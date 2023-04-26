@@ -3,19 +3,20 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Tools
 
-- OPENAI: EVAL https://github.com/openai/evals
+- **OPENAI: EVAL** https://github.com/openai/evals
 
-- EleutherAI: lm-evaluation-harness https://github.com/EleutherAI/lm-evaluation-harness
+- **EleutherAI: lm-evaluation-harness** https://github.com/EleutherAI/lm-evaluation-harness
 
-- wgryc: Large language model evaluation and workflow framework from Phase AI. https://github.com/wgryc/phasellm
+- **wgryc: Large language model evaluation and workflow framework from Phase AI** https://github.com/wgryc/phasellm
 
-- FreedomIntelligence: evaluation benchmark for large language models https://github.com/FreedomIntelligence/LLMZoo
+- **FreedomIntelligence: evaluation benchmark for large language models** https://github.com/FreedomIntelligence/LLMZoo
 
-- Stanford: Holistic Evaluation of Language Models (HELM), a framework to increase the transparency of language models M https://github.com/stanford-crfm/helm
+- **Stanford: Holistic Evaluation of Language Models (HELM), a framework to increase the transparency of LLM** https://github.com/stanford-crfm/helm
 
 
 ## Papers
 
+- [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://www.microsoft.com/en-us/research/publication/gpteval-nlg-evaluation-using-gpt-4-with-better-human-alignment/) [**G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment**](https://www.microsoft.com/en-us/research/publication/gpteval-nlg-evaluation-using-gpt-4-with-better-human-alignment/),<br> by *Yang Liu, Dan Iter, Yichong Xu, Shuohang Wang, Ruochen Xu, Chenguang Zhu*
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.04023) [**A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning,
 Hallucination, and Interactivity**](https://doi.org/10.48550/arXiv.2302.04023),<br> by *Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji et al.*
 <br><br>
@@ -185,9 +186,11 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
   - [HuggingChat](https://huggingface.co/chat/) - Powered by Open Assistant's latest model – the best open source chat model right now and @huggingface Inference API.
 
 ## Demos
-
+- [Chat with two anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA
 
 ## Others
+
+- [Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft](https://levelup.gitconnected.com/how-to-benchmark-language-models-by-openai-deepmind-google-microsoft-783d4307ec50) - Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft.
 
 ## Other Awesome Lists
 
