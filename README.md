@@ -4,19 +4,15 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Tools
 
-- **OPENAI: EVAL** https://github.com/openai/evals
-
-- **EleutherAI: lm-evaluation-harness** https://github.com/EleutherAI/lm-evaluation-harness
-
-- **wgryc: Large language model evaluation and workflow framework from Phase AI** https://github.com/wgryc/phasellm
-
-- **FreedomIntelligence: evaluation benchmark for large language models** https://github.com/FreedomIntelligence/LLMZoo
-
-- **Stanford: Holistic Evaluation of Language Models (HELM), a framework to increase the transparency of LLM** https://github.com/stanford-crfm/helm
-
-- **a lightweight evaluation tool for question-answering using Langchain** https://github.com/rlancemartin/auto-evaluator 
-
-- **WeOpenML: PandaLMReProducible and Automated Language Model Assessment** https://github.com/WeOpenML/PandaLM
+| 机构 | 名称 | 网址 |
+| :--: | :--: | :--: |
+| OPENAI | EVAL | https://github.com/openai/evals |
+| EleutherAI | lm-evaluation-harness | https://github.com/EleutherAI/lm-evaluation-harness |
+| wgryc | Large language model evaluation and workflow framework from Phase AI | https://github.com/wgryc/phasellm |
+| FreedomIntelligence | evaluation benchmark for large language models | https://github.com/FreedomIntelligence/LLMZoo |
+| Stanford | Holistic Evaluation of Language Models (HELM) | https://github.com/stanford-crfm/helm |
+| Langchain | a lightweight evaluation tool for question-answering | https://github.com/rlancemartin/auto-evaluator |
+| WeOpenML | PandaLMReProducible and Automated Language Model Assessment | https://github.com/WeOpenML/PandaLM |
 
 ## Demos
 - [Chat with two anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA
