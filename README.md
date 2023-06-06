@@ -19,11 +19,6 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Datasets
 
-
-好的，我会将以下内容整理成markdown表格格式。😊
-
-如下是整理后的表格：
-
 | 数据名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
 | JioNLP-LLM评测数据集 | jionlp | https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集 | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果。 |
