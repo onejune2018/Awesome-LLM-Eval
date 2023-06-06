@@ -19,14 +19,23 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Datasets
 
-- [JioNLP-LLM评测数据集](https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集) - jionlp LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果。
-- [BIG-bench](https://github.com/google/BIG-bench) - google推出的一个评测集，BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题。
-- [SuperCLUE](https://github.com/CLUEbenchmark/SuperCLUE) - 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力。
-- [Safety Eval: Tsinghua University 清华安全大模型评测](https://github.com/thu-coai/Safety-Prompts) - 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架。网址：http://115.182.62.166:18000。
-- [GAOKAO-Bench](https://github.com/OpenLMLab/GAOKAO-Bench) - GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架.
-- [MMLU](https://paperswithcode.com/dataset/mmlu) - 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择。
-- [MMCU](https://paperswithcode.com/dataset/mmlu) - 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道。 
-- [c_eval](https://arxiv.org/pdf/2305.08322.pdf) - 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能.
+
+好的，我会将以下内容整理成markdown表格格式。😊
+
+如下是整理后的表格：
+
+| 数据名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :--: |
+| JioNLP-LLM评测数据集 | jionlp | https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集 | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果。 |
+| BIG-bench | google | https://github.com/google/BIG-bench | BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题。 |
+| SuperCLUE | CLUEbenchmark | https://github.com/CLUEbenchmark/SuperCLUE | 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力。 |
+| Safety Eval: Tsinghua University 清华安全大模型评测 | 清华大学 | http://115.182.62.166:18000 | 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架。 |
+| GAOKAO-Bench | OpenLMLab | https://github.com/OpenLMLab/GAOKAO-Bench | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架. |
+| MMLU | paperswithcode.com | https://paperswithcode.com/dataset/mmlu | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择。 |
+| MMCU | 甲骨易AI研究院 | https://github.com/Felixgithub2017/MMCU | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道。 |
+| c_eval | 上交、清华以及爱丁堡大学 | https://arxiv.org/pdf/2305.08322.pdf | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能. |
+
+
 
 ## Papers
 
