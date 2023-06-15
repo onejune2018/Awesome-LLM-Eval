@@ -4,16 +4,17 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Tools
 
-| 机构 | 名称 | 网址 |
-| :--: | :--: | :--: |
-| OPENAI | EVAL | https://github.com/openai/evals |
-| EleutherAI | lm-evaluation-harness | https://github.com/EleutherAI/lm-evaluation-harness |
-| wgryc | Large language model evaluation and workflow framework from Phase AI | https://github.com/wgryc/phasellm |
-| FreedomIntelligence | evaluation benchmark for large language models | https://github.com/FreedomIntelligence/LLMZoo |
-| Stanford | Holistic Evaluation of Language Models (HELM) | https://github.com/stanford-crfm/helm |
-| Langchain | a lightweight evaluation tool for question-answering | https://github.com/rlancemartin/auto-evaluator |
-| WeOpenML | PandaLM: ReProducible and Automated Language Model Assessment | https://github.com/WeOpenML/PandaLM |
-| Tsinghua University | FlagEval | https://github.com/FlagOpen/FlagEval |
+| 机构 | 名称 | 网址 | 日期 |
+| :--: | :--: | :--: | :--: |
+| EVAL | OPENAI | https://github.com/openai/evals ||
+| lm-evaluation-harness | EleutherAI | https://github.com/EleutherAI/lm-evaluation-harness ||
+| Large language model evaluation and workflow framework from Phase AI | wgryc | https://github.com/wgryc/phasellm ||
+| Evaluation benchmark for large language models| FreedomIntelligence | https://github.com/FreedomIntelligence/LLMZoo ||
+| Holistic Evaluation of Language Models (HELM) | Stanford | https://github.com/stanford-crfm/helm ||
+| A lightweight evaluation tool for question-answering | Langchain | https://github.com/rlancemartin/auto-evaluator ||
+| PandaLM: ReProducible and Automated Language Model Assessment | WeOpenML | https://github.com/WeOpenML/PandaLM ||
+| FlagEval | Tsinghua University | https://github.com/FlagOpen/FlagEval ||
+| AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval |2023.06|
 
 ## Demos
 - [Chat with two anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA
@@ -27,8 +28,10 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | SuperCLUE | CLUEbenchmark | https://github.com/CLUEbenchmark/SuperCLUE | 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力。 |
 | Safety Eval: Tsinghua University 清华安全大模型评测 | 清华大学 | http://115.182.62.166:18000 | 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架。 |
 | GAOKAO-Bench | OpenLMLab | https://github.com/OpenLMLab/GAOKAO-Bench | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。 |
+| Gaokao | ExpressAI | https://github.com/ExpressAI/AI-Gaokao | “高考基准”旨在评估和追踪我们在达到人类智力水平方面取得的进展。它不仅可以提供对现实世界场景中实际有用的不同任务和领域的全面评估，还提供丰富的人类表现，以便大模型等可以直接与人类进行比较。 |
 | MMLU | paperswithcode.com | https://paperswithcode.com/dataset/mmlu | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择。 |
 | MMCU | 甲骨易AI研究院 | https://github.com/Felixgithub2017/MMCU | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道。 |
+| AGIEval | 微软研究院 | | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
 | c_eval | 上交、清华以及爱丁堡大学 | https://arxiv.org/pdf/2305.08322.pdf | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。 |
 | XieZhi | Fudan Univesity | https://github.com/MikeGu721/XiezhiBenchmark | a comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能。|
 
