@@ -4,7 +4,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Tools
 
-| 机构 | 名称 | 网址 | 日期 |
+| 名称 | 机构 | 网址 | 日期 |
 | :--: | :--: | :--: | :--: |
 | EVAL | OPENAI | https://github.com/openai/evals ||
 | lm-evaluation-harness | EleutherAI | https://github.com/EleutherAI/lm-evaluation-harness ||
