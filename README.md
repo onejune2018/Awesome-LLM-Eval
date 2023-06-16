@@ -33,7 +33,8 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | MMCU | 甲骨易AI研究院 | https://github.com/Felixgithub2017/MMCU | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道。 |
 | AGIEval | 微软研究院 | | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
 | c_eval | 上交、清华以及爱丁堡大学 | https://arxiv.org/pdf/2305.08322.pdf | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。 |
-| XieZhi | Fudan Univesity | https://github.com/MikeGu721/XiezhiBenchmark | a comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能。|
+| XieZhi | Fudan Univesity | https://github.com/MikeGu721/XiezhiBenchmark | A comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能。|
+| MT-bench | UC Berkeley, UCSD, CMU, Stanford, MBZUAI | https://arxiv.org/abs/2306.05685 | A benchmark consisting of 80 high-quality multi-turn questions. MT-bench is designed to test multi-turn conversation and instruction-following ability, covering common use cases and focusing on challenging questions to differentiate models. It includes 8 common categories of user prompts to guide its construction: writing, roleplay, extraction, reasoning, math, coding, etc. | 
 
 ## Leaderborad
 
