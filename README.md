@@ -21,38 +21,37 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
 
 ## Demos
-- [Chat with two anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA
+- [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
 ## Datasets / Benchmark
 
 | 数据名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
-| JioNLP-LLM评测数据集 | jionlp | https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集 | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果。 |
-| BIG-bench | google | https://github.com/google/BIG-bench | BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题。 |
-| SuperCLUE | CLUEbenchmark | https://github.com/CLUEbenchmark/SuperCLUE | 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力。 |
-| Safety Eval: Tsinghua University 清华安全大模型评测 | 清华大学 | http://115.182.62.166:18000 | 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架。 |
-| GAOKAO-Bench | OpenLMLab | https://github.com/OpenLMLab/GAOKAO-Bench | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架。 |
-| Gaokao | ExpressAI | https://github.com/ExpressAI/AI-Gaokao | “高考基准”旨在评估和追踪我们在达到人类智力水平方面取得的进展。它不仅可以提供对现实世界场景中实际有用的不同任务和领域的全面评估，还提供丰富的人类表现，以便大模型等可以直接与人类进行比较。 |
-| MMLU | paperswithcode.com | https://paperswithcode.com/dataset/mmlu | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择。 |
-| MMCU | 甲骨易AI研究院 | https://github.com/Felixgithub2017/MMCU | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道。 |
-| AGIEval | 微软研究院 | | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
-| c_eval | 上交、清华以及爱丁堡大学 | https://arxiv.org/pdf/2305.08322.pdf | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。 |
-| XieZhi | Fudan Univesity | https://github.com/MikeGu721/XiezhiBenchmark | A comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能。|
-| MT-bench | UC Berkeley, UCSD, CMU, Stanford, MBZUAI | https://arxiv.org/abs/2306.05685 | A benchmark consisting of 80 high-quality multi-turn questions. MT-bench is designed to test multi-turn conversation and instruction-following ability, covering common use cases and focusing on challenging questions to differentiate models. It includes 8 common categories of user prompts to guide its construction: writing, roleplay, extraction, reasoning, math, coding, etc. | 
-| GLUE Benchmark | NYU, University of Washington, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | https://gluebenchmark.com/ | 评估模型在语法、改写、文本相似度、推理、文本蕴含、代词指代等任务上的表现 |
-| OpenAI Moderation API | OpenAI | https://platform.openai.com/docs/api-reference/moderations | 过滤有害或不安全的内容 |
-| EleutherAI LM Eval | EleutherAI | https://github.com/EleutherAI/lm-evaluation-harness | 评估模型在少量样本下的表现和在多种任务上的微调效果 |
-| OpenAI Evals | OpenAI | https://github.com/openai/evals | 评估生成文本的准确性、多样性、一致性、鲁棒性、迁移性、效率和公平性 |
-| Adversarial NLI (ANLI) | Facebook AI Research, New York University, Johns Hopkins University, University of Maryland, Allen Institute for AI | https://github.com/facebookresearch/anli | 评估模型在对抗样本下的鲁棒性、泛化能力、推理解释能力和一致性，以及资源使用效率（内存使用、推理时间和训练时间）|
-| LIT (Language Interpretability Tool) | Google PAIR (People + AI Research) team and Google Brain team. 	https://pair-code.github.io/lit/	提供一个平台，可以根据用户定义的指标进行评估，分析模型的优势、弱点和潜在偏差 |
-| ParlAI	| Facebook AI Research	| https://github.com/facebookresearch/ParlAI	| 评估模型在准确性、F1分数、困惑度（模型预测序列中下一个词的能力）、人类评价（相关性、流畅度和连贯性）、速度和资源利用率、鲁棒性（模型在不同条件下的表现，如噪声输入、对抗攻击或数据质量变化）、泛化能力等方面的表现 |
-| CoQA	| Stanford | https://stanfordnlp.github.io/coqa/	| 评估模型在理解文本段落并回答一系列相互关联的问题，这些问题出现在对话中的能力 |
-| LAMBADA	| University of Trento and Fondazione Bruno Kessler	| https://zenodo.org/record/2630551#.ZFUKS-zML0p	| 评估模型使用预测段落最后一个词的方式来衡量长期理解能力 |
-| HellaSwag	| University of Washington, Allen Institute for AI	| https://rowanzellers.com/hellaswag/	| 评估模型的推理能力 |
-| LogiQA	| Tsinghua University and Microsoft Research Asia	| https://github.com/lgw863/LogiQA-dataset	| 评估模型的逻辑推理能力 |
-| MultiNLI	| New York University, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | https://cims.nyu.edu/~sbowman/multinli/ | 评估模型在不同文体之间理解句子关系的能力 |
-| SQUAD	| Stanford NLP Group	| https://rajpurkar.github.io/SQuAD-explorer/	| 评估模型在阅读理解任务上的表现 |
-
+| JioNLP-LLM评测数据集 | jionlp | [JioNLP-LLM评测数据集](https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集) | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果 |
+| BIG-bench | google | [BIG-bench](https://github.com/google/BIG-bench) | BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题 |
+| SuperCLUE | CLUEbenchmark | [SuperCLUE](https://github.com/CLUEbenchmark/SuperCLUE) | 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力 |
+| Safety Eval: Tsinghua University 清华安全大模型评测 | 清华大学 | [Safety Eval: Tsinghua University 清华安全大模型评测](http://115.182.62.166:18000) | 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架 |
+| GAOKAO-Bench | OpenLMLab | [GAOKAO-Bench](https://github.com/OpenLMLab/GAOKAO-Bench) | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架 |
+| Gaokao | ExpressAI | [Gaokao](https://github.com/ExpressAI/AI-Gaokao) | “高考基准”旨在评估和追踪我们在达到人类智力水平方面取得的进展。它不仅可以提供对现实世界场景中实际有用的不同任务和领域的全面评估，还提供丰富的人类表现，以便大模型等可以直接与人类进行比较 |
+| MMLU | paperswithcode.com | [MMLU](https://paperswithcode.com/dataset/mmlu) | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择 |
+| MMCU | 甲骨易AI研究院 | [MMCU](https://github.com/Felixgithub2017/MMCU) | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道 |
+| AGIEval | 微软研究院 | [AGIEval](https://www.microsoft.com/en-us/research/project/agi-evaluation/) | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
+| c_eval | 上交、清华以及爱丁堡大学 | [c_eval](https://arxiv.org/pdf/2305.08322.pdf) | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。|
+| XieZhi | Fudan Univesity | [XieZhi](https://github.com/MikeGu721/XiezhiBenchmark) | A comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能|
+| MT-bench | UC Berkeley, UCSD, CMU, Stanford, MBZUAI | [MT-bench](https://arxiv.org/abs/2306.05685) | A benchmark consisting of 80 high-quality multi-turn questions. MT-bench is designed to test multi-turn conversation and instruction-following ability, covering common use cases and focusing on challenging questions to differentiate models. It includes 8 common categories of user prompts to guide its construction: writing, roleplay, extraction, reasoning, math, coding, etc. | 
+| GLUE Benchmark | NYU, University of Washington, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [GLUE Benchmark](https://gluebenchmark.com/) | 评估模型在语法、改写、文本相似度、推理、文本蕴含、代词指代等任务上的表现 |
+| OpenAI Moderation API | OpenAI | [OpenAI Moderation API](https://platform.openai.com/docs/api-reference/moderations) | 过滤有害或不安全的内容 |
+| EleutherAI LM Eval | EleutherAI | [EleutherAI LM Eval](https://github.com/EleutherAI/lm-evaluation-harness) | 评估模型在少量样本下的表现和在多种任务上的微调效果 |
+| OpenAI Evals | OpenAI | [OpenAI Evals](https://github.com/openai/evals) | 评估生成文本的准确性、多样性、一致性、鲁棒性、迁移性、效率和公平性 |
+| Adversarial NLI (ANLI) | Facebook AI Research, New York University, Johns Hopkins University, University of Maryland, Allen Institute for AI | [Adversarial NLI (ANLI)](https://github.com/facebookresearch/anli) | 评估模型在对抗样本下的鲁棒性、泛化能力、推理解释能力和一致性，以及资源使用效率（内存使用、推理时间和训练时间）|
+| LIT (Language Interpretability Tool) | Google |	[LIT](https://pair-code.github.io/lit/)	| 提供一个平台，可以根据用户定义的指标进行评估，分析模型的优势、弱点和潜在偏差 |
+| ParlAI	| Facebook AI Research	| [ParlAI](https://github.com/facebookresearch/ParlAI)	| 评估模型在准确性、F1分数、困惑度（模型预测序列中下一个词的能力）、人类评价（相关性、流畅度和连贯性）、速度和资源利用率、鲁棒性（模型在不同条件下的表现，如噪声输入、对抗攻击或数据质量变化）、泛化能力等方面的表现 |
+| CoQA	| Stanford NLP Group	| [CoQA](https://stanfordnlp.github.io/coqa/)	| 评估模型在理解文本段落并回答一系列相互关联的问题，这些问题出现在对话中的能力 |
+| LAMBADA	| University of Trento and Fondazione Bruno Kessler	| [LAMBADA](https://zenodo.org/record/2630551#.ZFUKS-zML0p)	| 评估模型使用预测段落最后一个词的方式来衡量长期理解能力 |
+| HellaSwag	| University of Washington and Allen Institute for AI	| [HellaSwag](https://rowanzellers.com/hellaswag/)	| 评估模型的推理能力 |
+| LogiQA	| Tsinghua University and Microsoft Research Asia	| [LogiQA](https://github.com/lgw863/LogiQA-dataset)	| 评估模型的逻辑推理能力 |
+| MultiNLI	| New York University, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/) | 评估模型在不同文体之间理解句子关系的能力 |
+| SQUAD	| Stanford NLP Group	| [SQUAD](https://rajpurkar.github.io/SQuAD-explorer/)	| 评估模型在阅读理解任务上的表现 |
 
 ## Leaderborad
 
