@@ -52,8 +52,8 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | LogiQA	| Tsinghua University and Microsoft Research Asia	| [LogiQA](https://github.com/lgw863/LogiQA-dataset)	| 评估模型的逻辑推理能力 |
 | MultiNLI	| New York University, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/) | 评估模型在不同文体之间理解句子关系的能力 |
 | SQUAD	| Stanford NLP Group	| [SQUAD](https://rajpurkar.github.io/SQuAD-explorer/)	| 评估模型在阅读理解任务上的表现 |
-| Open LLM Leaderboard | HuggingFace | https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard | 由HuggingFace组织的一个LLM评测榜单，目前已评估了较多主流的开源LLM模型。评估主要包括AI2 Reasoning Challenge, HellaSwag, MMLU, TruthfulQA四个数据集上的表现，主要以英文为主 |
-| chinese-llm-benchmark | jeinlee1991 | https://github.com/jeinlee1991/chinese-llm-benchmark | 中文大模型能力评测榜单：覆盖百度文心一言、chatgpt、阿里通义千问、讯飞星火、belle / chatglm6b 等开源大模型，多维度能力评测。不仅提供能力评分排行榜，也提供所有模型的原始输出结果 |
+| Open LLM Leaderboard | HuggingFace | [Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 由HuggingFace组织的一个LLM评测榜单，目前已评估了较多主流的开源LLM模型。评估主要包括AI2 Reasoning Challenge, HellaSwag, MMLU, TruthfulQA四个数据集上的表现，主要以英文为主 |
+| chinese-llm-benchmark | jeinlee1991 | [Leaderboard](https://github.com/jeinlee1991/chinese-llm-benchmark) | 中文大模型能力评测榜单：覆盖百度文心一言、chatgpt、阿里通义千问、讯飞星火、belle / chatglm6b 等开源大模型，多维度能力评测。不仅提供能力评分排行榜，也提供所有模型的原始输出结果 |
 
 ## Leaderborad
 
