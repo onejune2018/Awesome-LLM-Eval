@@ -20,8 +20,6 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | FlagEval | Tsinghua University | https://github.com/FlagOpen/FlagEval ||
 | AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
 
-## Demos
-- [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
 ## Datasets / Benchmark
 
@@ -57,9 +55,14 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | Open LLM Leaderboard | HuggingFace | [Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 由HuggingFace组织的一个LLM评测榜单，目前已评估了较多主流的开源LLM模型。评估主要包括AI2 Reasoning Challenge, HellaSwag, MMLU, TruthfulQA四个数据集上的表现，主要以英文为主 |
 | chinese-llm-benchmark | jeinlee1991 | [llm-benchmark](https://github.com/jeinlee1991/chinese-llm-benchmark) | 中文大模型能力评测榜单：覆盖百度文心一言、chatgpt、阿里通义千问、讯飞星火、belle / chatglm6b 等开源大模型，多维度能力评测。不仅提供能力评分排行榜，也提供所有模型的原始输出结果 |
 
+
+## Demos
+- [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
+
+
 ## Leaderborad
 
-### Performance from XieZhi
+### Performance from XieZhi-202306
 
 |       Models      |                MMLU                |                            |                            |            CEval           |                            |                            |            M3KE            |    Xiezhi-Spec.-Chinese    |                            |                            |    Xiezhi-Inter.-Chinese   |                            |                            |    Xiezhi-Spec.-English    |                            |                            |    Xiezhi-Inter.-English   |                            |                            |
 |:--------------------------:|:----------------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|
@@ -371,3 +374,32 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Chain-of-Thought Hub](https://github.com/FranxYao/chain-of-thought-hub) - Measuring LLMs' Reasoning Performance
 - [Awesome GPT](https://github.com/formulahendry/awesome-gpt) - A curated list of awesome projects and resources related to GPT, ChatGPT, OpenAI, LLM, and more.
 - [Awesome GPT-3](https://github.com/elyase/awesome-gpt3) - a collection of demos and articles about the [OpenAI GPT-3 API](https://openai.com/blog/openai-api/).
+
+## Licenses
+
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+本项目遵循 [MIT License](https://lbesson.mit-license.org/).
+
+[![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+本项目遵循 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+
+
+## 引用
+
+如果您使用了我们的数据集，请引用我们的论文。
+
+```
+@misc{junwang2023,
+  author = {Jun Wang},
+  title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/onejune2018/Awesome-LLM-Eval}},
+}
+```
+
+作者简介： SFE平台算法研发负责 // 医药发现大模型MPG(Molecular Pretraining GraphModel)作者// SemEval2022习语判别任务第一、MIT AI-Cure第一、VQA2021第一、TREC2021第一
