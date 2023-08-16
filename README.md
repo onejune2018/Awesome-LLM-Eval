@@ -397,7 +397,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ## 引用
 
-如果您使用了我们的数据集，请引用我们的论文。
+如果我们的项目对您有帮助，请引用我们的项目。
 
 ```
 @misc{junwang2023,
