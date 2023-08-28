@@ -59,6 +59,16 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | SQUAD	| Stanford NLP Group	| [SQUAD](https://rajpurkar.github.io/SQuAD-explorer/)	| 评估模型在阅读理解任务上的表现 |
 | Open LLM Leaderboard | HuggingFace | [Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 由HuggingFace组织的一个LLM评测榜单，目前已评估了较多主流的开源LLM模型。评估主要包括AI2 Reasoning Challenge, HellaSwag, MMLU, TruthfulQA四个数据集上的表现，主要以英文为主 |
 | chinese-llm-benchmark | jeinlee1991 | [llm-benchmark](https://github.com/jeinlee1991/chinese-llm-benchmark) | 中文大模型能力评测榜单：覆盖百度文心一言、chatgpt、阿里通义千问、讯飞星火、belle / chatglm6b 等开源大模型，多维度能力评测。不仅提供能力评分排行榜，也提供所有模型的原始输出结果 |
+| AlpacaEval | tatsu-lab | [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | 开源模型领先者 vicuna、openchat 和 wizardlm 的基于LLM的自动评估|
+| Huggingface开源LLM排行榜 | huggingface | [HF开源LLM排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 仅评估开源模型，在 Eleuther AI 的四个评估集上排名，Falcon 夺冠，vicuna 亦夺冠|
+| lmsys-arena | Berkley | [lmsys排名榜](https://lmsys.org/blog/2023-05-03-arena/) | 使用 Elo 评分机制，排名为 GPT4 > Claude > GPT3.5 > Vicuna > 其他|
+| CMU开源聊天机器人评测应用 | CMU | [zeno-build](https://github.com/zeno-ml/zeno-build) | 在对话场景中进行训练可能很重要，排名为 ChatGPT > Vicuna > 其他|
+| Z-Bench中文真格基金评测 | 真格基金 | [ Z-Bench](https://github.com/zhenbench/z-bench) | 国产中文模型的编程可用性相对较低，模型水平差异不大，两个版本的 ChatGLM 有明显提升|
+| Chain-of-thought评估 | Yao Fu | [COT评估](https://github.com/FranxYao/chain-of-thought-hub) | 包括 GSM8k、MATH 等复杂问题排名|
+| InfoQ大模型综合能力评估 | InfoQ | [InfoQ评测](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651170429&idx=1&sn=b98af3bd14c9f97f1aa07f0f839bb3ec&scene=21#wechat_redirect) | 面向中文，排名为 ChatGPT > 文心一言 > Claude > 星火|
+| ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
+| AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
+| FlagEval | 智源/清华 | [FlagEval](https://flageval.baai.ac.cn/#/home) | 智源出品，结合主观和客观评分，提供了LLM的评分榜单|
 
 
 ## Demos
