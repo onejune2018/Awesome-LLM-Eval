@@ -52,9 +52,7 @@ Sure, here's the translation of the provided content into English:
 | AlpacaEval | tatsu-lab | [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) | An automatic evaluation based on AlpacaFarm evaluation set, comparing responses with reference answers. |
 | Adversarial NLI (ANLI) | Facebook AI Research, others | [Adversarial NLI (ANLI)](https://github.com/facebookresearch/anli) | Evaluates model robustness, generalization, inference explanations, and efficiency under adversarial samples. |
 | LIT (Language Interpretability Tool) | Google | [LIT](https://pair-code.github.io/lit/) | Provides a platform to evaluate, analyze model strengths, weaknesses, and potential biases based on user-defined metrics. |
-| ParlAI | Facebook AI Research | [ParlAI](https://github.com/facebookresearch/ParlAI) | Evaluates model performance in terms of
-
- accuracy, F1 score, perplexity, human ratings, speed, robustness, and generalization. |
+| ParlAI | Facebook AI Research | [ParlAI](https://github.com/facebookresearch/ParlAI) | Evaluates model performance in terms of accuracy, F1 score, perplexity, human ratings, speed, robustness, and generalization. |
 | CoQA | Stanford NLP Group | [CoQA](https://stanfordnlp.github.io/coqa/) | Evaluates models' comprehension of paragraphs and answering related questions in a conversational context. |
 | LAMBADA | University of Trento, Fondazione Bruno Kessler | [LAMBADA](https://zenodo.org/record/2630551#.ZFUKS-zML0p) | Measures models' long-term understanding by predicting the last word of paragraphs. |
 | HellaSwag | University of Washington, Allen Institute for AI | [HellaSwag](https://rowanzellers.com/hellaswag/) | Evaluates models' reasoning abilities using counterfactual statements. |
