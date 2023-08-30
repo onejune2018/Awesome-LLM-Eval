@@ -1,5 +1,7 @@
 # Awesome-LLM-Eval
 
+[English](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_EN.md) | [中文](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_CN.md)
+
 Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, etc).
 
 ![](docs/survey-gif-test.gif)
