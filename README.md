@@ -70,6 +70,8 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
 | FlagEval | 智源/清华 | [FlagEval](https://flageval.baai.ac.cn/#/home) | 智源出品，结合主观和客观评分，提供了LLM的评分榜单|
 | ChatEval | THU-NLP | [ChatEval](https://github.com/thunlp/ChatEval) |ChatEval旨在简化人类对生成的文本进行评估的过程。当给定不同的文本片段时，ChatEval中的角色(由法学硕士扮演)可以自主地讨论细微差别和差异，利用他们指定的角色，随后提供他们的判断|
+| Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | 多维能力覆盖，涵盖了7个能力维度和51个任务；多方面的评估方法协作，综合使用3种不同但互补的评估方法；全面的中文基准测试，同时提供英文评估能力 |
+| LucyEval | 甲骨文 | [LucyEval](http://lucyeval.besteasy.com/) | 中文大语言模型成熟度评测——LucyEval，能够通过对模型各方面能力的客观测试，找到模型的不足，帮助设计者和工程师更加精准地调整、训练模型，助力大模型不断迈向更智能的未来 |
 
 
 ## Demos
