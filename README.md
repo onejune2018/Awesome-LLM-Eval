@@ -39,6 +39,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | GAOKAO-Bench | OpenLMLab | [GAOKAO-Bench](https://github.com/OpenLMLab/GAOKAO-Bench) | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架 |
 | Gaokao | ExpressAI | [Gaokao](https://github.com/ExpressAI/AI-Gaokao) | “高考基准”旨在评估和追踪我们在达到人类智力水平方面取得的进展。它不仅可以提供对现实世界场景中实际有用的不同任务和领域的全面评估，还提供丰富的人类表现，以便大模型等可以直接与人类进行比较 |
 | MMLU | paperswithcode.com | [MMLU](https://paperswithcode.com/dataset/mmlu) | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择 |
+| CMMLU | MBZUAI & ShangHai JiaoTong & Microsoft | [CMMLU](https://github.com/haonan-li/CMMLU) | Measuring massive multitask language understanding in Chinese |
 | MMCU | 甲骨易AI研究院 | [MMCU](https://github.com/Felixgithub2017/MMCU) | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道 |
 | AGIEval | 微软研究院 | [AGIEval](https://www.microsoft.com/en-us/research/project/agi-evaluation/) | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
 | C_Eval | 上交、清华以及爱丁堡大学 | [C_Eval](https://cevalbenchmark.com/index.html#home) | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。|
