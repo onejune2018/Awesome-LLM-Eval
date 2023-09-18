@@ -4,6 +4,25 @@
 
 Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, etc).
 
+## Table of Contents
+
+- [Tools](#Tools)
+- [Datasets / Benchmark](#Datasets-or-Benchmark)
+- [Demos](#Demos)
+- [Leaderborad](#Leaderborad)
+- [Papers](#papers)
+- [LLM-List](#LLM-List)
+  - [Pre-trained LLM](#Pre-trained-LLM)
+  - [Instruction finetuned LLM](#Instruction-finetuned-LLM)
+  - [Aligned LLM](#Aligned-LLM)
+  - [Open LLM](#Open-LLM)
+  - [Popular LLM](#Popular-LLM)
+- [Courses](#Courses)
+- [Others](#Others)
+- [Other-Awesome-Lists](#Other-Awesome-Lists)
+- [Licenses](#Licenses)
+- [引用](#引用)
+
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
 
@@ -23,7 +42,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
 
 
-## Datasets / Benchmark
+## Datasets-or-Benchmark
 
 | 数据名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
@@ -214,9 +233,9 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 <br><br>
 
 
-## LLM List
+## LLM-List
 
-### Pre-trained LLM
+### Pre-trained-LLM
 
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
 | :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -242,7 +261,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |      GPT-Neo      | 2.7B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
 |      GPT-Neo      | 1.3B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
 
-### Instruction finetuned LLM
+### Instruction-finetuned-LLM
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
 | :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
 |Flan-PaLM| 540B | Decoder |-|2022-10|[Paper](https://arxiv.org/pdf/2210.11416.pdf)|
@@ -258,7 +277,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |Alpaca| 7B|Decoder|[demo](https://crfm.stanford.edu/alpaca/)|2023-03|[Github](https://github.com/tatsu-lab/stanford_alpaca)|
 
 
-### Aligned LLM
+### Aligned-LLM
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
 | :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
 | GPT 4  | - | - | - | 2023-03 | [Blog](https://openai.com/research/gpt-4)|
@@ -266,9 +285,8 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 | Sparrow  | 70B | - | - | 2022-09 | [Paper](https://arxiv.org/pdf/2209.14375.pdf)|
 | Claude  | - | - | [demo](https://poe.com/claude)\|[api](https://www.anthropic.com/earlyaccess) | 2023-03 | [Blog](https://www.anthropic.com/index/introducing-claude) |
 
----
 
-### Open LLM
+### Open-LLM
 
 - [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) - A foundational, 65-billion-parameter large language model. [LLaMA.cpp](https://github.com/ggerganov/llama.cpp) [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama)
   - [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) - A model fine-tuned from the LLaMA 7B model on 52K instruction-following demonstrations. [Alpaca.cpp](https://github.com/antimatter15/alpaca.cpp) [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
@@ -322,7 +340,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
   - [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) - An open-source, commercially available large-scale language model developed by Baichuan Intelligent Technology following Baichuan-7B, containing 13 billion parameters. (20230715)
   - - [Qwen](https://github.com/QwenLM/Qwen-7B) - Qwen-7B is the 7B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud. Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. (20230803)
 
-### Popular LLM
+### Popular-LLM
 
 |                                                                                                                                       **Model**                                                                                                                                       | **\#Author** | **\#Link** | **\#Parameter** |   **Base Model**  | **\#Layer** | **\#Encoder** | **\#Decoder** | **\#Pretrain Tokens** | **\#IFT Sample** | **RLHF** |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|:----------------------:|:----------------------:|:----------------------:|:----------------:|:------------------:|:------------------:|:--------------------------:|:---------------------:|:-------------:|
@@ -388,13 +406,14 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ## Courses
 
-- [大语言模型课程notebooks集-Large Language Model Course](https://github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs). 
+- [大语言模型课程notebooks集-Large Language Model Course](https://github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs).
+- [Full+Stack+LLM+Bootcamp](https://ihower.tw/notes/技術筆記-AI/Full+Stack+LLM+Bootcamp) - LLM相关学习/应用资源集.
 
 ## Others
 
 - [Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft](https://levelup.gitconnected.com/how-to-benchmark-language-models-by-openai-deepmind-google-microsoft-783d4307ec50) - Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft.
 
-## Other Awesome Lists
+## Other-Awesome-Lists
 
 - [Awesome LLM](https://github.com/Hannibal046/Awesome-LLM/) -  A curated list of papers about large language models. 
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - A collection of prompt examples to be used with the ChatGPT model.
