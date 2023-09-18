@@ -29,17 +29,18 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 
 ## Tools
 
-| 名称 | 机构 | 网址 | 日期 |
+| 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
-| EVAL | OPENAI | https://github.com/openai/evals ||
-| lm-evaluation-harness | EleutherAI | https://github.com/EleutherAI/lm-evaluation-harness ||
-| Large language model evaluation and workflow framework from Phase AI | wgryc | https://github.com/wgryc/phasellm ||
-| Evaluation benchmark for large language models| FreedomIntelligence | https://github.com/FreedomIntelligence/LLMZoo ||
-| Holistic Evaluation of Language Models (HELM) | Stanford | https://github.com/stanford-crfm/helm ||
-| A lightweight evaluation tool for question-answering | Langchain | https://github.com/rlancemartin/auto-evaluator ||
-| PandaLM: ReProducible and Automated Language Model Assessment | WeOpenML | https://github.com/WeOpenML/PandaLM ||
-| FlagEval | Tsinghua University | https://github.com/FlagOpen/FlagEval ||
-| AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
+| EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
+| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
+| Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) | phasellm是Phase AI提供的一个用于评估和管理LLM的框架，可以帮助用户选择合适的模型、数据集和指标，以及可视化和分析结果. |
+| Evaluation benchmark for LLM | FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) | LLMZoo是FreedomIntelligence开发的一个用于评估LLM的基准，包含了多个领域和任务的数据集和指标，以及一些预训练的模型和结果. |
+| Holistic Evaluation of Language Models (HELM) | Stanford | [HELM](https://github.com/stanford-crfm/helm) | HELM是Stanford研究团队提出的一个用于全面评估LLM的方法，考虑了模型的语言能力、知识、推理、公平性和安全性等多个方面. |
+| A lightweight evaluation tool for question-answering | Langchain | [auto-evaluator](https://github.com/rlancemartin/auto-evaluator) | auto-evaluator是Langchain开发的一个用于评估问答系统的轻量级工具，可以自动生成问题和答案，并计算模型的准确率、召回率和F1分数等指标. |
+| PandaLM | WeOpenML | [PandaLM](https://github.com/WeOpenML/PandaLM) | ReProducible and Automated Language Model Assessment | PandaLM是WeOpenML开发的一个用于自动化和可复现地评估LLM的工具，可以根据用户的需求和偏好，选择合适的数据集、指标和模型，并生成报告和图表. |
+| FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) | FlagEval是清华大学开发的一个用于评估LLM的平台，可以提供多种任务和数据集，以及在线测试、排行榜和分析等功能 |
+| AlpacaEval | tatsu-lab | [alpaca_eval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval是tatsu-lab开发的一个用于评估LLM的工具，可以使用多种语言、领域和任务进行测试，并提供可解释性、鲁棒性和可信度等指标. |
+|Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
 
 
 ## Datasets-or-Benchmark
