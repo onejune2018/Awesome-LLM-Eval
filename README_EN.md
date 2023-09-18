@@ -1,6 +1,6 @@
 # Awesome-LLM-Eval
 
-[English](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_EN.md) | [中文](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_CN.md)
+[English](README_EN.md) | [中文](README_CN.md)
 
 Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, etc).
 
@@ -76,6 +76,7 @@ Sure, here's the translation of the provided content into English:
 | ChatEval | THU-NLP | [ChatEval](https://github.com/thunlp/ChatEval) | Simplifies human evaluation of generated text by involving human raters in discussions. |
 | Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | Multidimensional evaluation covering 7 ability dimensions and 51 tasks in both Chinese and English. |
 | LucyEval | Oracle | [LucyEval](http://lucyeval.besteasy.com/) | Evaluates Chinese large models' maturity using objective tests across various abilities. |
+| Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| Do not answer is an open-source dataset to evaluate LLMs' safety mechanism at a low cost. The dataset is curated and filtered to consist only of prompts to which responsible language models do not answer. Besides human annotations, Do not answer also implements model-based evaluation, where a 600M fine-tuned BERT-like evaluator achieves comparable results with human and GPT-4. |
 
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - Open Source AI "Anonymous" Arena! Here, you can become a referee and rate the responses of two models whose names you don't know in advance. After scoring, their real identities will be revealed. The current "participants" include Vicuna, Koala, OpenAssistant (oasst), Dolly, ChatGLM, StableLM, Alpaca, LLaMA, and more.
