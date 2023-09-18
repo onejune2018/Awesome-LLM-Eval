@@ -382,6 +382,10 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |                                                                                              GPT-4~(2023.05.01) | openai2023gpt4 | https://platform.openai.com/docs/models/gpt-4                                                                                               |           -          |            -           |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
 
 
+## Courses
+
+- [大语言模型课程notebooks集-Large Language Model Course](github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs). 
+
 ## Others
 
 - [Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft](https://levelup.gitconnected.com/how-to-benchmark-language-models-by-openai-deepmind-google-microsoft-783d4307ec50) - Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft.
