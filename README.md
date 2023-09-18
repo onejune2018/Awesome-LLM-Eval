@@ -1,6 +1,6 @@
 # Awesome-LLM-Eval
 
-[English](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_EN.md) | [中文](https://github.com/onejune2018/Awesome-LLM-Eval/edit/main/README_CN.md)
+[English](README_EN.md) | [中文](README_CN.md)
 
 Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, etc).
 
@@ -74,6 +74,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | ChatEval | THU-NLP | [ChatEval](https://github.com/thunlp/ChatEval) |ChatEval旨在简化人类对生成的文本进行评估的过程。当给定不同的文本片段时，ChatEval中的角色(由法学硕士扮演)可以自主地讨论细微差别和差异，利用他们指定的角色，随后提供他们的判断|
 | Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | 多维能力覆盖，涵盖了7个能力维度和51个任务；多方面的评估方法协作，综合使用3种不同但互补的评估方法；全面的中文基准测试，同时提供英文评估能力 |
 | LucyEval | 甲骨文 | [LucyEval](http://lucyeval.besteasy.com/) | 中文大语言模型成熟度评测——LucyEval，能够通过对模型各方面能力的客观测试，找到模型的不足，帮助设计者和工程师更加精准地调整、训练模型，助力大模型不断迈向更智能的未来 |
+| Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| "Do not answer" 是一个开源数据集，旨在以低成本评估LLM（大型语言模型）的安全机制。该数据集经过策划和筛选，仅包含那些负责任的语言模型不回答的提示。除了人工标注外，“Do not answer” 还实施了基于模型的评估，其中一个经过6亿次微调的类似BERT的评估器获得了与人类和GPT-4相媲美的结果 |
 
 
 ## Demos
