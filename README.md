@@ -388,7 +388,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ## Courses
 
-- [大语言模型课程notebooks集-Large Language Model Course](github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs). 
+- [大语言模型课程notebooks集-Large Language Model Course](https://github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs). 
 
 ## Others
 
