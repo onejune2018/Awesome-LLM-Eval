@@ -7,7 +7,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 ## Table of Contents
 
 - [Tools](#Tools)
-- [Datasets / Benchmark](#Datasets/Benchmark)
+- [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
 - [Leaderborad](#Leaderborad)
 - [Papers](#papers)
@@ -42,7 +42,7 @@ Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on
 | AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
 
 
-## Datasets/Benchmark
+## Datasets-or-Benchmark
 
 | 数据名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
