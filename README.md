@@ -101,6 +101,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 | Aviary | github.com/ray-project/aviary | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (202308)|
 | LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
+| FinEval | SUFE-AIFLM-Lab | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
 
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
