@@ -23,7 +23,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 - [Others](#Others)
 - [Other-Awesome-Lists](#Other-Awesome-Lists)
 - [Licenses](#Licenses)
-- [引用](#引用)
+- [Citation](#引用)
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
