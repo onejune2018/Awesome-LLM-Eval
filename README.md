@@ -43,6 +43,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 | FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) | FlagEval是清华大学开发的一个用于评估LLM的平台，可以提供多种任务和数据集，以及在线测试、排行榜和分析等功能 |
 | AlpacaEval | tatsu-lab | [alpaca_eval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval是tatsu-lab开发的一个用于评估LLM的工具，可以使用多种语言、领域和任务进行测试，并提供可解释性、鲁棒性和可信度等指标. |
 |Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
+| DeepEval | mr-gpt | [DeepEval](github.com/mr-gpt/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产 |
 
 
 ## Datasets-or-Benchmark
