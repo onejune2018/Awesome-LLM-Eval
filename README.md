@@ -527,3 +527,4 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - 医药发现大模型MPG([Molecular Pretraining GraphTransformer](https://github.com/onejune2018/MPG))作者
 - 国际竞赛SemEval2022习语判别任务第一、MIT AI-Cure第一、VQA2021第一、TREC2021第一、EAD2019第一
 - 主页：https://onejune2018.github.io/homepage/
+- Google Scholar: https://scholar.google.com/citations?user=0Be01PgAAAAJ&hl=en
