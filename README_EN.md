@@ -4,6 +4,27 @@
 
 Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboard, papers, docs and models, mainly for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, Baichuan, etc).
 
+## Table of Contents
+
+- [Tools](#Tools)
+- [Datasets / Benchmark](#Datasets-or-Benchmark)
+- [Demos](#Demos)
+- [Leaderborad](#Leaderborad)
+- [Papers](#papers)
+- [LLM-List](#LLM-List)
+  - [Pre-trained LLM](#Pre-trained-LLM)
+  - [Instruction finetuned LLM](#Instruction-finetuned-LLM)
+  - [Aligned LLM](#Aligned-LLM)
+  - [Open LLM](#Open-LLM)
+  - [Popular LLM](#Popular-LLM)
+- [LLMOps](#LLMOps)
+- [Frameworks for Training](#Frameworks-for-Training)
+- [Courses](#Courses)
+- [Others](#Others)
+- [Other-Awesome-Lists](#Other-Awesome-Lists)
+- [Licenses](#Licenses)
+- [引用](#引用)
+
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
 
