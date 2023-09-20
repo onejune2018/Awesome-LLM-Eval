@@ -2,7 +2,7 @@
 
 [English](README_EN.md) | [中文](README_CN.md)
 
-Awesome-LLM-Eval: a curated list of tools, demos, papers, docs for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, etc).
+Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboard, papers, docs and models, mainly for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, Baichuan, etc).
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
