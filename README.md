@@ -484,6 +484,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Awesome-marketing-datascience](https://github.com/underlines/awesome-marketing-datascience) - Curated list of useful LLM / Analytics / Datascience resources.
 - [Awesome-llm-tools](https://github.com/underlines/awesome-marketing-datascience/blob/master/llm-tools.md) - Curated list of useful LLM tool.
 - [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) - A curated list for Efficient LLM Compression.
+- [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) -  A curated list of  Multimodal Large Language Models.
 - [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) - An awesome & curated list of the best LLMOps tools for developers.
 - [Awesome-MLops](https://github.com/visenger/awesome-mlops) - An awesome list of references for MLOps - Machine Learning Operations.
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - A collection of prompt examples to be used with the ChatGPT model.
