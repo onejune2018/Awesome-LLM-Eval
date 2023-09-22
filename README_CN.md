@@ -9,7 +9,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
-- [Leaderborad](#Leaderborad)
+- [Leaderborads](#Leaderborad)
 - [Papers](#papers)
 - [LLM-List](#LLM-List)
   - [Pre-trained LLM](#Pre-trained-LLM)
@@ -23,7 +23,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 - [Others](#Others)
 - [Other-Awesome-Lists](#Other-Awesome-Lists)
 - [Licenses](#Licenses)
-- [引用](#引用)
+- [Citation](#引用)
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
@@ -43,6 +43,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) | FlagEval是清华大学开发的一个用于评估LLM的平台，可以提供多种任务和数据集，以及在线测试、排行榜和分析等功能 |
 | AlpacaEval | tatsu-lab | [alpaca_eval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval是tatsu-lab开发的一个用于评估LLM的工具，可以使用多种语言、领域和任务进行测试，并提供可解释性、鲁棒性和可信度等指标. |
 |Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
+| DeepEval | mr-gpt | [DeepEval](github.com/mr-gpt/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产 |
 
 
 ## Datasets-or-Benchmark
@@ -101,12 +102,83 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | Aviary | github.com/ray-project/aviary | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (202308)|
 | LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
+| FinEval | SUFE-AIFLM-Lab | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
 
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
 
-## Leaderborad
+## Leaderborads
+
+### Performance from Open-Compass-20230920
+
+| 模型名称                 | 发布日期  | 参数量 | 综合 | 学科 | 语言 | 知识 | 理解 | 推理 |
+| ------------------------ | --------- | ------ | ---- | ---- | ---- | ---- | ---- | ---- |
+| GPT-4                    | 2023/3/15 | N/A    | 72.1 | 77.2 | 62   | 73.5 | 70   | 74.4 |
+| ChatGPT                  | 2023/3/1  | N/A    | 61.8 | 62.7 | 48.6 | 64.5 | 64.6 | 64   |
+| InternLM-20B             | 2023/9/20 | 20B    | 59.3 | 62.5 | 55   | 60.1 | 67.3 | 54.9 |
+| WeMix-LLaMA2-70B         | 2023/9/13 | 70B    | 58.6 | 62.3 | 52.6 | 69   | 62.9 | 54.1 |
+| StableBeluga2            | 2023/7/21 | 70B    | 58.1 | 61.7 | 50.7 | 62.2 | 60.3 | 57.1 |
+| Qwen-7B                  | 2023/8/3  | 7B     | 57.6 | 62.8 | 52.4 | 51.4 | 67.7 | 53   |
+| LLaMA-2-70B              | 2023/7/19 | 70B    | 57.4 | 57.3 | 51.6 | 67.7 | 60.8 | 55   |
+| LLaMA-2-70B-Chat         | 2023/7/19 | 70B    | 56.1 | 54.1 | 48.2 | 65   | 62.1 | 54.3 |
+| InternLM-Chat-7B-8K      | 2023/7/6  | 7B     | 55.6 | 56.7 | 50.4 | 50.1 | 66.9 | 52.1 |
+| InternLM-Chat-7B         | 2023/7/6  | 7B     | 55.2 | 56.3 | 49.3 | 48.8 | 66.6 | 52.1 |
+| Qwen-7B-Chat             | 2023/8/3  | 7B     | 55.2 | 58.4 | 52.6 | 54.4 | 63.5 | 50.2 |
+| Baichuan2-13B-Chat       | 2023/9/6  | 13B    | 54.9 | 59.8 | 51.5 | 51.9 | 63.1 | 50.1 |
+| Yulan-Chat-2-13B         | 2023/8/2  | 13B    | 52.9 | 54.3 | 43.8 | 56.6 | 64.1 | 48.4 |
+| Baichuan-13B-Chat        | 2023/7/10 | 13B    | 52.6 | 53.2 | 51.2 | 53.6 | 61.8 | 47.4 |
+| TigerBot-13B-Chat-V1     | 2023/8/8  | 13B    | 52.5 | 49.3 | 52.7 | 56.8 | 58.4 | 49.5 |
+| LLaMA-65B                | 2023/2/24 | 65B    | 51.9 | 49.7 | 47.1 | 66   | 54.2 | 49.8 |
+| TigerBot-13B-Chat-V2     | 2023/8/21 | 13B    | 51.9 | 51.8 | 53   | 52.5 | 61.8 | 45.8 |
+| Vicuna-13B-v1.5          | 2023/7/29 | 13B    | 50.6 | 50.3 | 43.6 | 59.6 | 59.4 | 46.2 |
+| TigerBot-13B-Base-V1     | 2023/8/8  | 13B    | 50.3 | 48.5 | 49.7 | 52.5 | 60.6 | 45   |
+| Vicuna-33B-v1.3          | 2023/4/7  | 33B    | 50   | 49.2 | 44.9 | 61.3 | 58.5 | 44.7 |
+| Baichuan2-7B-Chat        | 2023/9/6  | 7B     | 49.9 | 52.5 | 44   | 49   | 59.6 | 45.7 |
+| WeMix-LLaMa2-7B          | 2023/8/31 | 7B     | 49.9 | 45.5 | 47.3 | 59.4 | 55.5 | 47.4 |
+| TigerBot-13B-Base-V2     | 2023/8/25 | 13B    | 49.8 | 48.6 | 47.7 | 52.2 | 60.6 | 44.4 |
+| Vicuna-13B-v1.5-16k      | 2023/7/31 | 13B    | 49.5 | 49.2 | 43.7 | 58   | 56.1 | 46   |
+| Baichuan2-13B-Base       | 2023/9/6  | 13B    | 49.4 | 51.8 | 47.5 | 48.9 | 58.1 | 44.2 |
+| LLaMA-30B                | 2023/2/24 | 30B    | 48.9 | 47.4 | 44.6 | 64   | 50.6 | 46.4 |
+| InternLM-7B              | 2023/7/6  | 7B     | 48.7 | 54.9 | 49.2 | 41.3 | 59.3 | 41.6 |
+| Ziya-LLaMA-13B           | 2023/5/30 | 13B    | 48.3 | 40.5 | 50   | 58.4 | 55.8 | 44.4 |
+| Baichuan-13B-Base        | 2023/7/10 | 13B    | 48.1 | 53.2 | 50.9 | 45.5 | 54.9 | 41.8 |
+| Claude-1                 | 2023/3/14 | N/A    | 48   | 43.3 | 41   | 43.2 | 55.2 | 49.9 |
+| LLaMA-2-Chinese-13B      | 2023/7/19 | 13B    | 48   | 46.8 | 45.6 | 58.1 | 52.5 | 44.5 |
+| ChatGLM2-6B              | 2023/6/25 | 6B     | 47.9 | 52.5 | 42.9 | 44.6 | 55.5 | 44.3 |
+| LLaMA-2-13B-Chat         | 2023/7/19 | 13B    | 47.9 | 46.6 | 42.9 | 58.1 | 56.8 | 42.6 |
+| LLaMA-2-13B              | 2023/7/19 | 13B    | 47.3 | 45.2 | 47   | 58.3 | 50.9 | 43.6 |
+| Vicuna-13B-v1.3          | 2023/4/7  | 13B    | 47   | 44.7 | 43.8 | 57.2 | 53   | 43.3 |
+| BELLE-LLaMA-2            | 2023/7/27 | 13B    | 46.8 | 48.3 | 46   | 57.5 | 54   | 39.8 |
+| TigerBot-7B-Chat-V3      | 2023/8/21 | 7B     | 46.3 | 42   | 49.4 | 51.1 | 52.5 | 42.3 |
+| LLaMA-2-13B-Chinese-Chat | 2023/7/20 | 13B    | 46.2 | 45.4 | 43.8 | 55.9 | 49.3 | 43.4 |
+| Vicuna-7B-v1.5           | 2023/7/29 | 7B     | 46.2 | 44.2 | 41.8 | 51.8 | 56.7 | 41.4 |
+| Vicuna-7B-v1.5-16k       | 2023/8/7  | 7B     | 45.8 | 43   | 42.3 | 53   | 54.4 | 41.7 |
+| Chinese-Alpaca-2-7B      | 2023/7/31 | 7B     | 45   | 42.7 | 47.9 | 48.6 | 54.9 | 38.5 |
+| LLaMA-2-7B-Chat          | 2023/7/19 | 7B     | 44.8 | 40.1 | 44   | 54.3 | 50.9 | 41.4 |
+| Baichuan2-7B-Base        | 2023/9/6  | 7B     | 44.4 | 46.4 | 48.9 | 44.3 | 48.9 | 39.2 |
+| TigerBot-7B-Base-V3      | 2023/8/21 | 7B     | 44.2 | 38.2 | 47.8 | 48.8 | 52.5 | 39.7 |
+| LLaMA-13B                | 2023/2/24 | 13B    | 43.8 | 37.3 | 42.5 | 58.2 | 45.5 | 42.7 |
+| LLaMA-2-Chinese-7B       | 2023/7/19 | 7B     | 43.7 | 40.8 | 44.6 | 51.4 | 48.8 | 39.7 |
+| XVERSE-13B               | 2023/8/6  | 13B    | 43.6 | 47.9 | 55.9 | 32.9 | 52.7 | 34.7 |
+| Vicuna-7B-v1.3           | 2023/4/7  | 7B     | 43.4 | 40.5 | 39.6 | 51.7 | 50.5 | 39.9 |
+| GoGPT                    | 2023/7/21 | 7B     | 41.7 | 38.5 | 37.5 | 44.4 | 53.3 | 37.5 |
+| LLaMA-2-7B               | 2023/7/19 | 7B     | 41.6 | 35.5 | 44.1 | 53.3 | 42.4 | 40.1 |
+| Baichuan-7B              | 2023/6/15 | 7B     | 40.4 | 38.2 | 48.5 | 38.8 | 46   | 35.6 |
+| Alpaca-7B                | 2023/3/14 | 7B     | 39.9 | 35.3 | 39.5 | 44.6 | 45.1 | 38.1 |
+| WizardLM-7B              | 2023/4/25 | 7B     | 39.8 | 34.6 | 39.4 | 50.4 | 42.7 | 37.9 |
+| LLaMA-7B                 | 2023/2/24 | 7B     | 39.5 | 31.2 | 40.6 | 53.9 | 40.2 | 38.6 |
+| OpenLLaMA-7Bv2           | 2023/7/16 | 7B     | 38.7 | 32   | 41.2 | 45.4 | 41.4 | 37.6 |
+| MPT-7B                   | 2023/5/6  | 7B     | 37.9 | 30.3 | 41.2 | 43.4 | 39.6 | 37.7 |
+| MPT-Instruct-7B          | 2023/5/6  | 7B     | 37.8 | 28   | 41.1 | 40.8 | 42   | 37.7 |
+| Phi-1.5-1.3B             | 2023/9/10 | 1.3B   | 37.6 | 33.5 | 32.7 | 35.4 | 44.5 | 37.9 |
+| MOSS-Moon-SFT            | 2023/4/21 | 16B    | 36.4 | 32.2 | 37.4 | 29.1 | 45.1 | 34.8 |
+| OpenLLaMA-3Bv2           | 2023/7/16 | 3B     | 35.7 | 28   | 39.3 | 42.1 | 39.2 | 34   |
+| Chinese-LLaMA-2-7B       | 2023/7/31 | 7B     | 35.2 | 32.1 | 46.6 | 32.7 | 39.6 | 30.5 |
+| TigerBot-SFT             | 2023/6/15 | 7B     | 35.1 | 34.1 | 42.7 | 32.7 | 38.3 | 31.6 |
+| MOSS-Moon                | 2023/4/21 | 16B    | 35   | 29.7 | 39   | 33   | 40.5 | 33.1 |
+| TigerBot-Base            | 2023/6/7  | 7B     | 33.6 | 27.1 | 34.2 | 24   | 42.1 | 34   |
+
 
 ### Performance from XieZhi-202306
 
@@ -482,6 +554,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Awesome-marketing-datascience](https://github.com/underlines/awesome-marketing-datascience) - Curated list of useful LLM / Analytics / Datascience resources.
 - [Awesome-llm-tools](https://github.com/underlines/awesome-marketing-datascience/blob/master/llm-tools.md) - Curated list of useful LLM tool.
 - [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) - A curated list for Efficient LLM Compression.
+- [Awesome-Multimodal-Large-Language-Models](https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models) -  A curated list of  Multimodal Large Language Models.
 - [Awesome-LLMOps](https://github.com/tensorchord/Awesome-LLMOps) - An awesome & curated list of the best LLMOps tools for developers.
 - [Awesome-MLops](https://github.com/visenger/awesome-mlops) - An awesome list of references for MLOps - Machine Learning Operations.
 - [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts) - A collection of prompt examples to be used with the ChatGPT model.
