@@ -3,6 +3,7 @@
 [English](README_EN.md) | [中文](README_CN.md)
 
 Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboard, papers, docs and models, mainly for Evaluation on Large Language Models (like ChatGPT, LLaMA, GLM, Baichuan, etc).
+Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模型等组成的精选列表，主要面向大型语言模型评测（例如ChatGPT、LLaMA、GLM、Baichuan等）。
 
 ## Table of Contents
 
@@ -23,7 +24,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 - [Others](#Others)
 - [Other-Awesome-Lists](#Other-Awesome-Lists)
 - [Licenses](#Licenses)
-- [引用](#引用)
+- [Citation](#引用)
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
