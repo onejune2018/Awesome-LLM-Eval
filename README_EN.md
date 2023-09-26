@@ -99,6 +99,8 @@ Sure, here's the translation of the provided content into English:
 | Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | Multidimensional evaluation covering 7 ability dimensions and 51 tasks in both Chinese and English. |
 | LucyEval | Oracle | [LucyEval](http://lucyeval.besteasy.com/) | Evaluates Chinese large models' maturity using objective tests across various abilities. |
 | Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| Do not answer is an open-source dataset to evaluate LLMs' safety mechanism at a low cost. The dataset is curated and filtered to consist only of prompts to which responsible language models do not answer. Besides human annotations, Do not answer also implements model-based evaluation, where a 600M fine-tuned BERT-like evaluator achieves comparable results with human and GPT-4. |
+| ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval is a project which provides a uniform pipeline to help evaluate language models on different public dataset or your own dataset using both classic metrics and the help from GPTs. |
+
 
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - Open Source AI "Anonymous" Arena! Here, you can become a referee and rate the responses of two models whose names you don't know in advance. After scoring, their real identities will be revealed. The current "participants" include Vicuna, Koala, OpenAssistant (oasst), Dolly, ChatGLM, StableLM, Alpaca, LLaMA, and more.
