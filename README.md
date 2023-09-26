@@ -106,6 +106,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (202308)|
 | LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
 | FinEval | SUFE-AIFLM-Lab | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
+| ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval 是一个项目，提供一个统一评估流程的项目，用于在不同的公共数据集或自己的数据集上评估语言模型，使用传统指标以及来自 GPT（生成式预训练模型）的帮助 |
 
 
 ## Demos
