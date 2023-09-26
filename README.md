@@ -8,6 +8,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 ## Table of Contents
 
+- [News](#News)
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
@@ -30,6 +31,22 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
 
+
+## News
+
+- [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
+
+- [2023/09/22] We add [Leaderborad](#Leaderborad) from Open-Compass.
+
+- [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
+
+- [2023/09/18] We add [OpenCompass](https://github.com/InternLM/opencompass/tree/main) from Shanghai AI Lab.
+
+- [2023/08/03] We add new Chinese LLMs: [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) and [Qwen](https://github.com/QwenLM/Qwen-7B).
+
+- [2023/06/28] We add [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) and multiple tools.
+
+- [2023/04/26] We released the V0.1 Eval list with multiple benchmarks, etc.
 
 ## Tools
 
