@@ -36,7 +36,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
 
-- [2023/09/22] We add [Leaderborad](#Leaderborad) from Open-Compass.
+- [2023/09/22] We add [Leaderborad](#Leaderboard) from Open-Compass.
 
 - [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
 
@@ -609,7 +609,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Chen Song, Peng Gao, Guotong Xie},
+  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Guotong Xie},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
