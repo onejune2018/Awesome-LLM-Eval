@@ -6,10 +6,11 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 ## Table of Contents
 
+- [News](#News)
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
-- [Leaderborad](#Leaderborad)
+- [Leaderborads](#Leaderborad)
 - [Papers](#papers)
 - [LLM-List](#LLM-List)
   - [Pre-trained LLM](#Pre-trained-LLM)
@@ -27,6 +28,23 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
+
+
+## News
+
+- [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
+
+- [2023/09/22] We add [Leaderborad](#Leaderboard) from Open-Compass.
+
+- [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
+
+- [2023/09/18] We add [OpenCompass](https://github.com/InternLM/opencompass/tree/main) from Shanghai AI Lab.
+
+- [2023/08/03] We add new Chinese LLMs: [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) and [Qwen](https://github.com/QwenLM/Qwen-7B).
+
+- [2023/06/28] We add [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) and multiple tools.
+
+- [2023/04/26] We released the V0.1 Eval list with multiple benchmarks, etc.
 
 
 ## Tools
@@ -437,7 +455,7 @@ If our project is helpful to you, please cite our project.
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Chen Song, Peng Gao, Guotong Xie},
+  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Guotong Xie},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
