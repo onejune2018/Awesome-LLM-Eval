@@ -36,7 +36,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 - [2023/09/22] We add [Leaderboard](#Leaderboards) chapter.
 
-- [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
+- [2023/09/20] We add [DeepEval](https://github.com/mr-gpt/deepeval), [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](https://github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
 
 - [2023/09/18] We add [OpenCompass](https://github.com/InternLM/opencompass/tree/main) from Shanghai AI Lab.
 
