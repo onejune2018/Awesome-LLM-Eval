@@ -34,7 +34,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
 
-- [2023/09/22] We add [Leaderborad](#Leaderboard) from Open-Compass.
+- [2023/09/22] We add [Leaderboard](#Leaderboards) chapter.
 
 - [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
 
