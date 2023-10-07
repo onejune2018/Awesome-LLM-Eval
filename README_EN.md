@@ -10,7 +10,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
-- [Leaderborads](#Leaderborad)
+- [Leaderboards](#Leaderboards)
 - [Papers](#papers)
 - [LLM-List](#LLM-List)
   - [Pre-trained LLM](#Pre-trained-LLM)
@@ -123,7 +123,7 @@ Sure, here's the translation of the provided content into English:
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - Open Source AI "Anonymous" Arena! Here, you can become a referee and rate the responses of two models whose names you don't know in advance. After scoring, their real identities will be revealed. The current "participants" include Vicuna, Koala, OpenAssistant (oasst), Dolly, ChatGLM, StableLM, Alpaca, LLaMA, and more.
 
-## Leaderborad
+## Leaderborads
 
 ### Performance from XieZhi-202306
 
