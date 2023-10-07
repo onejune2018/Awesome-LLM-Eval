@@ -12,7 +12,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
 - [Demos](#Demos)
-- [Leaderborads](#Leaderborad)
+- [Leaderboards](#Leaderboards)
 - [Papers](#papers)
 - [LLM-List](#LLM-List)
   - [Pre-trained LLM](#Pre-trained-LLM)
@@ -36,7 +36,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
 
-- [2023/09/22] We add [Leaderboard](#Leaderboard) from Open-Compass.
+- [2023/09/22] We add [Leaderboards](#Leaderboards) chapter.
 
 - [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
 
