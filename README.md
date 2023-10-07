@@ -36,7 +36,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
 
-- [2023/09/22] We add [Leaderborad](#Leaderboard) from Open-Compass.
+- [2023/09/22] We add [Leaderboard](#Leaderboard) from Open-Compass.
 
 - [2023/09/20] We add [DeepEval](github.com/mr-gpt/deepeval), [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
 
@@ -131,7 +131,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
 
-## Leaderborads
+## Leaderboards
 
 ### Performance from Open-Compass-20230920
 
