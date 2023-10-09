@@ -67,7 +67,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 ## Datasets-or-Benchmark
 
-| 数据名称 | 机构 | 网址 | 简介 |
+| 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
 | M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. |
 | KoLA | THU-KEG | [KoLA](http://103.238.162.37:31622) | Knowledge-oriented LLM Assessment benchmark (KoLA), is hosted by Knowledge Engineering Group, Tsinghua University (THU-KEG), which aims at carefully benchmarking the world knowledge of LLMs by undertaking meticulous designs considering data, ability taxonomy and evaluation metric. |
