@@ -125,6 +125,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | FinEval | SUFE-AIFLM-Lab | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
 | ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval 是一个项目，提供一个统一评估流程的项目，用于在不同的公共数据集或自己的数据集上评估语言模型，使用传统指标以及来自 GPT（生成式预训练模型）的帮助 |
 | SmartPlay | microsoft | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay是一个大型语言模型 (LLM) 基准，设计为易于使用，提供各种游戏来测试 |
+| LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
 
 
 ## Demos
