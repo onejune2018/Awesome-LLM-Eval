@@ -69,7 +69,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
-| LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (20231011) |
+| LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (2023-10-11) |
 | BAMBOO | RUCAIBox | [BAMBOO](https://github.com/RUCAIBox/BAMBOO) | BAMBOO基准测试是一个用于分析LLMs的长文本建模能力的综合基准测试。在BAMBOO基准测试中，有来自5个任务的10个数据集，即，问答、幻觉检测、语言建模、代码补全和文本排序。我们的基准测试是根据以下原则构建的：综合能力评估、避免数据污染、准确的自动评估、不同的长度等级 (2023-10-11) |
 | TRACE | Fudan University | [TRACE](https://arxiv.org/abs/2310.06762) | TRACE是一个专为评估大型语言模型（LLMs）的持续学习能力而设计的新型基准测试。TRACE包含了8个不同的数据集，涵盖了包括领域特定任务、多语言能力、代码生成和数学推理等在内的挑战性任务 (2023-10-05)  |
 | OpsEval | Tsinghua University | [OpsEval](https://arxiv.org/abs/2310.07637) | OpsEval是一个针对大型语言模型的综合任务导向的AIOps基准测试，评估了LLMs在三个关键场景（有线网络操作、5G通信操作和数据库操作）中的熟练程度，这些场景涉及不同的能力水平（知识回忆、分析思维和实际应用）。该基准包含了7,200个问题，分为多项选择和问答（QA）两种格式，支持英文和中文 (2023-10-02) |
