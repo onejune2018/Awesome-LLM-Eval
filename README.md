@@ -6,6 +6,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模型等组成的精选列表，主要面向大型语言模型评测（例如ChatGPT、LLaMA、GLM、Baichuan等）。
 
+<br><br>
 ## Table of Contents
 
 - [News](#News)
@@ -31,7 +32,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
 
-
+<br><br>
 ## News
 
 - [2023/10/20] We add [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent)  for LLM agent evaluation.
@@ -50,6 +51,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 - [2023/04/26] We released the V0.1 Eval list with multiple benchmarks, etc.
 
+<br><br>
 ## Tools
 
 | 名称 | 机构 | 网址 | 简介 |
@@ -67,7 +69,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 |Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
 | DeepEval | mr-gpt | [DeepEval](github.com/mr-gpt/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产 |
 
-
+<br><br>
 ## Datasets-or-Benchmark
 
 | 名称 | 机构 | 网址 | 简介 |
@@ -137,10 +139,12 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. |
 
 
+<br><br>
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
 
+<br><br>
 ## Leaderboards
 
 ### Performance from Open-Compass-20230920
@@ -273,6 +277,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 |    Performance-Variance    |                0.062               |            0.068           |            0.087           |            0.067           |            0.065           |            0.078           |            0.064           |            0.058           |            0.070           |            0.082           |            0.067           |            0.082           |            0.095           |            0.067           |            0.080           |            0.090           |            0.078           |            0.092           |            0.104           |
 
 
+
 ## Papers
 
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2307.03109) [**A Closer Look into Automatic Evaluation Using Large Language Models**](https://browse.arxiv.org/pdf/2310.05657.pdf),<br> by *Cheng-han Chiang, Hungyi Li*
@@ -345,7 +350,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [<img src=https://img.shields.io/badge/ICLR-2020-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://openreview.net/forum?id=SkeHuCVFDr) [**BERTScore: Evaluating Text Generation with BERT**](https://openreview.net/forum?id=SkeHuCVFDr),<br> by *Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q. Weinberger and Yoav Artzi*
 <br><br>
 
-
+<br><br>
 ## LLM-List
 
 ### Pre-trained-LLM
@@ -453,6 +458,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
   - [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) - An open-source, commercially available large-scale language model developed by Baichuan Intelligent Technology following Baichuan-7B, containing 13 billion parameters. (20230715)
   - - [Qwen](https://github.com/QwenLM/Qwen-7B) - Qwen-7B is the 7B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud. Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. (20230803)
 
+<br><br>
 ### Popular-LLM
 
 |                                                                                                                                       **Model**                                                                                                                                       | **\#Author** | **\#Link** | **\#Parameter** |   **Base Model**  | **\#Layer** | **\#Encoder** | **\#Decoder** | **\#Pretrain Tokens** | **\#IFT Sample** | **RLHF** |
@@ -516,6 +522,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |                                                                                            ChatGPT~(2023.05.01) | openaichatgpt | https://platform.openai.com/docs/models/gpt-3-5                                                                                              |           -          |         GPT-3.5        |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
 |                                                                                              GPT-4~(2023.05.01) | openai2023gpt4 | https://platform.openai.com/docs/models/gpt-4                                                                                               |           -          |            -           |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
 
+<br><br>
 ## Frameworks-for-Training
 
 - [Accelerate](https://github.com/huggingface/accelerate) ![](https://img.shields.io/github/stars/huggingface/accelerate.svg?style=social) - 🚀 A simple way to train and use PyTorch models with multi-GPU, TPU, mixed-precision.
@@ -541,6 +548,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [VectorFlow](https://github.com/Netflix/vectorflow) ![](https://img.shields.io/github/stars/Netflix/vectorflow.svg?style=social) - A minimalist neural network library optimized for sparse data and single machine environments.
 
 
+<br><br>
 ## LLMOps
 
 | 名称                                                    | Stars 数                                                     | 介绍                                                         |
@@ -573,16 +581,22 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 | [xTuring](https://github.com/stochasticai/xturing)   | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social)   | 使用快速和高效的微调来构建和控制您的个人LLMs。                                                                     |
 | [ZenML](https://github.com/zenml-io/zenml)         | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social)         | 用于编排、实验和部署生产级ML解决方案的开源框架，具有内置的`langchain`和`llama_index`集成。    |
 
+
+<br><br>
 ## Courses
 
 - [大语言模型课程notebooks集-Large Language Model Course](https://github.com/mlabonne/llm-course) - Course with a roadmap and notebooks to get into Large Language Models (LLMs).
 - [Full+Stack+LLM+Bootcamp](https://ihower.tw/notes/技術筆記-AI/Full+Stack+LLM+Bootcamp) - LLM相关学习/应用资源集.
 
+
+<br><br>
 ## Others
 
 - [Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft](https://levelup.gitconnected.com/how-to-benchmark-language-models-by-openai-deepmind-google-microsoft-783d4307ec50) - Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft.
 - [Efficient Finetuning of Quantized LLMs --- 低资源的大语言模型量化训练/部署方案](https://github.com/jianzhnie/Efficient-Tuning-LLMs) - 旨在构建和开源遵循指令的baichuan/LLaMA/Pythia/GLM中文大模型微调训练方法，该方法可以在单个 Nvidia RTX-2080TI上进行训练，多轮聊天机器人可以在单个 Nvidia RTX-3090上进行上下文长度 2048的模型训练。使用bitsandbytes进行量化，并与Huggingface的PEFT和transformers库集成.
 
+
+<br><br>
 ## Other-Awesome-Lists
 
 - [Awesome LLM](https://github.com/Hannibal046/Awesome-LLM/) -  A curated list of papers about large language models.
@@ -605,6 +619,8 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Awesome GPT](https://github.com/formulahendry/awesome-gpt) - A curated list of awesome projects and resources related to GPT, ChatGPT, OpenAI, LLM, and more.
 - [Awesome GPT-3](https://github.com/elyase/awesome-gpt3) - a collection of demos and articles about the [OpenAI GPT-3 API](https://openai.com/blog/openai-api/).
 
+
+<br><br>
 ## Licenses
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -616,7 +632,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 本项目遵循 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 
-
+<br><br>
 ## 引用
 
 如果我们的项目对您有帮助，请引用我们的项目。
