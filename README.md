@@ -54,6 +54,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | :--: | :--: | :--: | :--: |
 | EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
 | lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
+| OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
 | Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) | phasellm是Phase AI提供的一个用于评估和管理LLM的框架，可以帮助用户选择合适的模型、数据集和指标，以及可视化和分析结果. |
 | Evaluation benchmark for LLM | FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) | LLMZoo是FreedomIntelligence开发的一个用于评估LLM的基准，包含了多个领域和任务的数据集和指标，以及一些预训练的模型和结果. |
 | Holistic Evaluation of Language Models (HELM) | Stanford | [HELM](https://github.com/stanford-crfm/helm) | HELM是Stanford研究团队提出的一个用于全面评估LLM的方法，考虑了模型的语言能力、知识、推理、公平性和安全性等多个方面. |
@@ -69,6 +70,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
+| SuperCLUE-Agent | CLUE | [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) | SuperCLUE-Agent，一个聚焦于Agent能力的多维度基准测试，包括3大核心能力、10大基础任务，可以用于评估大语言模型在核心Agent能力上的表现，包括工具使用、任务规划和长短期记忆能力。经过对16个支持中文的大语言模型的测评发现：在Agent的核心基础能力中文任务上，GPT4模型大幅领先；同时，代表性国内模型，包括开源和闭源模型，已经较为接近GPT3.5水平 （2023-10-20） |
 | FMTI | stanford | [FMTI](https://crfm.stanford.edu/fmti/) | 提出基础模型透明度指数（The Foundation Model Transparency Index），来评估不同开发者在模型训练和部署方面的透明度。该指数包含100个指标，评估范围广泛，包括数据、计算资源、劳动力等多个方面。对10家公司旗舰模型的评估显示，平均透明度指数仅为37/100，存在很大提升空间 （2023-10-18） |
 | LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (2023-10-11) |
 | BAMBOO | RUCAIBox | [BAMBOO](https://github.com/RUCAIBox/BAMBOO) | BAMBOO基准测试是一个用于分析LLMs的长文本建模能力的综合基准测试。在BAMBOO基准测试中，有来自5个任务的10个数据集，即，问答、幻觉检测、语言建模、代码补全和文本排序。我们的基准测试是根据以下原则构建的：综合能力评估、避免数据污染、准确的自动评估、不同的长度等级 (2023-10-11) |
@@ -128,7 +130,6 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | BIG-Bench-Hard | Stanford NLP | [BIG-Bench-Hard](https://github.com/suzgunmirac/BIG-Bench-Hard) | A suite of 23 challenging BIG-Bench tasks which we call BIG-Bench Hard (BBH). These are the task for which prior language model evaluations did not outperform the average human-rater |
 | BIG-bench | google | [BIG-bench](https://github.com/google/BIG-bench) | BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题 |
 | JioNLP-LLM评测数据集 | jionlp | [JioNLP-LLM评测数据集](https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集) | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果 |
-| OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
 | promptbench | microsoft | [promptbench](https://github.com/microsoft/promptbench) | PromptBench is a powerful tool designed to scrutinize and analyze the interaction of large language models with various prompts. It provides a convenient infrastructure to simulate black-box adversarial prompt attacks on the models and evaluate their performances. This repository hosts the necessary codebase, datasets, and instructions to facilitate these experiments. |
 | KoLA | THU-KEG | [KoLA](http://103.238.162.37:31622) | Knowledge-oriented LLM Assessment benchmark (KoLA), is hosted by Knowledge Engineering Group, Tsinghua University (THU-KEG), which aims at carefully benchmarking the world knowledge of LLMs by undertaking meticulous designs considering data, ability taxonomy and evaluation metric. |
 | M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. |
