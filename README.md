@@ -143,7 +143,6 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
-
 <br><br>
 ## Leaderboards
 
@@ -216,7 +215,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | MOSS-Moon                | 2023/4/21 | 16B    | 35   | 29.7 | 39   | 33   | 40.5 | 33.1 |
 | TigerBot-Base            | 2023/6/7  | 7B     | 33.6 | 27.1 | 34.2 | 24   | 42.1 | 34   |
 
-
+<br><br>
 ### Performance from XieZhi-202306
 
 |       Models      |                MMLU                |                            |                            |            CEval           |                            |                            |            M3KE            |    Xiezhi-Spec.-Chinese    |                            |                            |    Xiezhi-Inter.-Chinese   |                            |                            |    Xiezhi-Spec.-English    |                            |                            |    Xiezhi-Inter.-English   |                            |                            |
@@ -277,7 +276,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 |    Performance-Variance    |                0.062               |            0.068           |            0.087           |            0.067           |            0.065           |            0.078           |            0.064           |            0.058           |            0.070           |            0.082           |            0.067           |            0.082           |            0.095           |            0.067           |            0.080           |            0.090           |            0.078           |            0.092           |            0.104           |
 
 
-
+<br><br>
 ## Papers
 
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2307.03109) [**A Closer Look into Automatic Evaluation Using Large Language Models**](https://browse.arxiv.org/pdf/2310.05657.pdf),<br> by *Cheng-han Chiang, Hungyi Li*
@@ -379,6 +378,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |      GPT-Neo      | 2.7B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
 |      GPT-Neo      | 1.3B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
 
+<br><br>
 ### Instruction-finetuned-LLM
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
 | :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -394,7 +394,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |T0|11B|Encoder-Decoder|[ckpt](https://huggingface.co/bigscience/T0)|2021-10|[Paper](https://arxiv.org/pdf/2110.08207.pdf)|
 |Alpaca| 7B|Decoder|[demo](https://crfm.stanford.edu/alpaca/)|2023-03|[Github](https://github.com/tatsu-lab/stanford_alpaca)|
 
-
+<br><br>
 ### Aligned-LLM
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
 | :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -403,7 +403,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 | Sparrow  | 70B | - | - | 2022-09 | [Paper](https://arxiv.org/pdf/2209.14375.pdf)|
 | Claude  | - | - | [demo](https://poe.com/claude)\|[api](https://www.anthropic.com/earlyaccess) | 2023-03 | [Blog](https://www.anthropic.com/index/introducing-claude) |
 
-
+<br><br>
 ### Open-LLM
 
 - [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) - A foundational, 65-billion-parameter large language model. [LLaMA.cpp](https://github.com/ggerganov/llama.cpp) [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama)
@@ -521,6 +521,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 |                                      BLOOMZ /mt /p3 | muennighoff2022crosslingual | https://huggingface.co/bigscience/bloomz-p3                                          |         176B         |          BLOOM         |        70        |          -         |         70         |              -             |      2.09B tokens     |       -       |
 |                                                                                            ChatGPT~(2023.05.01) | openaichatgpt | https://platform.openai.com/docs/models/gpt-3-5                                                                                              |           -          |         GPT-3.5        |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
 |                                                                                              GPT-4~(2023.05.01) | openai2023gpt4 | https://platform.openai.com/docs/models/gpt-4                                                                                               |           -          |            -           |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
+
 
 <br><br>
 ## Frameworks-for-Training
