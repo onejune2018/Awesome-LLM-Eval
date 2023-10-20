@@ -34,6 +34,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 ## News
 
+- [2023/10/20] We add [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent)  for LLM agent evaluation.
+  
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
 
 - [2023/09/22] We add [Leaderboards](#Leaderboards) chapter.
