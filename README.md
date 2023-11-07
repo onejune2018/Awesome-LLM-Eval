@@ -74,8 +74,10 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
-| RGB | IS-CAS | [RGB](https://arxiv.org/abs/2309.01431) | 检索增强生成任务（Retrieval-Augmented Generation，RAG）的评测基准，分析了不同大型语言模型在RAG所需的4种基本能力（噪声稳健性、负面拒绝、信息整合和反事实稳健性）的性能，建立了中英文的“检索增强生成基准”（Retrieval-Augmented Generation Benchmark，RGB），根据所需的基本能力分为4个独立的测试集。 (2023-09-04)  |
-| LLMRec | Alibaba | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 |
+| llmperf | Ray | [llmperf](https://github.com/ray-project/llmperf) | 用于检验和基准测试LLM性能的库，可以测量第一个token出现的时间(TTFT)、两个token之间的响应时间(ITL)以及超过3秒没有返回数据的请求数量，还可以验证LLM的输出是否正确，主要检查是否有请求之间的交叉(请求A得到请求B的响应)。输入和输出token长度的变化也是设计考虑，目的是更好地代表实际情况。当前支持的端点包括OpenAI兼容端点(如Anyscale端点、私有端点、OpenAI、Fireworks等)、Together、Vertex AI和SageMaker （2023-11-03）|
+| PPTC| Microsoft, PKU | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 （2023-11-04） |
+| RGB | IS-CAS | [RGB](https://arxiv.org/abs/2309.01431) | 检索增强生成任务（Retrieval-Augmented Generation，RAG）的评测基准，分析了不同大型语言模型在RAG所需的4种基本能力（噪声稳健性、负面拒绝、信息整合和反事实稳健性）的性能，建立了中英文的“检索增强生成基准”（Retrieval-Augmented Generation Benchmark，RGB），根据所需的基本能力分为4个独立的测试集 (2023-09-04)  |
+| LLMRec | Alibaba | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 (2023-10-08)|
 | LAiW | Dai-shen | [LAiW](https://github.com/Dai-shen/LAiW) | 针对法律大型语言模型的快速发展，提出了第一个基于法律能力的中文法律大型语言模型基准。将法律能力划分为基本的法律自然语言处理能力、基本的法律应用能力和复杂的法律应用能力三个层次。完成了第一阶段的评估，主要集中在基本法律自然语言处理能力的能力评估。评估结果显示，尽管一些法律大型语言模型的性能优于其基础模型，但与ChatGPT相比仍存在差距 (2023-10-25)|
 | ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 （2023-10-24） |
 | SuperCLUE-Agent | CLUE | [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) | SuperCLUE-Agent，一个聚焦于Agent能力的多维度基准测试，包括3大核心能力、10大基础任务，可以用于评估大语言模型在核心Agent能力上的表现，包括工具使用、任务规划和长短期记忆能力。经过对16个支持中文的大语言模型的测评发现：在Agent的核心基础能力中文任务上，GPT4模型大幅领先；同时，代表性国内模型，包括开源和闭源模型，已经较为接近GPT3.5水平 （2023-10-20） |
