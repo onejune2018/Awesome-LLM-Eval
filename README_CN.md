@@ -14,8 +14,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
   - [通用](#通用)
   - [垂直领域](#垂直领域)
-  - [Agent能力](Agent能力)
-  - [多模态/跨模态](#多模态/跨模态)
+  - [Agent能力](#Agent能力)
+  - [多模态/跨模态](#多模态-跨模态)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
 - [Papers](#papers)
@@ -59,7 +59,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 ## Tools
 
 | 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
+| :--: | :--: | :--: | :--: |
 | EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
 | lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
 | OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
@@ -162,7 +162,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
 
 <br><br>
-### 多模态/跨模态
+### 多模态-跨模态
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
