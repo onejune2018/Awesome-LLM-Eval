@@ -81,6 +81,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| HalluQA | Fudan, Shanghai AI Lab | [HalluQA](https://github.com/xiami2019/HalluQA/) | 幻觉是文本生成领域的一个经典问题，HalluQA是一个中文大模型幻觉评测基准，收集了450条数据，其中misleading部分175条，misleading-hard部分69条，knowledge部分206条，每个问题平均有2.8个正确答案和错误答案标注。为了提高HalluQA的可用性，作者设计了一个使用GPT-4担任评估者的评测方法。具体来说，把幻觉的标准以及作为参考的正确答案以指令的形式输入给GPT-4，让GPT-4判断模型的回复有没有出现幻觉 （2023-11-08） |
 | llmperf | Ray | [llmperf](https://github.com/ray-project/llmperf) | 用于检验和基准测试LLM性能的库，可以测量第一个token出现的时间(TTFT)、两个token之间的响应时间(ITL)以及超过3秒没有返回数据的请求数量，还可以验证LLM的输出是否正确，主要检查是否有请求之间的交叉(请求A得到请求B的响应)。输入和输出token长度的变化也是设计考虑，目的是更好地代表实际情况。当前支持的端点包括OpenAI兼容端点(如Anyscale端点、私有端点、OpenAI、Fireworks等)、Together、Vertex AI和SageMaker （2023-11-03）|
 | FMTI | stanford | [FMTI](https://crfm.stanford.edu/fmti/) | 提出基础模型透明度指数（The Foundation Model Transparency Index），来评估不同开发者在模型训练和部署方面的透明度。该指数包含100个指标，评估范围广泛，包括数据、计算资源、劳动力等多个方面。对10家公司旗舰模型的评估显示，平均透明度指数仅为37/100，存在很大提升空间 （2023-10-18） |
 | LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (2023-10-11) |
