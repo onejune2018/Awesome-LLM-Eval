@@ -190,7 +190,6 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | GLUE                                   | [[Source](https://gluebenchmark.com/)]                                                 |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
-| Huggingface Human Eval LLM Leaderboard | [[Source](https://huggingface.co/spaces/HuggingFaceH4/human_eval_llm_leaderboard)]     |
 | Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
 | LAiW                                   | [[Source](https://huggingface.co/spaces/daishen/LAiW)]                                 |
