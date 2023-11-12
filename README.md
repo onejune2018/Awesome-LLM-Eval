@@ -1,4 +1,7 @@
-# Awesome-LLM-Eval
+<div align="center">
+    <h1>Awesome LLM Eval</h1>
+    <a href="https://awesome.re"><img src="https://awesome.re/badge.svg"/></a>
+</div>
 
 [English](README_EN.md) | [中文](README_CN.md)
 
