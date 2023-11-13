@@ -177,7 +177,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ## Leaderboards
 
-|                Platform                |                                          Access                                        |
+| Platform                               | Access                                                                                 |
 | :------------------------------------: | ---------------------------------------------------------------------------------------|
 | AgentBench                             | [[Source](https://llmbench.ai/agent)]                                                  |
 | AlpacaEval                             | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]                                   |
