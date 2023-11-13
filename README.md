@@ -184,10 +184,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
 | Chatbot Arena                          | [[Source](https://chat.lmsys.org/)]                                                    |
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
-| CLUE                                   | [[Source](https://www.cluebenchmarks.com/)]                                            |
 | C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
 | FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
-| GLUE                                   | [[Source](https://gluebenchmark.com/)]                                                 |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
 | Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
