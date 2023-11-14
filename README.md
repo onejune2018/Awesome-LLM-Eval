@@ -191,7 +191,6 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
 | Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
-| Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
 | InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
 | LLMonitor                              | [[Source](https://benchmarks.llmonitor.com/)]                                          |
 | LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
