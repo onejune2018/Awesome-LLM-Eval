@@ -39,6 +39,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ## News
 
+- [2023/11/15] We add [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for the evaluation of Instruction Following ability of LLMs.
+
 - [2023/10/20] We add [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent)  for LLM agent evaluation.
   
 - [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
@@ -81,6 +83,9 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| IFEval | google-research | [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) | 大型语言模型的一个核心能力是遵循自然语言指令。然而，对这种能力的评估并没有标准化：人工评估费用高、速度慢，并且缺乏客观的可重复性，而基于LLM的自动评估可能存在评估者LLM的偏见或能力限制。为了克服这些问题，google的研究者引入了用于大型语言模型的指令遵循评估（IFEval）。IFEval是一个简单易复现的评估基准，侧重于一组“可验证指令”，例如“写入超过400字”和“至少提到AI关键词3次”。IFEval确定了25种这些可验证指令，并构建了约500个提示，每个提示包含一个或多个可验证指令 （2023-11-15） |
+| LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | 一个名为LLMBar的具有挑战性的元评估基准，旨在测试LLM评估器在识别遵循指令的输出方面的能力。LLMBar包含419个实例，每个实例包含一条指令和两个输出：一个忠实并正确地遵循指令，另一个则偏离指令。每个实例还有一个金标签，指示哪个输出在客观上更好 （2023-10-29） |
+| HalluQA | Fudan, Shanghai AI Lab | [HalluQA](https://github.com/xiami2019/HalluQA/) | 幻觉是文本生成领域的一个经典问题，HalluQA是一个中文大模型幻觉评测基准，收集了450条数据，其中misleading部分175条，misleading-hard部分69条，knowledge部分206条，每个问题平均有2.8个正确答案和错误答案标注。为了提高HalluQA的可用性，作者设计了一个使用GPT-4担任评估者的评测方法。具体来说，把幻觉的标准以及作为参考的正确答案以指令的形式输入给GPT-4，让GPT-4判断模型的回复有没有出现幻觉 （2023-11-08） |
 | llmperf | Ray | [llmperf](https://github.com/ray-project/llmperf) | 用于检验和基准测试LLM性能的库，可以测量第一个token出现的时间(TTFT)、两个token之间的响应时间(ITL)以及超过3秒没有返回数据的请求数量，还可以验证LLM的输出是否正确，主要检查是否有请求之间的交叉(请求A得到请求B的响应)。输入和输出token长度的变化也是设计考虑，目的是更好地代表实际情况。当前支持的端点包括OpenAI兼容端点(如Anyscale端点、私有端点、OpenAI、Fireworks等)、Together、Vertex AI和SageMaker （2023-11-03）|
 | FMTI | stanford | [FMTI](https://crfm.stanford.edu/fmti/) | 提出基础模型透明度指数（The Foundation Model Transparency Index），来评估不同开发者在模型训练和部署方面的透明度。该指数包含100个指标，评估范围广泛，包括数据、计算资源、劳动力等多个方面。对10家公司旗舰模型的评估显示，平均透明度指数仅为37/100，存在很大提升空间 （2023-10-18） |
 | LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (2023-10-11) |
@@ -139,17 +144,20 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ### 垂直领域
 
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| PPTC| Microsoft, PKU | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 （2023-11-04） |
-| RGB | IS-CAS | [RGB](https://arxiv.org/abs/2309.01431) | 检索增强生成任务（Retrieval-Augmented Generation，RAG）的评测基准，分析了不同大型语言模型在RAG所需的4种基本能力（噪声稳健性、负面拒绝、信息整合和反事实稳健性）的性能，建立了中英文的“检索增强生成基准”（Retrieval-Augmented Generation Benchmark，RGB），根据所需的基本能力分为4个独立的测试集 (2023-09-04)  |
-| LLMRec | Alibaba | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 (2023-10-08)|
-| LAiW | Dai-shen | [LAiW](https://github.com/Dai-shen/LAiW) | 针对法律大型语言模型的快速发展，提出了第一个基于法律能力的中文法律大型语言模型基准。将法律能力划分为基本的法律自然语言处理能力、基本的法律应用能力和复杂的法律应用能力三个层次。完成了第一阶段的评估，主要集中在基本法律自然语言处理能力的能力评估。评估结果显示，尽管一些法律大型语言模型的性能优于其基础模型，但与ChatGPT相比仍存在差距 (2023-10-25)|
-| OpsEval | Tsinghua University | [OpsEval](https://arxiv.org/abs/2310.07637) | OpsEval是一个针对大型语言模型的综合任务导向的AIOps基准测试，评估了LLMs在三个关键场景（有线网络操作、5G通信操作和数据库操作）中的熟练程度，这些场景涉及不同的能力水平（知识回忆、分析思维和实际应用）。该基准包含了7,200个问题，分为多项选择和问答（QA）两种格式，支持英文和中文 (2023-10-02) |
-| SWE-bench | princeton-nlp | [SWE-bench](https://github.com/princeton-nlp/SWE-bench) | SWE-bench 是一个用于评估大型语言模型在从 GitHub 收集的实际软件问题上的基准测试。给定一个代码库和一个问题，语言模型的任务是生成一个能够解决所描述问题的补丁 || BLURB | Mindrank AI | [BLURB](https://microsoft.github.io/BLURB/index.html) | BLURB包括一个基于PubMed的生物医学自然语言处理应用的全面基准测试，以及一个用于跟踪社区进展的排行榜。BLURB包含六种多样化任务、十三个公开可用数据集。为了避免过于强调具有许多可用数据集的任务（例如命名实体识别NER），BLURB以所有任务的宏平均作为主要分数进行报告。BLURB的排行榜不依赖于模型，任何能够使用相同的训练和开发数据生成测试预测的系统都可以参与。BLURB的主要目标是降低在生物医学自然语言处理中的参与门槛，并帮助加速这个对社会和人类有积极影响的重要领域的进展 |
-| SmartPlay | microsoft | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay是一个大型语言模型 (LLM) 基准，设计为易于使用，提供各种游戏来测试 |
-| FinEval | SUFE-AIFLM-Lab | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
-| GSM8K | OpenAI | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K是一个包含8.5K个高质量语言多样性的小学数学单词问题的数据集。GSM8K将它们分为7.5K个训练问题和1K个测试问题。这些问题需要2到8个步骤来解决，解决方案主要涉及执行一系列基本算术运算（+ - / *）以达到最终答案 |
+| 名称 | 机构 | 领域 | 网址 | 简介 |
+| :--: | :--: | :--: | :--: | :-- |
+| LawBench | Nanjing University | 法律 | [LawBench](https://github.com/open-compass/lawbench) | LawBench经过精心设计，可对大语言模型的法律能力进行精确评估。 在设计测试任务时，模拟了司法认知的三个维度，并选择了20个任务来评估大模型的能力。与一些仅有多项选择题的现有基准相比，LawBench包含了更多与现实世界应用密切相关的任务类型，如法律实体识别、阅读理解、犯罪金额计算和咨询等。 LawBench认识到当前大模型的安全性策略可能会拒绝回应某些法律询问，或在理解指令方面遇到困难，从而导致缺乏回应。因此，LawBench中开发了一个单独的评估指标 "弃权率"，以衡量模型拒绝提供答案或未能正确理解指令的频率。 研究者评测了51种大语言模型在LawBench上的表现，包括20种多语言模型、22种中文模型和9种法律专用大语言模型 （2023-09-28） |
+| PsyEval | SJTU | 心理 | [PsyEval](https://arxiv.org/abs/2311.09189) | 在心理健康研究中，大型语言模型（LLMs）的使用越来越受到关注，尤其是其疾病检测等显著能力。研究者为心理健康领域量身定制了第一个全面基准，以系统地评估LLMs在这个领域的能力。这个基准包括六个子任务，涵盖了三个维度，以全面评估LLMs在心理健康领域的能力。为每个子任务设计了相应的简洁提示。并全面评估了八个高级LLM （2023-11-15） |
+| PPTC| Microsoft, PKU | 多模态生成 | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 （2023-11-04） |
+| RGB | IS-CAS | 检索增强生成 | [RGB](https://arxiv.org/abs/2309.01431) | 检索增强生成任务（Retrieval-Augmented Generation，RAG）的评测基准，分析了不同大型语言模型在RAG所需的4种基本能力（噪声稳健性、负面拒绝、信息整合和反事实稳健性）的性能，建立了中英文的“检索增强生成基准”（Retrieval-Augmented Generation Benchmark，RGB），根据所需的基本能力分为4个独立的测试集 (2023-09-04)  |
+| LLMRec | Alibaba | 推荐 | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 (2023-10-08)|
+| LAiW | Dai-shen | 法律 | [LAiW](https://github.com/Dai-shen/LAiW) | 针对法律大型语言模型的快速发展，提出了第一个基于法律能力的中文法律大型语言模型基准。将法律能力划分为基本的法律自然语言处理能力、基本的法律应用能力和复杂的法律应用能力三个层次。完成了第一阶段的评估，主要集中在基本法律自然语言处理能力的能力评估。评估结果显示，尽管一些法律大型语言模型的性能优于其基础模型，但与ChatGPT相比仍存在差距 (2023-10-25)|
+| OpsEval | Tsinghua University | AIOps | [OpsEval](https://arxiv.org/abs/2310.07637) | OpsEval是一个针对大型语言模型的综合任务导向的AIOps基准测试，评估了LLMs在三个关键场景（有线网络操作、5G通信操作和数据库操作）中的熟练程度，这些场景涉及不同的能力水平（知识回忆、分析思维和实际应用）。该基准包含了7,200个问题，分为多项选择和问答（QA）两种格式，支持英文和中文 (2023-10-02) |
+| SWE-bench | princeton-nlp | 软件 | [SWE-bench](https://github.com/princeton-nlp/SWE-bench) | SWE-bench 是一个用于评估大型语言模型在从 GitHub 收集的实际软件问题上的基准测试。给定一个代码库和一个问题，语言模型的任务是生成一个能够解决所描述问题的补丁 |
+| BLURB | Mindrank AI | 生物医学 | [BLURB](https://microsoft.github.io/BLURB/index.html) | BLURB包括一个基于PubMed的生物医学自然语言处理应用的全面基准测试，以及一个用于跟踪社区进展的排行榜。BLURB包含六种多样化任务、十三个公开可用数据集。为了避免过于强调具有许多可用数据集的任务（例如命名实体识别NER），BLURB以所有任务的宏平均作为主要分数进行报告。BLURB的排行榜不依赖于模型，任何能够使用相同的训练和开发数据生成测试预测的系统都可以参与。BLURB的主要目标是降低在生物医学自然语言处理中的参与门槛，并帮助加速这个对社会和人类有积极影响的重要领域的进展 |
+| SmartPlay | microsoft | 游戏 | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay是一个大型语言模型 (LLM) 基准，设计为易于使用，提供各种游戏来测试 |
+| FinEval | SUFE-AIFLM-Lab | 金融 | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
+| GSM8K | OpenAI | 数学 | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K是一个包含8.5K个高质量语言多样性的小学数学单词问题的数据集。GSM8K将它们分为7.5K个训练问题和1K个测试问题。这些问题需要2到8个步骤来解决，解决方案主要涉及执行一系列基本算术运算（+ - / *）以达到最终答案 |
 
 <br><br>
 ### Agent能力
