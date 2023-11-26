@@ -210,6 +210,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
 | Nucleotide Transformer                 | [[Source](https://huggingface.co/spaces/InstaDeepAI/nucleotide_transformer_benchmark)] |
 | OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
+| OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
 | OpenKG LLM                             | [[Source](https://huggingface.co/spaces/openkg/llm_leaderboard)]                       |
 | Open Ko-LLM                            | [[Source](https://huggingface.co/spaces/upstage/open-ko-llm-leaderboard)]              |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
