@@ -87,6 +87,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| AlignBench | THUDM | [AlignBench](https://github.com/THUDM/AlignBench) | AlignBench是一个用于评估中文大语言模型对齐性能的全面、多维度的评测基准。AlignBench 构建了人类参与的数据构建流程，来保证评测数据的动态更新。AlignBench 采用多维度、规则校准的模型评价方法（LLM-as-Judge），并且结合思维链（Chain-of-Thought）生成对模型回复的多维度分析和最终的综合评分，增强了评测的高可靠性和可解释性 (2023-12-01)|
 | IFEval | google-research | [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) | 大型语言模型的一个核心能力是遵循自然语言指令。然而，对这种能力的评估并没有标准化：人工评估费用高、速度慢，并且缺乏客观的可重复性，而基于LLM的自动评估可能存在评估者LLM的偏见或能力限制。为了克服这些问题，google的研究者引入了用于大型语言模型的指令遵循评估（IFEval）。IFEval是一个简单易复现的评估基准，侧重于一组“可验证指令”，例如“写入超过400字”和“至少提到AI关键词3次”。IFEval确定了25种这些可验证指令，并构建了约500个提示，每个提示包含一个或多个可验证指令 （2023-11-15） |
 | LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | 一个名为LLMBar的具有挑战性的元评估基准，旨在测试LLM评估器在识别遵循指令的输出方面的能力。LLMBar包含419个实例，每个实例包含一条指令和两个输出：一个忠实并正确地遵循指令，另一个则偏离指令。每个实例还有一个金标签，指示哪个输出在客观上更好 （2023-10-29） |
 | HalluQA | Fudan, Shanghai AI Lab | [HalluQA](https://github.com/xiami2019/HalluQA/) | 幻觉是文本生成领域的一个经典问题，HalluQA是一个中文大模型幻觉评测基准，收集了450条数据，其中misleading部分175条，misleading-hard部分69条，knowledge部分206条，每个问题平均有2.8个正确答案和错误答案标注。为了提高HalluQA的可用性，作者设计了一个使用GPT-4担任评估者的评测方法。具体来说，把幻觉的标准以及作为参考的正确答案以指令的形式输入给GPT-4，让GPT-4判断模型的回复有没有出现幻觉 （2023-11-08） |
@@ -502,6 +503,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 | 名称                                                    | Stars 数                                                     | 介绍                                                         |
 | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Byzer-LLM](https://github.com/allwefantasy/byzer-llm) |  ![](https://img.shields.io/github/stars/allwefantasy/byzer-llm.svg?style=social) | Byzer-LLM是一套大模型基础设施，支持预训练，微调，部署，serving等各种和大模型相关的能力。Byzer-Retrieval则是专门为大模型开发的存储基础设施，支持各种数据源批量导入，实时单条更新，支持全文检索，向量检索，混合检索，方便Byzer-LLM使用数据。Byzer-SQL/Python则提供了易于使用的人机交互API，极低门槛去使用上述产品。 |
 | [agenta](https://github.com/Agenta-AI/agenta)           | ![](https://img.shields.io/github/stars/Agenta-AI/agenta.svg?style=social) | 用于构建强大LLM应用的LLMOps平台。轻松尝试和评估不同提示、模型和工作流，以构建稳健的应用程序。 |
 | [Arize-Phoenix](https://github.com/Arize-ai/phoenix)    | ![](https://img.shields.io/github/stars/Arize-ai/phoenix.svg?style=social) | 用于LLMs、视觉、语言和表格模型的ML可观测性。                 |
 | [BudgetML](https://github.com/ebhy/budgetml)            | ![](https://img.shields.io/github/stars/ebhy/budgetml.svg?style=social) | 在不到10行代码的情况下，以有限的预算部署ML推理服务。         |
