@@ -591,7 +591,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Guotong Xie},
+  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Qi Shen, Guotong Xie},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
@@ -600,9 +600,9 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 }
 ```
 
-作者简介： 
-- SFE平台算法研发负责
-- 医药发现大模型MPG([Molecular Pretraining GraphTransformer](https://github.com/onejune2018/MPG))作者
-- 国际竞赛SemEval2022习语判别任务第一、MIT AI-Cure第一、VQA2021第一、TREC2021第一、EAD2019第一
+作者信息： 
+- 简介：企业AI平台部算法研发负责人，前IBM研究院研究员，ETH访问学者，北京大学博士
+- 研发：图网络/视觉、深度学习、大模型、空间科学等，医药发现大模型[MPG](https://github.com/onejune2018/MPG)作者
+- 荣誉：国际竞赛冠军（SemEval2022习语判别赛道、MIT AI-Cure、VQA2021、TREC2021、EAD2019等）
 - 主页：https://onejune2018.github.io/homepage/
 - Google Scholar: https://scholar.google.com/citations?user=0Be01PgAAAAJ&hl=en
