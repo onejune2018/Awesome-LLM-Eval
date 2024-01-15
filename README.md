@@ -43,7 +43,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ## News
 
-- [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench) [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
+- [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench), [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
 
 - [2023/12/20] We add [RAG evaluation](#RAG检索增强生成评估).
 
