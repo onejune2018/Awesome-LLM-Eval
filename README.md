@@ -43,6 +43,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ## News
 
+- [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench) [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
+
 - [2023/12/20] We add [RAG evaluation](#RAG检索增强生成评估).
 
 - [2023/11/15] We add [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for the evaluation of Instruction Following ability of LLMs.
@@ -90,6 +92,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| CRUXEval | MIT CSAIL | [CRUXEval](https://arxiv.org/abs/2401.03065) | CRUXEval是一个用于代码推理、理解和执行评估的基准，包含800个Python函数及其输入输出对，测试输入预测和输出预测任务。许多在HumanEval上得分高的模型在CRUXEval上表现不佳，突显了改进代码推理能力的需求。最佳模型GPT-4结合了思维链(CoT)，在输入预测和输出预测上的pass@1分别达到了75％和81％。该基准测试暴露了开源和闭源模型之间的差距。GPT-4未能完全通过CRUXEval，提供了对其局限性和改进方向的见解 (2024-01-05)|
 | MLAgentBench | snap-stanford | [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) | MLAgentBench是一套端到端的机器学习（ML）研究任务，用于对AI研究代理进行基准测试，其中代理的目标是根据给定的数据集和机器学习任务描述，自主地开发或改进一个ML模型。每个任务都是一个交互式的环境，直接反映了人类研究者所看到的情况，其中代理可以读取可用的文件，在计算集群上运行多个实验，并分析结果以实现指定的研究目标。具体来说，包括了15个不同的ML工程任务，可以通过尝试不同的机器学习方法、数据处理、架构、训练过程来实现 (2023-10-05) |
 | AlignBench | THUDM | [AlignBench](https://github.com/THUDM/AlignBench) | AlignBench是一个用于评估中文大语言模型对齐性能的全面、多维度的评测基准。AlignBench 构建了人类参与的数据构建流程，来保证评测数据的动态更新。AlignBench 采用多维度、规则校准的模型评价方法（LLM-as-Judge），并且结合思维链（Chain-of-Thought）生成对模型回复的多维度分析和最终的综合评分，增强了评测的高可靠性和可解释性 (2023-12-01)|
 | UltraEval | OpenBMB | [UltraEval](https://github.com/OpenBMB/UltraEval) | UltraEval是一个开源的基础模型能力评测框架，提供了一套轻量级、易于使用的评测体系，支持主流大模型的性能评估。它的主要特色如下：（1）轻量易用的评测框架：具备简洁直观的设计，依赖少，易于部署，具有良好的扩展性，适用多种评测场景。（）2灵活多样的评测方法：提供了统一的prompt模板和丰富的评估指标，同时支持自定义。（3）高效快速的推理部署：支持包括torch和vLLM在内的多种模型部署方案，并实现了多实例部署以加速评测过程。（4）公开透明的开源榜单：维护一个公开的、可追溯和可复现的评测榜单，由社区推动更新，确保透明度。（5）官方权威的评测数据：采用广泛认可的官方评测集，保证评测的公平性和标准化，确保结果具有可比性和复现性  (2023-11-24) |
@@ -156,6 +159,9 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 领域 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: | :-- |
+| DebugBench | 清华大学 | 软开 |[DebugBench](https://github.com/thunlp/DebugBench)| DebugBench是一个包含4,253个实例的LLM调试基准，涵盖了C++、Java和Python中四个主要的漏洞类别和18个次要类别。为构建DebugBench，作者从LeetCode社区收集了代码片段，使用GPT-4向源数据植入漏洞，并确保了严格的质量检查 (2024-01-09) |
+| OpenFinData | 上海人工智能实验室 | 金融 | [OpenFinData](https://opencompass.org.cn) |首个全场景金融测评数据集OpenFinData(基于"OpenCompass"框架)，由上海人工智能实验室发布，包含的六大模块和十九项金融任务维度，覆盖多层次数据类型和多样化金融场景，每一条数据均由实际金融业务场景产生 (2024-01-04)|
+|LAiW| Sichuan University | 法律 |[LAiW](https://github.com/Dai-shen/LAiW)|从法学角度和可实现性上对法律 NLP的能力进行划分，将其分成了3大能力，共计13个基础任务：(1)法律 NLP 基础能力：评测法律基础任务、 NLP 基础任务和法律信息抽取的能力，包括法条推送、要素识别、命名实体识别、司法要点摘要和案件识别 5 个基础任务；(2)法律基础应用能力：评测大模型对法律领域知识的基础应用能力，包括争议焦点挖掘、类案匹配、刑事裁判预测、民事裁判预测和法律问答 5 个基础任务；(3)法律复杂应用能力：评测大模型对法律领域知识的复杂应用能力，包括司法说理生成、案情理解和法律咨询 3 个基础任务 ([2023-10-08)|
 | LawBench | Nanjing University | 法律 | [LawBench](https://github.com/open-compass/lawbench) | LawBench经过精心设计，可对大语言模型的法律能力进行精确评估。 在设计测试任务时，模拟了司法认知的三个维度，并选择了20个任务来评估大模型的能力。与一些仅有多项选择题的现有基准相比，LawBench包含了更多与现实世界应用密切相关的任务类型，如法律实体识别、阅读理解、犯罪金额计算和咨询等。 LawBench认识到当前大模型的安全性策略可能会拒绝回应某些法律询问，或在理解指令方面遇到困难，从而导致缺乏回应。因此，LawBench中开发了一个单独的评估指标 "弃权率"，以衡量模型拒绝提供答案或未能正确理解指令的频率。 研究者评测了51种大语言模型在LawBench上的表现，包括20种多语言模型、22种中文模型和9种法律专用大语言模型 （2023-09-28） |
 | PsyEval | SJTU | 心理 | [PsyEval](https://arxiv.org/abs/2311.09189) | 在心理健康研究中，大型语言模型（LLMs）的使用越来越受到关注，尤其是其疾病检测等显著能力。研究者为心理健康领域量身定制了第一个全面基准，以系统地评估LLMs在这个领域的能力。这个基准包括六个子任务，涵盖了三个维度，以全面评估LLMs在心理健康领域的能力。为每个子任务设计了相应的简洁提示。并全面评估了八个高级LLM （2023-11-15） |
 | PPTC| Microsoft, PKU | 多模态生成 | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 （2023-11-04） |
