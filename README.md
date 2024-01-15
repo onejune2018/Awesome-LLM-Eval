@@ -206,6 +206,9 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
 
+![image](https://github.com/onejune2018/Awesome-LLM-Eval/assets/35061855/7c6c2ff4-a189-42c8-a8d4-e4defecebf85)
+
+
 <br><br>
 ## Leaderboards
 
