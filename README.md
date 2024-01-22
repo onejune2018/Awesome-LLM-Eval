@@ -92,6 +92,9 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| CommonGen-Eval | allenai |[CommonGen-Eval](https://github.com/allenai/CommonGen-Eval) | 使用CommonGen-lite数据集对LLM进行评估的研究，使用了GPT-4模型进行评估，比较了不同模型的性能，并列出了排行榜上的模型结果 (2024-01-04) |
+| just-eval | AI2 Mosaic |[just-eval](https://github.com/Re-Align/just-eval)| 基于GPT的评估工具，用于对LLM进行多方面、可解释的评估，可以评估帮助性、清晰度、真实性、深度和参与度等方面 (2023-12-05) |
+| EQ-Bench | EQ-Bench | (EQ-Bench)[https://github.com/EQ-bench/EQ-Bench] | 用于评估语言模型情感智能的基准测试，包含171个问题(相比v1的60个问题)和一种新的评分系统，能更好地区分模型之间的性能差异 (2023-12-20) |
 | CRUXEval | MIT CSAIL | [CRUXEval](https://arxiv.org/abs/2401.03065) | CRUXEval是一个用于代码推理、理解和执行评估的基准，包含800个Python函数及其输入输出对，测试输入预测和输出预测任务。许多在HumanEval上得分高的模型在CRUXEval上表现不佳，突显了改进代码推理能力的需求。最佳模型GPT-4结合了思维链(CoT)，在输入预测和输出预测上的pass@1分别达到了75％和81％。该基准测试暴露了开源和闭源模型之间的差距。GPT-4未能完全通过CRUXEval，提供了对其局限性和改进方向的见解 (2024-01-05)|
 | MLAgentBench | snap-stanford | [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) | MLAgentBench是一套端到端的机器学习（ML）研究任务，用于对AI研究代理进行基准测试，其中代理的目标是根据给定的数据集和机器学习任务描述，自主地开发或改进一个ML模型。每个任务都是一个交互式的环境，直接反映了人类研究者所看到的情况，其中代理可以读取可用的文件，在计算集群上运行多个实验，并分析结果以实现指定的研究目标。具体来说，包括了15个不同的ML工程任务，可以通过尝试不同的机器学习方法、数据处理、架构、训练过程来实现 (2023-10-05) |
 | AlignBench | THUDM | [AlignBench](https://github.com/THUDM/AlignBench) | AlignBench是一个用于评估中文大语言模型对齐性能的全面、多维度的评测基准。AlignBench 构建了人类参与的数据构建流程，来保证评测数据的动态更新。AlignBench 采用多维度、规则校准的模型评价方法（LLM-as-Judge），并且结合思维链（Chain-of-Thought）生成对模型回复的多维度分析和最终的综合评分，增强了评测的高可靠性和可解释性 (2023-12-01)|
