@@ -51,20 +51,19 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 | Name | Institute | Link | Date |
 | :--: | :--: | :--: | :--: |
+| LLM Comparator | Google | [LLM Comparator](https://arxiv.org/html/2402.10524v1) | a novel visual analytics tool for interactively analyzing results from automatic side-by-side evaluation. The tool supports interactive workflows for users to understand when and why a model performs better or worse than a baseline model, and how the responses from two models are qualitatively different. (2024-02-16) |
 | EVAL | OPENAI | https://github.com/openai/evals ||
-| lm-evaluation-harness | EleutherAI | https://github.com/EleutherAI/lm-evaluation-harness ||
-| Large language model evaluation and workflow framework from Phase AI | wgryc | https://github.com/wgryc/phasellm ||
-| Evaluation benchmark for large language models| FreedomIntelligence | https://github.com/FreedomIntelligence/LLMZoo ||
-| Holistic Evaluation of Language Models (HELM) | Stanford | https://github.com/stanford-crfm/helm ||
-| A lightweight evaluation tool for question-answering | Langchain | https://github.com/rlancemartin/auto-evaluator ||
-| PandaLM: ReProducible and Automated Language Model Assessment | WeOpenML | https://github.com/WeOpenML/PandaLM ||
-| FlagEval | Tsinghua University | https://github.com/FlagOpen/FlagEval ||
-| AlpacaEval | tatsu-lab | https://github.com/tatsu-lab/alpaca_eval ||
+| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) ||
+| Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) ||
+| Evaluation benchmark for large language models| FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) ||
+| Holistic Evaluation of Language Models (HELM) | Stanford | [HELM](https://github.com/stanford-crfm/helm) ||
+| A lightweight evaluation tool for question-answering | Langchain | [auto-evaluator](https://github.com/rlancemartin/auto-evaluator) ||
+| PandaLM: ReProducible and Automated Language Model Assessment | WeOpenML | [PandaLM](https://github.com/WeOpenML/PandaLM) ||
+| FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) ||
+| AlpacaEval | tatsu-lab | [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) ||
 
 
 ## Datasets / Benchmark
-
-Sure, here's the translation of the provided content into English:
 
 | Data Name | Institution | Website | Description |
 | :--: | :--: | :--: | :--: |
