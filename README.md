@@ -70,6 +70,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
+| LLM Comparator | Google | [LLM Comparator](https://arxiv.org/html/2402.10524v1) | 一个用于比较和评估大型语言模型(LLM)的可视化分析工具。相较于传统的基于人工评分的方法，该工具提供了一种可扩展的自动化方面对比评估方法，旨在解决规模化评估和解释性挑战。利用另一个LLM作为评判，工具可以展示模型间质量对比，并给出理由。LLM Comparator通过交互式表格和汇总可视化，帮助用户理解模型在特定情境下表现好坏的原因，以及两种模型响应的定性差异。本文通过与Google的研究员和工程师紧密合作开发此工具，并通过观察研究评估其有效性。该工具在Google内部广泛使用，三个月内吸引了400多名用户，评估了超过1000个实验 (2024-02-16) |
 | EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
 | lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
 | OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
