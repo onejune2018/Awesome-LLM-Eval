@@ -19,6 +19,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
   - [垂直领域](#垂直领域)
   - [RAG检索增强生成评估](#RAG检索增强生成评估)
   - [Agent能力](#Agent能力)
+  - [代码能力](#代码能力)
   - [多模态/跨模态](#多模态-跨模态)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
@@ -43,9 +44,11 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 <br><br>
 ## News
 
+- [2024/02/26] We add [Coding Evaluation](#代码能力) section.
+
 - [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench), [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
 
-- [2023/12/20] We add [RAG evaluation](#RAG检索增强生成评估).
+- [2023/12/20] We add [RAG Evaluation](#RAG检索增强生成评估) section.
 
 - [2023/11/15] We add [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for the evaluation of Instruction Following ability of LLMs.
 
@@ -198,6 +201,15 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (202308)|
 | AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
 | ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
+
+
+<br><br>
+### 代码能力
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| HumanEval-XL | FloatAI | [SuperCLUE-Agent](https://github.com/FloatAI/HumanEval-XL) | 现有的基准测试主要集中在将英文提示翻译成多语言代码，或者局限于非常有限的自然语言。这些基准测试忽视了大规模多语言NL到多语言代码生成的广阔领域，留下了评估多语言LLMs的一个重要空白。为了应对这一挑战，作者们提出了HumanEval-XL，这是一个大规模多语言代码生成基准测试，旨在填补这一缺陷。HumanEval-XL在23种自然语言和12种编程语言之间建立了联系，包含22,080个提示，平均每个提示有8.33个测试用例。通过确保跨多种NL和PLs的平行数据，HumanEval-XL为多语言LLMs提供了一个全面的评估平台，允许评估对不同NLs的理解。这项工作是填补多语言代码生成领域NL泛化评估空白的开创性步骤。 （2024-02-26） |
+
 
 <br><br>
 ### 多模态-跨模态
