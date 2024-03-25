@@ -99,6 +99,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| RewardBench | AIAI | [RewardBench](https://github.com/allenai/reward-bench) | 语言模型奖励模型评估基准RewardBench，评估各类模型的优劣势，发现现有模型在推理和遵循指令方面仍存在明显不足，包含[Leaderboard](https://hf.co/spaces/allenai/reward-bench)，[Code](https://github.com/allenai/reward-bench) 和 [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20)|
+| Psychometrics Eval | 微软亚洲研究院 | [Psychometrics Eval](https://arxiv.org/abs/2310.16379) | 微软亚洲研究院提出了一种基于心理测量学的通用型人工智能评估方法，旨在解决传统评估方法在预测力、信息量和测试工具质量上的局限。该方法借鉴心理测量学的理论，通过识别AI的关键心理构念，设计针对性测验并应用项目反应理论进行精准评分，同时引入信度和效度概念确保评估的可靠性和准确性。这一框架扩展了心理测量学方法，适用于评估AI在处理未知复杂任务时的表现，但同时也面临着如何区分AI的“个体”与“总体”、处理prompts敏感性以及评估人类与AI构念差异等开放性问题 (2023-10-19)  |
 | CommonGen-Eval | allenai |[CommonGen-Eval](https://github.com/allenai/CommonGen-Eval) | 使用CommonGen-lite数据集对LLM进行评估的研究，使用了GPT-4模型进行评估，比较了不同模型的性能，并列出了排行榜上的模型结果 (2024-01-04) |
 | just-eval | AI2 Mosaic |[just-eval](https://github.com/Re-Align/just-eval)| 基于GPT的评估工具，用于对LLM进行多方面、可解释的评估，可以评估帮助性、清晰度、真实性、深度和参与度等方面 (2023-12-05) |
 | EQ-Bench | EQ-Bench | (EQ-Bench)[https://github.com/EQ-bench/EQ-Bench] | 用于评估语言模型情感智能的基准测试，包含171个问题(相比v1的60个问题)和一种新的评分系统，能更好地区分模型之间的性能差异 (2023-12-20) |
