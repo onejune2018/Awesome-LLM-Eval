@@ -119,7 +119,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | TRACE | Fudan University | [TRACE](https://arxiv.org/abs/2310.06762) | TRACE是一个专为评估大型语言模型（LLMs）的持续学习能力而设计的新型基准测试。TRACE包含了8个不同的数据集，涵盖了包括领域特定任务、多语言能力、代码生成和数学推理等在内的挑战性任务 (2023-10-05)  |
 | ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval 是一个项目，提供一个统一评估流程的项目，用于在不同的公共数据集或自己的数据集上评估语言模型，使用传统指标以及来自 GPT（生成式预训练模型）的帮助 |
 | LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
-| Aviary | github.com/ray-project/aviary | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
+| Aviary | ray-project | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
 | Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| "Do not answer" 是一个开源数据集，旨在以低成本评估LLM（大型语言模型）的安全机制。该数据集经过策划和筛选，仅包含那些负责任的语言模型不回答的提示。除了人工标注外，“Do not answer” 还实施了基于模型的评估，其中一个经过6亿次微调的类似BERT的评估器获得了与人类和GPT-4相媲美的结果 |
 | LucyEval | 甲骨文 | [LucyEval](http://lucyeval.besteasy.com/) | 中文大语言模型成熟度评测——LucyEval，能够通过对模型各方面能力的客观测试，找到模型的不足，帮助设计者和工程师更加精准地调整、训练模型，助力大模型不断迈向更智能的未来 |
 | Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | 多维能力覆盖，涵盖了7个能力维度和51个任务；多方面的评估方法协作，综合使用3种不同但互补的评估方法；全面的中文基准测试，同时提供英文评估能力 |
