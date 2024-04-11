@@ -75,7 +75,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
-| LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder): 帮你找到适合特定场景的大模型排行榜 (2024-04-02) |
+| LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder帮你找到适合特定场景的大模型排行榜，排行榜的排行榜 (2024-04-02) |
 | LightEval | Huggingface | [lighteval](https://github.com/huggingface/lighteval) | LightEval 是由 Hugging Face 开发的一个轻量级框架，专门用于大型语言模型（LLM）的评估。这个框架是 Hugging Face 内部用于评估最近发布的 LLM 数据处理库 datatrove 和 LLM 训练库 nanotron 的工具。现在，Hugging Face 将其开源，以便社区可以共同使用和改进。LightEval 的一些主要特点：(1) 轻量级：LightEval 设计为一个轻量级工具，易于使用和集成。(2) 评估套件：它提供了一个评估套件，支持多种任务和模型的评估。(3) 兼容性：LightEval 支持在 CPU 或 GPU 上评估模型，并且可以与 Hugging Face 的加速库（Accelerate）和 Nanotron 等框架一起使用。(4) 分布式评估：它支持在分布式环境中评估模型，这对于处理大型模型尤其有用。(5) Open LLM Leaderboard：LightEval 可以用来在 Open LLM Leaderboard 的所有基准测试上评估模型。(6) 自定义：用户可以添加新的度量标准和任务，以适应特定的评估需求。 (2024-02-08) |
 | LLM Comparator | Google | [LLM Comparator](https://arxiv.org/html/2402.10524v1) | 一个用于比较和评估大型语言模型(LLM)的可视化分析工具。相较于传统的基于人工评分的方法，该工具提供了一种可扩展的自动化方面对比评估方法，旨在解决规模化评估和解释性挑战。利用另一个LLM作为评判，工具可以展示模型间质量对比，并给出理由。LLM Comparator通过交互式表格和汇总可视化，帮助用户理解模型在特定情境下表现好坏的原因，以及两种模型响应的定性差异。本文通过与Google的研究员和工程师紧密合作开发此工具，并通过观察研究评估其有效性。该工具在Google内部广泛使用，三个月内吸引了400多名用户，评估了超过1000个实验 (2024-02-16) |
 | EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
