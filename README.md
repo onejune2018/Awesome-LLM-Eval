@@ -100,6 +100,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| DyVal | Microsoft | [DyVal](https://github.com/microsoft/promptbench) | 人们对于其庞大的训练语料库中潜在的数据污染问题表示担忧。此外，当前基准测试的静态性质和固定复杂度可能无法充分衡量LLMs不断进步的能力。DyVal，这是一种用于动态评估LLMs的通用且灵活的协议。基于图的DyVal，利用有向无环图的结构优势动态生成具有可控复杂度的评估样本。DyVal在包括数学、逻辑推理和算法问题在内的推理任务上生成了具有挑战性的评估集。评估了从Flan-T5-large到GPT-3.5-Turbo和GPT-4的各种LLMs。实验表明，LLMs在DyVal生成的不同复杂度的评估样本中表现更差，突显了动态评估的重要性。作者还分析了不同提示方法的失败案例和结果。此外，DyVal生成的样本不仅是评估集，而且有助于微调，以提高LLMs在现有基准测试上的性能 (2024-04-20) |
 | RewardBench | AIAI | [RewardBench](https://github.com/allenai/reward-bench) | 语言模型奖励模型评估基准RewardBench，评估各类模型的优劣势，发现现有模型在推理和遵循指令方面仍存在明显不足，包含[Leaderboard](https://hf.co/spaces/allenai/reward-bench)，[Code](https://github.com/allenai/reward-bench) 和 [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20)|
 | Psychometrics Eval | 微软亚洲研究院 | [Psychometrics Eval](https://arxiv.org/abs/2310.16379) | 微软亚洲研究院提出了一种基于心理测量学的通用型人工智能评估方法，旨在解决传统评估方法在预测力、信息量和测试工具质量上的局限。该方法借鉴心理测量学的理论，通过识别AI的关键心理构念，设计针对性测验并应用项目反应理论进行精准评分，同时引入信度和效度概念确保评估的可靠性和准确性。这一框架扩展了心理测量学方法，适用于评估AI在处理未知复杂任务时的表现，但同时也面临着如何区分AI的“个体”与“总体”、处理prompts敏感性以及评估人类与AI构念差异等开放性问题 (2023-10-19)  |
 | CommonGen-Eval | allenai |[CommonGen-Eval](https://github.com/allenai/CommonGen-Eval) | 使用CommonGen-lite数据集对LLM进行评估的研究，使用了GPT-4模型进行评估，比较了不同模型的性能，并列出了排行榜上的模型结果 (2024-01-04) |
