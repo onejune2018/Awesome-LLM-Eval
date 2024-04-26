@@ -21,6 +21,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
   - [Agent能力](#Agent能力)
   - [代码能力](#代码能力)
   - [多模态/跨模态](#多模态-跨模态)
+  - [推理速度](#推理速度)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
 - [Papers](#papers)
@@ -43,6 +44,8 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 <br><br>
 ## News
+
+- [2024/04/26] We add [推理速度](#推理速度) section.
 
 - [2024/02/26] We add [Coding Evaluation](#代码能力) section.
 
@@ -228,6 +231,15 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 | ChartVLM | Shanghai AI Lab | [ChartVLM](https://github.com/UniModal4Reasoning/ChartVLM) | ChartX是一个多模式评估集，包括18种图表类型、7种图表任务、22个学科主题和高质量的图表数据。此外本文作者还开发了ChartVLM，为处理依赖于可解释模式的多模态任务（比如图表或几何图像领域的推理任务）提供了新视角。 (2024-02-19) |
 | ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 (2023-10-24) |
 | LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
+
+<br><br>
+### 推理速度
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| llm-analysis | Databricks  | [llm-analysis](https://github.com/cli99/llm-analysis) | Latency and Memory Analysis of Transformer Models for Training and Inference. |
+| llm-inference-bench | CentML | [llm-inference-bench](https://github.com/CentML/llm-inference-bench) | This benchmark operates entirely external to any serving framework, and can easily be extended and modified. Provides a variety of statistics and profiling modes. It is intended to be a standalone tool for precise statistically significant benchmarking with a particular input/output distribution. Each request consists of a single prompt and single decode. |
+| GPU-Benchmarks-on-LLM-Inference | UIUC | [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference) | Use llama.cpp to test the LLaMA models inference speed of different GPUs on RunPod, 16-inch M1 Max MacBook Pro, M2 Ultra Mac Studio, 14-inch M3 MacBook Pro and 16-inch M3 Max MacBook Pro. |
 
 <br><br>
 ## Demos
