@@ -67,6 +67,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboa
 
 | Data Name | Institution | Website | Description |
 | :--: | :--: | :--: | :--: |
+| TrustLLM Benchmark | TrustLLM | [TrustLLM](https://trustllmbenchmark.github.io/TrustLLM-Website/) | TrustLLM is a benchmark for assessing the trustworthiness of large language models. This benchmark encompasses six dimensions of trustworthiness and includes over 30 datasets to comprehensively evaluate the capabilities of LLMs, ranging from simple classification to complex generation tasks. Each dataset presents unique challenges and has been used to benchmark 16 mainstream large language models, including both commercial and open-source models, across multiple dimensions of trustworthiness.|
 | M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models. |
 | KoLA | THU-KEG | [KoLA](http://103.238.162.37:31622) | Knowledge-oriented LLM Assessment benchmark (KoLA), hosted by Knowledge Engineering Group, Tsinghua University (THU-KEG), aims to benchmark LLMs' world knowledge by meticulously designing data, ability taxonomy, and evaluation metrics. |
 | promptbench | Microsoft | [promptbench](https://github.com/microsoft/promptbench) | PromptBench is a powerful tool to scrutinize and analyze large language models' interaction with prompts. It simulates black-box adversarial prompt attacks and evaluates model performance. The repository provides code, datasets, and instructions for experiments. |
