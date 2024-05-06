@@ -666,7 +666,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Qi Shen, Guotong Xie},
+  author = {Jun Wang, Changyu Hou, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Qi Shen, Guotong Xie, Jing Xiao},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
