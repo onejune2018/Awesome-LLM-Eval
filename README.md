@@ -78,6 +78,7 @@ Awesome-LLM-Eval: 一个由工具、基准/数据、演示、排行榜和大模�
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
+| prometheus-eval | prometheus-eval | [prometheus-eval](https://github.com/prometheus-eval/prometheus-eval) | PROMETHEUS开放第二版比其前身更强大的评估专用的语言模型，它能密切模仿人类和 GPT-4 的判断。此外,它能够处理直接评估和成对排序两种格式，并配合使用者定义的评估标准。在四个直接评估基准和四个成对排序基准上，PROMETHEUS 2 在所有测试的开源评估语言模型中，与人类和专有语言模型评判者取得最高的相关性和一致性 (2024-05-04) |
 | athina-evals | athina-ai |[athina-ai](https://github.com/athina-ai/athina-evals) | athina-ai是一个开源库，提供即插即用的预设评估（preset evals）/模块化、可扩展的框架来编写和运行评估，帮助工程师通过评估驱动的开发来系统性地提高他们的大型语言模型的可靠性和性能，athina-ai提供了一个系统，用于评估驱动的开发，克服了传统工作流程的限制，允许快速实验和具有一致指标的可定制评估器 |
 | LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder帮你找到适合特定场景的大模型排行榜，排行榜的排行榜 (2024-04-02) |
 | LightEval | Huggingface | [lighteval](https://github.com/huggingface/lighteval) | LightEval 是由 Hugging Face 开发的一个轻量级框架，专门用于大型语言模型（LLM）的评估。这个框架是 Hugging Face 内部用于评估最近发布的 LLM 数据处理库 datatrove 和 LLM 训练库 nanotron 的工具。现在，Hugging Face 将其开源，以便社区可以共同使用和改进。LightEval 的一些主要特点：(1) 轻量级：LightEval 设计为一个轻量级工具，易于使用和集成。(2) 评估套件：它提供了一个评估套件，支持多种任务和模型的评估。(3) 兼容性：LightEval 支持在 CPU 或 GPU 上评估模型，并且可以与 Hugging Face 的加速库（Accelerate）和 Nanotron 等框架一起使用。(4) 分布式评估：它支持在分布式环境中评估模型，这对于处理大型模型尤其有用。(5) Open LLM Leaderboard：LightEval 可以用来在 Open LLM Leaderboard 的所有基准测试上评估模型。(6) 自定义：用户可以添加新的度量标准和任务，以适应特定的评估需求。 (2024-02-08) |
