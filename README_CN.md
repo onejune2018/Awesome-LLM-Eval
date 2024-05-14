@@ -19,7 +19,9 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
   - [垂直领域](#垂直领域)
   - [RAG检索增强生成评估](#RAG检索增强生成评估)
   - [Agent能力](#Agent能力)
+  - [代码能力](#代码能力)
   - [多模态/跨模态](#多模态-跨模态)
+  - [推理速度](#推理速度)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
 - [Papers](#papers)
@@ -43,7 +45,15 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 <br><br>
 ## News
 
-- [2023/12/20] We add [RAG evaluation](#RAG检索增强生成评估).
+- [2024/04/26] We add [推理速度](#推理速度) section.
+
+- [2024/02/26] We add [Coding Evaluation](#代码能力) section.
+
+- [2024/02/08] We add [lighteval](https://github.com/huggingface/lighteval) tool from Huggingface.
+
+- [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench), [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
+
+- [2023/12/20] We add [RAG Evaluation](#RAG检索增强生成评估) section.
 
 - [2023/11/15] We add [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for the evaluation of Instruction Following ability of LLMs.
 
@@ -68,9 +78,15 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
+| prometheus-eval | prometheus-eval | [prometheus-eval](https://github.com/prometheus-eval/prometheus-eval) | PROMETHEUS开放第二版比其前身更强大的评估专用的语言模型，它能密切模仿人类和 GPT-4 的判断。此外,它能够处理直接评估和成对排序两种格式，并配合使用者定义的评估标准。在四个直接评估基准和四个成对排序基准上，PROMETHEUS 2 在所有测试的开源评估语言模型中，与人类和专有语言模型评判者取得最高的相关性和一致性 (2024-05-04) |
+| athina-evals | athina-ai |[athina-ai](https://github.com/athina-ai/athina-evals) | athina-ai是一个开源库，提供即插即用的预设评估（preset evals）/模块化、可扩展的框架来编写和运行评估，帮助工程师通过评估驱动的开发来系统性地提高他们的大型语言模型的可靠性和性能，athina-ai提供了一个系统，用于评估驱动的开发，克服了传统工作流程的限制，允许快速实验和具有一致指标的可定制评估器 |
+| LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder帮你找到适合特定场景的大模型排行榜，排行榜的排行榜 (2024-04-02) |
+| LightEval | Huggingface | [lighteval](https://github.com/huggingface/lighteval) | LightEval 是由 Hugging Face 开发的一个轻量级框架，专门用于大型语言模型（LLM）的评估。这个框架是 Hugging Face 内部用于评估最近发布的 LLM 数据处理库 datatrove 和 LLM 训练库 nanotron 的工具。现在，Hugging Face 将其开源，以便社区可以共同使用和改进。LightEval 的一些主要特点：(1) 轻量级：LightEval 设计为一个轻量级工具，易于使用和集成。(2) 评估套件：它提供了一个评估套件，支持多种任务和模型的评估。(3) 兼容性：LightEval 支持在 CPU 或 GPU 上评估模型，并且可以与 Hugging Face 的加速库（Accelerate）和 Nanotron 等框架一起使用。(4) 分布式评估：它支持在分布式环境中评估模型，这对于处理大型模型尤其有用。(5) Open LLM Leaderboard：LightEval 可以用来在 Open LLM Leaderboard 的所有基准测试上评估模型。(6) 自定义：用户可以添加新的度量标准和任务，以适应特定的评估需求。 (2024-02-08) |
 | LLM Comparator | Google | [LLM Comparator](https://arxiv.org/html/2402.10524v1) | 一个用于比较和评估大型语言模型(LLM)的可视化分析工具。相较于传统的基于人工评分的方法，该工具提供了一种可扩展的自动化方面对比评估方法，旨在解决规模化评估和解释性挑战。利用另一个LLM作为评判，工具可以展示模型间质量对比，并给出理由。LLM Comparator通过交互式表格和汇总可视化，帮助用户理解模型在特定情境下表现好坏的原因，以及两种模型响应的定性差异。本文通过与Google的研究员和工程师紧密合作开发此工具，并通过观察研究评估其有效性。该工具在Google内部广泛使用，三个月内吸引了400多名用户，评估了超过1000个实验 (2024-02-16) |
+| Arthur Bench | Arthur-AI |[Arthur Bench](https://github.com/arthur-ai/bench)| Arthur Bench 是一个开源的评估工具，专门设计来比较和分析大型语言模型（LLM）的性能。它支持多种评估任务，包括问答、摘要、翻译和代码生成等，能够为LLM在这些任务上的表现提供详细的报告。Arthur Bench的一些关键特性和优势：（1）模型比较：Arthur Bench 能够比较不同供应商、不同版本以及不同训练数据集的LLM模型性能。（2）提示和超参数评估：它可以评估不同的提示对LLM性能的影响，以及测试不同超参数设置对模型行为的控制。（3）任务定义与模型选择：用户可以定义具体的评估任务，并从支持的多种LLM模型中选择评估对象。（4）参数配置：Arthur Bench 允许用户调整提示和超参数，以精细化控制LLM的行为。（5）自动化评估流程：提供自动化的评估流程，简化了评估任务的执行。（6）使用场景：Arthur Bench 适用于模型选择和验证、预算和隐私优化，以及将学术基准转化为现实世界表现的评估。（7）特性分析：它具备全套评分指标，支持本地和云版本，且完全开源，鼓励社区协作和项目发展 (2023-10-06)  |
 | EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
-| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
+| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | lm-evaluation-harness是EleutherAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
+| lm-evaluation | AI21Labs | [lm-evaluation](https://github.com/AI21Labs/lm-evaluation) | The evaluations and reproducing the results from the Jurassic-1 Technical [Paper](https://www.ai21.com/blog/announcing-ai21-studio-and-jurassic-1), with current support for running the tasks through both the AI21 Studio API and OpenAI's GPT3 API. |
 | OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
 | Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) | phasellm是Phase AI提供的一个用于评估和管理LLM的框架，可以帮助用户选择合适的模型、数据集和指标，以及可视化和分析结果. |
 | Evaluation benchmark for LLM | FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) | LLMZoo是FreedomIntelligence开发的一个用于评估LLM的基准，包含了多个领域和任务的数据集和指标，以及一些预训练的模型和结果. |
@@ -92,6 +108,16 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
 | TrustLLM Benchmark | TrustLLM | [TrustLLM](https://trustllmbenchmark.github.io/TrustLLM-Website/) | TrustLLM是一个针对大语言模型可信赖的评估基准，该基准测试涵盖了6个可信赖维度，包含了30+的数据集，以全面评估LLMs的功能能力，范围从简单分类到复杂的生成任务。每个数据集都提出了独特的挑战，并在可信度的多个维度上对16个主流的大语言模型（包括商业模型和开源模型）进行了基准测试。|
+| DyVal | Microsoft | [DyVal](https://github.com/microsoft/promptbench) | 人们对于其庞大的训练语料库中潜在的数据污染问题表示担忧。此外，当前基准测试的静态性质和固定复杂度可能无法充分衡量LLMs不断进步的能力。DyVal，这是一种用于动态评估LLMs的通用且灵活的协议。基于图的DyVal，利用有向无环图的结构优势动态生成具有可控复杂度的评估样本。DyVal在包括数学、逻辑推理和算法问题在内的推理任务上生成了具有挑战性的评估集。评估了从Flan-T5-large到GPT-3.5-Turbo和GPT-4的各种LLMs。实验表明，LLMs在DyVal生成的不同复杂度的评估样本中表现更差，突显了动态评估的重要性。作者还分析了不同提示方法的失败案例和结果。此外，DyVal生成的样本不仅是评估集，而且有助于微调，以提高LLMs在现有基准测试上的性能 (2024-04-20) |
+| RewardBench | AIAI | [RewardBench](https://github.com/allenai/reward-bench) | 语言模型奖励模型评估基准RewardBench，评估各类模型的优劣势，发现现有模型在推理和遵循指令方面仍存在明显不足，包含[Leaderboard](https://hf.co/spaces/allenai/reward-bench)，[Code](https://github.com/allenai/reward-bench) 和 [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20)|
+| LV-Eval | Infinigence-AI | [LVEval](https://github.com/infinigence/LVEval) | LV-Eval是一个具备5个长度等级（16k、32k、64k、128k和256k）、最大文本测试长度达到256k的长文本评测基准。LV-Eval的平均文本长度达到102,380字，最小/最大文本长度为11,896/387,406字。LV-Eval主要有两类评测任务——单跳QA和多跳QA，共包含11个涵盖中英文的评测数据子集。LV-Eval设计时引入3个关键技术：干扰事实插入（Confusiong Facts Insertion，CFI）提高挑战性，关键词和短语替换（Keyword and Phrase Replacement，KPR）减少信息泄漏，以及基于关键词召回的评测指标（Answer Keywords，AK，指代结合答案关键词和字词黑名单的评价指标）提高评测数值客观性 (2024-02-06)  |
+| LLM-Uncertainty-Bench | Tencent | [LLM-Uncertainty-Bench](https://github.com/smartyfh/LLM-Uncertainty-Bench) | 引入了一种新的LLMs基准测试方法，该方法整合了不确定性量化。基于九个LLMs针对五个代表性的自然语言处理任务试验，发现I) 准确度更高的LLMs可能表现出较低的确定性；II) 规模更大的LLMs可能比规模较小的模型表现出更大的不确定性；III) 指令微调倾向于增加LLMs的不确定性。这些结果强调了在评估LLMs时纳入不确定性的重要性 (2024-01-22)|
+| Psychometrics Eval | 微软亚洲研究院 | [Psychometrics Eval](https://arxiv.org/abs/2310.16379) | 微软亚洲研究院提出了一种基于心理测量学的通用型人工智能评估方法，旨在解决传统评估方法在预测力、信息量和测试工具质量上的局限。该方法借鉴心理测量学的理论，通过识别AI的关键心理构念，设计针对性测验并应用项目反应理论进行精准评分，同时引入信度和效度概念确保评估的可靠性和准确性。这一框架扩展了心理测量学方法，适用于评估AI在处理未知复杂任务时的表现，但同时也面临着如何区分AI的“个体”与“总体”、处理prompts敏感性以及评估人类与AI构念差异等开放性问题 (2023-10-19)  |
+| CommonGen-Eval | allenai |[CommonGen-Eval](https://github.com/allenai/CommonGen-Eval) | 使用CommonGen-lite数据集对LLM进行评估的研究，使用了GPT-4模型进行评估，比较了不同模型的性能，并列出了排行榜上的模型结果 (2024-01-04) |
+| felm | hkust | [felm](https://github.com/hkust-nlp/felm)| | FELM is a meta benchmark to evaluate factuality evaluation for large language models. The benchmark comprises 847 questions that span five distinct domains: world knowledge, science/technology, writing/recommendation, reasoning, and math. We gather prompts corresponding to each domain by various sources including standard datasets like truthfulQA, online platforms like Github repositories, ChatGPT generation or drafted by authors. We then obtain responses from ChatGPT for these prompts. For each response, we employ fine-grained annotation at the segment level, which includes reference links, identified error types, and the reasons behind these errors as provided by our annotators. (2023-10-03) |
+| just-eval | AI2 Mosaic |[just-eval](https://github.com/Re-Align/just-eval)| 基于GPT的评估工具，用于对LLM进行多方面、可解释的评估，可以评估帮助性、清晰度、真实性、深度和参与度等方面 (2023-12-05) |
+| EQ-Bench | EQ-Bench | (EQ-Bench)[https://github.com/EQ-bench/EQ-Bench] | 用于评估语言模型情感智能的基准测试，包含171个问题(相比v1的60个问题)和一种新的评分系统，能更好地区分模型之间的性能差异 (2023-12-20) |
+| CRUXEval | MIT CSAIL | [CRUXEval](https://arxiv.org/abs/2401.03065) | CRUXEval是一个用于代码推理、理解和执行评估的基准，包含800个Python函数及其输入输出对，测试输入预测和输出预测任务。许多在HumanEval上得分高的模型在CRUXEval上表现不佳，突显了改进代码推理能力的需求。最佳模型GPT-4结合了思维链(CoT)，在输入预测和输出预测上的pass@1分别达到了75％和81％。该基准测试暴露了开源和闭源模型之间的差距。GPT-4未能完全通过CRUXEval，提供了对其局限性和改进方向的见解 (2024-01-05)|
 | MLAgentBench | snap-stanford | [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) | MLAgentBench是一套端到端的机器学习（ML）研究任务，用于对AI研究代理进行基准测试，其中代理的目标是根据给定的数据集和机器学习任务描述，自主地开发或改进一个ML模型。每个任务都是一个交互式的环境，直接反映了人类研究者所看到的情况，其中代理可以读取可用的文件，在计算集群上运行多个实验，并分析结果以实现指定的研究目标。具体来说，包括了15个不同的ML工程任务，可以通过尝试不同的机器学习方法、数据处理、架构、训练过程来实现 (2023-10-05) |
 | AlignBench | THUDM | [AlignBench](https://github.com/THUDM/AlignBench) | AlignBench是一个用于评估中文大语言模型对齐性能的全面、多维度的评测基准。AlignBench 构建了人类参与的数据构建流程，来保证评测数据的动态更新。AlignBench 采用多维度、规则校准的模型评价方法（LLM-as-Judge），并且结合思维链（Chain-of-Thought）生成对模型回复的多维度分析和最终的综合评分，增强了评测的高可靠性和可解释性 (2023-12-01)|
 | UltraEval | OpenBMB | [UltraEval](https://github.com/OpenBMB/UltraEval) | UltraEval是一个开源的基础模型能力评测框架，提供了一套轻量级、易于使用的评测体系，支持主流大模型的性能评估。它的主要特色如下：（1）轻量易用的评测框架：具备简洁直观的设计，依赖少，易于部署，具有良好的扩展性，适用多种评测场景。（）2灵活多样的评测方法：提供了统一的prompt模板和丰富的评估指标，同时支持自定义。（3）高效快速的推理部署：支持包括torch和vLLM在内的多种模型部署方案，并实现了多实例部署以加速评测过程。（4）公开透明的开源榜单：维护一个公开的、可追溯和可复现的评测榜单，由社区推动更新，确保透明度。（5）官方权威的评测数据：采用广泛认可的官方评测集，保证评测的公平性和标准化，确保结果具有可比性和复现性  (2023-11-24) |
@@ -105,7 +131,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | TRACE | Fudan University | [TRACE](https://arxiv.org/abs/2310.06762) | TRACE是一个专为评估大型语言模型（LLMs）的持续学习能力而设计的新型基准测试。TRACE包含了8个不同的数据集，涵盖了包括领域特定任务、多语言能力、代码生成和数学推理等在内的挑战性任务 (2023-10-05)  |
 | ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval 是一个项目，提供一个统一评估流程的项目，用于在不同的公共数据集或自己的数据集上评估语言模型，使用传统指标以及来自 GPT（生成式预训练模型）的帮助 |
 | LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
-| Aviary | github.com/ray-project/aviary | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
+| Aviary | ray-project | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
 | Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| "Do not answer" 是一个开源数据集，旨在以低成本评估LLM（大型语言模型）的安全机制。该数据集经过策划和筛选，仅包含那些负责任的语言模型不回答的提示。除了人工标注外，“Do not answer” 还实施了基于模型的评估，其中一个经过6亿次微调的类似BERT的评估器获得了与人类和GPT-4相媲美的结果 |
 | LucyEval | 甲骨文 | [LucyEval](http://lucyeval.besteasy.com/) | 中文大语言模型成熟度评测——LucyEval，能够通过对模型各方面能力的客观测试，找到模型的不足，帮助设计者和工程师更加精准地调整、训练模型，助力大模型不断迈向更智能的未来 |
 | Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | 多维能力覆盖，涵盖了7个能力维度和51个任务；多方面的评估方法协作，综合使用3种不同但互补的评估方法；全面的中文基准测试，同时提供英文评估能力 |
@@ -158,9 +184,14 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 领域 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: | :-- |
-| LawBench | Nanjing University | 法律 | [LawBench](https://github.com/open-compass/lawbench) | LawBench经过精心设计，可对大语言模型的法律能力进行精确评估。 在设计测试任务时，模拟了司法认知的三个维度，并选择了20个任务来评估大模型的能力。与一些仅有多项选择题的现有基准相比，LawBench包含了更多与现实世界应用密切相关的任务类型，如法律实体识别、阅读理解、犯罪金额计算和咨询等。 LawBench认识到当前大模型的安全性策略可能会拒绝回应某些法律询问，或在理解指令方面遇到困难，从而导致缺乏回应。因此，LawBench中开发了一个单独的评估指标 "弃权率"，以衡量模型拒绝提供答案或未能正确理解指令的频率。 研究者评测了51种大语言模型在LawBench上的表现，包括20种多语言模型、22种中文模型和9种法律专用大语言模型 （2023-09-28） |
+|Fin-Eva| 蚂蚁集团、上海财经大学 | 金融 | [Fin-Eva](https://github.com/alipay/financial_evaluation_dataset) | 蚂蚁集团、上海财经大学联合推出金融评测集Fin-Eva Version 1.0，覆盖财富管理、保险、投资研究等多个金融场景以及金融专业主题学科，总评测题数目达到1.3w+。蚂蚁数据源包括各业务领域数据、互联网公开数据，经过数据脱敏、文本聚类、语料精筛、数据改写等处理过程后，结合金融领域专家的评审构建而成。上海财经大学数据源主要基于相关领域权威性考试的各类真题和模拟题对知识大纲的要求。蚂蚁部分涵盖金融认知、金融知识、金融逻辑、内容生成以及安全合规五大类能力33个子维度共8445个测评题； 上财部分涵盖金融，经济，会计和证书等四大领域，包括4661个问题，涵盖34个不同的学科。Fin-Eva Version 1.0 全部采用单选题这类有固定答案的问题，配合相应指令让模型输出标准格式 (2023-12-20) |
+| GenMedicalEval | SJTU | 医疗 |[GenMedicalEval](https://github.com/MediaBrain-SJTU/GenMedicalEval)| 1.**大规模综合性能评测**：GenMedicalEval构建了一个覆盖16大主要科室、3个医生培养阶段、6种医学临床应用场景、基于40，000+道医学考试真题和55，000+三甲医院患者病历构建的总计100,000+例医疗评测数据。这一数据集从医学基础知识、临床应用、安全规范等层面全面评估大模型在真实医疗复杂情境中的整体性能，弥补了现有评测基准未能覆盖医学实践中众多实际挑战的不足。 2.**深入细分的多维度场景评估**：GenMedicalEval融合了医师的临床笔记与医学影像资料，围绕检查、诊断、治疗等关键医疗场景，构建了一系列多样化和主题丰富的生成式评估题目，为现有问答式评测模拟真实临床环境的开放式诊疗流程提供了有力补充。 3.**创新性的开放式评估指标和自动化评估模型**：为解决开放式生成任务缺乏有效评估指标的难题，GenMedicalEval采用先进的结构化抽取和术语对齐技术，构建了一套创新的生成式评估指标体系，这一体系能够精确衡量生成答案的医学知识准确性。进一步地，基于自建知识库训练了与人工评价相关性较高的医疗自动评估模型，提供多维度医疗评分和评价理由。这一模型的特点是无数据泄露和自主可控，相较于GPT-4等其他模型，具有独特优势 (2023-12-08)|
+| DebugBench | 清华大学 | 软开 |[DebugBench](https://github.com/thunlp/DebugBench)| DebugBench是一个包含4,253个实例的LLM调试基准，涵盖了C++、Java和Python中四个主要的漏洞类别和18个次要类别。为构建DebugBench，作者从LeetCode社区收集了代码片段，使用GPT-4向源数据植入漏洞，并确保了严格的质量检查 (2024-01-09) |
+| OpenFinData | 上海人工智能实验室 | 金融 | [OpenFinData](https://opencompass.org.cn) |首个全场景金融测评数据集OpenFinData(基于"OpenCompass"框架)，由上海人工智能实验室发布，包含的六大模块和十九项金融任务维度，覆盖多层次数据类型和多样化金融场景，每一条数据均由实际金融业务场景产生 (2024-01-04)|
+|LAiW| Sichuan University | 法律 |[LAiW](https://github.com/Dai-shen/LAiW)|从法学角度和可实现性上对法律 NLP的能力进行划分，将其分成了3大能力，共计13个基础任务：(1)法律 NLP 基础能力：评测法律基础任务、 NLP 基础任务和法律信息抽取的能力，包括法条推送、要素识别、命名实体识别、司法要点摘要和案件识别 5 个基础任务；(2)法律基础应用能力：评测大模型对法律领域知识的基础应用能力，包括争议焦点挖掘、类案匹配、刑事裁判预测、民事裁判预测和法律问答 5 个基础任务；(3)法律复杂应用能力：评测大模型对法律领域知识的复杂应用能力，包括司法说理生成、案情理解和法律咨询 3 个基础任务 ([2023-10-08)|
+| LawBench | Nanjing University | 法律 | [LawBench](https://github.com/open-compass/lawbench) | LawBench经过精心设计，可对大语言模型的法律能力进行精确评估。 在设计测试任务时，模拟了司法认知的三个维度，并选择了20个任务来评估大模型的能力。与一些仅有多项选择题的现有基准相比，LawBench包含了更多与现实世界应用密切相关的任务类型，如法律实体识别、阅读理解、犯罪金额计算和咨询等。 LawBench认识到当前大模型的安全性策略可能会拒绝回应某些法律询问，或在理解指令方面遇到困难，从而导致缺乏回应。因此，LawBench中开发了一个单独的评估指标 "弃权率"，以衡量模型拒绝提供答案或未能正确理解指令的频率。 研究者评测了51种大语言模型在LawBench上的表现，包括20种多语言模型、22种中文模型和9种法律专用大语言模型 (2023-09-28) |
 | PsyEval | SJTU | 心理 | [PsyEval](https://arxiv.org/abs/2311.09189) | 在心理健康研究中，大型语言模型（LLMs）的使用越来越受到关注，尤其是其疾病检测等显著能力。研究者为心理健康领域量身定制了第一个全面基准，以系统地评估LLMs在这个领域的能力。这个基准包括六个子任务，涵盖了三个维度，以全面评估LLMs在心理健康领域的能力。为每个子任务设计了相应的简洁提示。并全面评估了八个高级LLM （2023-11-15） |
-| PPTC| Microsoft, PKU | 多模态生成 | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 （2023-11-04） |
+| PPTC| Microsoft, PKU | 多模态生成 | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 (2023-11-04) |
 | RGB | IS-CAS | 检索增强生成 | [RGB](https://arxiv.org/abs/2309.01431) | 检索增强生成任务（Retrieval-Augmented Generation，RAG）的评测基准，分析了不同大型语言模型在RAG所需的4种基本能力（噪声稳健性、负面拒绝、信息整合和反事实稳健性）的性能，建立了中英文的“检索增强生成基准”（Retrieval-Augmented Generation Benchmark，RGB），根据所需的基本能力分为4个独立的测试集 (2023-09-04)  |
 | LLMRec | Alibaba | 推荐 | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 (2023-10-08)|
 | LAiW | Dai-shen | 法律 | [LAiW](https://github.com/Dai-shen/LAiW) | 针对法律大型语言模型的快速发展，提出了第一个基于法律能力的中文法律大型语言模型基准。将法律能力划分为基本的法律自然语言处理能力、基本的法律应用能力和复杂的法律应用能力三个层次。完成了第一阶段的评估，主要集中在基本法律自然语言处理能力的能力评估。评估结果显示，尽管一些法律大型语言模型的性能优于其基础模型，但与ChatGPT相比仍存在差距 (2023-10-25)|
@@ -176,6 +207,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| raga-llm-hub | RAGA-AI | [raga-llm-hub](https://github.com/raga-ai-hub/raga-llm-hub) | raga-llm-hub是一个全面的语言和学习模型（LLM）评估工具包。它拥有超过100个精心设计的评价指标，是允许开发者和组织有效评估和比较LLM的最具综合性的平台，并为LLM和检索增强生成（RAG）应用建立基本的防护措施。这些测试评估包括相关性与理解、内容质量、幻觉、安全与偏见、上下文相关性、防护措施以及漏洞扫描等多个方面，同时提供一系列基于指标的测试用于定量分析 (2024-03-10) |
 | ARES | Stanford | [ARES](https://github.com/stanford-futuredata/ARES) | ARES是一个用于检索增强生成系统的自动评估框架，包含三个组件：(1)一组用于评估标准（例如上下文相关性、答案忠实度和/或答案相关性）的已注释查询、文档和答案三元组的人工首选验证集。至少应有50个示例，但最好有几百个示例。(2)一组用于在您的系统中评分上下文相关性、答案忠实度和/或答案相关性的少量示例。(3)由您的RAG系统输出的用于评分的大量未标记查询-文档-答案三元组。ARES培训流程包括三个步骤：(1)从领域内段落生成合成查询和答案。(2)通过在合成生成的训练数据上进行微调，为评分RAG系统准备LLM评委。(3)部署准备好的LLM评委以评估您的RAG系统在关键性能指标上的表现 (2023-09-27) |
 | RGB | CAS | [RGB](https://github.com/chen700564/RGB) | RGB是一个用于英语和中文RAG评估的新语料库/检索增强生成基准（RGB），RGB分析了不同大型语言模型在RAG所需的4种基本能力方面的表现，包括噪声鲁棒性、负面拒绝、信息整合和反事实鲁棒性。RGB将基准中的实例分为4个独立的测试集，基于上述基本能力以解决案例。然后，在RGB中评估了6个代表性的LLMs，以诊断当前LLMs在应用RAG时面临的挑战。评估显示，虽然LLMs表现出一定程度的噪声鲁棒性，但在负面拒绝、信息整合和处理虚假信息方面仍然存在显著困难。上述评估结果表明，在有效应用RAG到LLMs方面仍有相当长的路要走 (2023-09-04) |
 | tvalmetrics | TonicAI | [tvalmetrics](https://github.com/TonicAI/tvalmetrics) | Tonic Validate Metrics中的指标使用LLM辅助评估，这意味着它们使用一个LLM（例如gpt-4）来评分RAG应用的输出的不同方面。Tonic Validate Metrics中的指标使用这些对象和LLM辅助评估来回答有关RAG应用的问题。（1）答案相似度分数： RAG答案与答案应该是多么匹配？（2）检索精度： 检索的上下文是否与问题相关？（3）增强精度： 答案中是否包含与问题相关的检索上下文？（4）增强准确度： 检索上下文在答案中的占比如何？（5）答案一致性（二进制）： 答案是否包含来自检索上下文之外的任何信息？（6）检索k-召回： 对于前k个上下文向量，在检索上下文是前k个上下文向量的子集的情况下，检索上下文是否是回答问题的前k个上下文向量中所有相关上下文？ (2023-11-11) |
@@ -185,22 +217,45 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
-| SuperCLUE-Agent | CLUE | [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) | SuperCLUE-Agent，一个聚焦于Agent能力的多维度基准测试，包括3大核心能力、10大基础任务，可以用于评估大语言模型在核心Agent能力上的表现，包括工具使用、任务规划和长短期记忆能力。经过对16个支持中文的大语言模型的测评发现：在Agent的核心基础能力中文任务上，GPT4模型大幅领先；同时，代表性国内模型，包括开源和闭源模型，已经较为接近GPT3.5水平 （2023-10-20） |
-| AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (202308)|
+| SuperCLUE-Agent | CLUE | [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) | SuperCLUE-Agent，一个聚焦于Agent能力的多维度基准测试，包括3大核心能力、10大基础任务，可以用于评估大语言模型在核心Agent能力上的表现，包括工具使用、任务规划和长短期记忆能力。经过对16个支持中文的大语言模型的测评发现：在Agent的核心基础能力中文任务上，GPT4模型大幅领先；同时，代表性国内模型，包括开源和闭源模型，已经较为接近GPT3.5水平 (2023-10-20) |
+| AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (2023-08-01) |
 | AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
 | ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
+
+
+<br><br>
+### 代码能力
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| HumanEval-XL | FloatAI | [SuperCLUE-Agent](https://github.com/FloatAI/HumanEval-XL) | 现有的基准测试主要集中在将英文提示翻译成多语言代码，或者局限于非常有限的自然语言。这些基准测试忽视了大规模多语言NL到多语言代码生成的广阔领域，留下了评估多语言LLMs的一个重要空白。为了应对这一挑战，作者们提出了HumanEval-XL，这是一个大规模多语言代码生成基准测试，旨在填补这一缺陷。HumanEval-XL在23种自然语言和12种编程语言之间建立了联系，包含22,080个提示，平均每个提示有8.33个测试用例。通过确保跨多种NL和PLs的平行数据，HumanEval-XL为多语言LLMs提供了一个全面的评估平台，允许评估对不同NLs的理解。这项工作是填补多语言代码生成领域NL泛化评估空白的开创性步骤。 (2024-02-26) |
+
 
 <br><br>
 ### 多模态-跨模态
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
-| ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 （2023-10-24） |
+| ChartVLM | Shanghai AI Lab | [ChartVLM](https://github.com/UniModal4Reasoning/ChartVLM) | ChartX是一个多模式评估集，包括18种图表类型、7种图表任务、22个学科主题和高质量的图表数据。此外本文作者还开发了ChartVLM，为处理依赖于可解释模式的多模态任务（比如图表或几何图像领域的推理任务）提供了新视角。 (2024-02-19) |
+| ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 (2023-10-24) |
 | LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
+
+<br><br>
+### LLM推理
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| llm-analysis | Databricks  | [llm-analysis](https://github.com/cli99/llm-analysis) | Latency and Memory Analysis of Transformer Models for Training and Inference. |
+| llm-inference-benchmark | Nankai University | [llm-inference-benchmark](https://github.com/ninehills/llm-inference-benchmark) | LLM Inference framework benchmark. |
+| llm-inference-bench | CentML | [llm-inference-bench](https://github.com/CentML/llm-inference-bench) | This benchmark operates entirely external to any serving framework, and can easily be extended and modified. Provides a variety of statistics and profiling modes. It is intended to be a standalone tool for precise statistically significant benchmarking with a particular input/output distribution. Each request consists of a single prompt and single decode. |
+| GPU-Benchmarks-on-LLM-Inference | UIUC | [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference) | Use llama.cpp to test the LLaMA models inference speed of different GPUs on RunPod, 16-inch M1 Max MacBook Pro, M2 Ultra Mac Studio, 14-inch M3 MacBook Pro and 16-inch M3 Max MacBook Pro. |
 
 <br><br>
 ## Demos
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
+
+![image](https://github.com/onejune2018/Awesome-LLM-Eval/assets/35061855/7c6c2ff4-a189-42c8-a8d4-e4defecebf85)
+
 
 <br><br>
 ## Leaderboards
@@ -315,6 +370,19 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 <br><br>
 ## LLM-List
 
+### Typical LLM details
+
+| 模型         | 参数规模 | 层数 | 自注意力头数 | 嵌入表示维度 | 学习率        | 全局批次大小 | 训练Token数    |
+|--------------|----------|------|------------|--------------|---------------|--------------|----------------|
+| LLaMA2       | 6.7B    | 32   | 32         | 4096        | 3.00E-04     | 400万        | 1.0万亿        |
+| LLaMA2       | 13.0B   | 40   | 40         | 5120        | 3.00E-04     | 400万        | 1.0万亿        |
+| LLaMA2       | 32.5B   | 60   | 52         | 6656        | 1.50E-04     | 400万        | 1.4万亿        |
+| LLaMA2       | 65.2B   | 80   | 64         | 8192        | 1.50E-04     | 400万        | 1.4万亿        |
+| nano-GPT     | 85,584  | 3    | 3          | 768         | 3.00E-04     |              |                |
+| GPT2-small   | 0.12B   | 12   | 12         | 768         | 2.50E-04     |              |                |
+| GPT2-XL      | 1.5B    | 48   | 25         | 1600        | 1.50E-04     |              |                |
+| GPT3         | 175B    | 96   | 96         | 12288       | 1.50E-04     |              | 0.5万亿        |
+
 ### Pre-trained-LLM
 
 |       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
@@ -417,9 +485,9 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [PanGu-α](https://openi.org.cn/pangu/) - PanGu-α is a 200B parameter autoregressive pretrained Chinese language model develped by Huawei Noah's Ark Lab, MindSpore Team and Peng Cheng Laboratory.
 - [MOSS](https://github.com/OpenLMLab/MOSS) - MOSS是一个支持中英双语和多种插件的开源对话语言模型.
 - [Open-Assistant](https://github.com/LAION-AI/Open-Assistant) - a project meant to give everyone access to a great chat based large language model.
-  - [HuggingChat](https://huggingface.co/chat/) - Powered by Open Assistant's latest model – the best open source chat model right now and @huggingface Inference API.
-  - [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) - An open-source, commercially available large-scale language model developed by Baichuan Intelligent Technology following Baichuan-7B, containing 13 billion parameters. (20230715)
-  - - [Qwen](https://github.com/QwenLM/Qwen-7B) - Qwen-7B is the 7B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud. Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. (20230803)
+- [HuggingChat](https://huggingface.co/chat/) - Powered by Open Assistant's latest model – the best open source chat model right now and @huggingface Inference API.
+- [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) - An open-source, commercially available large-scale language model developed by Baichuan Intelligent Technology following Baichuan-7B, containing 13 billion parameters. (20230715)
+- [Qwen](https://github.com/QwenLM/Qwen-7B) - Qwen-7B is the 7B-parameter version of the large language model series, Qwen (abbr. Tongyi Qianwen), proposed by Alibaba Cloud. Qwen-7B is a Transformer-based large language model, which is pretrained on a large volume of data, including web texts, books, codes, etc. (20230803)
 
 <br><br>
 ### Popular-LLM
@@ -604,7 +672,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Xiaorui Wang, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Qi Shen, Guotong Xie},
+  author = {Jun Wang, Changyu Hou, Pengyong Li, Jingjing Gong, Chen Song, Peng Gao, Qi Shen, Guotong Xie, Jing Xiao},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
