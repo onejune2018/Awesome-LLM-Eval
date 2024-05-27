@@ -22,6 +22,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
   - [代码能力](#代码能力)
   - [多模态/跨模态](#多模态-跨模态)
   - [推理速度](#推理速度)
+  - [量化压缩](#量化压缩)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
 - [Papers](#papers)
@@ -242,7 +243,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
 
 <br><br>
-### LLM推理
+### 推理速度
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
@@ -250,6 +251,13 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | llm-inference-benchmark | Nankai University | [llm-inference-benchmark](https://github.com/ninehills/llm-inference-benchmark) | LLM Inference framework benchmark. |
 | llm-inference-bench | CentML | [llm-inference-bench](https://github.com/CentML/llm-inference-bench) | This benchmark operates entirely external to any serving framework, and can easily be extended and modified. Provides a variety of statistics and profiling modes. It is intended to be a standalone tool for precise statistically significant benchmarking with a particular input/output distribution. Each request consists of a single prompt and single decode. |
 | GPU-Benchmarks-on-LLM-Inference | UIUC | [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference) | Use llama.cpp to test the LLaMA models inference speed of different GPUs on RunPod, 16-inch M1 Max MacBook Pro, M2 Ultra Mac Studio, 14-inch M3 MacBook Pro and 16-inch M3 Max MacBook Pro. |
+
+<br><br>
+### 量化压缩
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| LLM-QBench | Beihang/SenseTime | [LLM-QBench](https://github.com/ModelTC/llmc)| LLM-QBench is a Benchmark Towards the Best Practice for Post-training Quantization of Large Language Models", and it is also an efficient LLM compression tool with various advanced compression methods, supporting multiple inference backends. (2024-05-09) |
 
 <br><br>
 ## Demos
