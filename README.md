@@ -233,6 +233,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| McEval | Beihang | [McEval](https://github.com/MCEVAL/McEval) | 为了更加全面的探究大语言模型的代码能力，该工作提出了一个涵盖40种编程语言的大规模多语言多任务代码评测基准（McEval），包含了16000个测试样本。评测结果表明开源模型与GPT-4相比，在多语言的编程能力上仍然存在较大差距，绝大多数开源模型甚至无法超越GPT-3.5。此外测试也表明开源模型中如Codestral，DeepSeek-Coder, CodeQwen以及一些衍生模型也展现出优异的多语言能力. McEval is a massively multilingual code benchmark covering 40 programming languages with 16K test samples, which substantially pushes the limits of code LLMs in multilingual scenarios. The benchmark contains challenging code completion, understanding, and generation evaluation tasks with finely curated massively multilingual instruction corpora McEval-Instruct. McEval leaderboard can be found [here](https://mceval.github.io/). (2024-06-11) |
 | HumanEval-XL | FloatAI | [SuperCLUE-Agent](https://github.com/FloatAI/HumanEval-XL) | 现有的基准测试主要集中在将英文提示翻译成多语言代码，或者局限于非常有限的自然语言。这些基准测试忽视了大规模多语言NL到多语言代码生成的广阔领域，留下了评估多语言LLMs的一个重要空白。为了应对这一挑战，作者们提出了HumanEval-XL，这是一个大规模多语言代码生成基准测试，旨在填补这一缺陷。HumanEval-XL在23种自然语言和12种编程语言之间建立了联系，包含22,080个提示，平均每个提示有8.33个测试用例。通过确保跨多种NL和PLs的平行数据，HumanEval-XL为多语言LLMs提供了一个全面的评估平台，允许评估对不同NLs的理解。这项工作是填补多语言代码生成领域NL泛化评估空白的开创性步骤。 (2024-02-26) |
 
 
