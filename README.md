@@ -21,6 +21,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
   - [Agent能力](#Agent能力)
   - [代码能力](#代码能力)
   - [多模态/跨模态](#多模态-跨模态)
+  - [长上下文](#长上下文)
   - [推理速度](#推理速度)
   - [量化压缩](#量化压缩)
 - [Demos](#Demos)
@@ -245,6 +246,13 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | ChartVLM | Shanghai AI Lab | [ChartVLM](https://github.com/UniModal4Reasoning/ChartVLM) | ChartX是一个多模式评估集，包括18种图表类型、7种图表任务、22个学科主题和高质量的图表数据。此外本文作者还开发了ChartVLM，为处理依赖于可解释模式的多模态任务（比如图表或几何图像领域的推理任务）提供了新视角。 (2024-02-19) |
 | ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 (2023-10-24) |
 | LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
+
+<br><br>
+### 长上下文
+
+| 名称 | 机构 | 网址 | 简介 |
+| :--: | :--: | :--: | :-- |
+| InfiniteBench | OpenBMB | [InfiniteBench](https://github.com/OpenBMB/InfiniteBench) |理解、处理长文本，是大模型迈向更深层次理解与交互阶段必备的能力。现已有大模型声称可以处理100k+的长序列，但是对应的标准评测集却是空缺的。InfiniteBench构建了一个面向 100k+ 的评测集，该评测集针对大模型在长文本方面的五项能力而设计：检索、数学、代码、问答、和摘要。(1)长上下文: InfiniteBench 测试数据的平均上下文长度为195k，远超现有评测数据。(2)多领域多语言: InfiniteBench 评测集包含12个任务，包括中英双语，涵盖了检索、数学、代码、问答、和摘要等5个领域。(3)前瞻性挑战性: InfiniteBench 测试任务，对标当前最强的模型如 GPT-4, Claude 2 等。(4)真实场景与合成场景: InfiniteBench 既包含真实场景数据，探测大模型在处理实际问题的能力；也包含合成数据，为测试数据拓展上下文窗口提供了便捷 (2024-03-19) |
 
 <br><br>
 ### 推理速度
