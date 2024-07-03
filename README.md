@@ -111,6 +111,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :-- |
+| MMLU-Pro | TIGER-AI-Lab | [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) | MMLU-Pro 是 MMLU 数据集的改进版本。MMLU 一直是多选知识数据集的参考。然而，最近的研究表明它既包含噪音（一些问题无法回答），又太容易（通过模型能力的进化和污染的增加）。MMLU-Pro 向模型提供十个选择而不是四个，要求在更多问题上进行推理，并经过专家审查以减少噪音量。它比原版质量更高且更难. MMLU-Pro减少了提示变化对模型性能的影响，这是其前身MMLU常见的问题。研究发现，在这个新基准上使用“Chain of Thought”推理的模型表现更好，这表明MMLU-Pro更适合评估人工智能的微妙推理能力. (2024-05-20) |
 | TrustLLM Benchmark | TrustLLM | [TrustLLM](https://trustllmbenchmark.github.io/TrustLLM-Website/) | TrustLLM是一个针对大语言模型可信赖的评估基准，该基准测试涵盖了6个可信赖维度，包含了30+的数据集，以全面评估LLMs的功能能力，范围从简单分类到复杂的生成任务。每个数据集都提出了独特的挑战，并在可信度的多个维度上对16个主流的大语言模型（包括商业模型和开源模型）进行了基准测试。|
 | DyVal | Microsoft | [DyVal](https://github.com/microsoft/promptbench) | 人们对于其庞大的训练语料库中潜在的数据污染问题表示担忧。此外，当前基准测试的静态性质和固定复杂度可能无法充分衡量LLMs不断进步的能力。DyVal，这是一种用于动态评估LLMs的通用且灵活的协议。基于图的DyVal，利用有向无环图的结构优势动态生成具有可控复杂度的评估样本。DyVal在包括数学、逻辑推理和算法问题在内的推理任务上生成了具有挑战性的评估集。评估了从Flan-T5-large到GPT-3.5-Turbo和GPT-4的各种LLMs。实验表明，LLMs在DyVal生成的不同复杂度的评估样本中表现更差，突显了动态评估的重要性。作者还分析了不同提示方法的失败案例和结果。此外，DyVal生成的样本不仅是评估集，而且有助于微调，以提高LLMs在现有基准测试上的性能 (2024-04-20) |
 | RewardBench | AIAI | [RewardBench](https://github.com/allenai/reward-bench) | 语言模型奖励模型评估基准RewardBench，评估各类模型的优劣势，发现现有模型在推理和遵循指令方面仍存在明显不足，包含[Leaderboard](https://hf.co/spaces/allenai/reward-bench)，[Code](https://github.com/allenai/reward-bench) 和 [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20)|
