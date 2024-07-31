@@ -459,7 +459,7 @@ If our project is helpful to you, please cite our project.
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Changyu Hou, Pengyong Li},
+  author = {Jun Wang, Pengyong Li, Xuebin Qin, Junchi Yan},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
