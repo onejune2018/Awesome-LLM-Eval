@@ -290,27 +290,33 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
 | Big Code Models Leaderboard            | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)]           |
 | Chatbot Arena                          | [[Source](https://chat.lmsys.org/)]                                                    |
+| Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
+| CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
 | C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
+| FELM                                   | [[Source](https://hkust-nlp.github.io/felm)]                                           |
 | FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
 | Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
+| InfiBench                              | [[Source](https://infi-coder.github.io/infibench)]                                     |
 | InstructEval                           | [[Source](https://github.com/declare-lab/instruct-eval)]                               |
 | InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
-| LAiW                                   | [[Source](https://huggingface.co/spaces/daishen/LAiW)]                                 |
-| LLMonitor                              | [[Source](https://benchmarks.llmonitor.com/)]                                          |
+| LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
+| LLMEval                                | [[Source](http://llmeval.com/index)]                                                   |
 | LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
 | MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
+| MathEval                               | [[Source](https://matheval.ai/)]                                                       |
 | OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
 | OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
-| OpenKG LLM                             | [[Source](https://huggingface.co/spaces/openkg/llm_leaderboard)]                       |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
 | SafetyBench                            | [[Source](https://llmbench.ai/safety)]                                                 |
 | SEED-Bench                             | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)]             |
+| SuperBench                             | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)]                     |
 | SuperCLUE                              | [[Source](https://www.superclueai.com/)]                                               |
 | SuperGLUE                              | [[Source](https://super.gluebenchmark.com/)]                                           |
+| SuperLim                               | [[Source](https://lab.kb.se/leaderboard/results)]                                      |
 | TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
