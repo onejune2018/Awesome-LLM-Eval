@@ -288,6 +288,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | AgentBench                             | [[Source](https://llmbench.ai/agent)]                                                  |
 | AlpacaEval                             | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]                                   |
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
+| BeHonest                               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)]                           |
 | Big Code Models Leaderboard            | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)]           |
 | Chatbot Arena                          | [[Source](https://chat.lmsys.org/)]                                                    |
 | Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
@@ -307,7 +308,9 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
 | LLMEval                                | [[Source](http://llmeval.com/index)]                                                   |
 | LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
+| M3CoT                                  | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)]            |
 | MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
+| MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
 | MathEval                               | [[Source](https://matheval.ai/)]                                                       |
 | OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
 | OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
@@ -315,6 +318,8 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
 | PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
 | SafetyBench                            | [[Source](https://llmbench.ai/safety)]                                                 |
+| SciBench                               | [[Source](https://scibench-ucla.github.io/#leaderboard)]                               |
+| SciKnowEval                            | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]                                   |
 | SEED-Bench                             | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)]             |
 | SuperBench                             | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)]                     |
 | SuperCLUE                              | [[Source](https://www.superclueai.com/)]                                               |
@@ -325,6 +330,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
+| We-Math                                | [[Source](https://promptpg.github.io/leaderboard.html)]                                |
 
 <br><br>
 
