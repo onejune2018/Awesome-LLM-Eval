@@ -294,6 +294,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
 | CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
 | C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
+| DreamBench++                           | [[Source](https://dreambenchplus.github.io/#leaderboard)]                              |
 | FELM                                   | [[Source](https://hkust-nlp.github.io/felm)]                                           |
 | FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
@@ -308,15 +309,19 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
 | MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
 | MathEval                               | [[Source](https://matheval.ai/)]                                                       |
+| OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
 | OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
 | OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
+| PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
 | SafetyBench                            | [[Source](https://llmbench.ai/safety)]                                                 |
 | SEED-Bench                             | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)]             |
 | SuperBench                             | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)]                     |
 | SuperCLUE                              | [[Source](https://www.superclueai.com/)]                                               |
 | SuperGLUE                              | [[Source](https://super.gluebenchmark.com/)]                                           |
 | SuperLim                               | [[Source](https://lab.kb.se/leaderboard/results)]                                      |
+| TAT-DQA                                | [[Source](https://nextplusplus.github.io/TAT-DQA)]                                     |
+| TAT-QA                                 | [[Source](https://nextplusplus.github.io/TAT-QA)]                                      |
 | TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
