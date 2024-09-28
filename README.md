@@ -290,7 +290,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
 | BeHonest                               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)]                           |
 | Big Code Models Leaderboard            | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)]           |
-| Chatbot Arena                          | [[Source](https://chat.lmsys.org/)]                                                    |
+| Chatbot Arena                          | [[Source](https://lmarena.ai/?leaderboard)]                                            |
 | Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
 | CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
@@ -300,20 +300,19 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
-| Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
+| Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)]    |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
 | InfiBench                              | [[Source](https://infi-coder.github.io/infibench)]                                     |
-| InstructEval                           | [[Source](https://github.com/declare-lab/instruct-eval)]                               |
 | InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
 | LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
-| LLMEval                                | [[Source](http://llmeval.com/index)]                                                   |
+| LLMEval                                | [[Source](http://llmeval.com)]                                                         |
 | LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
 | M3CoT                                  | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)]            |
-| MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
+| MMLU by Task Leaderboard               | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
 | MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
 | MathEval                               | [[Source](https://matheval.ai/)]                                                       |
 | OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
-| OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
+| OpenCompass                            | [[Source](https://rank.opencompass.org.cn/)]                                           |
 | OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
 | PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
