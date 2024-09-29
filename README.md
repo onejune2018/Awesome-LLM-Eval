@@ -330,6 +330,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
 | We-Math                                | [[Source](https://promptpg.github.io/leaderboard.html)]                                |
+| WHOOPS!                                | [[Source](https://whoops-benchmark.github.io)]                                |
 
 <br><br>
 
