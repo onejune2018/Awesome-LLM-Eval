@@ -329,8 +329,8 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
-| We-Math                                | [[Source](https://promptpg.github.io/leaderboard.html)]                                |
-| WHOOPS!                                | [[Source](https://whoops-benchmark.github.io)]                                |
+| We-Math                                | [[Source](https://we-math.github.io/#leaderboard)]                                     |
+| WHOOPS!                                | [[Source](https://whoops-benchmark.github.io)]                                         |
 
 <br><br>
 
