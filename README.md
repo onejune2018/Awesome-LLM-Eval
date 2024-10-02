@@ -293,6 +293,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | Chatbot Arena                          | [[Source](https://lmarena.ai/?leaderboard)]                                            |
 | Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
+| CompassRank                            | [[Source](https://rank.opencompass.org.cn/)]                                           |
 | CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
 | C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
 | DreamBench++                           | [[Source](https://dreambenchplus.github.io/#leaderboard)]                              |
@@ -312,7 +313,6 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
 | MathEval                               | [[Source](https://matheval.ai/)]                                                       |
 | OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
-| OpenCompass                            | [[Source](https://rank.opencompass.org.cn/)]                                           |
 | OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
 | PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
