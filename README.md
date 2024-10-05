@@ -285,6 +285,7 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | Platform                               | Access                                                                                 |
 | :------------------------------------: | ---------------------------------------------------------------------------------------|
+| ACLUE                                  | [[Source](https://github.com/isen-zhang/ACLUE)                                         |
 | AgentBench                             | [[Source](https://llmbench.ai/agent)]                                                  |
 | AlpacaEval                             | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]                                   |
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
