@@ -304,11 +304,14 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
 | Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)]    |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
+| Indico LLM Leaderboard                 | [[Source](https://indicodata.ai/llm)                                                   |
 | InfiBench                              | [[Source](https://infi-coder.github.io/infibench)]                                     |
 | InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
 | LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
-| LLMEval                                | [[Source](http://llmeval.com)]                                                         |
-| LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
+| LLMEval                                | [[Source](https://openrouter.ai/rankings)]                                             |
+| LLM Rankings                           | [[Source](http://llmeval.com)]                                                         |
+| LLM Use Case Leaderboard               | [[Source](https://llmleaderboard.goml.io)]                                             |
+| LucyEval                               | [[Source](https://openrouter.ai/rankings)]                                             |
 | M3CoT                                  | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)]            |
 | MMLU by Task Leaderboard               | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
 | MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
