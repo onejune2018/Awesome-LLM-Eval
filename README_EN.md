@@ -459,7 +459,7 @@ If our project is helpful to you, please cite our project.
 
 ```
 @misc{junwang2023,
-  author = {Jun Wang, Pengyong Li, Xuebin Qin, Junchi Yan},
+  author = {Jun Wang, Pengyong Li, Liwei Liu, Xuebin Qin, Junchi Yan},
   title = {Awesome-LLM-Eval: a curated list of tools, benchmarks, demos, papers for Large Language Models Evaluation},
   year = {2023},
   publisher = {GitHub},
@@ -469,7 +469,7 @@ If our project is helpful to you, please cite our project.
 ```
 
 Author's bio:
-- Intro: Responsible for AI Platform Algorithm R&D at PA, former work at IBM, PKU, CAS, ETH
+- Intro: Working experience at CMCC, PA, IBM, PKU, CAS, ETH
 - Research: Graph/CV, DL, LLM, Remote Sensing, etc. Co-first author of the Large Graph Model ([MPG](https://github.com/onejune2018/MPG/tree/main)) for Drug Discovery
 - Honors: First place in several international competitions such as SemEval2022, MIT AI-Cure, VQA2021, TREC2021, and EAD2019
 - Homepage: https://onejune2018.github.io/homepage/
