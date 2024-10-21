@@ -285,35 +285,57 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 | Platform                               | Access                                                                                 |
 | :------------------------------------: | ---------------------------------------------------------------------------------------|
+| ACLUE                                  | [[Source](https://github.com/isen-zhang/ACLUE)                                         |
 | AgentBench                             | [[Source](https://llmbench.ai/agent)]                                                  |
 | AlpacaEval                             | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]                                   |
 | ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
+| BeHonest                               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)]                           |
 | Big Code Models Leaderboard            | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)]           |
-| Chatbot Arena                          | [[Source](https://chat.lmsys.org/)]                                                    |
+| Chatbot Arena                          | [[Source](https://lmarena.ai/?leaderboard)]                                            |
+| Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
 | CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
+| CompassRank                            | [[Source](https://rank.opencompass.org.cn/)]                                           |
+| CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
 | C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
+| DreamBench++                           | [[Source](https://dreambenchplus.github.io/#leaderboard)]                              |
+| FELM                                   | [[Source](https://hkust-nlp.github.io/felm)]                                           |
 | FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
 | Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
 | HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
-| Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)]           |
+| Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)]    |
 | Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
-| InstructEval                           | [[Source](https://github.com/declare-lab/instruct-eval)]                               |
+| Indico LLM Leaderboard                 | [[Source](https://indicodata.ai/llm)                                                   |
+| InfiBench                              | [[Source](https://infi-coder.github.io/infibench)]                                     |
 | InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
-| LAiW                                   | [[Source](https://huggingface.co/spaces/daishen/LAiW)]                                 |
-| LLMonitor                              | [[Source](https://benchmarks.llmonitor.com/)]                                          |
-| LucyEval                               | [[Source](http://cgeval.besteasy.com/)]                                                |
-| MMLU                                   | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
-| OpenCompass                            | [[Source](https://opencompass.org.cn/)]                                                |
+| LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
+| LLMEval                                | [[Source](https://openrouter.ai/rankings)]                                             |
+| LLM Rankings                           | [[Source](http://llmeval.com)]                                                         |
+| LLM Use Case Leaderboard               | [[Source](https://llmleaderboard.goml.io)]                                             |
+| LucyEval                               | [[Source](https://openrouter.ai/rankings)]                                             |
+| M3CoT                                  | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)]            |
+| MMLU by Task Leaderboard               | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
+| MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
+| MathEval                               | [[Source](https://matheval.ai/)]                                                       |
+| OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
 | OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
-| OpenKG LLM                             | [[Source](https://huggingface.co/spaces/openkg/llm_leaderboard)]                       |
 | Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
+| PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
 | SafetyBench                            | [[Source](https://llmbench.ai/safety)]                                                 |
+| SciBench                               | [[Source](https://scibench-ucla.github.io/#leaderboard)]                               |
+| SciKnowEval                            | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]                                   |
 | SEED-Bench                             | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)]             |
+| SuperBench                             | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)]                     |
 | SuperCLUE                              | [[Source](https://www.superclueai.com/)]                                               |
 | SuperGLUE                              | [[Source](https://super.gluebenchmark.com/)]                                           |
+| SuperLim                               | [[Source](https://lab.kb.se/leaderboard/results)]                                      |
+| TAT-DQA                                | [[Source](https://nextplusplus.github.io/TAT-DQA)]                                     |
+| TAT-QA                                 | [[Source](https://nextplusplus.github.io/TAT-QA)]                                      |
 | TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
 | Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
 | Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
+| VisualWebArena                         | [[Source](https://jykoh.com/vwa)]                                                      |
+| We-Math                                | [[Source](https://we-math.github.io/#leaderboard)]                                     |
+| WHOOPS!                                | [[Source](https://whoops-benchmark.github.io)]                                         |
 
 <br><br>
 
