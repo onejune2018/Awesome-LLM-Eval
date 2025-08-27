@@ -74,6 +74,159 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 - [2023/04/26] We released the V0.1 Eval list with multiple benchmarks, etc.
 
 <br><br>
+
+## 拟人化评测体系
+<br><br>
+### 智商(IQ)-General Intelligence evaluation benchmarks
+
+| Name                  | Year | Task Type              | Institution         | Evaluation Focus                              | Datasets       | Url                                                          |
+| --------------------- | ---- | ---------------------- | ------------------- | --------------------------------------------- | -------------- | ------------------------------------------------------------ |
+| MMLU-Pro              | 2024 | Multi-Choice Knowledge | TIGER-AI-Lab        | Subtle Reasoning, Fewer Noise                 | MMLU-Pro       | [link](https://github.com/TIGER-AI-Lab/MMLU-Pro )            |
+| DyVal                 | 2024 | Dynamic Evaluation     | Microsoft           | Data Pollution, Complexity Control            | DyVal          | [link](https://github.com/microsoft/promptbench )            |
+| PertEval              | 2024 | General                | USTC                | Knowledge capacity                            | PertEval       | [link](https://github.com/aigc-apps/PertEval )               |
+| LV-Eval               | 2024 | Long Text QA           | Infinigence-AI      | Length Variability, Factuality                | 11 Subsets     | [link](https://github.com/infinigence/LVEval )               |
+| LLM-Uncertainty-Bench | 2024 | NLP Tasks              | Tencent             | Uncertainty Quantification                    | 5 NLP Tasks    | [link](https://github.com/smartyfh/LLM-Uncertainty-Bench )   |
+| CommonGen-Eval        | 2024 | Generation             | AI2                 | Common Sense                                  | CommonGen-lite | [link](https://github.com/allenai/CommonGen-Eval )           |
+| MathBench             | 2024 | Math                   | Shanghai AI Lab     | Theoretical and practical problem-solving     | Various        | [link](https://github.com/open-compass/MathBench )           |
+| AIME                  | 2024 | Math                   | MAA                 | American Invitational Mathematics Examination | Various        | [link](https://www.kaggle.com/datasets/hemishveeraboina/aime-problem-set-1983-2024 ) |
+| FrontierMath          | 2024 | Math                   | Epoch AI            | Original, challenging mathematics problems    | Various        | [link](https://epochai.org/files/sample_question_transcripts.zip ) |
+| FELM                  | 2023 | Factuality             | HKUST               | Factuality                                    | 847 Questions  | [link](https://github.com/hkust-nlp/felm )                   |
+| Just-Eval-Instruct    | 2023 | General                | AI2 Mosaic          | Helpfulness, Explainability                   | Various        | [link](https://github.com/Re-Align/just-eval )               |
+| MLAgentBench          | 2023 | ML Research            | snap-stanford       | End-to-End ML Tasks                           | 15 Tasks       | [link](https://github.com/snap-stanford/MLAgentBench )       |
+| UltraEval             | 2023 | General                | OpenBMB             | Lightweight, Flexible, Fast                   | Various        | [link](https://github.com/OpenBMB/UltraEval )                |
+| FMTI                  | 2023 | Transparency           | Stanford            | Model Transparency                            | 100 Metrics    | [link](https://crfm.stanford.edu/fmti/ )                     |
+| BAMBOO                | 2023 | Long Text              | RUCAIBox            | Long Text Modeling                            | 10 Datasets    | [link](https://github.com/RUCAIBox/BAMBOO )                  |
+| TRACE                 | 2023 | Continuous Learning    | Fudan University    | Continuous Learning                           | 8 Datasets     | [link](https://arxiv.org/abs/2310.06762 )                    |
+| ColossalEval          | 2023 | General                | Colossal-AI         | Unified Evaluation                            | Various        | [link](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval ) |
+| LLMEval²              | 2023 | General                | AlibabaResearch     | Wide and Deep Evaluation                      | 2,553 Samples  | [link](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep ) |
+| BigBench              | 2023 | General                | Google              | knowledge, language, reasoning                | Various        | [link](https://github.com/google/BIG-bench )                 |
+| LucyEval              | 2023 | General                | Oracle              | Maturity Assessment                           | Various        | [link](http://lucyeval.besteasy.com/ )                       |
+| Zhujiu                | 2023 | General                | IACAS               | Comprehensive Evaluation                      | 51 Tasks       | [link](http://www.zhujiu-benchmark.com )                     |
+| ChatEval              | 2023 | Chat                   | THU-NLP             | Human-like Evaluation                         | Various        | [link](https://github.com/thunlp/ChatEval )                  |
+| FlagEval              | 2023 | General                | THU                 | Subjective and Objective Scoring              | Various        | [link](https://flageval.baai.ac.cn/ )                        |
+| AlpacaEval            | 2023 | General                | tatsu-lab           | Automatic Evaluation                          | Various        | [link](https://tatsu-lab.github.io/alpaca_eval/ )            |
+| GPQA                  | 2023 | General                | NYU                 | Graduate-Level Google-Proof QA                | Various        | [link](https://github.com/idavidrein/gpqa )                  |
+| MuSR                  | 2023 | Reasoning              | Zayne Sprague       | Narrative-Based Reasoning                     | 756            | [link](https://github.com/Zayne-sprague/MuSR )               |
+| FreshQA               | 2023 | Knowledge              | FreshLLMs           | Current World Knowledge                       | 599            | [link](https://github.com/freshllms/freshqa )                |
+| AGIEval               | 2023 | General                | Microsoft           | Human-Centric Reasoning                       | NA             | [link](https://github.com/ruixiangcui/AGIEval )              |
+| SummEdits             | 2023 | General                | Salesforce          | Inconsistency Detection                       | 6,348          | [link](https://github.com/salesforce/factualNLG )            |
+| ScienceQA             | 2022 | Reasoning              | UCLA                | Science Reasoning                             | 21,208         | [link](https://github.com/lupantech/ScienceQA )              |
+| e-CARE                | 2022 | Reasoning              | HIT                 | Explainable Causality                         | 21,000         | [link](https://github.com/Waste-Wood/e-CARE )                |
+| BigBench Hard         | 2022 | Reasoning              | BigBench            | Challenging Subtasks                          | 6,500          | [link](https://github.com/suzgunmirac/BIG-Bench-Hard )       |
+| PlanBench             | 2022 | Reasoning              | ASU                 | Action Planning                               | 11,113         | [link](https://github.com/karthikv792/LLMs-Planning )        |
+| MGSM                  | 2022 | Math                   | Google              | Grade-school math problems in 10 languages    | Various        | [link](https://github.com/google-research/url-nlp/tree/main/mgsm ) |
+| MATH                  | 2021 | Math                   | UC Berkeley         | Mathematical Problem Solving                  | Various        | [link](https://github.com/hendrycks/math/ )                  |
+| GSM8K                 | 2021 | Math                   | OpenAI              | Diverse grade school math word problems       | Various        | [link](https://github.com/openai/grade-school-math )         |
+| SVAMP                 | 2021 | Math                   | Microsoft           | Arithmetic Reasoning                          | 1,000          | [link](https://github.com/arkilpatel/SVAMP )                 |
+| SpartQA               | 2021 | Reasoning              | MSU                 | Textual Spatial QA                            | 510            | [link](https://github.com/HLR/SpartQA-baselines )            |
+| MLSUM                 | 2020 | General                | Thomas Scialom      | News Summarization                            | 535,062        | [link](https://github.com/ThomasScialom/MLSUM )              |
+| Natural Questions     | 2019 | Language, Reasoning    | Google              | Search-Based QA                               | 300,000        | [link](https://github.com/google-research-datasets/natural-questions ) |
+| ANLI                  | 2019 | Language, Reasoning    | Facebook AI         | Adversarial Reasoning                         | 169,265        | [link](https://github.com/facebookresearch/anli )            |
+| BoolQ                 | 2019 | Language, Reasoning    | Google              | Binary QA                                     | 16,000         | [link](https://github.com/google-research-datasets/boolean-questions ) |
+| SuperGLUE             | 2019 | Language, Reasoning    | NYU                 | Advanced GLUE Tasks                           | NA             | [link](https://github.com/nyu-mll/jiant )                    |
+| DROP                  | 2019 | Language, Reasoning    | UCI NLP             | Paragraph-Level Reasoning                     | 96,000         | [link](https://github.com/EleutherAI/lm-evaluation-harness ) |
+| HellaSwag             | 2019 | Language, Reasoning    | AI2                 | Commonsense Inference                         | 59,950         | [link](https://github.com/rowanz/hellaswag )                 |
+| Winogrande            | 2019 | Language, Reasoning    | AI2                 | Pronoun Disambiguation                        | 44,000         | [link](https://github.com/allenai/winogrande )               |
+| PIQA                  | 2019 | Language, Reasoning    | AI2                 | Physical Interaction QA                       | 18,000         | [link](https://github.com/ybisk/ybisk.github.io/tree/master/piqa ) |
+| HotpotQA              | 2018 | Language, Reasoning    | HotpotQA            | Explainable QA                                | 113,000        | [link](https://github.com/hotpotqa/hotpot )                  |
+| GLUE                  | 2018 | Language, Reasoning    | NYU                 | Foundational NLU Tasks                        | NA             | [link](https://github.com/nyu-mll/GLUE-baselines )           |
+| OpenBookQA            | 2018 | Language, Reasoning    | AI2                 | Open Book Exams                               | 12,000         | [link](https://github.com/allenai/OpenBookQA )               |
+| SQuAD2.0              | 2018 | Language, Reasoning    | Stanford University | Unanswerable Questions                        | 150,000        | [link](https://rajpurkar.github.io/SQuAD-explorer/ )         |
+| ARC                   | 2018 | Language, Reasoning    | AI2                 | AI2 Reasoning Challenge                       | 7,787          | [link](https://github.com/allenai/aristo-leaderboard )       |
+| SWAG                  | 2018 | Language, Reasoning    | AI2                 | Adversarial Commonsense                       | 113,000        | [link](https://github.com/rowanz/swagaf )                    |
+| CommonsenseQA         | 2018 | Language, Reasoning    | AI2                 | Commonsense Reasoning                         | 12,102         | [link](https://github.com/jonathanherzig/commonsenseqa )     |
+| RACE                  | 2017 | Language, Reasoning    | CMU                 | Exam-Style QA                                 | 100,000        | [link](https://www.cs.cmu.edu/~glai1/data/race/ )            |
+| SciQ                  | 2017 | Language, Reasoning    | AI2                 | Crowd-Sourced Science                         | 13,700         | [link](https://huggingface.co/datasets/allenai/sciq )        |
+| TriviaQA              | 2017 | Language, Reasoning    | AI2                 | Distant Supervision                           | 650,000        | [link](https://github.com/mandarjoshi90/triviaqa )           |
+| MultiNLI              | 2017 | Language, Reasoning    | NYU                 | Cross-Genre Entailment                        | 433,000        | [link](https://github.com/nyu-mll/multiNLI )                 |
+| SQuAD                 | 2016 | Language, Reasoning    | Stanford University | Wikipedia-Based QA                            | 100,000        | [link](https://rajpurkar.github.io/SQuAD-explorer/ )         |
+| LAMBADA               | 2016 | Language, Reasoning    | CIMEC               | Discourse Context                             | 12,684         | [link](https://huggingface.co/datasets/cimec/lambada )       |
+| MS MARCO              | 2016 | Language, Reasoning    | Microsoft           | Search-Based QA                               | 1,112,939      | [link](https://microsoft.github.io/msmarco/ )                |
+
+<br><br>
+
+### 专业商 (PQ)-Professional Expertise evaluation benchmarks
+
+| Domain     | Name                  | Institution              | Scope of Tasks                                         | Unique Contributions                                         | Url                                                          |
+| ---------- | --------------------- | ------------------------ | ------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+|            | BLURB                 | Mindrank AI              | Six diverse NLP tasks, thirteen datasets               | A macro-average score across all tasks                       | [link](https://microsoft.github.io/BLURB/index.html )        |
+|            | Seismometer           | Epic                     | Using local data and workflows                         | patient demographics, clinical interventions, and outcomes   | [link](https://github.com/epic-open-source/seismometer )     |
+| Healthcare | Medbench              | OpenMEDLab               | Emphasizes scientific rigor and fairness               | 40,041 questions from medical exams and reports              | [link](https://github.com/open-compass/opencompass/tree/main/opencompass/datasets/medbench/ ) |
+|            | GenMedicalEval        | E                        | 16 majors, 3 training stages, 6 clinical scenarios     | Open-ended metrics and automated assessment models           | [link](https://github.com/MediaBrain-SJTU/GenMedicalEval )   |
+|            | PsyEval               | SJTU                     | Six subtasks covering three dimensions                 | Customized benchmark for mental health LLMs                  | [link](https://arxiv.org/abs/2311.09189 )                    |
+|            | Fin-Eva               | Ant Group                | Wealth management, insurance, investment research      | Both industrial and academic financial evaluations           | [link](https://github.com/alipay/financial_evaluation_dataset ) |
+| Finance    | FinEval               | SUFE-AIFLM-Lab           | Multiple-choice QA on finance, economics, accounting   | Focuses on high-quality evaluation questions                 | [link](https://github.com/SUFE-AIFLM-Lab/FinEval )           |
+|            | OpenFinData           | Shanghai AI Lab          | Multi-scenario financial tasks                         | First comprehensive finance evaluation dataset               | [link](https://opencompass.org.cn )                          |
+|            | FinBen                | FinAI                    | 35 datasets across 23 financial tasks                  | Inductive reasoning, quantitative reasoning                  | [link](https://github.com/The-FinAI/PIXIU )                  |
+|            | LAiW                  | Sichuan University       | 13 fundamental legal NLP tasks                         | Divides legal NLP capabilities into three major abilities    | [link](https://github.com/Dai-shen/LAiW )                    |
+| Legal      | LawBench              | Nanjing University       | Legal entity recognition, reading comprehension        | Real-world tasks, "abstention rate" metric                   | [link](https://github.com/open-compass/lawbench )            |
+|            | LegalBench            | Stanford University      | 162 tasks covering six types of legal reasoning        | Enables interdisciplinary conversations                      | [link](https://github.com/HazyResearch/legalbench/ )         |
+|            | LexEval               | Tsinghua University      | Legal cognitive abilities to organize different tasks  | Larger legal evaluation dataset, examining the ethical issues | [link](https://github.com/CSHaitao/LexEval )                 |
+|            | SPEC5G                | Purdue University        | Security-related text classification and summarization | 5G protocol analysis automation                              | [link](https://github.com/Imtiazkarimik23/SPEC5G )           |
+| Telecom    | TeleQnA               | Huawei(Paris)            | General telecom inquiries                              | Proficiency in telecom-related questions                     | [link](https://github.com/netop-team/TeleQnA )               |
+|            | OpsEval               | Tsinghua University      | Wired network ops, 5G, database ops                    | Focus on AIOps, evaluates proficiency                        | [link](https://arxiv.org/abs/2310.07637 )                    |
+|            | TelBench              | SK Telecom               | Math modeling, open-ended QA, code generation          | Holistic evaluation in telecom                               | [link](https://arxiv.org/abs/2407.09424v1 )                  |
+|            | TelecomGPT            | UAE                      | Telecom Math Modeling, Open QnA and Code Tasks         | Holistic evaluation in telecom                               | [link](https://arxiv.org/abs/2407.09424v1 )                  |
+|            | Linguistic            | Queen's University       | Multiple language-centric tasks                        | zero-shot evaluation                                         | [link](https://arxiv.org/abs/2402.15818 )                    |
+|            | TelcoLM               | Orange                   | Multiple-choice questionnaires                         | Domain-specific data (800M tokens, 80K instructions)         | [link](https://arxiv.org/abs/2412.15891 )                    |
+|            | ORAN-Bench-13K        | GMU                      | Multiple-choice questions                              | Open Radio Access Networks (O-RAN)                           | [link](https://github.com/prnshv/ORAN-Bench-13K )            |
+|            | Open-Telco Benchmarks | GSMA                     | Multiple language-centric tasks                        | zero-shot evaluation                                         | [link](https://www.gsma.com/get-involved/gsma-foundry/gsma-open-telco-llm-benchmarks/ ) |
+|            | FullStackBench        | ByteDance                | Code writing, debugging, code review                   | Featuring the most recent Stack Overflow QA                  | [link](https://github.com/bytedance/FullStackBench )         |
+| Coding     | StackEval             | Prosus AI                | 11 real-world scenarios, 16 languages                  | Evaluation across diverse & practical coding environments    | [link](https://github.com/ProsusAI/stack-eval )              |
+|            | CodeBenchGen          | Various Institutions     | Execution-based code generation tasks                  | Benchmarks scaling with the size and complexity              | [link](https://arxiv.org/abs/2404.00566 )                    |
+|            | HumanEval             | University of Washington | Rigorous testing                                       | Stricter protocol for assessing correctness of generated code | [link](https://arxiv.org/abs/2107.03374 )                    |
+|            | APPS                  | University of California | Coding challenges from competitive platforms           | Checking problem-solving of generated code on test cases     | [link](https://github.com/hendrycks/apps )                   |
+|            | MBPP                  | Google Research          | Programming problems sourced from various origins      | Diverse programming tasks                                    | [link](https://github.com/google-research/google-research/tree/master/mbpp ) |
+|            | ClassEval             | Tsinghua University      | Class-level code generation                            | Manually crafted, object-oriented programming concepts       | [link](https://github.com/FudanSELab/ClassEval )             |
+|            | CoderEval             | Peking University        | Pragmatic code generation                              | Proficiency to generate functional code patches for described issues | [link](https://github.com/CoderEval/CoderEval )              |
+|            | MultiPL-E             | Princeton University     | Neural code generation                                 | Benchmarking neural code generation models                   | [link](https://github.com/nuprl/MultiPL-E )                  |
+|            | CodeXGLUE             | Microsoft                | Code intelligence                                      | Wide tasks covering: code-code, text-code, code-text and text-text | [link](https://github.com/microsoft/CodeXGLUE )              |
+|            | EvoCodeBench          | Peking University        | Evolving code generation benchmark                     | Aligned with real-world code repositories, evolving over time | [link](https://github.com/seketeam/EvoCodeBench )            |
+
+<br><br>
+
+### 情商 (EQ)-Alignment Ability evaluation benchmarks
+
+| Name | Year | Task Type | Institution | Category | Datasets | Url |
+| --- | --- | --- | --- | --- | --- | --- |
+| DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
+| CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
+| Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
+| HarmBench | 2024 | Safety | UIUC | Adversarial Behaviors | 510 | [link](https://github.com/centerforaisafety/HarmBench ) |
+| SimpleQA | 2024 | Safety | OpenAI | Factuality | 4,326 | [link](https://github.com/openai/simple-evals ) |
+| AgentHarm | 2024 | Safety | BEIS | Malicious Agent Tasks | 110 | [link](https://github.com/UKGovernmentBEIS/inspect_evals ) |
+| StrongReject | 2024 | Safety | dsbowen | Attack Resistance | n/a | [link](https://github.com/dsbowen/strong_reject ) |
+| LLMBar | 2024 | Instruction | Princeton | Instruction Following | 419 Instances | [link](https://github.com/princeton-nlp/LLMBar ) |
+| AIR-Bench | 2024 | Safety | Stanford | Regulatory Alignment | 5,694 | [link](https://github.com/stanford-crfm/air-bench-2024 ) |
+| TrustLLM | 2024 | General | TrustLLM | Trustworthiness | 30+ | [link](https://trustllmbenchmark.github.io/TrustLLM-Website/ ) |
+| RewardBench | 2024 | Alignment | AIAI | Human preference | RewardBench | [link](https://github.com/allenai/reward-bench ) |
+| EQ-Bench | 2024 | Emotion | Paech | Emotional intelligence | 171 Questions | [link](https://github.com/EQ-bench/EQ-Bench ) |
+| Forbidden | 2023 | Safety | CISPA | Jailbreak Detection | 15,140 | [link](https://github.com/verazuo/jailbreak_llms ) |
+| MaliciousInstruct | 2023 | Safety | Princeton | Malicious Intentions | 100 | [link](https://github.com/Princeton-SysML/Jailbreak_LLM ) |
+| SycophancyEval | 2023 | Safety | Anthropic | Opinion Alignment | n/a | [link](https://github.com/meg-tong/sycophancy-eval ) |
+| DecodingTrust | 2023 | Safety | UIUC | Trustworthiness | 243,877 | [link](https://github.com/AI-secure/DecodingTrust ) |
+| AdvBench | 2023 | Safety | CMU | Adversarial Attacks | 1,000 | [link](https://github.com/llm-attacks/llm-attacks ) |
+| XSTest | 2023 | Safety | Bocconi | Safety Overreach | 450 | [link](https://github.com/paul-rottger/exaggerated-safety ) |
+| OpinionQA | 2023 | Safety | tatsu-lab | Demographic Alignment | 1,498 | [link](https://github.com/tatsu-lab/opinions_qa ) |
+| SafetyBench | 2023 | Safety | THU | Content Safety | 11,435 | [link](https://github.com/thu-coai/SafetyBench ) |
+| HarmfulQA | 2023 | Safety | declare-lab | Harmful Topics | 1,960 | [link](https://github.com/declare-lab/red-instruct ) |
+| QHarm | 2023 | Safety | vinid | Safety Sampling | 100 | [link](https://github.com/vinid/safety-tuned-llamas ) |
+| BeaverTails | 2023 | Safety | PKU | Red Teaming | 334,000 | [link](https://github.com/PKU-Alignment/beavertails ) |
+| DoNotAnswer | 2023 | Safety | Libr-AI | Safety Mechanisms | 939 | [link](https://github.com/Libr-AI/do-not-answer ) |
+| AlignBench | 2023 | Alignment | THUDM | Alignment, Reliability | Various | [link](https://github.com/THUDM/AlignBench ) |
+| IFEval | 2023 | Instruction | Google | Instruction Following | 500 Prompts | [link](https://github.com/google-research/google-research/tree/master/instruction_following_eval ) |
+| ToxiGen | 2022 | Safety | Microsoft | Toxicity Detection | 274,000 | [link](https://github.com/microsoft/TOXIGEN ) |
+| HHH | 2022 | Safety | Anthropic | Human Preferences | 44,849 | [link](https://github.com/anthropics/hh-rlhf ) |
+| RedTeam | 2022 | Safety | Anthropic | Red Teaming | 38,921 | [link](https://github.com/anthropics/hh-rlhf ) |
+| BOLD | 2021 | Bias | Amazon | Bias in Generation | 23,679 | [link](https://github.com/amazon-science/bold ) |
+| BBQ | 2021 | Bias | NYU | Social Bias | 58,492 | [link](https://github.com/nyu-mll/BBQ ) |
+| StereoSet | 2020 | Bias | McGill | Stereotype Detection | 4,229 | [link](https://github.com/moinnadeem/StereoSet ) |
+| ETHICS | 2020 | Ethics | Berkeley | Moral Judgement | 134,400 | [link](https://github.com/hendrycks/ethics ) |
+| ToxicityPrompt | 2020 | Safety | AllenAI | Toxicity Assessment | 99,442 | [link](https://github.com/allenai/real-toxicity-prompts ) |
+| CrowS-Pairs | 2020 | Bias | NYU | Stereotype Measurement | 1,508 | [link](https://github.com/nyu-mll/crows-pairs ) |
+| SEAT | 2019 | Bias | Princeton | Encoder Bias | n/a | [link](https://github.com/W4ngatang/sent-bias ) |
+| WinoGender | 2018 | Bias | UMass | Gender Bias | 720 | [link](https://github.com/rudinger/winogender-schemas ) |
+
 ## Tools
 
 | 名称 | 机构 | 网址 | 简介 |
