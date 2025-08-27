@@ -174,21 +174,47 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 
 
 
-### Typical Professional Quotient (PQ)-Professional Expertise evaluation benchmarks
+### Typical Emotional Quotient (EQ)-Alignment Ability evaluation benchmarks
 
-| Domain | Name           | Institution              | Scope of Tasks                                    | Unique Contributions                                         | Url                                                          |
-| ------ | -------------- | ------------------------ | ------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|        | FullStackBench | ByteDance                | Code writing, debugging, code review              | Featuring the most recent Stack Overflow QA                  | [link](https://github.com/bytedance/FullStackBench )         |
-| Coding | StackEval      | Prosus AI                | 11 real-world scenarios, 16 languages             | Evaluation across diverse & practical coding environments    | [link](https://github.com/ProsusAI/stack-eval )              |
-|        | CodeBenchGen   | Various Institutions     | Execution-based code generation tasks             | Benchmarks scaling with the size and complexity              | [link](https://arxiv.org/abs/2404.00566 )                    |
-|        | HumanEval      | University of Washington | Rigorous testing                                  | Stricter protocol for assessing correctness of generated code | [link](https://arxiv.org/abs/2107.03374 )                    |
-|        | APPS           | University of California | Coding challenges from competitive platforms      | Checking problem-solving of generated code on test cases     | [link](https://github.com/hendrycks/apps )                   |
-|        | MBPP           | Google Research          | Programming problems sourced from various origins | Diverse programming tasks                                    | [link](https://github.com/google-research/google-research/tree/master/mbpp ) |
-|        | ClassEval      | Tsinghua University      | Class-level code generation                       | Manually crafted, object-oriented programming concepts       | [link](https://github.com/FudanSELab/ClassEval )             |
-|        | CoderEval      | Peking University        | Pragmatic code generation                         | Proficiency to generate functional code patches for described issues | [link](https://github.com/CoderEval/CoderEval )              |
-|        | MultiPL-E      | Princeton University     | Neural code generation                            | Benchmarking neural code generation models                   | [link](https://github.com/nuprl/MultiPL-E )                  |
-|        | CodeXGLUE      | Microsoft                | Code intelligence                                 | Wide tasks covering: code-code, text-code, code-text and text-text | [link](https://github.com/microsoft/CodeXGLUE )              |
-|        | EvoCodeBench   | Peking University        | Evolving code generation benchmark                | Aligned with real-world code repositories, evolving over time | [link](https://github.com/seketeam/EvoCodeBench )            |
+| Name | Year | Task Type | Institution | Category | Datasets | Url |
+| --- | --- | --- | --- | --- | --- | --- |
+| DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
+| CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
+| Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
+| HarmBench | 2024 | Safety | UIUC | Adversarial Behaviors | 510 | [link](https://github.com/centerforaisafety/HarmBench ) |
+| SimpleQA | 2024 | Safety | OpenAI | Factuality | 4,326 | [link](https://github.com/openai/simple-evals ) |
+| AgentHarm | 2024 | Safety | BEIS | Malicious Agent Tasks | 110 | [link](https://github.com/UKGovernmentBEIS/inspect_evals ) |
+| StrongReject | 2024 | Safety | dsbowen | Attack Resistance | n/a | [link](https://github.com/dsbowen/strong_reject ) |
+| LLMBar | 2024 | Instruction | Princeton | Instruction Following | 419 Instances | [link](https://github.com/princeton-nlp/LLMBar ) |
+| AIR-Bench | 2024 | Safety | Stanford | Regulatory Alignment | 5,694 | [link](https://github.com/stanford-crfm/air-bench-2024 ) |
+| TrustLLM | 2024 | General | TrustLLM | Trustworthiness | 30+ | [link](https://trustllmbenchmark.github.io/TrustLLM-Website/ ) |
+| RewardBench | 2024 | Alignment | AIAI | Human preference | RewardBench | [link](https://github.com/allenai/reward-bench ) |
+| EQ-Bench | 2024 | Emotion | Paech | Emotional intelligence | 171 Questions | [link](https://github.com/EQ-bench/EQ-Bench ) |
+| Forbidden | 2023 | Safety | CISPA | Jailbreak Detection | 15,140 | [link](https://github.com/verazuo/jailbreak_llms ) |
+| MaliciousInstruct | 2023 | Safety | Princeton | Malicious Intentions | 100 | [link](https://github.com/Princeton-SysML/Jailbreak_LLM ) |
+| SycophancyEval | 2023 | Safety | Anthropic | Opinion Alignment | n/a | [link](https://github.com/meg-tong/sycophancy-eval ) |
+| DecodingTrust | 2023 | Safety | UIUC | Trustworthiness | 243,877 | [link](https://github.com/AI-secure/DecodingTrust ) |
+| AdvBench | 2023 | Safety | CMU | Adversarial Attacks | 1,000 | [link](https://github.com/llm-attacks/llm-attacks ) |
+| XSTest | 2023 | Safety | Bocconi | Safety Overreach | 450 | [link](https://github.com/paul-rottger/exaggerated-safety ) |
+| OpinionQA | 2023 | Safety | tatsu-lab | Demographic Alignment | 1,498 | [link](https://github.com/tatsu-lab/opinions_qa ) |
+| SafetyBench | 2023 | Safety | THU | Content Safety | 11,435 | [link](https://github.com/thu-coai/SafetyBench ) |
+| HarmfulQA | 2023 | Safety | declare-lab | Harmful Topics | 1,960 | [link](https://github.com/declare-lab/red-instruct ) |
+| QHarm | 2023 | Safety | vinid | Safety Sampling | 100 | [link](https://github.com/vinid/safety-tuned-llamas ) |
+| BeaverTails | 2023 | Safety | PKU | Red Teaming | 334,000 | [link](https://github.com/PKU-Alignment/beavertails ) |
+| DoNotAnswer | 2023 | Safety | Libr-AI | Safety Mechanisms | 939 | [link](https://github.com/Libr-AI/do-not-answer ) |
+| AlignBench | 2023 | Alignment | THUDM | Alignment, Reliability | Various | [link](https://github.com/THUDM/AlignBench ) |
+| IFEval | 2023 | Instruction | Google | Instruction Following | 500 Prompts | [link](https://github.com/google-research/google-research/tree/master/instruction_following_eval ) |
+| ToxiGen | 2022 | Safety | Microsoft | Toxicity Detection | 274,000 | [link](https://github.com/microsoft/TOXIGEN ) |
+| HHH | 2022 | Safety | Anthropic | Human Preferences | 44,849 | [link](https://github.com/anthropics/hh-rlhf ) |
+| RedTeam | 2022 | Safety | Anthropic | Red Teaming | 38,921 | [link](https://github.com/anthropics/hh-rlhf ) |
+| BOLD | 2021 | Bias | Amazon | Bias in Generation | 23,679 | [link](https://github.com/amazon-science/bold ) |
+| BBQ | 2021 | Bias | NYU | Social Bias | 58,492 | [link](https://github.com/nyu-mll/BBQ ) |
+| StereoSet | 2020 | Bias | McGill | Stereotype Detection | 4,229 | [link](https://github.com/moinnadeem/StereoSet ) |
+| ETHICS | 2020 | Ethics | Berkeley | Moral Judgement | 134,400 | [link](https://github.com/hendrycks/ethics ) |
+| ToxicityPrompt | 2020 | Safety | AllenAI | Toxicity Assessment | 99,442 | [link](https://github.com/allenai/real-toxicity-prompts ) |
+| CrowS-Pairs | 2020 | Bias | NYU | Stereotype Measurement | 1,508 | [link](https://github.com/nyu-mll/crows-pairs ) |
+| SEAT | 2019 | Bias | Princeton | Encoder Bias | n/a | [link](https://github.com/W4ngatang/sent-bias ) |
+| WinoGender | 2018 | Bias | UMass | Gender Bias | 720 | [link](https://github.com/rudinger/winogender-schemas ) |
 
 ## Tools
 
