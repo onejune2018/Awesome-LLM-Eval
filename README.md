@@ -5,31 +5,31 @@
 
 [English](README_EN.md) | [中文](README_CN.md)
 
-Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, learderboard, papers, docs and models, mainly for Evaluation on Large Language Models and exploring the boundaries and limits of Generative AI.
 
-Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboard, papers, docs and models, mainly for Evaluation on LLMs.  一个由工具、基准/数据、演示、排行榜和大模型等组成的精选列表，主要面向基础大模型评测，旨在探求生成式AI的技术边界.
+Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboard, papers, docs and models, mainly for Evaluation on Large Language Models and exploring the boundaries and limits of Generative AI.
 
-<br><br>
+
+
 ## Table of Contents
 
 - [News](#News)
 - [Tools](#Tools)
 - [Datasets / Benchmark](#Datasets-or-Benchmark)
-  - [通用](#通用)
-  - [垂直领域](#垂直领域)
-  - [RAG检索增强生成评估](#RAG检索增强生成评估)
-  - [Agent能力](#Agent能力)
-  - [代码能力](#代码能力)
-  - [多模态/跨模态](#多模态-跨模态)
-  - [长上下文](#长上下文)
-  - [推理速度](#推理速度)
-  - [量化压缩](#量化压缩)
+  - [General](#General)
+  - [Vertical Fields](#Vertical Fields)
+  - [RAG Retrieval Augmented Generation Evaluation](#RAG Retrieval Augmented Generation Evaluation)
+  - [Agent Capabilities](#Agent Capabilities)
+  - [Coding Capabilities](#Coding Capabilities)
+  - [Multimodal/Cross-modal](#Multimodal-Cross-modal)
+  - [Long Context](#Long Context)
+  - [Inference Speed](#Inference Speed)
+  - [Quantization and Compression](#Quantization and Compression)
 - [Demos](#Demos)
 - [Leaderboards](#Leaderboards)
-- [Papers](#papers)
+- [Papers](#Papers)
 - [LLM-List](#LLM-List)
   - [Pre-trained LLM](#Pre-trained-LLM)
-  - [Instruction finetuned LLM](#Instruction-finetuned-LLM)
+  - [Instruction Fine-tuned LLM](#Instruction-finetuned-LLM)
   - [Aligned LLM](#Aligned-LLM)
   - [Open LLM](#Open-LLM)
   - [Popular LLM](#Popular-LLM)
@@ -37,307 +37,172 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 - [Frameworks for Training](#Frameworks-for-Training)
 - [Courses](#Courses)
 - [Others](#Others)
-- [Other-Awesome-Lists](#Other-Awesome-Lists)
+- [Other Awesome Lists](#Other-Awesome-Lists)
 - [Licenses](#Licenses)
-- [Citation](#引用)
+- [Citation](#Citation)
 
 ![](docs/survey-gif-test.gif)
 ![](docs/image_llm_palm.gif)
 
-<br><br>
 ## News
 
-- [2024/04/26] We add [推理速度](#推理速度) section.
+- [2024/04/26] We added the [Inference Speed](#Inference Speed) section.
+- [2024/02/26] We added the [Coding Evaluation](#Coding Capabilities) section.
+- [2024/02/08] We added the [lighteval](https://github.com/huggingface/lighteval) tool from Huggingface.
+- [2024/01/15] We added [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench), [OpenFinData](https://opencompass.org.cn), and [LAiW](https://github.com/Dai-shen/LAiW).
+- [2023/12/20] We added the [RAG Evaluation](#RAG Retrieval Augmented Generation Evaluation) section.
+- [2023/11/15] We added [Instruction Following Evaluation](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for evaluating the instruction following capabilities of LLMs.
+- [2023/10/20] We added [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) for LLM agent evaluation.
+- [2023/09/25] We added [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
+- [2023/09/22] We added the [LeaderboardFinder](#Leaderboards) chapter.
+- [2023/09/20] We added [DeepEval](https://github.com/mr-gpt/deepeval), [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval), and [SuperCLUE-Safety](https://github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
+- [2023/09/18] We added [OpenCompass](https://github.com/InternLM/opencompass/tree/main) from Shanghai AI Lab.
+- [2023/08/03] We added new Chinese LLMs: [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) and [Qwen](https://github.com/QwenLM/Qwen-7B).
+- [2023/06/28] We added [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) and multiple tools.
+- [2023/04/26] We released the V0.1 evaluation list with multiple benchmarks.
 
-- [2024/02/26] We add [Coding Evaluation](#代码能力) section.
-
-- [2024/02/08] We add [lighteval](https://github.com/huggingface/lighteval) tool from Huggingface.
-
-- [2024/01/15] We add [CRUXEval](https://arxiv.org/abs/2401.03065), [DebugBench](https://github.com/thunlp/DebugBench), [OpenFinData](https://opencompass.org.cn) and [LAiW](https://github.com/Dai-shen/LAiW).
-
-- [2023/12/20] We add [RAG Evaluation](#RAG检索增强生成评估) section.
-
-- [2023/11/15] We add [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) and [LLMBar](https://github.com/princeton-nlp/LLMBar) for the evaluation of Instruction Following ability of LLMs.
-
-- [2023/10/20] We add [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent)  for LLM agent evaluation.
-  
-- [2023/09/25] We add [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) from Colossal-AI.
-
-- [2023/09/22] We add [Leaderboards](#Leaderboards) chapter.
-
-- [2023/09/20] We add [DeepEval](https://github.com/mr-gpt/deepeval), [FinEval](https://github.com/SUFE-AIFLM-Lab/FinEval) and [SuperCLUE-Safety](https://github.com/CLUEbenchmark/SuperCLUE-Safety) from CLUEbenchmark.
-
-- [2023/09/18] We add [OpenCompass](https://github.com/InternLM/opencompass/tree/main) from Shanghai AI Lab.
-
-- [2023/08/03] We add new Chinese LLMs: [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) and [Qwen](https://github.com/QwenLM/Qwen-7B).
-
-- [2023/06/28] We add [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) and multiple tools.
-
-- [2023/04/26] We released the V0.1 Eval list with multiple benchmarks, etc.
-
-<br><br>
 ## Tools
 
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :--: |
-| prometheus-eval | prometheus-eval | [prometheus-eval](https://github.com/prometheus-eval/prometheus-eval) | PROMETHEUS开放第二版比其前身更强大的评估专用的语言模型，它能密切模仿人类和 GPT-4 的判断。此外,它能够处理直接评估和成对排序两种格式，并配合使用者定义的评估标准。在四个直接评估基准和四个成对排序基准上，PROMETHEUS 2 在所有测试的开源评估语言模型中，与人类和专有语言模型评判者取得最高的相关性和一致性 (2024-05-04) |
-| athina-evals | athina-ai |[athina-ai](https://github.com/athina-ai/athina-evals) | athina-ai是一个开源库，提供即插即用的预设评估（preset evals）/模块化、可扩展的框架来编写和运行评估，帮助工程师通过评估驱动的开发来系统性地提高他们的大型语言模型的可靠性和性能，athina-ai提供了一个系统，用于评估驱动的开发，克服了传统工作流程的限制，允许快速实验和具有一致指标的可定制评估器 |
-| LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder帮你找到适合特定场景的大模型排行榜，排行榜的排行榜 (2024-04-02) |
-| LightEval | Huggingface | [lighteval](https://github.com/huggingface/lighteval) | LightEval 是由 Hugging Face 开发的一个轻量级框架，专门用于大型语言模型（LLM）的评估。这个框架是 Hugging Face 内部用于评估最近发布的 LLM 数据处理库 datatrove 和 LLM 训练库 nanotron 的工具。现在，Hugging Face 将其开源，以便社区可以共同使用和改进。LightEval 的一些主要特点：(1) 轻量级：LightEval 设计为一个轻量级工具，易于使用和集成。(2) 评估套件：它提供了一个评估套件，支持多种任务和模型的评估。(3) 兼容性：LightEval 支持在 CPU 或 GPU 上评估模型，并且可以与 Hugging Face 的加速库（Accelerate）和 Nanotron 等框架一起使用。(4) 分布式评估：它支持在分布式环境中评估模型，这对于处理大型模型尤其有用。(5) Open LLM Leaderboard：LightEval 可以用来在 Open LLM Leaderboard 的所有基准测试上评估模型。(6) 自定义：用户可以添加新的度量标准和任务，以适应特定的评估需求。 (2024-02-08) |
-| LLM Comparator | Google | [LLM Comparator](https://arxiv.org/html/2402.10524v1) | 一个用于比较和评估大型语言模型(LLM)的可视化分析工具。相较于传统的基于人工评分的方法，该工具提供了一种可扩展的自动化方面对比评估方法，旨在解决规模化评估和解释性挑战。利用另一个LLM作为评判，工具可以展示模型间质量对比，并给出理由。LLM Comparator通过交互式表格和汇总可视化，帮助用户理解模型在特定情境下表现好坏的原因，以及两种模型响应的定性差异。本文通过与Google的研究员和工程师紧密合作开发此工具，并通过观察研究评估其有效性。该工具在Google内部广泛使用，三个月内吸引了400多名用户，评估了超过1000个实验 (2024-02-16) |
-| Arthur Bench | Arthur-AI |[Arthur Bench](https://github.com/arthur-ai/bench)| Arthur Bench 是一个开源的评估工具，专门设计来比较和分析大型语言模型（LLM）的性能。它支持多种评估任务，包括问答、摘要、翻译和代码生成等，能够为LLM在这些任务上的表现提供详细的报告。Arthur Bench的一些关键特性和优势：（1）模型比较：Arthur Bench 能够比较不同供应商、不同版本以及不同训练数据集的LLM模型性能。（2）提示和超参数评估：它可以评估不同的提示对LLM性能的影响，以及测试不同超参数设置对模型行为的控制。（3）任务定义与模型选择：用户可以定义具体的评估任务，并从支持的多种LLM模型中选择评估对象。（4）参数配置：Arthur Bench 允许用户调整提示和超参数，以精细化控制LLM的行为。（5）自动化评估流程：提供自动化的评估流程，简化了评估任务的执行。（6）使用场景：Arthur Bench 适用于模型选择和验证、预算和隐私优化，以及将学术基准转化为现实世界表现的评估。（7）特性分析：它具备全套评分指标，支持本地和云版本，且完全开源，鼓励社区协作和项目发展 (2023-10-06)  |
-| llm-benchmarker-suite | FormulaMonks | [llm-benchmarker-suite](https://github.com/FormulaMonks/llm-benchmarker-suite) | This open-source effort aims to address fragmentation and ambiguity in LLM benchmarking. The suite provides a structured methodology, a collection of diverse benchmarks, and toolkits to streamline assessing LLM performance. By offering a common platform, this project seeks to promote collaboration, transparency, and quality research in NLP. (2023-07-06) |
-| autoevals | braintrust | [autoevals](https://github.com/braintrustdata/autoevals) | AutoEvals是一个AI模型输出评估工具，利用最佳实践快速轻松评估AI模型输出，集成多种自动评估方法，支持定制评估提示和自定义评分器，简化模型输出的评估过程. Autoevals uses model-graded evaluation for a variety of subjective tasks including fact checking, safety, and more. Many of these evaluations are adapted from OpenAI's excellent evals project but are implemented so you can flexibly run them on individual examples, tweak the prompts, and debug their outputs.  |
-| EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL是OpenAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
-| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | lm-evaluation-harness是EleutherAI开发的一个用于评估大型语言模型（LLM）的工具，可以测试模型在不同任务和数据集上的性能和泛化能力. |
-| lm-evaluation | AI21Labs | [lm-evaluation](https://github.com/AI21Labs/lm-evaluation) | The evaluations and reproducing the results from the Jurassic-1 Technical [Paper](https://www.ai21.com/blog/announcing-ai21-studio-and-jurassic-1), with current support for running the tasks through both the AI21 Studio API and OpenAI's GPT3 API. |
-| OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass 是面向大模型评测的一站式平台。其主要特点如下：开源可复现：提供公平、公开、可复现的大模型评测方案；全面的能力维度：五大维度设计，提供 50+ 个数据集约 30 万题的的模型评测方案，全面评估模型能力；丰富的模型支持：已支持 20+ HuggingFace 及 API 模型；分布式高效评测：一行命令实现任务分割和分布式评测，数小时即可完成千亿模型全量评测；多样化评测范式：支持零样本、小样本及思维链评测，结合标准型或对话型提示词模板，轻松激发各种模型最大性能 |
-| Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) | phasellm是Phase AI提供的一个用于评估和管理LLM的框架，可以帮助用户选择合适的模型、数据集和指标，以及可视化和分析结果. |
-| Evaluation benchmark for LLM | FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) | LLMZoo是FreedomIntelligence开发的一个用于评估LLM的基准，包含了多个领域和任务的数据集和指标，以及一些预训练的模型和结果. |
-| Holistic Evaluation of Language Models (HELM) | Stanford | [HELM](https://github.com/stanford-crfm/helm) | HELM是Stanford研究团队提出的一个用于全面评估LLM的方法，考虑了模型的语言能力、知识、推理、公平性和安全性等多个方面. |
-| A lightweight evaluation tool for question-answering | Langchain | [auto-evaluator](https://github.com/rlancemartin/auto-evaluator) | auto-evaluator是Langchain开发的一个用于评估问答系统的轻量级工具，可以自动生成问题和答案，并计算模型的准确率、召回率和F1分数等指标. |
-| PandaLM | WeOpenML | [PandaLM](https://github.com/WeOpenML/PandaLM) | ReProducible and Automated Language Model Assessment | PandaLM是WeOpenML开发的一个用于自动化和可复现地评估LLM的工具，可以根据用户的需求和偏好，选择合适的数据集、指标和模型，并生成报告和图表. |
-| FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) | FlagEval是清华大学开发的一个用于评估LLM的平台，可以提供多种任务和数据集，以及在线测试、排行榜和分析等功能 |
-| AlpacaEval | tatsu-lab | [alpaca_eval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval是tatsu-lab开发的一个用于评估LLM的工具，可以使用多种语言、领域和任务进行测试，并提供可解释性、鲁棒性和可信度等指标. |
-|Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
-| DeepEval | mr-gpt | [DeepEval](github.com/confident-ai/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产. DeepEval is a simple-to-use, open-source LLM evaluation framework. It is similar to Pytest but specialized for unit testing LLM outputs. DeepEval incorporates the latest research to evaluate LLM outputs based on metrics such as G-Eval, hallucination, answer relevancy, RAGAS, etc., which uses LLMs and various other NLP models that runs locally on your machine for evaluation. |
-| CONNER | Tencent AI Lab | [CONNER](https://github.com/ChanLiang/CONNER) | CONNER：一个综合性的大模型知识评估框架，旨在从六个重要角度系统地、自动地评估生成的信息——事实性、相关性、连贯性、信息性、有用性和有效性。 |
+|       Name        |  Organization   |                           Website                            |                         Description                          |
+| :---------------: | :-------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  prometheus-eval  | prometheus-eval | [prometheus-eval](https://github.com/prometheus-eval/prometheus-eval) | PROMETHEUS Open Evaluation Dedicated Language Model, which is more powerful than its predecessor. It can closely imitate the judgments of humans and GPT-4. Additionally, it can handle both direct evaluation and pairwise ranking formats, and can be used with user-defined evaluation criteria. On four direct evaluation benchmarks and four pairwise ranking benchmarks, PROMETHEUS 2 achieves the highest correlation and consistency with human evaluators and proprietary language models among all tested open-source evaluation language models (2024-05-04). |
+|   athina-evals    |    athina-ai    |    [athina-ai](https://github.com/athina-ai/athina-evals)    | Athina-ai is an open-source library that provides plug-and-play preset evaluations and a modular, extensible framework for writing and running evaluations. It helps engineers systematically improve the reliability and performance of their large language models through evaluation-driven development. Athina-ai offers a system for evaluation-driven development, overcoming the limitations of traditional workflows, enabling rapid experimentation, and providing customizable evaluators with consistent metrics. |
+| LeaderboardFinder |   Huggingface   | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder helps you find suitable leaderboards for specific scenarios, a leaderboard of leaderboards (2024-04-02). |
+|     LightEval     |   Huggingface   |    [lighteval](https://github.com/huggingface/lighteval)     | LightEval is a lightweight framework developed by Hugging Face for evaluating large language models (LLMs). Originally designed as an internal tool for assessing Hugging Face's recently released LLM data processing library datatrove and LLM training library nanotron, it is now open-sourced for community use and improvement. Key features of LightEval include: (1) lightweight design, making it easy to use and integrate; (2) an evaluation suite supporting multiple tasks and models; (3) compatibility with evaluation on CPUs or GPUs, and integration with Hugging Face's acceleration library (Accelerate) and frameworks like Nanotron; (4) support for distributed evaluation, which is particularly useful for evaluating large models; (5) applicability to all benchmarks on the Open LLM Leaderboard; and (6) customizability, allowing users to add new metrics and tasks to meet specific evaluation needs (2024-02-08). |
+|  LLM Comparator   |     Google      |    [LLM Comparator](https://arxiv.org/html/2402.10524v1)     | A visual analytical tool for comparing and evaluating large language models (LLMs). Compared to traditional human evaluation methods, this tool offers a scalable automated approach to comparative evaluation. It leverages another LLM as an evaluator to demonstrate quality differences between models and provide reasons for these differences. Through interactive tables and summary visualizations, the LLM Comparator helps users understand why models perform well or poorly in specific contexts, as well as the qualitative differences between model responses. Developed in collaboration with Google researchers and engineers, this tool has been widely used internally at Google, attracting over 400 users and evaluating more than 1,000 experiments within three months (2024-02-16).|
+|   Arthur Bench    |    Arthur-AI    |      [Arthur Bench](https://github.com/arthur-ai/bench)      | Arthur Bench is an open-source evaluation tool designed to compare and analyze the performance of large language models (LLMs). It supports various evaluation tasks, including question answering, summarization, translation, and code generation, and provides detailed reports on LLM performance across these tasks. Key features and advantages of Arthur Bench include: (1) model comparison, enabling the evaluation of different suppliers, versions, and training datasets of LLMs; (2) prompt and hyperparameter evaluation, assessing the impact of different prompts on LLM performance and testing the control of model behavior through various hyperparameter settings; (3) task definition and model selection, allowing users to define specific evaluation tasks and select evaluation targets from a range of supported LLM models; (4) parameter configuration, enabling users to adjust prompts and hyperparameters to finely control LLM behavior; (5) automated evaluation workflows, simplifying the execution of evaluation tasks; and (6) application scenarios such as model selection and validation, budget and privacy optimization, and the transformation of academic benchmarks into real-world performance evaluations. Additionally, it offers comprehensive scoring metrics, supports both local and cloud versions, and encourages community collaboration and project development (2023-10-06). |
+| llm-benchmarker-suite | FormulaMonks | [llm-benchmarker-suite](https://github.com/FormulaMonks/llm-benchmarker-suite) | This open-source initiative aims to address fragmentation and ambiguity in LLM benchmarking. The suite provides a structured methodology, a collection of diverse benchmarks, and toolkits to streamline the assessment of LLM performance. By offering a common platform, this project seeks to promote collaboration, transparency, and high-quality research in NLP. |
+| autoevals | braintrust | [autoevals](https://github.com/braintrustdata/autoevals) | AutoEvals is an AI model output evaluation tool that leverages best practices to quickly and easily assess AI model outputs. It integrates multiple automatic evaluation methods, supports customizable evaluation prompts and custom scorers, and simplifies the evaluation process of model outputs. Autoevals incorporates model-graded evaluation for various subjective tasks, including fact-checking, safety, and more. Many of these evaluations are adapted from OpenAI's excellent evals project but are implemented in a flexible way to allow users to tweak prompts and debug outputs. |
+| EVAL | OPENAI | [EVAL](https://github.com/openai/evals) | EVAL is a tool developed by OpenAI for evaluating large language models (LLMs). It can test the performance and generalization capabilities of models across different tasks and datasets. |
+| lm-evaluation-harness | EleutherAI | [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) | lm-evaluation-harness is a tool developed by EleutherAI for evaluating large language models (LLMs). It can test the performance and generalization capabilities of models across different tasks and datasets. |
+| lm-evaluation | AI21Labs | [lm-evaluation](https://github.com/AI21Labs/lm-evaluation) | Evaluations and reproducing the results from the Jurassic-1 Technical [Paper](https://www.ai21.com/blog/announcing-ai21-studio-and-jurassic-1), with current support for running tasks via both the AI21 Studio API and OpenAI's GPT-3 API. |
+| OpenCompass | Shanghai AI Lab | [OpenCompass](https://github.com/InternLM/opencompass/tree/main) | OpenCompass is a one-stop platform for evaluating large models. Its main features include: open-source and reproducible evaluation schemes; comprehensive capability dimensions covering five major areas with over 50 datasets and approximately 300,000 questions to assess model capabilities; support for over 20 Hugging Face and API models; distributed and efficient evaluation with one-line task splitting and distributed evaluation, enabling full evaluation of trillion-parameter models within hours; diverse evaluation paradigms supporting zero-shot, few-shot, and chain-of-thought evaluations with standard or conversational prompt templates to easily elicit peak model performance. |
+| Large language model evaluation and workflow framework from Phase AI | wgryc | [phasellm](https://github.com/wgryc/phasellm) | A framework provided by Phase AI for evaluating and managing LLMs, helping users select appropriate models, datasets, and metrics, as well as visualize and analyze results. |
+| Evaluation benchmark for LLM | FreedomIntelligence | [LLMZoo](https://github.com/FreedomIntelligence/LLMZoo) | LLMZoo is an evaluation benchmark for LLMs developed by FreedomIntelligence, featuring multiple domain and task datasets, metrics, and pre-trained models with results. |
+| Holistic Evaluation of Language Models (HELM) | Stanford | [HELM](https://github.com/stanford-crfm/helm) | HELM is a comprehensive evaluation method for LLMs proposed by the Stanford research team, considering multiple aspects such as model language ability, knowledge, reasoning, fairness, and safety. |
+| A lightweight evaluation tool for question-answering | Langchain | [auto-evaluator](https://github.com/rlancemartin/auto-evaluator) | auto-evaluator is a lightweight tool developed by Langchain for evaluating question-answering systems. It can automatically generate questions and answers and calculate metrics such as model accuracy, recall, and F1 score. |
+| PandaLM | WeOpenML | [PandaLM](https://github.com/WeOpenML/PandaLM) | PandaLM is an LLM assessment tool developed by WeOpenML for automated and reproducible evaluation. It allows users to select appropriate datasets, metrics, and models based on their needs and preferences, and generates reports and charts. |
+| FlagEval | Tsinghua University | [FlagEval](https://github.com/FlagOpen/FlagEval) | FlagEval is an evaluation platform for LLMs developed by Tsinghua University, offering multiple tasks and datasets, as well as online testing, leaderboards, and analysis functions. |
+| AlpacaEval | tatsu-lab | [alpaca_eval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval is an evaluation tool for LLMs developed by tatsu-lab, capable of testing models across various languages, domains, and tasks, and providing explainability, robustness, and credibility metrics. |
+| Prompt flow | Microsoft | [promptflow](https://github.com/microsoft/promptflow) | A set of development tools designed by Microsoft to simplify the end-to-end development cycle of AI applications based on LLMs, from conception, prototyping, testing, and evaluation to production deployment and monitoring. It makes prompt engineering easier and enables the development of product-level LLM applications. |
+| DeepEval | mr-gpt | [DeepEval](https://github.com/confident-ai/deepeval) | DeepEval is a simple-to-use, open-source LLM evaluation framework. Similar to Pytest but specialized for unit testing LLM outputs, it incorporates the latest research to evaluate LLM outputs based on metrics such as G-Eval, hallucination, answer relevance, RAGAS, etc., utilizing LLMs and various other NLP models that run locally on your machine for evaluation. |
+| CONNER | Tencent AI Lab | [CONNER](https://github.com/ChanLiang/CONNER) | CONNER is a comprehensive large model knowledge evaluation framework designed to systematically and automatically assess the information generated from six critical perspectives: factuality, relevance, coherence, informativeness, usefulness, and validity. |
 
-<br><br>
-## Datasets-or-Benchmark
+## Datasets or Benchmarks
 
-<br><br>
-### 通用
+### General
 
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| MMLU-Pro | TIGER-AI-Lab | [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) | MMLU-Pro 是 MMLU 数据集的改进版本。MMLU 一直是多选知识数据集的参考。然而，最近的研究表明它既包含噪音（一些问题无法回答），又太容易（通过模型能力的进化和污染的增加）。MMLU-Pro 向模型提供十个选择而不是四个，要求在更多问题上进行推理，并经过专家审查以减少噪音量。它比原版质量更高且更难. MMLU-Pro减少了提示变化对模型性能的影响，这是其前身MMLU常见的问题。研究发现，在这个新基准上使用“Chain of Thought”推理的模型表现更好，这表明MMLU-Pro更适合评估人工智能的微妙推理能力. (2024-05-20) |
-| TrustLLM Benchmark | TrustLLM | [TrustLLM](https://trustllmbenchmark.github.io/TrustLLM-Website/) | TrustLLM是一个针对大语言模型可信赖的评估基准，该基准测试涵盖了6个可信赖维度，包含了30+的数据集，以全面评估LLMs的功能能力，范围从简单分类到复杂的生成任务。每个数据集都提出了独特的挑战，并在可信度的多个维度上对16个主流的大语言模型（包括商业模型和开源模型）进行了基准测试。|
-| DyVal | Microsoft | [DyVal](https://github.com/microsoft/promptbench) | 人们对于其庞大的训练语料库中潜在的数据污染问题表示担忧。此外，当前基准测试的静态性质和固定复杂度可能无法充分衡量LLMs不断进步的能力。DyVal，这是一种用于动态评估LLMs的通用且灵活的协议。基于图的DyVal，利用有向无环图的结构优势动态生成具有可控复杂度的评估样本。DyVal在包括数学、逻辑推理和算法问题在内的推理任务上生成了具有挑战性的评估集。评估了从Flan-T5-large到GPT-3.5-Turbo和GPT-4的各种LLMs。实验表明，LLMs在DyVal生成的不同复杂度的评估样本中表现更差，突显了动态评估的重要性。作者还分析了不同提示方法的失败案例和结果。此外，DyVal生成的样本不仅是评估集，而且有助于微调，以提高LLMs在现有基准测试上的性能 (2024-04-20) |
-| RewardBench | AIAI | [RewardBench](https://github.com/allenai/reward-bench) | 语言模型奖励模型评估基准RewardBench，评估各类模型的优劣势，发现现有模型在推理和遵循指令方面仍存在明显不足，包含[Leaderboard](https://hf.co/spaces/allenai/reward-bench)，[Code](https://github.com/allenai/reward-bench) 和 [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20)|
-| LV-Eval | Infinigence-AI | [LVEval](https://github.com/infinigence/LVEval) | LV-Eval是一个具备5个长度等级（16k、32k、64k、128k和256k）、最大文本测试长度达到256k的长文本评测基准。LV-Eval的平均文本长度达到102,380字，最小/最大文本长度为11,896/387,406字。LV-Eval主要有两类评测任务——单跳QA和多跳QA，共包含11个涵盖中英文的评测数据子集。LV-Eval设计时引入3个关键技术：干扰事实插入（Confusiong Facts Insertion，CFI）提高挑战性，关键词和短语替换（Keyword and Phrase Replacement，KPR）减少信息泄漏，以及基于关键词召回的评测指标（Answer Keywords，AK，指代结合答案关键词和字词黑名单的评价指标）提高评测数值客观性 (2024-02-06)  |
-| LLM-Uncertainty-Bench | Tencent | [LLM-Uncertainty-Bench](https://github.com/smartyfh/LLM-Uncertainty-Bench) | 引入了一种新的LLMs基准测试方法，该方法整合了不确定性量化。基于九个LLMs针对五个代表性的自然语言处理任务试验，发现I) 准确度更高的LLMs可能表现出较低的确定性；II) 规模更大的LLMs可能比规模较小的模型表现出更大的不确定性；III) 指令微调倾向于增加LLMs的不确定性。这些结果强调了在评估LLMs时纳入不确定性的重要性 (2024-01-22)|
-| Psychometrics Eval | 微软亚洲研究院 | [Psychometrics Eval](https://arxiv.org/abs/2310.16379) | 微软亚洲研究院提出了一种基于心理测量学的通用型人工智能评估方法，旨在解决传统评估方法在预测力、信息量和测试工具质量上的局限。该方法借鉴心理测量学的理论，通过识别AI的关键心理构念，设计针对性测验并应用项目反应理论进行精准评分，同时引入信度和效度概念确保评估的可靠性和准确性。这一框架扩展了心理测量学方法，适用于评估AI在处理未知复杂任务时的表现，但同时也面临着如何区分AI的“个体”与“总体”、处理prompts敏感性以及评估人类与AI构念差异等开放性问题 (2023-10-19)  |
-| CommonGen-Eval | allenai |[CommonGen-Eval](https://github.com/allenai/CommonGen-Eval) | 使用CommonGen-lite数据集对LLM进行评估的研究，使用了GPT-4模型进行评估，比较了不同模型的性能，并列出了排行榜上的模型结果 (2024-01-04) |
-| felm | hkust | [felm](https://github.com/hkust-nlp/felm)| | FELM is a meta benchmark to evaluate factuality evaluation for large language models. The benchmark comprises 847 questions that span five distinct domains: world knowledge, science/technology, writing/recommendation, reasoning, and math. We gather prompts corresponding to each domain by various sources including standard datasets like truthfulQA, online platforms like Github repositories, ChatGPT generation or drafted by authors. We then obtain responses from ChatGPT for these prompts. For each response, we employ fine-grained annotation at the segment level, which includes reference links, identified error types, and the reasons behind these errors as provided by our annotators. (2023-10-03) |
-| just-eval | AI2 Mosaic |[just-eval](https://github.com/Re-Align/just-eval)| 基于GPT的评估工具，用于对LLM进行多方面、可解释的评估，可以评估帮助性、清晰度、真实性、深度和参与度等方面 (2023-12-05) |
-| EQ-Bench | EQ-Bench | [EQ-Bench](https://github.com/EQ-bench/EQ-Bench) | 用于评估语言模型情感智能的基准测试，包含171个问题(相比v1的60个问题)和一种新的评分系统，能更好地区分模型之间的性能差异 (2023-12-20) |
-| CRUXEval | MIT CSAIL | [CRUXEval](https://arxiv.org/abs/2401.03065) | CRUXEval是一个用于代码推理、理解和执行评估的基准，包含800个Python函数及其输入输出对，测试输入预测和输出预测任务。许多在HumanEval上得分高的模型在CRUXEval上表现不佳，突显了改进代码推理能力的需求。最佳模型GPT-4结合了思维链(CoT)，在输入预测和输出预测上的pass@1分别达到了75％和81％。该基准测试暴露了开源和闭源模型之间的差距。GPT-4未能完全通过CRUXEval，提供了对其局限性和改进方向的见解 (2024-01-05)|
-| MLAgentBench | snap-stanford | [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) | MLAgentBench是一套端到端的机器学习（ML）研究任务，用于对AI研究代理进行基准测试，其中代理的目标是根据给定的数据集和机器学习任务描述，自主地开发或改进一个ML模型。每个任务都是一个交互式的环境，直接反映了人类研究者所看到的情况，其中代理可以读取可用的文件，在计算集群上运行多个实验，并分析结果以实现指定的研究目标。具体来说，包括了15个不同的ML工程任务，可以通过尝试不同的机器学习方法、数据处理、架构、训练过程来实现 (2023-10-05) |
-| AlignBench | THUDM | [AlignBench](https://github.com/THUDM/AlignBench) | AlignBench是一个用于评估中文大语言模型对齐性能的全面、多维度的评测基准。AlignBench 构建了人类参与的数据构建流程，来保证评测数据的动态更新。AlignBench 采用多维度、规则校准的模型评价方法（LLM-as-Judge），并且结合思维链（Chain-of-Thought）生成对模型回复的多维度分析和最终的综合评分，增强了评测的高可靠性和可解释性 (2023-12-01)|
-| UltraEval | OpenBMB | [UltraEval](https://github.com/OpenBMB/UltraEval) | UltraEval是一个开源的基础模型能力评测框架，提供了一套轻量级、易于使用的评测体系，支持主流大模型的性能评估。它的主要特色如下：（1）轻量易用的评测框架：具备简洁直观的设计，依赖少，易于部署，具有良好的扩展性，适用多种评测场景。（）2灵活多样的评测方法：提供了统一的prompt模板和丰富的评估指标，同时支持自定义。（3）高效快速的推理部署：支持包括torch和vLLM在内的多种模型部署方案，并实现了多实例部署以加速评测过程。（4）公开透明的开源榜单：维护一个公开的、可追溯和可复现的评测榜单，由社区推动更新，确保透明度。（5）官方权威的评测数据：采用广泛认可的官方评测集，保证评测的公平性和标准化，确保结果具有可比性和复现性  (2023-11-24) |
-| IFEval | google-research | [Instruction_Following_Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) | 大型语言模型的一个核心能力是遵循自然语言指令。然而，对这种能力的评估并没有标准化：人工评估费用高、速度慢，并且缺乏客观的可重复性，而基于LLM的自动评估可能存在评估者LLM的偏见或能力限制。为了克服这些问题，google的研究者引入了用于大型语言模型的指令遵循评估（IFEval）。IFEval是一个简单易复现的评估基准，侧重于一组“可验证指令”，例如“写入超过400字”和“至少提到AI关键词3次”。IFEval确定了25种这些可验证指令，并构建了约500个提示，每个提示包含一个或多个可验证指令 （2023-11-15） |
-| LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | 一个名为LLMBar的具有挑战性的元评估基准，旨在测试LLM评估器在识别遵循指令的输出方面的能力。LLMBar包含419个实例，每个实例包含一条指令和两个输出：一个忠实并正确地遵循指令，另一个则偏离指令。每个实例还有一个金标签，指示哪个输出在客观上更好 （2023-10-29） |
-| HalluQA | Fudan, Shanghai AI Lab | [HalluQA](https://github.com/xiami2019/HalluQA/) | 幻觉是文本生成领域的一个经典问题，HalluQA是一个中文大模型幻觉评测基准，收集了450条数据，其中misleading部分175条，misleading-hard部分69条，knowledge部分206条，每个问题平均有2.8个正确答案和错误答案标注。为了提高HalluQA的可用性，作者设计了一个使用GPT-4担任评估者的评测方法。具体来说，把幻觉的标准以及作为参考的正确答案以指令的形式输入给GPT-4，让GPT-4判断模型的回复有没有出现幻觉 （2023-11-08） |
-| FMTI | stanford | [FMTI](https://crfm.stanford.edu/fmti/) | 提出基础模型透明度指数（The Foundation Model Transparency Index），来评估不同开发者在模型训练和部署方面的透明度。该指数包含100个指标，评估范围广泛，包括数据、计算资源、劳动力等多个方面。对10家公司旗舰模型的评估显示，平均透明度指数仅为37/100，存在很大提升空间 （2023-10-18） |
-| LLMBar | princeton-nlp | [LLMBar](https://github.com/princeton-nlp/LLMBar) | LLMBar引入了一个具有挑战性的meta评估基准LLMBAR，旨在测试LLM评估者识别指令跟随输出的能力。还提出了一套新颖的提示策略，进一步缩小了LLM和人类评估者之间的差距 (2023-10-11) |
-| BAMBOO | RUCAIBox | [BAMBOO](https://github.com/RUCAIBox/BAMBOO) | BAMBOO基准测试是一个用于分析LLMs的长文本建模能力的综合基准测试。在BAMBOO基准测试中，有来自5个任务的10个数据集，即，问答、幻觉检测、语言建模、代码补全和文本排序。我们的基准测试是根据以下原则构建的：综合能力评估、避免数据污染、准确的自动评估、不同的长度等级 (2023-10-11) |
-| TRACE | Fudan University | [TRACE](https://arxiv.org/abs/2310.06762) | TRACE是一个专为评估大型语言模型（LLMs）的持续学习能力而设计的新型基准测试。TRACE包含了8个不同的数据集，涵盖了包括领域特定任务、多语言能力、代码生成和数学推理等在内的挑战性任务 (2023-10-05)  |
-| ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | ColossalEval 是一个项目，提供一个统一评估流程的项目，用于在不同的公共数据集或自己的数据集上评估语言模型，使用传统指标以及来自 GPT（生成式预训练模型）的帮助 |
-| LLMEval²-WideDeep | AlibabaResearch | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | 构建了最大、最多样化的英语评估基准LLMEval²，供LLM评估者使用，包括15个任务、8个能力和2,553个样本。实验结果表明，一个更宽的网络（涉及许多审阅者）和2层（一轮讨论）的性能最佳，将Kappa相关系数从0.28提高到0.34。我们还利用WideDeep来辅助评估中文LLM，这加速了评估时间4.6倍，节省了60%的成本 |
-| Aviary | ray-project | [Aviary](github.com/ray-project/aviary) |允许在一个地方与各种大型语言模型(LLM)进行交互。可以直接比较不同模型的输出，按质量进行排名，获得成本和延迟估计等功能。特别支持在Hugging Face上托管的Transformer模型，并在许多情况下还支持DeepSpeed推理加速 (202306) |
-| Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer)| "Do not answer" 是一个开源数据集，旨在以低成本评估LLM（大型语言模型）的安全机制。该数据集经过策划和筛选，仅包含那些负责任的语言模型不回答的提示。除了人工标注外，“Do not answer” 还实施了基于模型的评估，其中一个经过6亿次微调的类似BERT的评估器获得了与人类和GPT-4相媲美的结果 |
-| LucyEval | 甲骨文 | [LucyEval](http://lucyeval.besteasy.com/) | 中文大语言模型成熟度评测——LucyEval，能够通过对模型各方面能力的客观测试，找到模型的不足，帮助设计者和工程师更加精准地调整、训练模型，助力大模型不断迈向更智能的未来 |
-| Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | 多维能力覆盖，涵盖了7个能力维度和51个任务；多方面的评估方法协作，综合使用3种不同但互补的评估方法；全面的中文基准测试，同时提供英文评估能力 |
-| ChatEval | THU-NLP | [ChatEval](https://github.com/thunlp/ChatEval) |ChatEval旨在简化人类对生成的文本进行评估的过程。当给定不同的文本片段时，ChatEval中的角色(由法学硕士扮演)可以自主地讨论细微差别和差异，利用他们指定的角色，随后提供他们的判断|
-| FlagEval | 智源/清华 | [FlagEval](https://flageval.baai.ac.cn/#/home) | 智源出品，结合主观和客观评分，提供了LLM的评分榜单|
-| InfoQ大模型综合能力评估 | InfoQ | [InfoQ评测](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651170429&idx=1&sn=b98af3bd14c9f97f1aa07f0f839bb3ec&scene=21#wechat_redirect) | 面向中文，排名为 ChatGPT > 文心一言 > Claude > 星火|
-| Chain-of-thought评估 | Yao Fu | [COT评估](https://github.com/FranxYao/chain-of-thought-hub) | 包括 GSM8k、MATH 等复杂问题排名|
-| Z-Bench中文真格基金评测 | 真格基金 | [ Z-Bench](https://github.com/zhenbench/z-bench) | 国产中文模型的编程可用性相对较低，模型水平差异不大，两个版本的 ChatGLM 有明显提升|
-| CMU开源聊天机器人评测应用 | CMU | [zeno-build](https://github.com/zeno-ml/zeno-build) | 在对话场景中进行训练可能很重要，排名为 ChatGPT > Vicuna > 其他|
-| lmsys-arena | Berkley | [lmsys排名榜](https://lmsys.org/blog/2023-05-03-arena/) | 使用 Elo 评分机制，排名为 GPT4 > Claude > GPT3.5 > Vicuna > 其他|
-| Huggingface开源LLM排行榜 | huggingface | [HF开源LLM排行榜](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 仅评估开源模型，在 Eleuther AI 的四个评估集上排名，Falcon 夺冠，vicuna 亦夺冠|
-| AlpacaEval | tatsu-lab | [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | 开源模型领先者 vicuna、openchat 和 wizardlm 的基于LLM的自动评估|
-| chinese-llm-benchmark | jeinlee1991 | [llm-benchmark](https://github.com/jeinlee1991/chinese-llm-benchmark) | 中文大模型能力评测榜单：覆盖百度文心一言、chatgpt、阿里通义千问、讯飞星火、belle / chatglm6b 等开源大模型，多维度能力评测。不仅提供能力评分排行榜，也提供所有模型的原始输出结果 |
-| Open LLM Leaderboard | HuggingFace | [Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | 由HuggingFace组织的一个LLM评测榜单，目前已评估了较多主流的开源LLM模型。评估主要包括AI2 Reasoning Challenge, HellaSwag, MMLU, TruthfulQA四个数据集上的表现，主要以英文为主 |
-| SQUAD	| Stanford NLP Group	| [SQUAD](https://rajpurkar.github.io/SQuAD-explorer/)	| 评估模型在阅读理解任务上的表现 |
-| MultiNLI	| New York University, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/) | 评估模型在不同文体之间理解句子关系的能力 |
-| LogiQA	| Tsinghua University and Microsoft Research Asia	| [LogiQA](https://github.com/lgw863/LogiQA-dataset)	| 评估模型的逻辑推理能力 |
-| HellaSwag	| University of Washington and Allen Institute for AI	| [HellaSwag](https://rowanzellers.com/hellaswag/)	| 评估模型的推理能力 |
-| LAMBADA	| University of Trento and Fondazione Bruno Kessler	| [LAMBADA](https://zenodo.org/record/2630551#.ZFUKS-zML0p)	| 评估模型使用预测段落最后一个词的方式来衡量长期理解能力 |
-| CoQA	| Stanford NLP Group	| [CoQA](https://stanfordnlp.github.io/coqa/)	| 评估模型在理解文本段落并回答一系列相互关联的问题，这些问题出现在对话中的能力 |
-| ParlAI	| Facebook AI Research	| [ParlAI](https://github.com/facebookresearch/ParlAI)	| 评估模型在准确性、F1分数、困惑度（模型预测序列中下一个词的能力）、人类评价（相关性、流畅度和连贯性）、速度和资源利用率、鲁棒性（模型在不同条件下的表现，如噪声输入、对抗攻击或数据质量变化）、泛化能力等方面的表现 |
-| LIT (Language Interpretability Tool) | Google |	[LIT](https://pair-code.github.io/lit/)	| 提供一个平台，可以根据用户定义的指标进行评估，分析模型的优势、弱点和潜在偏差 |
-| Adversarial NLI (ANLI) | Facebook AI Research, New York University, Johns Hopkins University, University of Maryland, Allen Institute for AI | [Adversarial NLI (ANLI)](https://github.com/facebookresearch/anli) | 评估模型在对抗样本下的鲁棒性、泛化能力、推理解释能力和一致性，以及资源使用效率（内存使用、推理时间和训练时间）|
-| AlpacaEval | tatsu-lab | [AlpacaEval](https://github.com/tatsu-lab/alpaca_eval) | AlpacaEval是一种基于LLM的快速、廉价且可靠的自动评估方法。它基于AlpacaFarm评估集，测试模型遵循一般用户指令的能力。然后，这些响应与提供的GPT-4、Claude或ChatGPT基于自动注释者的参考Davinci003响应进行比较，从而产生上述的胜率 |
-| OpenAI Evals | OpenAI | [OpenAI Evals](https://github.com/openai/evals) | 评估生成文本的准确性、多样性、一致性、鲁棒性、迁移性、效率和公平性 |
-| EleutherAI LM Eval | EleutherAI | [EleutherAI LM Eval](https://github.com/EleutherAI/lm-evaluation-harness) | 评估模型在少量样本下的表现和在多种任务上的微调效果 |
-| OpenAI Moderation API | OpenAI | [OpenAI Moderation API](https://platform.openai.com/docs/api-reference/moderations) | 过滤有害或不安全的内容 |
-| GLUE Benchmark | NYU, University of Washington, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [GLUE Benchmark](https://gluebenchmark.com/) | 评估模型在语法、改写、文本相似度、推理、文本蕴含、代词指代等任务上的表现 |
-| MT-bench | UC Berkeley, UCSD, CMU, Stanford, MBZUAI | [MT-bench](https://arxiv.org/abs/2306.05685) | MT-bench旨在测试多轮对话和遵循指令的能力，包含80个高质量的多轮问题，涵盖常见用例并侧重于具有挑战性的问题，以区分不同的模型。它包括8个常见类别的用户提示，以指导其构建：写作、角色扮演、提取、推理、数学、编程等 | 
-| XieZhi | Fudan Univesity | [XieZhi](https://github.com/MikeGu721/XiezhiBenchmark) | A comprehensive evaluation suite for Language Models (LMs). It consists of 249587 multi-choice questions spanning 516 diverse disciplines and four difficulty levels. 新的领域知识综合评估基准测试：Xiezhi。对于多选题，Xiezhi涵盖了516种不同学科中的220,000个独特问题，其中涵盖了13个学科。作者还提出了Xiezhi-Specialty和Xiezhi-Interdiscipline，每个都含有15k个问题。使用Xiezhi基准测试评估了47种先进的LLMs的性能|
-| C_Eval | 上交、清华以及爱丁堡大学 | [C_Eval](https://cevalbenchmark.com/index.html#home) | 上交、清华以及爱丁堡大学合作产出的一个评测集，包含52个学科来评估大模型高级知识和推理能力，其评估了包含 GPT-4、ChatGPT、Claude、LLaMA、Moss 等多个模型的性能。|
-| AGIEval | 微软研究院 | [AGIEval](https://www.microsoft.com/en-us/research/project/agi-evaluation/) | 由微软研究院发起，旨在全面评估基础模型在人类认知和问题解决相关任务上的能力，包含了中国的高考、司法考试，以及美国的SAT、LSAT、GRE和GMAT等20个公开且严谨的官方入学和职业资格考试|
-| MMCU | 甲骨易AI研究院 | [MMCU](https://github.com/Felixgithub2017/MMCU) | 甲骨易AI研究院提出一种衡量中文大模型处理多任务准确度的测试, 数据集的测试内容涵盖四大领域：医疗、法律、心理学和教育。题目的数量达到1万+，其中包括医疗领域2819道题，法律领域3695道题，心理学领域2001道，教育领域3331道 |
-| CMMLU | MBZUAI & ShangHai JiaoTong & Microsoft | [CMMLU](https://github.com/haonan-li/CMMLU) | Measuring massive multitask language understanding in Chinese |
-| MMLU | paperswithcode.com | [MMLU](https://paperswithcode.com/dataset/mmlu) | 该测评数据集涵盖 STEM、人文学科、社会科学等领域的 57 个学科。难度从初级到专业高级，既考验世界知识，又考验解决问题的能力。学科范围从数学和历史等传统领域到法律和伦理等更专业的领域。主题的粒度和广度使基准成为识别模型盲点的理想选择 |
-| Gaokao | ExpressAI | [Gaokao](https://github.com/ExpressAI/AI-Gaokao) | “高考基准”旨在评估和追踪我们在达到人类智力水平方面取得的进展。它不仅可以提供对现实世界场景中实际有用的不同任务和领域的全面评估，还提供丰富的人类表现，以便大模型等可以直接与人类进行比较 |
-| GAOKAO-Bench | OpenLMLab | [GAOKAO-Bench](https://github.com/OpenLMLab/GAOKAO-Bench) | GAOKAO-bench是一个以中国高考题目为数据集，测评大模型语言理解能力、逻辑推理能力的测评框架 |
-| Safety Eval | 清华大学 | [Safety Eval 安全大模型评测](http://115.182.62.166:18000) | 清华收集的一个评测集，涵盖了仇恨言论、偏见歧视言论、犯罪违法、隐私、伦理道德等八大类别，包括细粒度划分的40余个二级安全类别，并依托于一套系统的安全评测框架 |
-| SuperCLUE-Safety | CLUEbenchmark | [SuperCLUE-Safety](github.com/CLUEbenchmark/SuperCLUE-Safety) | 中文大模型多轮对抗安全基准 |
-| SuperCLUE | CLUEbenchmark | [SuperCLUE](https://github.com/CLUEbenchmark/SuperCLUE) | 中文的一个榜单，这里从基础能力、专业能力、中文特性三个角度进行准备测试集 基础能力能力包括：语义理解、对话、逻辑推理、角色模拟、代码、生成与创作等10项能力。专业能力包括：包括了中学、大学与专业考试，涵盖了从数学、物理、地理到社会科学等50多项能力。中文特性能力：针对有中文特点的任务，包括了中文成语、诗歌、文学、字形等10项多种能力 |
-| BIG-Bench-Hard | Stanford NLP | [BIG-Bench-Hard](https://github.com/suzgunmirac/BIG-Bench-Hard) | 一组包含23个具有挑战性的BIG-Bench任务，我们称之为BIG-Bench Hard（BBH）。这些任务是以前的语言模型评估未能超越平均人工评分者的任务 |
-| BIG-bench | google | [BIG-bench](https://github.com/google/BIG-bench) | BIG bench由 204 项任务组成，任务主题涉及语言学、儿童发展、数学、常识推理、生物学、物理学、社会偏见、软件开发等等领域的问题 |
-| JioNLP-LLM评测数据集 | jionlp | [JioNLP-LLM评测数据集](https://github.com/dongrixinyu/JioNLP/wiki/LLM评测数据集) | LLM 评测数据集主要用于评测通用 LLM 的效果评价。着眼考察 LLM 模型对人类用户的帮助效果、辅助能力，可否达到一个【智能助手】的水平。题型包括：选择题来源于中国大陆国内各种专业性考试，重点在于考察模型对客观知识的覆盖面，占比 32%；主观题来源于日常总结，主要考察用户对 LLM 常用功能的效果 |
-| promptbench | microsoft | [promptbench](https://github.com/microsoft/promptbench) | PromptBench是一个强大的工具，旨在仔细研究和分析大型语言模型与各种提示的互动。它提供了一个方便的基础设施，用于模拟对模型的黑盒对抗提示攻击并评估它们的性能。这个存储库托管了必要的代码库、数据集和说明，以促进这些实验的进行 |
-| KoLA | THU-KEG | [KoLA](http://103.238.162.37:31622) | Knowledge-oriented LLM Assessment benchmark（KoLA）由清华大学知识工程组（THU-KEG）托管，旨在通过进行认真的设计，考虑数据、能力分类和评估指标，来精心测试LLMs的全球知识。这个基准测试包含80个高质量的多轮问题 |
-| M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | 一个多语言、多模态、多层次的用于研究大型语言模型的基准测试 |
+|         Name          |      Organization       |                           Website                            |                         Description                          |
+| :-------------------: | :---------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|       MMLU-Pro        |      TIGER-AI-Lab       |     [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro)     | MMLU-Pro is an improved version of the MMLU dataset. MMLU has long been a reference for multiple-choice knowledge datasets. However, recent studies have shown that it contains noise (some questions are unanswerable) and is too easy (due to the evolution of model capabilities and increased contamination). MMLU-Pro provides ten options instead of four, requires reasoning on more questions, and has undergone expert review to reduce noise. It is of higher quality and more challenging than the original. MMLU-Pro reduces the impact of prompt variations on model performance, a common issue with its predecessor MMLU. Research indicates that models using "Chain of Thought" reasoning perform better on this new benchmark, suggesting that MMLU-Pro is better suited for evaluating the subtle reasoning abilities of AI. (2024-05-20) |
+|  TrustLLM Benchmark   |        TrustLLM         | [TrustLLM](https://trustllmbenchmark.github.io/TrustLLM-Website/) | TrustLLM is a benchmark for evaluating the trustworthiness of large language models. It covers six dimensions of trustworthiness and includes over 30 datasets to comprehensively assess the functional capabilities of LLMs, ranging from simple classification tasks to complex generative tasks. Each dataset presents unique challenges and has benchmarked 16 mainstream LLMs (including commercial and open-source models). |
+|         DyVal         |        Microsoft        |      [DyVal](https://github.com/microsoft/promptbench)       | Concerns have been raised about the potential data contamination in the vast training corpora of LLMs. Additionally, the static nature and fixed complexity of current benchmarks may not adequately measure the evolving capabilities of LLMs. DyVal is a general and flexible protocol for dynamically evaluating LLMs. Leveraging the advantages of directed acyclic graphs, DyVal dynamically generates evaluation samples with controllable complexity. It has created challenging evaluation sets for reasoning tasks such as mathematics, logical reasoning, and algorithmic problems. Various LLMs, from Flan-T5-large to GPT-3.5-Turbo and GPT-4, have been evaluated. Experiments show that LLMs perform worse on DyVal-generated samples of different complexities, highlighting the importance of dynamic evaluation. The authors also analyze failure cases and results of different prompting methods. Furthermore, DyVal-generated samples not only serve as evaluation sets but also aid in fine-tuning to enhance LLM performance on existing benchmarks. (2024-04-20) |
+|      RewardBench      |          AIAI           |    [RewardBench](https://github.com/allenai/reward-bench)    | RewardBench is an evaluation benchmark for language model reward models, assessing the strengths and weaknesses of various models. It reveals that existing models still exhibit significant shortcomings in reasoning and instruction following. It includes a [Leaderboard](https://hf.co/spaces/allenai/reward-bench), [Code](https://github.com/allenai/reward-bench), and [Dataset](https://hf.co/datasets/allenai/reward-bench) (2024-03-20). |
+|        LV-Eval        |     Infinigence-AI      |       [LVEval](https://github.com/infinigence/LVEval)        | LV-Eval is a long-text evaluation benchmark featuring five length tiers (16k, 32k, 64k, 128k, and 256k), with a maximum text test length of 256k. The average text length of LV-Eval is 102,380 characters, with a minimum/maximum text length of 11,896/387,406 characters. LV-Eval primarily consists of two types of evaluation tasks: single-hop QA and multi-hop QA, encompassing 11 sub-datasets in Chinese and English. During its design, LV-Eval introduced three key technologies: Confusion Facts Insertion (CFI) to enhance challenge, Keyword and Phrase Replacement (KPR) to reduce information leakage, and Answer Keywords (AK) based evaluation metrics (combining answer keywords and word blacklists) to improve the objectivity of evaluation results (2024-02-06). |
+| LLM-Uncertainty-Bench |         Tencent         | [LLM-Uncertainty-Bench](https://github.com/smartyfh/LLM-Uncertainty-Bench) | A new benchmark method for LLMs has been introduced, incorporating uncertainty quantification. Based on nine LLMs tested across five representative NLP tasks, it was found that: I) More accurate LLMs may exhibit lower certainty; II) Larger-scale LLMs may display greater uncertainty than smaller models; III) Instruction fine-tuning tends to increase the uncertainty of LLMs. These findings underscore the importance of including uncertainty in LLM evaluations (2024-01-22). |
+|  Psychometrics Eval   | Microsoft Research Asia |    [Psychometrics Eval](https://arxiv.org/abs/2310.16379)    | Microsoft Research Asia has proposed a generalized evaluation method for AI based on psychometrics, aiming to address limitations in traditional evaluation methods concerning predictive power, information volume, and test tool quality. This approach draws on psychometric theories to identify key psychological constructs of AI, design targeted tests, and apply Item Response Theory for precise scoring. It also introduces concepts of reliability and validity to ensure evaluation reliability and accuracy. This framework extends psychometric methods to assess AI performance in handling unknown complex tasks but also faces open questions such as distinguishing between AI "individuals" and "populations," addressing prompt sensitivity, and evaluating differences between human and AI constructs (2023-10-19). |
+|    CommonGen-Eval     |         AllenAI         | [CommonGen-Eval](https://github.com/allenai/CommonGen-Eval)  | A study using the CommonGen-lite dataset to evaluate LLMs, employing GPT-4 for assessment and comparing the performance of different models, with results listed on the leaderboard (2024-01-04). |
+|         felm          |          HKUST          |          [felm](https://github.com/hkust-nlp/felm)           | FELM is a meta-benchmark for evaluating the factual assessment of large language models. The benchmark comprises 847 questions spanning five distinct domains: world knowledge, science/technology, writing/recommendation, reasoning, and mathematics. Prompts corresponding to each domain are gathered from various sources, including standard datasets like TruthfulQA, online platforms like GitHub repositories, ChatGPT-generated prompts, or those drafted by authors. For each response, fine-grained annotation at the segment level is employed, including reference links, identified error types, and reasons behind these errors as provided by annotators (2023-10-03). |
+|       just-eval       |       AI2 Mosaic        |      [just-eval](https://github.com/Re-Align/just-eval)      | A GPT-based evaluation tool for multi-faceted and explainable assessment of LLMs, capable of evaluating aspects such as helpfulness, clarity, factuality, depth, and engagement (2023-12-05). |
+|       EQ-Bench        |        EQ-Bench         |       [EQ-Bench](https://github.com/EQ-bench/EQ-Bench)       | A benchmark for evaluating the emotional intelligence of language models, featuring 171 questions (compared to 60 in v1) and a new scoring system that better distinguishes performance differences among models (2023-12-20). |
+|       CRUXEval        |        MIT CSAIL        |         [CRUXEval](https://arxiv.org/abs/2401.03065)         | CRUXEval is a benchmark for evaluating code reasoning, understanding, and execution. It includes 800 Python functions and their input-output pairs, testing input prediction and output prediction tasks. Many models that perform well on HumanEval underperform on CRUXEval, highlighting the need for improved code reasoning capabilities. The best model, GPT-4 with chain-of-thought (CoT), achieved pass@1 rates of 75% and 81% for input prediction and output prediction, respectively. The benchmark exposes gaps between open-source and closed-source models. GPT-4 failed to fully pass CRUXEval, providing insights into its limitations and directions for improvement (2024-01-05). |
+|     MLAgentBench      |      snap-stanford      | [MLAgentBench](https://github.com/snap-stanford/MLAgentBench) | MLAgentBench is a suite of end-to-end machine learning (ML) research tasks for benchmarking AI research agents. These agents aim to autonomously develop or improve an ML model based on a given dataset and ML task description. Each task represents an interactive environment that directly reflects what human researchers encounter. Agents can read available files, run multiple experiments on compute clusters, and analyze results to achieve the specified research objectives. Specifically, it includes 15 diverse ML engineering tasks that can be accomplished by attempting different ML methods, data processing, architectures, and training processes (2023-10-05). |
+|      AlignBench       |          THUDM          |      [AlignBench](https://github.com/THUDM/AlignBench)       | AlignBench is a comprehensive and multi-dimensional benchmark for evaluating the alignment performance of Chinese large language models. It constructs a human-in-the-loop data creation process to ensure dynamic data updates. AlignBench employs a multi-dimensional, rule-based model evaluation method (LLM-as-Judge) and combines chain-of-thought (CoT) to generate multi-dimensional analyses and final comprehensive scores for model responses, enhancing the reliability and explainability of evaluations (2023-12-01). |
+|       UltraEval       |         OpenBMB         |      [UltraEval](https://github.com/OpenBMB/UltraEval)       | UltraEval is an open-source foundational model capability evaluation framework offering a lightweight and easy-to-use evaluation system that supports mainstream large model performance assessments. Its key features include: (1) a lightweight and user-friendly evaluation framework with intuitive design, minimal dependencies, easy deployment, and good scalability for various evaluation scenarios; (2) flexible and diverse evaluation methods with unified prompt templates and rich evaluation metrics, supporting customization; (3) efficient and rapid inference deployment supporting multiple model deployment solutions, including torch and vLLM, and enabling multi-instance deployment to accelerate the evaluation process; (4) a transparent and open leaderboard with publicly accessible, traceable, and reproducible evaluation results driven by the community to ensure transparency; and (5) official and authoritative evaluation data using widely recognized official datasets to guarantee evaluation fairness and standardization, ensuring result comparability and reproducibility (2023-11-24). |
+|        IFEval         |     google-research     | [Instruction Following Eval](https://github.com/google-research/google-research/tree/master/instruction_following_eval) | Following natural language instructions is a core capability of large language models. However, the evaluation of this capability lacks standardization: human evaluation is expensive, slow, and lacks objective reproducibility, while automated evaluation based on LLMs may be biased by the evaluator LLM's capabilities or limitations. To address these issues, researchers at Google introduced Instruction Following Evaluation (IFEval), a simple and reproducible benchmark focusing on a set of "verifiable instructions," such as "write over 400 words" and "mention the AI keyword at least 3 times." IFEval identifies 25 such verifiable instructions and constructs approximately 500 prompts, each containing one or more verifiable instructions (2023-11-15). |
+|        LLMBar         |      princeton-nlp      |      [LLMBar](https://github.com/princeton-nlp/LLMBar)       | LLMBar is a challenging meta-evaluation benchmark designed to test the ability of LLM evaluators to identify instruction-following outputs. It contains 419 instances, each consisting of an instruction and two outputs: one faithfully and correctly following the instruction, and the other deviating from it. Each instance also includes a gold label indicating which output is objectively better (2023-10-29). |
+|HalluQA | Fudan, Shanghai AI Lab | [HalluQA](https://github.com/xiami2019/HalluQA/) | HalluQA is a Chinese LLM hallucination evaluation benchmark, featuring 450 data points including 175 misleading entries, 69 hard misleading entries, and 206 knowledge-based entries. Each question has an average of 2.8 correct and incorrect answers annotated. To enhance the usability of HalluQA, the authors designed a GPT-4-based evaluation method. Specifically, hallucination criteria and correct answers are input as instructions to GPT-4, which evaluates whether the model's response contains hallucinations.|
+|FMTI | Stanford | [FMTI](https://crfm.stanford.edu/fmti/) | The Foundation Model Transparency Index (FMTI) evaluates the transparency of developers in model training and deployment across 100 indicators, including data, computational resources, and labor. Evaluations of flagship models from 10 companies reveal an average transparency score of only 37/100, indicating significant room for improvement.|
+|ColossalEval | Colossal-AI | [ColossalEval](https://github.com/hpcaitech/ColossalAI/tree/main/applications/ColossalEval) | A project by Colossal-AI offering a unified evaluation workflow for assessing language models on public datasets or custom datasets using traditional metrics and GPT-assisted evaluations.|
+| LLMEval²-WideDeep | Alibaba Research | [LLMEval²](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/WideDeep) | Constructed as the largest and most diverse English evaluation benchmark for LLM evaluators, featuring 15 tasks, 8 capabilities, and 2,553 samples. Experimental results indicate that a wider network (involving many reviewers) with two layers (one round of discussion) performs best, improving the Kappa correlation coefficient from 0.28 to 0.34. WideDeep is also utilized to assist in evaluating Chinese LLMs, accelerating the evaluation process by 4.6 times and reducing costs by 60%.|
+|Aviary | Ray Project | [Aviary](https://github.com/ray-project/aviary) | Enables interaction with various large language models (LLMs) in one place. Direct comparison of different model outputs, ranking by quality, and obtaining cost and latency estimates are supported. It particularly supports models hosted on Hugging Face and in many cases, also supports DeepSpeed inference acceleration.|
+| Do-Not-Answer | Libr-AI | [Do-Not-Answer](https://github.com/Libr-AI/do-not-answer) | An open-source dataset designed to evaluate the safety mechanisms of LLMs at a low cost. It consists of prompts that responsible language models should not respond to. In addition to human annotations, it implements model-based evaluation, where a BERT-like evaluator fine-tuned 600 million times achieves results comparable to humans and GPT-4.|
+| LucyEval | Oracle | [LucyEval](http://lucyeval.besteasy.com/) | Chinese LLM maturity evaluation—LucyEval can objectively test various aspects of model capabilities, identify model shortcomings, and help designers and engineers more accurately adjust and train models, aiding LLMs in advancing toward greater intelligence.|
+| Zhujiu | Institute of Automation, CAS | [Zhujiu](http://www.zhujiu-benchmark.com) | Covers seven capability dimensions and 51 tasks; employs three complementary evaluation methods; offers comprehensive Chinese benchmarking with English evaluation capabilities.|
+| ChatEval | THU-NLP | [ChatEval](https://github.com/thunlp/ChatEval) | ChatEval aims to simplify the human evaluation process of generated text. Given different text fragments, roles (played by master's students) in ChatEval can autonomously discuss nuances and differences, providing judgments based on their designated roles.|
+|FlagEval | Zhiyuan/Tsinghua | [FlagEval](https://flageval.baai.ac.cn/#/home) | Produced by Zhiyuan, combining subjective and objective scoring to offer LLM score rankings.|
+|InfoQ Comprehensive LLM Evaluation | InfoQ | [InfoQ Evaluation](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=265117067676&idx=1&sn=b98af3bd14c9f9fbb3e7f0f8f9bb3ec&scene=21#wechat_redirect) | Chinese-oriented ranking: ChatGPT > Wenxin Yiyang > Claude > Xinghuo.|
+|Chain-of-Thought Evaluation | Yao Fu | [COT Evaluation](https://github.com/FranxYao/chain-of-thought-hub) | Includes rankings for GSM8k and MATH complex problems.|
+|Z-Bench | True Fund | [Z-Bench](https://github.com/zhenbench/z-bench) | Indicates that domestic Chinese models have relatively low programmability, with minimal performance differences between models. The two versions of ChatGLM show significant improvement.|
+| CMU Chatbot Evaluation  | CMU | [zeno-build](https://github.com/zeno-ml/zeno-build) | In conversational training scenarios, rankings show ChatGPT > Vicuna > others.|
+|lmsys-arena | Berkeley | [lmsys Ranking](https://lmsys.org/blog/2023-05-03-arena/) | Utilizes Elo scoring mechanism, with rankings showing GPT4 > Claude > GPT3.5 > Vicuna > others.|
+|Huggingface Open LLM Leaderboard | Huggingface | [HF Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | Organized by Huggingface, this leaderboard evaluates multiple mainstream open-source LLMs. Evaluations focus on four datasets: AI2 Reasoning Challenge, HellaSwag, MMLU, and TruthfulQA, primarily in English.|
+| AlpacaEval | tatsu-lab | [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | Open-source model leader where Vicuna, OpenChat, and WizardLM lead based on LLM-based automatic evaluations.|
+|Chinese-LLM-Benchmark | jeinlee1991 | [llm-benchmark](https://github.com/jeinlee1991/chinese-llm-benchmark) | Chinese LLM capability evaluation rankings covering Baidu Ernie Bot, ChatGPT, Alibaba Tongyi Qianwen, iFLYTEK Xinghuo, and open-source models like Belle and ChatGLM6B. It provides capability score rankings and original model output results.|
+|Open LLM Leaderboard | HuggingFace | [Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) | Organized by HuggingFace to evaluate multiple mainstream open-source LLMs. Evaluations primarily focus on four datasets: AI2 Reasoning Challenge, HellaSwag, MMLU, and TruthfulQA, mainly in English.|
+|Stanford Question Answering Dataset (SQuAD) | Stanford NLP Group | [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) | Evaluates model performance on reading comprehension tasks.|
+|Multi-Genre Natural Language Inference (MultiNLI) | New York University, DeepMind, Facebook AI Research, Allen Institute for AI, Google AI Language | [MultiNLI](https://cims.nyu.edu/~sbowman/multinli/) | Evaluates the model's ability to understand sentence relationships across different text genres.|
+|LogiQA | Tsinghua University and Microsoft Research Asia | [LogiQA](https://github.com/lgw863/LogiQA-dataset) | Evaluates the model's logical reasoning capabilities.|
+| HellaSwag | University of Washington and Allen Institute for AI | [HellaSwag](https://rowanzellers.com/hellaswag/) | Evaluates the model's reasoning capabilities.|
+| The LAMBADA Dataset | University of Trento and Fondazione Bruno Kessler | [LAMBADA](https://zenodo.org/record/2630551#.ZFUKS-zML0p) | Evaluates the model's ability to predict the last word of a paragraph, reflecting long-term understanding capabilities.|
+|CoQA | Stanford NLP Group | [CoQA](https://stanfordnlp.github.io/coqa/) | Evaluates the model's ability to understand text paragraphs and answer a series of interrelated questions in conversational settings.|
+|ParlAI | Facebook AI Research | [ParlAI](https://github.com/facebookresearch/ParlAI) | Evaluates model performance in accuracy, F1 score, perplexity (the model's ability to predict the next word in a sequence), human evaluation (relevance, fluency, and coherence), speed and resource utilization, robustness (model performance under varying conditions such as noisy inputs, adversarial attacks, or changes in data quality), and generalization capabilities.|
+|Language Interpretability Tool (LIT) | Google | [LIT](https://pair-code.github.io/lit/) | Provides a platform for evaluating models based on user-defined metrics, analyzing model strengths, weaknesses, and potential biases.|
+|Adversarial NLI (ANLI) | Facebook AI Research, New York University, Johns Hopkins University, University of Maryland, Allen Institute for AI | [Adversarial NLI (ANLI)](https://github.com/facebookresearch/anli) | Evaluates the model's robustness, generalization capabilities, reasoning explanation abilities, consistency, and resource efficiency (memory usage, inference time, and training time). |
 
-<br><br>
-### 垂直领域
-
-| 名称 | 机构 | 领域 | 网址 | 简介 |
-| :--: | :--: | :--: | :--: | :-- |
-| Seismometer | Epic | 医疗 | [seismomete](github.com/epic-open-source/seismometer) | Seismometer是一个医疗保健领域AI模型性能评估工具，提供标准化评估标准，帮助决策基于本地数据和工作流程的模型验证，支持模型性能的持续监控. seismometer is a suite of tools that allows you to evaluate AI model performance using these standardized evaluation criteria to help you make decisions based on your own local data and workflows. You can use it to validate a model’s initial performance and continue to monitor its performance over time. Although it can be used for models in any field, it was designed with a focus on validation for healthcare AI models where local validation requires cross-referencing data about patients (such as demographics, clinical interventions, and patient outcomes) and model performance. (2024-05-22) |
-|Medbench| OpenMEDLab | 医疗 | [medbench](https://github.com/open-compass/opencompass/tree/main/opencompass/datasets/medbench/) | MedBench致力于打造一个科学、公平且严谨的中文医疗大模型评测体系及开放平台。我们基于医学权威标准，不断更新维护高质量的医学数据集，全方位多维度量化模型在各个医学维度的能力. MedBench, a comprehensive benchmark for the Chinese medical domain, comprising 40,041 questions sourced from authentic examination exercises and medical reports of diverse branches of medicine. In particular, this benchmark is composed of four key components: the Chinese Medical Licensing Examination, the Resident Standardization Training Examination, the Doctor In-Charge Qualification Examination, and real-world clinic cases encompassing examinations, diagnoses, and treatments. (2023-12-20)|
-|Fin-Eva| 蚂蚁集团、上海财经大学 | 金融 | [Fin-Eva](https://github.com/alipay/financial_evaluation_dataset) | 蚂蚁集团、上海财经大学联合推出金融评测集Fin-Eva Version 1.0，覆盖财富管理、保险、投资研究等多个金融场景以及金融专业主题学科，总评测题数目达到1.3w+。蚂蚁数据源包括各业务领域数据、互联网公开数据，经过数据脱敏、文本聚类、语料精筛、数据改写等处理过程后，结合金融领域专家的评审构建而成。上海财经大学数据源主要基于相关领域权威性考试的各类真题和模拟题对知识大纲的要求。蚂蚁部分涵盖金融认知、金融知识、金融逻辑、内容生成以及安全合规五大类能力33个子维度共8445个测评题； 上财部分涵盖金融，经济，会计和证书等四大领域，包括4661个问题，涵盖34个不同的学科。Fin-Eva Version 1.0 全部采用单选题这类有固定答案的问题，配合相应指令让模型输出标准格式 (2023-12-20) |
-| GenMedicalEval | SJTU | 医疗 |[GenMedicalEval](https://github.com/MediaBrain-SJTU/GenMedicalEval)| 1.**大规模综合性能评测**：GenMedicalEval构建了一个覆盖16大主要科室、3个医生培养阶段、6种医学临床应用场景、基于40，000+道医学考试真题和55，000+三甲医院患者病历构建的总计100,000+例医疗评测数据。这一数据集从医学基础知识、临床应用、安全规范等层面全面评估大模型在真实医疗复杂情境中的整体性能，弥补了现有评测基准未能覆盖医学实践中众多实际挑战的不足。 2.**深入细分的多维度场景评估**：GenMedicalEval融合了医师的临床笔记与医学影像资料，围绕检查、诊断、治疗等关键医疗场景，构建了一系列多样化和主题丰富的生成式评估题目，为现有问答式评测模拟真实临床环境的开放式诊疗流程提供了有力补充。 3.**创新性的开放式评估指标和自动化评估模型**：为解决开放式生成任务缺乏有效评估指标的难题，GenMedicalEval采用先进的结构化抽取和术语对齐技术，构建了一套创新的生成式评估指标体系，这一体系能够精确衡量生成答案的医学知识准确性。进一步地，基于自建知识库训练了与人工评价相关性较高的医疗自动评估模型，提供多维度医疗评分和评价理由。这一模型的特点是无数据泄露和自主可控，相较于GPT-4等其他模型，具有独特优势 (2023-12-08)|
-| OpenFinData | 上海人工智能实验室 | 金融 | [OpenFinData](https://opencompass.org.cn) |首个全场景金融测评数据集OpenFinData(基于"OpenCompass"框架)，由上海人工智能实验室发布，包含的六大模块和十九项金融任务维度，覆盖多层次数据类型和多样化金融场景，每一条数据均由实际金融业务场景产生 (2024-01-04)|
-|LAiW| Sichuan University | 法律 |[LAiW](https://github.com/Dai-shen/LAiW)|从法学角度和可实现性上对法律 NLP的能力进行划分，将其分成了3大能力，共计13个基础任务：(1)法律 NLP 基础能力：评测法律基础任务、 NLP 基础任务和法律信息抽取的能力，包括法条推送、要素识别、命名实体识别、司法要点摘要和案件识别 5 个基础任务；(2)法律基础应用能力：评测大模型对法律领域知识的基础应用能力，包括争议焦点挖掘、类案匹配、刑事裁判预测、民事裁判预测和法律问答 5 个基础任务；(3)法律复杂应用能力：评测大模型对法律领域知识的复杂应用能力，包括司法说理生成、案情理解和法律咨询 3 个基础任务 ([2023-10-08)|
-| LawBench | Nanjing University | 法律 | [LawBench](https://github.com/open-compass/lawbench) | LawBench经过精心设计，可对大语言模型的法律能力进行精确评估。 在设计测试任务时，模拟了司法认知的三个维度，并选择了20个任务来评估大模型的能力。与一些仅有多项选择题的现有基准相比，LawBench包含了更多与现实世界应用密切相关的任务类型，如法律实体识别、阅读理解、犯罪金额计算和咨询等。 LawBench认识到当前大模型的安全性策略可能会拒绝回应某些法律询问，或在理解指令方面遇到困难，从而导致缺乏回应。因此，LawBench中开发了一个单独的评估指标 "弃权率"，以衡量模型拒绝提供答案或未能正确理解指令的频率。 研究者评测了51种大语言模型在LawBench上的表现，包括20种多语言模型、22种中文模型和9种法律专用大语言模型 (2023-09-28) |
-| PsyEval | SJTU | 心理 | [PsyEval](https://arxiv.org/abs/2311.09189) | 在心理健康研究中，大型语言模型（LLMs）的使用越来越受到关注，尤其是其疾病检测等显著能力。研究者为心理健康领域量身定制了第一个全面基准，以系统地评估LLMs在这个领域的能力。这个基准包括六个子任务，涵盖了三个维度，以全面评估LLMs在心理健康领域的能力。为每个子任务设计了相应的简洁提示。并全面评估了八个高级LLM （2023-11-15） |
-| PPTC| Microsoft, PKU | 办公 | [PPTC](https://github.com/gydpku/PPTC) | PPTC是用于测试大模型在PPT生成方面的能力的基准，包含 279 个涵盖不同主题的多回合会话和数百条涉及多模式操作的说明。研究团队还提出了PPTX-Match评估系统，该系统根据预测文件而不是标签API序列来评估大语言模型是否完成指令，因此它支持各种LLM生成的API序列目前PPT生成存在三个方面的不足：多轮会话中的错误累积、长PPT模板处理和多模态感知问题 (2023-11-04) |
-| LLMRec | Alibaba | 推荐 | [LLMRec](https://github.com/williamliujl/LLMRec)| 对热门LLMs（（如ChatGPT、LLaMA、ChatGLM等），在5种推荐相关任务上进行基准测试，这些任务包括：评分预测、顺序推荐、直接推荐、解释生成和评论摘要。此外，还研究了监督微调的有效性，以提高LLMs的指令遵从能力 (2023-10-08)|
-| LAiW | Dai-shen | 法律 | [LAiW](https://github.com/Dai-shen/LAiW) | 针对法律大型语言模型的快速发展，提出了第一个基于法律能力的中文法律大型语言模型基准。将法律能力划分为基本的法律自然语言处理能力、基本的法律应用能力和复杂的法律应用能力三个层次。完成了第一阶段的评估，主要集中在基本法律自然语言处理能力的能力评估。评估结果显示，尽管一些法律大型语言模型的性能优于其基础模型，但与ChatGPT相比仍存在差距 (2023-10-25)|
-| OpsEval | Tsinghua University | AIOps | [OpsEval](https://arxiv.org/abs/2310.07637) | OpsEval是一个针对大型语言模型的综合任务导向的AIOps基准测试，评估了LLMs在三个关键场景（有线网络操作、5G通信操作和数据库操作）中的熟练程度，这些场景涉及不同的能力水平（知识回忆、分析思维和实际应用）。该基准包含了7,200个问题，分为多项选择和问答（QA）两种格式，支持英文和中文 (2023-10-02) |
-| SWE-bench | princeton-nlp | 软件 | [SWE-bench](https://github.com/princeton-nlp/SWE-bench) | SWE-bench 是一个用于评估大型语言模型在从 GitHub 收集的实际软件问题上的基准测试。给定一个代码库和一个问题，语言模型的任务是生成一个能够解决所描述问题的补丁 |
-| BLURB | Mindrank AI | 医疗 | [BLURB](https://microsoft.github.io/BLURB/index.html) | BLURB包括一个基于PubMed的生物医学自然语言处理应用的全面基准测试，以及一个用于跟踪社区进展的排行榜。BLURB包含六种多样化任务、十三个公开可用数据集。为了避免过于强调具有许多可用数据集的任务（例如命名实体识别NER），BLURB以所有任务的宏平均作为主要分数进行报告。BLURB的排行榜不依赖于模型，任何能够使用相同的训练和开发数据生成测试预测的系统都可以参与。BLURB的主要目标是降低在生物医学自然语言处理中的参与门槛，并帮助加速这个对社会和人类有积极影响的重要领域的进展 |
-| SmartPlay | microsoft | 游戏 | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay是一个大型语言模型 (LLM) 基准，设计为易于使用，提供各种游戏来测试 |
-| FinEval | SUFE-AIFLM-Lab | 金融 | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
-| GSM8K | OpenAI | 数学 | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K是一个包含8.5K个高质量语言多样性的小学数学单词问题的数据集。GSM8K将它们分为7.5K个训练问题和1K个测试问题。这些问题需要2到8个步骤来解决，解决方案主要涉及执行一系列基本算术运算（+ - / *）以达到最终答案 |
-
-<br><br>
-### RAG检索增强生成评估
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| BERGEN | NAVER | [BERGEN](https://github.com/naver/bergen) | BERGEN：RAG系统基准测试库，专注于问答（QA）领域的性能评估，旨在提高RAG管线中各组件影响的理解和比较的一致性，通过HuggingFace简化新数据集和模型的复现性和集成. BERGEN (BEnchmarking Retrieval-augmented GENeration), a library to benchmark RAG systems, focusing on question-answering (QA). Inconsistent benchmarking poses a major challenge in comparing approaches and understanding the impact of each component in a RAG pipeline. BERGEN was designed to ease the reproducibility and integration of new datasets and models thanks to HuggingFace. (2024-05-31) |
-| CRAG | Meta Reality Labs | [CRAG](https://arxiv.org/abs/2406.04744) | CRAG是一个包含近4500个QA对和模拟API的RAG基准集，覆盖广泛领域和问题类型，可以启发各方研究人员提升问答系统的可靠性和准确性. A factual question answering benchmark of 4,409 question-answer pairs and mock APIs to simulate web and Knowledge Graph (KG) search. CRAG is designed to encapsulate a diverse array of questions across five domains and eight question categories, reflecting varied entity popularity from popular to long-tail, and temporal dynamisms ranging from years to seconds. (2024-06-07) |
-| raga-llm-hub | RAGA-AI | [raga-llm-hub](https://github.com/raga-ai-hub/raga-llm-hub) | raga-llm-hub是一个全面的语言和学习模型（LLM）评估工具包。它拥有超过100个精心设计的评价指标，是允许开发者和组织有效评估和比较LLM的最具综合性的平台，并为LLM和检索增强生成（RAG）应用建立基本的防护措施。这些测试评估包括相关性与理解、内容质量、幻觉、安全与偏见、上下文相关性、防护措施以及漏洞扫描等多个方面，同时提供一系列基于指标的测试用于定量分析 (2024-03-10) |
-| ARES | Stanford | [ARES](https://github.com/stanford-futuredata/ARES) | ARES是一个用于检索增强生成系统的自动评估框架，包含三个组件：(1)一组用于评估标准（例如上下文相关性、答案忠实度和/或答案相关性）的已注释查询、文档和答案三元组的人工首选验证集。至少应有50个示例，但最好有几百个示例。(2)一组用于在您的系统中评分上下文相关性、答案忠实度和/或答案相关性的少量示例。(3)由您的RAG系统输出的用于评分的大量未标记查询-文档-答案三元组。ARES培训流程包括三个步骤：(1)从领域内段落生成合成查询和答案。(2)通过在合成生成的训练数据上进行微调，为评分RAG系统准备LLM评委。(3)部署准备好的LLM评委以评估您的RAG系统在关键性能指标上的表现 (2023-09-27) |
-| RGB | CAS | [RGB](https://github.com/chen700564/RGB) | RGB是一个用于英语和中文RAG评估的新语料库/检索增强生成基准（RGB），RGB分析了不同大型语言模型在RAG所需的4种基本能力方面的表现，包括噪声鲁棒性、负面拒绝、信息整合和反事实鲁棒性。RGB将基准中的实例分为4个独立的测试集，基于上述基本能力以解决案例。然后，在RGB中评估了6个代表性的LLMs，以诊断当前LLMs在应用RAG时面临的挑战。评估显示，虽然LLMs表现出一定程度的噪声鲁棒性，但在负面拒绝、信息整合和处理虚假信息方面仍然存在显著困难。上述评估结果表明，在有效应用RAG到LLMs方面仍有相当长的路要走 (2023-09-04) |
-| tvalmetrics | TonicAI | [tvalmetrics](https://github.com/TonicAI/tvalmetrics) | Tonic Validate Metrics中的指标使用LLM辅助评估，这意味着它们使用一个LLM（例如gpt-4）来评分RAG应用的输出的不同方面。Tonic Validate Metrics中的指标使用这些对象和LLM辅助评估来回答有关RAG应用的问题。（1）答案相似度分数： RAG答案与答案应该是多么匹配？（2）检索精度： 检索的上下文是否与问题相关？（3）增强精度： 答案中是否包含与问题相关的检索上下文？（4）增强准确度： 检索上下文在答案中的占比如何？（5）答案一致性（二进制）： 答案是否包含来自检索上下文之外的任何信息？（6）检索k-召回： 对于前k个上下文向量，在检索上下文是前k个上下文向量的子集的情况下，检索上下文是否是回答问题的前k个上下文向量中所有相关上下文？ (2023-11-11) |
-
-<br><br>
-### Agent能力
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| SuperCLUE-Agent | CLUE | [SuperCLUE-Agent](https://github.com/CLUEbenchmark/SuperCLUE-Agent) | SuperCLUE-Agent，一个聚焦于Agent能力的多维度基准测试，包括3大核心能力、10大基础任务，可以用于评估大语言模型在核心Agent能力上的表现，包括工具使用、任务规划和长短期记忆能力。经过对16个支持中文的大语言模型的测评发现：在Agent的核心基础能力中文任务上，GPT4模型大幅领先；同时，代表性国内模型，包括开源和闭源模型，已经较为接近GPT3.5水平 (2023-10-20) |
-| AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (2023-08-01) |
-| AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
-| ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
-
-
-<br><br>
-### 代码能力
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| McEval | Beihang | [McEval](https://github.com/MCEVAL/McEval) | 为了更加全面的探究大语言模型的代码能力，该工作提出了一个涵盖40种编程语言的大规模多语言多任务代码评测基准（McEval），包含了16000个测试样本。评测结果表明开源模型与GPT-4相比，在多语言的编程能力上仍然存在较大差距，绝大多数开源模型甚至无法超越GPT-3.5。此外测试也表明开源模型中如Codestral，DeepSeek-Coder, CodeQwen以及一些衍生模型也展现出优异的多语言能力. McEval is a massively multilingual code benchmark covering 40 programming languages with 16K test samples, which substantially pushes the limits of code LLMs in multilingual scenarios. The benchmark contains challenging code completion, understanding, and generation evaluation tasks with finely curated massively multilingual instruction corpora McEval-Instruct. McEval leaderboard can be found [here](https://mceval.github.io/). (2024-06-11) |
-| HumanEval-XL | FloatAI | [SuperCLUE-Agent](https://github.com/FloatAI/HumanEval-XL) | 现有的基准测试主要集中在将英文提示翻译成多语言代码，或者局限于非常有限的自然语言。这些基准测试忽视了大规模多语言NL到多语言代码生成的广阔领域，留下了评估多语言LLMs的一个重要空白。为了应对这一挑战，作者们提出了HumanEval-XL，这是一个大规模多语言代码生成基准测试，旨在填补这一缺陷。HumanEval-XL在23种自然语言和12种编程语言之间建立了联系，包含22,080个提示，平均每个提示有8.33个测试用例。通过确保跨多种NL和PLs的平行数据，HumanEval-XL为多语言LLMs提供了一个全面的评估平台，允许评估对不同NLs的理解。这项工作是填补多语言代码生成领域NL泛化评估空白的开创性步骤。 (2024-02-26) |
-| DebugBench | 清华大学 |[DebugBench](https://github.com/thunlp/DebugBench)| DebugBench是一个包含4,253个实例的LLM调试基准，涵盖了C++、Java和Python中四个主要的漏洞类别和18个次要类别。为构建DebugBench，作者从LeetCode社区收集了代码片段，使用GPT-4向源数据植入漏洞，并确保了严格的质量检查 (2024-01-09) |
-
-
-<br><br>
-### 多模态-跨模态
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| ChartVLM | Shanghai AI Lab | [ChartVLM](https://github.com/UniModal4Reasoning/ChartVLM) | ChartX是一个多模式评估集，包括18种图表类型、7种图表任务、22个学科主题和高质量的图表数据。此外本文作者还开发了ChartVLM，为处理依赖于可解释模式的多模态任务（比如图表或几何图像领域的推理任务）提供了新视角。 (2024-02-19) |
-| ReForm-Eval | FudanDISC | [ReForm-Eval](https://github.com/FudanDISC/ReForm-Eval) | ReForm-Eval是一个用于综合评估大视觉语言模型的基准数据集。ReForm-Eval通过对已有的、不同任务形式的多模态基准数据集进行重构，构建了一个具有统一且适用于大模型评测形式的基准数据集。所构建的ReForm-Eval具有如下特点：构建了横跨8个评估维度，并为每个维度提供足量的评测数据（平均每个维度4000余条）；具有统一的评测问题形式（包括单选题和文本生成问题）；方便易用，评测方法可靠高效，且无需依赖ChatGPT等外部服务；高效地利用了现存的数据资源，无需额外的人工标注，并且可以进一步拓展到更多数据集上 (2023-10-24) |
-| LVLM-eHub | OpenGVLab | [LVLM-eHub](https://github.com/OpenGVLab/Multi-Modality-Arena) | "Multi-Modality Arena"是一个用于大型多模态模型的评估平台。在Fastchat之后，两个匿名模型在视觉问答任务上进行并排比较，"Multi-Modality Arena"允许你在提供图像输入的同时，对视觉-语言模型进行并排基准测试。支持MiniGPT-4，LLaMA-Adapter V2，LLaVA，BLIP-2等多种模型 |
-
-<br><br>
-### 长上下文
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| InfiniteBench | OpenBMB | [InfiniteBench](https://github.com/OpenBMB/InfiniteBench) |理解、处理长文本，是大模型迈向更深层次理解与交互阶段必备的能力。现已有大模型声称可以处理100k+的长序列，但是对应的标准评测集却是空缺的。InfiniteBench构建了一个面向 100k+ 的评测集，该评测集针对大模型在长文本方面的五项能力而设计：检索、数学、代码、问答、和摘要。(1)长上下文: InfiniteBench 测试数据的平均上下文长度为195k，远超现有评测数据。(2)多领域多语言: InfiniteBench 评测集包含12个任务，包括中英双语，涵盖了检索、数学、代码、问答、和摘要等5个领域。(3)前瞻性挑战性: InfiniteBench 测试任务，对标当前最强的模型如 GPT-4, Claude 2 等。(4)真实场景与合成场景: InfiniteBench 既包含真实场景数据，探测大模型在处理实际问题的能力；也包含合成数据，为测试数据拓展上下文窗口提供了便捷. InfiniteBench is the first LLM benchmark featuring an average data length surpassing 100K tokens. InfiniteBench comprises synthetic and realistic tasks spanning diverse domains, presented in both English and Chinese. The tasks in InfiniteBench are designed to require well understanding of long dependencies in contexts, and make simply retrieving a limited number of passages from contexts not sufficient for these tasks. (2024-03-19) |
-
-<br><br>
-### 推理速度
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| llmperf | Ray | [llmperf](https://github.com/ray-project/llmperf) | 用于检验和基准测试LLM性能的库，可以测量第一个token出现的时间(TTFT)、两个token之间的响应时间(ITL)以及超过3秒没有返回数据的请求数量，还可以验证LLM的输出是否正确，主要检查是否有请求之间的交叉(请求A得到请求B的响应)。输入和输出token长度的变化也是设计考虑，目的是更好地代表实际情况。当前支持的端点包括OpenAI兼容端点(如Anyscale端点、私有端点、OpenAI、Fireworks等)、Together、Vertex AI和SageMaker （2023-11-03）|
-| llm-analysis | Databricks  | [llm-analysis](https://github.com/cli99/llm-analysis) | Latency and Memory Analysis of Transformer Models for Training and Inference. |
-| llm-inference-benchmark | Nankai University | [llm-inference-benchmark](https://github.com/ninehills/llm-inference-benchmark) | LLM Inference framework benchmark. |
-| llm-inference-bench | CentML | [llm-inference-bench](https://github.com/CentML/llm-inference-bench) | This benchmark operates entirely external to any serving framework, and can easily be extended and modified. Provides a variety of statistics and profiling modes. It is intended to be a standalone tool for precise statistically significant benchmarking with a particular input/output distribution. Each request consists of a single prompt and single decode. |
-| GPU-Benchmarks-on-LLM-Inference | UIUC | [GPU-Benchmarks-on-LLM-Inference](https://github.com/XiongjieDai/GPU-Benchmarks-on-LLM-Inference) | Use llama.cpp to test the LLaMA models inference speed of different GPUs on RunPod, 16-inch M1 Max MacBook Pro, M2 Ultra Mac Studio, 14-inch M3 MacBook Pro and 16-inch M3 Max MacBook Pro. |
-
-<br><br>
-### 量化压缩
-
-| 名称 | 机构 | 网址 | 简介 |
-| :--: | :--: | :--: | :-- |
-| LLM-QBench | Beihang/SenseTime | [LLM-QBench](https://github.com/ModelTC/llmc)| LLM-QBench is a Benchmark Towards the Best Practice for Post-training Quantization of Large Language Models", and it is also an efficient LLM compression tool with various advanced compression methods, supporting multiple inference backends. (2024-05-09) |
-
-<br><br>
 ## Demos
-- [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - 开源AI大模型“匿名”竞技场！你在这里可以成为一名裁判，给两个事先不知道名字的模型回答打分，评分后将给出他们的真实身份。目前已经“参赛”的选手包括Vicuna、Koala、OpenAssistant (oasst)、Dolly、ChatGLM、StableLM、Alpaca、LLaMA等。
+
+- [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - An open-source AI LLM "anonymous" arena! Here, you can become a judge, score two model responses without knowing their identities, and after scoring, the true identities of the models will be revealed. Participants include Vicuna, Koala, OpenAssistant (oasst), Dolly, ChatGLM, StableLM, Alpaca, LLaMA, and more.
 
 ![image](https://github.com/onejune2018/Awesome-LLM-Eval/assets/35061855/7c6c2ff4-a189-42c8-a8d4-e4defecebf85)
 
-
-<br><br>
 ## Leaderboards
 
-| Platform                               | Access                                                                                 |
-| :------------------------------------: | ---------------------------------------------------------------------------------------|
-| ACLUE                                  | [[Source](https://github.com/isen-zhang/ACLUE)                                         |
-| AgentBench                             | [[Source](https://llmbench.ai/agent)]                                                  |
-| AlpacaEval                             | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]                                   |
-| ANGO                                   | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)]                      |
-| BeHonest                               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)]                           |
-| Big Code Models Leaderboard            | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)]           |
-| Chatbot Arena                          | [[Source](https://lmarena.ai/?leaderboard)]                                            |
-| Chinese Large Model Leaderboard        | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)]                       |
-| CLEVA                                  | [[Source](http://www.lavicleva.com/)]                                                  |
-| CompassRank                            | [[Source](https://rank.opencompass.org.cn/)]                                           |
-| CompMix                                | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                                          |
-| C-Eval                                 | [[Source](https://cevalbenchmark.com/)]                                                |
-| DreamBench++                           | [[Source](https://dreambenchplus.github.io/#leaderboard)]                              |
-| FELM                                   | [[Source](https://hkust-nlp.github.io/felm)]                                           |
-| FlagEval                               | [[Source](https://flageval.baai.ac.cn/)]                                               |
-| Hallucination Leaderboard              | [[Source](https://github.com/vectara/hallucination-leaderboard)]                       |
-| HELM                                   | [[Source](https://crfm.stanford.edu/helm/)]                                            |
-| Huggingface Open LLM Leaderboard       | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)]    |
-| Huggingface LLM Perf Leaderboard       | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)]                 |
-| Indico LLM Leaderboard                 | [[Source](https://indicodata.ai/llm)                                                   |
-| InfiBench                              | [[Source](https://infi-coder.github.io/infibench)]                                     |
-| InterCode                              | [[Source](https://intercode-benchmark.github.io/)]                                     |
-| LawBench                               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]                            |
-| LLMEval                                | [[Source](https://openrouter.ai/rankings)]                                             |
-| LLM Rankings                           | [[Source](http://llmeval.com)]                                                         |
-| LLM Use Case Leaderboard               | [[Source](https://llmleaderboard.goml.io)]                                             |
-| LucyEval                               | [[Source](https://openrouter.ai/rankings)]                                             |
-| M3CoT                                  | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)]            |
-| MMLU by Task Leaderboard               | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)]         |
-| MMToM-QA                               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]                              |
-| MathEval                               | [[Source](https://matheval.ai/)]                                                       |
-| OlympicArena                           | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)]                       |
-| OpenEval                               | [[Source](http://openeval.org.cn/#/rank)]                                              |
-| Open Multilingual LLM Eval             | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)]      |
-| PubMedQA                               | [[Source](https://pubmedqa.github.io/)]                                                |
-| SafetyBench                            | [[Source](https://llmbench.ai/safety)]                                                 |
-| SciBench                               | [[Source](https://scibench-ucla.github.io/#leaderboard)]                               |
-| SciKnowEval                            | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]                                   |
-| SEED-Bench                             | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)]             |
-| SuperBench                             | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)]                     |
-| SuperCLUE                              | [[Source](https://www.superclueai.com/)]                                               |
-| SuperGLUE                              | [[Source](https://super.gluebenchmark.com/)]                                           |
-| SuperLim                               | [[Source](https://lab.kb.se/leaderboard/results)]                                      |
-| TAT-DQA                                | [[Source](https://nextplusplus.github.io/TAT-DQA)]                                     |
-| TAT-QA                                 | [[Source](https://nextplusplus.github.io/TAT-QA)]                                      |
-| TheoremOne LLM Benchmarking Metrics    | [[Source](https://llm-evals.formula-labs.com/)]                                        |
-| Toloka                                 | [[Source](https://toloka.ai/llm-leaderboard/)]                                         |
-| Toolbench                              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)]            |
-| VisualWebArena                         | [[Source](https://jykoh.com/vwa)]                                                      |
-| We-Math                                | [[Source](https://we-math.github.io/#leaderboard)]                                     |
-| WHOOPS!                                | [[Source](https://whoops-benchmark.github.io)]                                         |
+|              Platform               | Access                                                       |
+| :---------------------------------: | ------------------------------------------------------------ |
+|                ACLUE                | [[Source](https://github.com/isen-zhang/ACLUE)               |
+|             AgentBench              | [[Source](https://llmbench.ai/agent)]                        |
+|             AlpacaEval              | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]         |
+|                ANGO                 | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)] |
+|              BeHonest               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)] |
+|     Big Code Models Leaderboard     | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)] |
+|            Chatbot Arena            | [[Source](https://lmarena.ai/?leaderboard)]                  |
+|   Chinese Large Model Leaderboard   | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)] |
+|                CLEVA                | [[Source](http://www.lavicleva.com/)]                        |
+|             CompassRank             | [[Source](https://rank.opencompass.org.cn/)]                 |
+|               CompMix               | [[Source](https://qa.mpi-inf.mpg.de/compmix)]                |
+|               C-Eval                | [[Source](https://cevalbenchmark.com/)]                      |
+|            DreamBench++             | [[Source](https://dreambenchplus.github.io/#leaderboard)]    |
+|                FELM                 | [[Source](https://hkust-nlp.github.io/felm)]                 |
+|              FlagEval               | [[Source](https://flageval.baai.ac.cn/)]                     |
+|      Hallucination Leaderboard      | [[Source](https://github.com/vectara/hallucination-leaderboard)] |
+|                HELM                 | [[Source](https://crfm.stanford.edu/helm/)]                  |
+|  Huggingface Open LLM Leaderboard   | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)] |
+|  Huggingface LLM Perf Leaderboard   | [[Source](https://huggingface.co/spaces/optimum/llm-perf-leaderboard)] |
+|       Indico LLM Leaderboard        | [[Source](https://indicodata.ai/llm)]                        |
+|              InfiBench              | [[Source](https://infi-coder.github.io/infibench)]           |
+|              InterCode              | [[Source](https://intercode-benchmark.github.io/)]           |
+|              LawBench               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]  |
+|               LLMEval               | [[Source](https://openrouter.ai/rankings)]                   |
+|            LLM Rankings             | [[Source](http://llmeval.com)]                               |
+|      LLM Use Case Leaderboard       | [[Source](https://llmleaderboard.goml.io)]                   |
+|              LucyEval               | [[Source](https://openrouter.ai/rankings)]                   |
+|                M3CoT                | [[Source](https://lightchen233.github.io/m3cot.github.io/leaderboard.html)] |
+|      MMLU by Task Leaderboard       | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)] |
+|              MMToM-QA               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]    |
+|              MathEval               | [[Source](https://matheval.ai/)]                             |
+|            OlympicArena             | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)] |
+|              OpenEval               | [[Source](http://openeval.org.cn/#/rank)]                    |
+|     Open Multilingual LLM Eval      | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)] |
+|              PubMedQA               | [[Source](https://pubmedqa.github.io/)]                      |
+|             SafetyBench             | [[Source](https://llmbench.ai/safety)]                       |
+|              SciBench               | [[Source](https://scibench-ucla.github.io/#leaderboard)]     |
+|             SciKnowEval             | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]         |
+|             SEED-Bench              | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)] |
+|             SuperBench              | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)] |
+|              SuperCLUE              | [[Source](https://www.superclueai.com/)]                     |
+|              SuperGLUE              | [[Source](https://super.gluebenchmark.com/)]                 |
+|              SuperLim               | [[Source](https://lab.kb.se/leaderboard/results)]            |
+|               TAT-DQA               | [[Source](https://nextplusplus.github.io/TAT-DQA)]           |
+|               TAT-QA                | [[Source](https://nextplusplus.github.io/TAT-QA)]            |
+| TheoremOne LLM Benchmarking Metrics | [[Source](https://llm-evals.formula-labs.com/)]              |
+|               Toloka                | [[Source](https://toloka.ai/llm-leaderboard/)]               |
+|              Toolbench              | [[Source](https://huggingface.co/spaces/qiantong-xu/toolbench-leaderboard)] |
+|           VisualWebArena            | [[Source](https://jykoh.com/vwa)]                            |
+|               We-Math               | [[Source](https://we-math.github.io/#leaderboard)]           |
+|               WHOOPS!               | [[Source](https://whoops-benchmark.github.io)]               |
 
-<br><br>
+
 
 ### Leaderboards for popular Provider (performance and cost, 2024-05-14)
 
@@ -392,143 +257,142 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 ## Papers
 
 - [<img src=https://img.shields.io/badge/EMNLP-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2310.07289) [**Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators**](https://arxiv.org/abs/2310.07289),<br> by *Liang Chen, Yang Deng, Yatao Bian et al.*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2307.03109) [**A Closer Look into Automatic Evaluation Using Large Language Models**](https://browse.arxiv.org/pdf/2310.05657.pdf),<br> by *Cheng-han Chiang, Hungyi Li*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2307.03109) [**A Survey on Evaluation of Large Language Models**](https://arxiv.org/abs/2307.03109),<br> by *Yupeng Chang, Xu Wang, Jindong Wang, Yuan Wu, Linyi Yang, Kaijie Zhu, Hao Chen, Xiaoyuan Yi et al.*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://www.microsoft.com/en-us/research/publication/gpteval-nlg-evaluation-using-gpt-4-with-better-human-alignment/) [**G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment**](https://www.microsoft.com/en-us/research/publication/gpteval-nlg-evaluation-using-gpt-4-with-better-human-alignment/),<br> by *Yang Liu, Dan Iter, Yichong Xu, Shuohang Wang, Ruochen Xu, Chenguang Zhu*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.04023) [**A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning,
-Hallucination, and Interactivity**](https://doi.org/10.48550/arXiv.2302.04023),<br> by *Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji et al.*
-<br><br>
+  Hallucination, and Interactivity**](https://doi.org/10.48550/arXiv.2302.04023),<br> by *Yejin Bang, Samuel Cahyawijaya, Nayeon Lee, Wenliang Dai, Dan Su, Bryan Wilie, Holy Lovenia, Ziwei Ji et al.*
+  <br><br>
 - [<img src=https://img.shields.io/badge/EMNLP-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.12095) [**Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators**](https://arxiv.org/abs/2310.07289),<br> by *Liang Chen, Yang Deng, Yatao Bian, Zeyu Qin, Bingzhe Wu, Tat-Seng Chua, Kam-Fai Wong*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2302.06476) [**Is ChatGPT a General-Purpose Natural Language Processing Task Solver?**](https://arxiv.org/abs/2302.06476),<br> by *Qin, Chengwei, Zhang, Aston, Zhang, Zhuosheng, Chen, Jiaao, Yasunaga, Michihiro and Yang, Diyi*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.06466) [**ChatGPT versus Traditional Question Answering for Knowledge Graphs:
-Current Status and Future Directions Towards Knowledge Graph Chatbots**](https://doi.org/10.48550/arXiv.2302.06466),<br> by *Reham Omar, Omij Mangukiya, Panos Kalnis and Essam Mansour*
-<br><br>
+  Current Status and Future Directions Towards Knowledge Graph Chatbots**](https://doi.org/10.48550/arXiv.2302.06466),<br> by *Reham Omar, Omij Mangukiya, Panos Kalnis and Essam Mansour*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2301.13867) [**Mathematical Capabilities of ChatGPT**](https://doi.org/10.48550/arXiv.2301.13867),<br> by *Simon Frieder, Luca Pinchetti, Ryan-Rhys Griffiths, Tommaso Salvatori, Thomas Lukasiewicz, Philipp Christian Petersen, Alexis Chevalier and Julius Berner*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.08081) [**Exploring the Limits of ChatGPT for Query or Aspect-based Text Summarization**](https://doi.org/10.48550/arXiv.2302.08081),<br> by *Xianjun Yang, Yan Li, Xinlu Zhang, Haifeng Chen and Wei Cheng*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2302.12095) [**On the Robustness of ChatGPT: An Adversarial and Out-of-distribution
-Perspective**](https://doi.org/10.48550/arXiv.2302.12095),<br> by *Jindong Wang, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang et al.*
-<br><br>
+  Perspective**](https://doi.org/10.48550/arXiv.2302.12095),<br> by *Jindong Wang, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang et al.*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2301.04655) [**ChatGPT is not all you need. A State of the Art Review of large
-Generative AI models**](https://doi.org/10.48550/arXiv.2301.04655),<br> by *Roberto Gozalo-Brizuela and Eduardo C. Garrido-Merch\'an*
-<br><br>
+  Generative AI models**](https://doi.org/10.48550/arXiv.2301.04655),<br> by *Roberto Gozalo-Brizuela and Eduardo C. Garrido-Merch\'an*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2302.10198) [**Can ChatGPT Understand Too? A Comparative Study on ChatGPT and Fine-tuned
-BERT**](https://arxiv.org/abs/2302.10198),<br> by *Qihuang Zhong, Liang Ding, Juhua Liu, Bo Du and Dacheng Tao*
-<br><br>
+  BERT**](https://arxiv.org/abs/2302.10198),<br> by *Qihuang Zhong, Liang Ding, Juhua Liu, Bo Du and Dacheng Tao*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2303.07992) [**Evaluation of ChatGPT as a Question Answering System for Answering
-Complex Questions**](https://doi.org/10.48550/arXiv.2303.07992),<br> by *Yiming Tan, Dehai Min, Yu Li, Wenbo Li, Nan Hu, Yongrui Chen and Guilin Qi*
-<br><br>
+  Complex Questions**](https://doi.org/10.48550/arXiv.2303.07992),<br> by *Yiming Tan, Dehai Min, Yu Li, Wenbo Li, Nan Hu, Yongrui Chen and Guilin Qi*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2303.16421) [**ChatGPT is a Knowledgeable but Inexperienced Solver: An Investigation of Commonsense Problem in Large Language Models**](https://arxiv.org/abs/2303.16421),<br> by *Ning Bian, Xianpei Han, Le Sun, Hongyu Lin, Yaojie Lu and Ben He*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2211.09110) [**Holistic Evaluation of Language Models**](https://doi.org/10.48550/arXiv.2211.09110),<br> by *Percy Liang, Rishi Bommasani, Tony Lee, Dimitris Tsipras, Dilara Soylu, Michihiro Yasunaga, Yian Zhang, Deepak Narayanan et al.*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2204.00498) [**Evaluating the Text-to-SQL Capabilities of Large Language Models**](https://doi.org/10.48550/arXiv.2204.00498),<br> by *Nitarshan Rajkumar, Raymond Li and Dzmitry Bahdanau*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/COLING-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://aclanthology.org/2022.coling-1.491) [**Are Visual-Linguistic Models Commonsense Knowledge Bases?**](https://aclanthology.org/2022.coling-1.491),<br> by *Hsiu-Yu Yang and Carina Silberer*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.48550/arXiv.2212.10529) [**Is GPT-3 a Psychopath? Evaluating Large Language Models from a Psychological
-Perspective**](https://doi.org/10.48550/arXiv.2212.10529),<br> by *Xingxuan Li, Yutong Li, Linlin Liu, Lidong Bing and Shafiq R. Joty*
-<br><br>
+  Perspective**](https://doi.org/10.48550/arXiv.2212.10529),<br> by *Xingxuan Li, Yutong Li, Linlin Liu, Lidong Bing and Shafiq R. Joty*
+  <br><br>
 - [<img src=https://img.shields.io/badge/EMNLP-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://aclanthology.org/2022.emnlp-main.132) [**GeoMLAMA: Geo-Diverse Commonsense Probing on Multilingual Pre-Trained
-Language Models**](https://aclanthology.org/2022.emnlp-main.132),<br> by *Da Yin, Hritik Bansal, Masoud Monajatipoor, Liunian Harold Li and Kai-Wei Chang*
-<br><br>
+  Language Models**](https://aclanthology.org/2022.emnlp-main.132),<br> by *Da Yin, Hritik Bansal, Masoud Monajatipoor, Liunian Harold Li and Kai-Wei Chang*
+  <br><br>
 - [<img src=https://img.shields.io/badge/EMNLP-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://aclanthology.org/2022.emnlp-main.653) [**RobustLR: A Diagnostic Benchmark for Evaluating Logical Robustness
-of Deductive Reasoners**](https://aclanthology.org/2022.emnlp-main.653),<br> by *Soumya Sanyal, Zeyi Liao and Xiang Ren*
-<br><br>
+  of Deductive Reasoners**](https://aclanthology.org/2022.emnlp-main.653),<br> by *Soumya Sanyal, Zeyi Liao and Xiang Ren*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2022-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2202.13169) [**A Systematic Evaluation of Large Language Models of Code**](https://arxiv.org/abs/2202.13169),<br> by *Frank F. Xu, Uri Alon, Graham Neubig and Vincent J. Hellendoorn*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2021-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2107.03374) [**Evaluating Large Language Models Trained on Code**](https://arxiv.org/abs/2107.03374),<br> by *Mark Chen, Jerry Tworek, Heewoo Jun, Qiming Yuan, Henrique Pond\'e de Oliveira Pinto, Jared Kaplan, Harrison Edwards, Yuri Burda et al.*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/ACL-2021-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.18653/v1/2021.findings-acl.36) [**GLGE: A New General Language Generation Evaluation Benchmark**](https://doi.org/10.18653/v1/2021.findings-acl.36),<br> by *Dayiheng Liu, Yu Yan, Yeyun Gong, Weizhen Qi, Hang Zhang, Jian Jiao, Weizhu Chen, Jie Fu et al.*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2021-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2104.05861) [**Evaluating Pre-Trained Models for User Feedback Analysis in Software
-Engineering: A Study on Classification of App-Reviews**](https://arxiv.org/abs/2104.05861),<br> by *Mohammad Abdul Hadi and Fatemeh H. Fard*
-<br><br>
+  Engineering: A Study on Classification of App-Reviews**](https://arxiv.org/abs/2104.05861),<br> by *Mohammad Abdul Hadi and Fatemeh H. Fard*
+  <br><br>
 - [<img src=https://img.shields.io/badge/ACL_Findings-2021-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.18653/v1/2021.findings-acl.322) [**Do Language Models Perform Generalizable Commonsense Inference?**](https://doi.org/10.18653/v1/2021.findings-acl.322), [<img src=https://img.shields.io/badge/Code-skyblue alt="img" style="zoom:100%; vertical-align: middle" />](https://github.com/wangpf3/LM-for-CommonsenseInference)<br> by *Peifeng Wang, Filip Ilievski, Muhao Chen and Xiang Ren*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/EMNLP-2021-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://doi.org/10.18653/v1/2021.emnlp-main.598) [**RICA: Evaluating Robust Inference Capabilities Based on Commonsense
-Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Rahul Khanna, Seyeon Lee, Bill Yuchen Lin, Daniel Ho, Jay Pujara and Xiang Ren*
-<br><br>
+  Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Rahul Khanna, Seyeon Lee, Bill Yuchen Lin, Daniel Ho, Jay Pujara and Xiang Ren*
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2020-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2006.14799) [**Evaluation of Text Generation: A Survey**](https://arxiv.org/abs/2006.14799),<br> by *Asli Celikyilmaz, Elizabeth Clark and Jianfeng Gao*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2020-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2007.15780) [**Neural Language Generation: Formulation, Methods, and Evaluation**](https://arxiv.org/abs/2007.15780),<br> by *Cristina Garbacea and Qiaozhu Mei*
-<br><br>
+  <br><br>
 - [<img src=https://img.shields.io/badge/ICLR-2020-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://openreview.net/forum?id=SkeHuCVFDr) [**BERTScore: Evaluating Text Generation with BERT**](https://openreview.net/forum?id=SkeHuCVFDr),<br> by *Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q. Weinberger and Yoav Artzi*
-<br><br>
+  <br><br>
 
 <br><br>
 ## LLM-List
 
 ### Typical LLM details
 
-| 模型         | 参数规模 | 层数 | 自注意力头数 | 嵌入表示维度 | 学习率        | 全局批次大小 | 训练Token数    |
-|--------------|----------|------|------------|--------------|---------------|--------------|----------------|
-| LLaMA2       | 6.7B    | 32   | 32         | 4096        | 3.00E-04     | 400万        | 1.0万亿        |
-| LLaMA2       | 13.0B   | 40   | 40         | 5120        | 3.00E-04     | 400万        | 1.0万亿        |
-| LLaMA2       | 32.5B   | 60   | 52         | 6656        | 1.50E-04     | 400万        | 1.4万亿        |
-| LLaMA2       | 65.2B   | 80   | 64         | 8192        | 1.50E-04     | 400万        | 1.4万亿        |
-| nano-GPT     | 85,584  | 3    | 3          | 768         | 3.00E-04     |              |                |
-| GPT2-small   | 0.12B   | 12   | 12         | 768         | 2.50E-04     |              |                |
-| GPT2-XL      | 1.5B    | 48   | 25         | 1600        | 1.50E-04     |              |                |
-| GPT3         | 175B    | 96   | 96         | 12288       | 1.50E-04     |              | 0.5万亿        |
+| 模型       | Parameter | Layers | Atten  heads | Dimension | Learning rate | batch  size | train tokens |
+| ---------- | --------- | ------ | ------------ | --------- | ------------- | ----------- | ------------ |
+| LLaMA2     | 6.7B      | 32     | 32           | 4096      | 3.00E-04      | 400万       | 1.0万亿      |
+| LLaMA2     | 13.0B     | 40     | 40           | 5120      | 3.00E-04      | 400万       | 1.0万亿      |
+| LLaMA2     | 32.5B     | 60     | 52           | 6656      | 1.50E-04      | 400万       | 1.4万亿      |
+| LLaMA2     | 65.2B     | 80     | 64           | 8192      | 1.50E-04      | 400万       | 1.4万亿      |
+| nano-GPT   | 85,584    | 3      | 3            | 768       | 3.00E-04      |             |              |
+| GPT2-small | 0.12B     | 12     | 12           | 768       | 2.50E-04      |             |              |
+| GPT2-XL    | 1.5B      | 48     | 25           | 1600      | 1.50E-04      |             |              |
+| GPT3       | 175B      | 96     | 96           | 12288     | 1.50E-04      |             | 0.5万亿      |
 
 ### Pre-trained-LLM
 
-|       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
-| :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
-| Switch Transformer | 1.6T |  Decoder(MOE)  |                                                                                                   -                                                                                                   | 2021-01 | [Paper](https://arxiv.org/pdf/2101.03961.pdf)                                                                                    |
-|        GLaM        | 1.2T |  Decoder(MOE)  |                                                                                                   -                                                                                                   | 2021-12 | [Paper](https://arxiv.org/pdf/2112.06905.pdf)                                                                                    |
-|        PaLM        | 540B |     Decoder     |                                                                                                   -                                                                                                   | 2022-04 | [Paper](https://arxiv.org/pdf/2204.02311.pdf)                                                                                    |
-|       MT-NLG       | 530B |     Decoder     |                                                                                                   -                                                                                                   | 2022-01 | [Paper](https://arxiv.org/pdf/2201.11990.pdf)                                                                                    |
-|      J1-Jumbo      | 178B |     Decoder     |                                                                              [api](https://docs.ai21.com/docs/complete-api)                                                                              | 2021-08 | [Paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf)               |
-|        OPT        | 175B |     Decoder     |                                                  [api](https://opt.alpa.ai) \| [ckpt](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT)                                                  | 2022-05 | [Paper](https://arxiv.org/pdf/2205.01068.pdf)                                                                                    |
-|       BLOOM       | 176B |     Decoder     |                                                      [api](https://huggingface.co/bigscience/bloom) \| [ckpt](https://huggingface.co/bigscience/bloom)                                                      | 2022-11 | [Paper](https://arxiv.org/pdf/2211.05100.pdf)                                                                                    |
-|      GPT 3.0      | 175B |     Decoder     |                                                                                      [api](https://openai.com/api/)                                                                                      | 2020-05 | [Paper](https://arxiv.org/pdf/2005.14165.pdf)                                                                                    |
-|       LaMDA       | 137B |     Decoder     |                                                                                                   -                                                                                                   | 2022-01 | [Paper](https://arxiv.org/pdf/2201.08239.pdf)                                                                                    |
-|        GLM        | 130B |     Decoder     |                                                                                [ckpt](https://github.com/THUDM/GLM-130B)                                                                                | 2022-10 | [Paper](https://arxiv.org/pdf/2210.02414.pdf)                                                                                    |
-|        YaLM        | 100B |     Decoder     |                                                                               [ckpt](https://github.com/yandex/YaLM-100B)                                                                               | 2022-06 | [Blog](https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6) |
-|       LLaMA       |  65B  |      Decoder      |                                                                          [ckpt](https://github.com/facebookresearch/llama)                                                                          | 2022-09 | [Paper](https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/)                                                                                     |
-|      GPT-NeoX      | 20B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neox)                                                                              | 2022-04 | [Paper](https://arxiv.org/pdf/2204.06745.pdf)                                                                                    |
-|        UL2        | 20B |    agnostic    | [ckpt](https://huggingface.co/google/ul2#:~:text=UL2%20is%20a%20unified%20framework%20for%20pretraining%20models,downstream%20fine-tuning%20is%20associated%20with%20specific%20pre-training%20schemes.) | 2022-05 | [Paper](https://arxiv.org/pdf/2205.05131v1.pdf)                                                                                  |
-|    鹏程.盘古α    | 13B |     Decoder     |                                                      [ckpt](https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/PanGu-α#模型下载)                                                      | 2021-04 | [Paper](https://arxiv.org/pdf/2104.12369.pdf)                                                                                    |
-|         T5         | 11B | Encoder-Decoder |                                                                                  [ckpt](https://huggingface.co/t5-11b)                                                                                  | 2019-10 | [Paper](https://jmlr.org/papers/v21/20-074.html)                                                                                 |
-|      CPM-Bee      | 10B |     Decoder     |                                                                                [api](https://live.openbmb.org/models/bee)                                                                                | 2022-10 | [Paper](https://arxiv.org/pdf/2012.00413.pdf)                                                                                    |
-|       rwkv-4       |  7B  |      RWKV      |                                                                          [ckpt](https://huggingface.co/BlinkDL/rwkv-4-pile-7b)                                                                          | 2022-09 | [Github](https://github.com/BlinkDL/RWKV-LM)                                                                                     |
-|       GPT-J       |  6B  |     Decoder     |                                                                            [ckpt](https://huggingface.co/EleutherAI/gpt-j-6B)                                                                            | 2022-09 | [Github](https://github.com/kingoflolz/mesh-transformer-jax)                                                                     |
-|      GPT-Neo      | 2.7B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
-|      GPT-Neo      | 1.3B |     Decoder     |                                                                              [ckpt](https://github.com/EleutherAI/gpt-neo)                                                                              | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)                                                                                  |
+|       Model        | Size |  Architecture   |                            Access                            |  Date   | Origin                                                       |
+| :----------------: | :--: | :-------------: | :----------------------------------------------------------: | :-----: | ------------------------------------------------------------ |
+| Switch Transformer | 1.6T |  Decoder(MOE)   |                              -                               | 2021-01 | [Paper](https://arxiv.org/pdf/2101.03961.pdf)                |
+|        GLaM        | 1.2T |  Decoder(MOE)   |                              -                               | 2021-12 | [Paper](https://arxiv.org/pdf/2112.06905.pdf)                |
+|        PaLM        | 540B |     Decoder     |                              -                               | 2022-04 | [Paper](https://arxiv.org/pdf/2204.02311.pdf)                |
+|       MT-NLG       | 530B |     Decoder     |                              -                               | 2022-01 | [Paper](https://arxiv.org/pdf/2201.11990.pdf)                |
+|      J1-Jumbo      | 178B |     Decoder     |        [api](https://docs.ai21.com/docs/complete-api)        | 2021-08 | [Paper](https://uploads-ssl.webflow.com/60fd4503684b466578c0d307/61138924626a6981ee09caf6_jurassic_tech_paper.pdf) |
+|        OPT         | 175B |     Decoder     | [api](https://opt.alpa.ai) \| [ckpt](https://github.com/facebookresearch/metaseq/tree/main/projects/OPT) | 2022-05 | [Paper](https://arxiv.org/pdf/2205.01068.pdf)                |
+|       BLOOM        | 176B |     Decoder     | [api](https://huggingface.co/bigscience/bloom) \| [ckpt](https://huggingface.co/bigscience/bloom) | 2022-11 | [Paper](https://arxiv.org/pdf/2211.05100.pdf)                |
+|      GPT 3.0       | 175B |     Decoder     |                [api](https://openai.com/api/)                | 2020-05 | [Paper](https://arxiv.org/pdf/2005.14165.pdf)                |
+|       LaMDA        | 137B |     Decoder     |                              -                               | 2022-01 | [Paper](https://arxiv.org/pdf/2201.08239.pdf)                |
+|        GLM         | 130B |     Decoder     |          [ckpt](https://github.com/THUDM/GLM-130B)           | 2022-10 | [Paper](https://arxiv.org/pdf/2210.02414.pdf)                |
+|        YaLM        | 100B |     Decoder     |         [ckpt](https://github.com/yandex/YaLM-100B)          | 2022-06 | [Blog](https://medium.com/yandex/yandex-publishes-yalm-100b-its-the-largest-gpt-like-neural-network-in-open-source-d1df53d0e9a6) |
+|       LLaMA        | 65B  |     Decoder     |      [ckpt](https://github.com/facebookresearch/llama)       | 2022-09 | [Paper](https://research.facebook.com/publications/llama-open-and-efficient-foundation-language-models/) |
+|      GPT-NeoX      | 20B  |     Decoder     |        [ckpt](https://github.com/EleutherAI/gpt-neox)        | 2022-04 | [Paper](https://arxiv.org/pdf/2204.06745.pdf)                |
+|        UL2         | 20B  |    agnostic     | [ckpt](https://huggingface.co/google/ul2#:~:text=UL2%20is%20a%20unified%20framework%20for%20pretraining%20models,downstream%20fine-tuning%20is%20associated%20with%20specific%20pre-training%20schemes.) | 2022-05 | [Paper](https://arxiv.org/pdf/2205.05131v1.pdf)              |
+|         T5         | 11B  | Encoder-Decoder |            [ckpt](https://huggingface.co/t5-11b)             | 2019-10 | [Paper](https://jmlr.org/papers/v21/20-074.html)             |
+|      CPM-Bee       | 10B  |     Decoder     |          [api](https://live.openbmb.org/models/bee)          | 2022-10 | [Paper](https://arxiv.org/pdf/2012.00413.pdf)                |
+|       rwkv-4       |  7B  |      RWKV       |    [ckpt](https://huggingface.co/BlinkDL/rwkv-4-pile-7b)     | 2022-09 | [Github](https://github.com/BlinkDL/RWKV-LM)                 |
+|       GPT-J        |  6B  |     Decoder     |      [ckpt](https://huggingface.co/EleutherAI/gpt-j-6B)      | 2022-09 | [Github](https://github.com/kingoflolz/mesh-transformer-jax) |
+|      GPT-Neo       | 2.7B |     Decoder     |        [ckpt](https://github.com/EleutherAI/gpt-neo)         | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)              |
+|      GPT-Neo       | 1.3B |     Decoder     |        [ckpt](https://github.com/EleutherAI/gpt-neo)         | 2021-03 | [Github](https://github.com/EleutherAI/gpt-neo)              |
 
 <br><br>
 ### Instruction-finetuned-LLM
-|       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
-| :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
-|Flan-PaLM| 540B | Decoder |-|2022-10|[Paper](https://arxiv.org/pdf/2210.11416.pdf)|
-|BLOOMZ| 176B | Decoder | [ckpt](https://huggingface.co/bigscience/bloomz) |2022-11|[Paper](https://arxiv.org/pdf/2211.01786.pdf)|
-| InstructGPT |175B| Decoder | [api](https://platform.openai.com/overview) | 2022-03 | [Paper](https://arxiv.org/pdf/2203.02155.pdf) |
-|Galactica|120B|Decoder|[ckpt](https://huggingface.co/facebook/galactica-120b)|2022-11| [Paper](https://arxiv.org/pdf/2211.09085.pdf)|
-| OpenChatKit| 20B | - |[ckpt](https://github.com/togethercomputer/OpenChatKit)| 2023-3 |-|
-| Flan-UL2| 20B  | Decoder | [ckpt](https://github.com/google-research/google-research/tree/master/ul2)|2023-03 | [Blog](https://www.yitay.net/blog/flan-ul2-20b)|
-| Gopher | - | - | - | - | - |
-| Chinchilla | - | - | - | - |- |
-|Flan-T5| 11B | Encoder-Decoder |[ckpt](https://github.com/google-research/t5x/blob/main/docs/models.md#flan-t5-checkpoints)|2022-10|[Paper](https://arxiv.org/pdf/2210.11416.pdf)|
-|T0|11B|Encoder-Decoder|[ckpt](https://huggingface.co/bigscience/T0)|2021-10|[Paper](https://arxiv.org/pdf/2110.08207.pdf)|
-|Alpaca| 7B|Decoder|[demo](https://crfm.stanford.edu/alpaca/)|2023-03|[Github](https://github.com/tatsu-lab/stanford_alpaca)|
+|    Model    | Size |  Architecture   |                            Access                            |  Date   | Origin                                                 |
+| :---------: | :--: | :-------------: | :----------------------------------------------------------: | :-----: | ------------------------------------------------------ |
+|  Flan-PaLM  | 540B |     Decoder     |                              -                               | 2022-10 | [Paper](https://arxiv.org/pdf/2210.11416.pdf)          |
+|   BLOOMZ    | 176B |     Decoder     |       [ckpt](https://huggingface.co/bigscience/bloomz)       | 2022-11 | [Paper](https://arxiv.org/pdf/2211.01786.pdf)          |
+| InstructGPT | 175B |     Decoder     |         [api](https://platform.openai.com/overview)          | 2022-03 | [Paper](https://arxiv.org/pdf/2203.02155.pdf)          |
+|  Galactica  | 120B |     Decoder     |    [ckpt](https://huggingface.co/facebook/galactica-120b)    | 2022-11 | [Paper](https://arxiv.org/pdf/2211.09085.pdf)          |
+| OpenChatKit | 20B  |        -        |   [ckpt](https://github.com/togethercomputer/OpenChatKit)    | 2023-3  | -                                                      |
+|  Flan-UL2   | 20B  |     Decoder     | [ckpt](https://github.com/google-research/google-research/tree/master/ul2) | 2023-03 | [Blog](https://www.yitay.net/blog/flan-ul2-20b)        |
+|   Gopher    |  -   |        -        |                              -                               |    -    | -                                                      |
+| Chinchilla  |  -   |        -        |                              -                               |    -    | -                                                      |
+|   Flan-T5   | 11B  | Encoder-Decoder | [ckpt](https://github.com/google-research/t5x/blob/main/docs/models.md#flan-t5-checkpoints) | 2022-10 | [Paper](https://arxiv.org/pdf/2210.11416.pdf)          |
+|     T0      | 11B  | Encoder-Decoder |         [ckpt](https://huggingface.co/bigscience/T0)         | 2021-10 | [Paper](https://arxiv.org/pdf/2110.08207.pdf)          |
+|   Alpaca    |  7B  |     Decoder     |          [demo](https://crfm.stanford.edu/alpaca/)           | 2023-03 | [Github](https://github.com/tatsu-lab/stanford_alpaca) |
 
 <br><br>
 ### Aligned-LLM
-|       Model       | Size |  Architecture  |                                                                                               Access                                                                                               |  Date  | Origin                                                                                                                        |
-| :----------------: | :--: | :-------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----: | ----------------------------------------------------------------------------------------------------------------------------- |
-| GPT 4  | - | - | - | 2023-03 | [Blog](https://openai.com/research/gpt-4)|
-|      ChatGPT      |  -  |     Decoder     |                                                                                 [demo](https://openai.com/blog/chatgpt/)\|[api](https://share.hsforms.com/1u4goaXwDRKC9-x9IvKno0A4sk30)   | 2022-11 | [Blog](https://openai.com/blog/chatgpt/)      |
-| Sparrow  | 70B | - | - | 2022-09 | [Paper](https://arxiv.org/pdf/2209.14375.pdf)|
-| Claude  | - | - | [demo](https://poe.com/claude)\|[api](https://www.anthropic.com/earlyaccess) | 2023-03 | [Blog](https://www.anthropic.com/index/introducing-claude) |
+|  Model  | Size | Architecture |                            Access                            |  Date   | Origin                                                     |
+| :-----: | :--: | :----------: | :----------------------------------------------------------: | :-----: | ---------------------------------------------------------- |
+|  GPT 4  |  -   |      -       |                              -                               | 2023-03 | [Blog](https://openai.com/research/gpt-4)                  |
+| ChatGPT |  -   |   Decoder    | [demo](https://openai.com/blog/chatgpt/)\|[api](https://share.hsforms.com/1u4goaXwDRKC9-x9IvKno0A4sk30) | 2022-11 | [Blog](https://openai.com/blog/chatgpt/)                   |
+| Sparrow | 70B  |      -       |                              -                               | 2022-09 | [Paper](https://arxiv.org/pdf/2209.14375.pdf)              |
+| Claude  |  -   |      -       | [demo](https://poe.com/claude)\|[api](https://www.anthropic.com/earlyaccess) | 2023-03 | [Blog](https://www.anthropic.com/index/introducing-claude) |
 
 <br><br>
 ### Open-LLM
@@ -551,15 +415,13 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [BLOOM](https://huggingface.co/bigscience/bloom) - BigScience Large Open-science Open-access Multilingual Language Model [BLOOM-LoRA](https://github.com/linhduongtuan/BLOOM-LORA)
   - [BLOOMZ&mT0](https://huggingface.co/bigscience/bloomz) - a family of models capable of following human instructions in dozens of languages zero-shot.
   - [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)
-  
+
 - [T5](https://arxiv.org/abs/1910.10683) - Text-to-Text Transfer Transformer 
   - [T0](https://arxiv.org/abs/2110.08207) - Multitask Prompted Training Enables Zero-Shot Task Generalization
 
 - [OPT](https://arxiv.org/abs/2205.01068) - Open Pre-trained Transformer Language Models.
 - [UL2](https://arxiv.org/abs/2205.05131v1) - a unified framework for pretraining models that are universally effective across datasets and setups. 
 - [GLM](https://github.com/THUDM/GLM)- GLM is a General Language Model pretrained with an autoregressive blank-filling objective and can be finetuned on various natural language understanding and generation tasks.
-  - [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B) - ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于 [General Language Model (GLM)](https://github.com/THUDM/GLM) 架构，具有 62 亿参数.
-  - [ChatGLM2-6B](https://github.com/THUDM/ChatGLM2-6B) -开源中英双语对话模型 ChatGLM-6B 的第二代版本，在保留了初代模型对话流畅、部署门槛较低等众多优秀特性的基础之上，ChatGLM2-6B 引入了更长的上下文、更好的性能和更高效的推理.
 - [RWKV](https://github.com/BlinkDL/RWKV-LM) - Parallelizable RNN with Transformer-level LLM Performance.
   - [ChatRWKV](https://github.com/BlinkDL/ChatRWKV) - ChatRWKV is like ChatGPT but powered by my RWKV (100% RNN) language model.
 - [StableLM](https://stability.ai/blog/stability-ai-launches-the-first-of-its-stablelm-suite-of-language-models) - Stability AI Language Models.
@@ -579,7 +441,6 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Camel](https://huggingface.co/Writer/camel-5b-hf) - a state-of-the-art instruction-following large language model designed to deliver exceptional performance and versatility.
 - [h2oGPT](https://github.com/h2oai/h2ogpt)
 - [PanGu-α](https://openi.org.cn/pangu/) - PanGu-α is a 200B parameter autoregressive pretrained Chinese language model develped by Huawei Noah's Ark Lab, MindSpore Team and Peng Cheng Laboratory.
-- [MOSS](https://github.com/OpenLMLab/MOSS) - MOSS是一个支持中英双语和多种插件的开源对话语言模型.
 - [Open-Assistant](https://github.com/LAION-AI/Open-Assistant) - a project meant to give everyone access to a great chat based large language model.
 - [HuggingChat](https://huggingface.co/chat/) - Powered by Open Assistant's latest model – the best open source chat model right now and @huggingface Inference API.
 - [Baichuan](https://github.com/baichuan-inc/Baichuan-13B) - An open-source, commercially available large-scale language model developed by Baichuan Intelligent Technology following Baichuan-7B, containing 13 billion parameters. (20230715)
@@ -588,66 +449,66 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 <br><br>
 ### Popular-LLM
 
-|                                                                                                                                       **Model**                                                                                                                                       | **\#Author** | **\#Link** | **\#Parameter** |   **Base Model**  | **\#Layer** | **\#Encoder** | **\#Decoder** | **\#Pretrain Tokens** | **\#IFT Sample** | **RLHF** |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|:----------------------:|:----------------------:|:----------------------:|:----------------:|:------------------:|:------------------:|:--------------------------:|:---------------------:|:-------------:|
-|                                                                                                 GPT3-Ada | brown2020language | https://platform.openai.com/docs/models/gpt-3                                                                                                 |         0.35B        |            -           |        24        |          -         |         24         |              -             |           -           |       -       |
-|                                                                                                 Pythia-1B | biderman2023pythia | https://huggingface.co/EleutherAI/pythia-1b                                                                                                 |          1B          |            -           |        16        |          -         |         16         |         300B tokens        |           -           |       -       |
-|                                                                                               GPT3-Babbage | brown2020language | https://platform.openai.com/docs/models/gpt-3                                                                                               |         1.3B         |            -           |        24        |          -         |         24         |              -             |           -           |       -       |
-|                                                                                                        GPT2-XL | radford2019language | https://huggingface.co/gpt2-xl                                                                                                        |         1.5B         |            -           |        48        |          -         |         48         |         40B tokens         |           -           |       -       |
-|                                                                                                    BLOOM-1b7 | scao2022bloom | https://huggingface.co/bigscience/bloom-1b7                                                                                                   |         1.7B         |            -           |        24        |          -         |         24         |         350B tokens        |           -           |       -       |
-|                                                                                            BLOOMZ-1b7 | muennighoff2022crosslingual | https://huggingface.co/bigscience/bloomz-1b7                                                                                           |         1.7B         |        BLOOM-1b7       |        24        |          -         |         24         |              -             |      8.39B tokens     |       -       |
-|                                                                                                    Dolly-v2-3b | 2023dolly | https://huggingface.co/databricks/dolly-v2-3b                                                                                                   |         2.8B         |       Pythia-2.8B      |        32        |          -         |         32         |              -             |          15K          |       -       |
-|                                                                                               Pythia-2.8B | biderman2023pythia | https://huggingface.co/EleutherAI/pythia-2.8b                                                                                               |         2.8B         |            -           |        32        |          -         |         32         |         300B tokens        |           -           |       -       |
-|                                                                                                     BLOOM-3b | scao2022bloom | https://huggingface.co/bigscience/bloom-3b                                                                                                    |          3B          |            -           |        30        |          -         |         30         |         350B tokens        |           -           |       -       |
-|                                                                                             BLOOMZ-3b | muennighoff2022crosslingual | https://huggingface.co/bigscience/bloomz-3b                                                                                            |          3B          |        BLOOM-3b        |        30        |          -         |         30         |              -             |      8.39B tokens     |       -       |
-|                                                                                       StableLM-Base-Alpha-3B | 2023StableLM | https://huggingface.co/stabilityai/stablelm-base-alpha-3b                                                                                      |          3B          |            -           |        16        |          -         |         16         |         800B tokens        |           -           |       -       |
-|                                                                                      StableLM-Tuned-Alpha-3B | 2023StableLM | https://huggingface.co/stabilityai/stablelm-tuned-alpha-3b                                                                                     |          3B          | StableLM-Base-Alpha-3B |        16        |          -         |         16         |              -             |          632K         |       -       |
-|                                                                                               ChatGLM-6B | zeng2023glm-130b,du2022glm | https://huggingface.co/THUDM/chatglm-6b                                                                                              |          6B          |            -           |        28        |         28         |         28         |          1T tokens         |       \checkmark      |   \checkmark  |
-|                                                                                                  DoctorGLM | xiong2023doctorglm | https://github.com/xionghonglin/DoctorGLM                                                                                                  |          6B          |       ChatGLM-6B       |        28        |         28         |         28         |              -             |         6.38M         |       -       |
-|                                                                                                      ChatGLM-Med | ChatGLM-Med | https://github.com/SCIR-HI/Med-ChatGLM                                                                                                      |          6B          |       ChatGLM-6B       |        28        |         28         |         28         |              -             |           8K          |       -       |
-|                                                                                                GPT3-Curie | brown2020language | https://platform.openai.com/docs/models/gpt-3                                                                                                |         6.7B         |            -           |        32        |          -         |         32         |              -             |           -           |       -       |
-|                                                                                              MPT-7B-Chat | MosaicML2023Introducing | https://huggingface.co/mosaicml/mpt-7b-chat                                                                                             |         6.7B         |         MPT-7B         |        32        |          -         |         32         |              -             |          360K         |       -       |
-|                                                                                          MPT-7B-Instruct | MosaicML2023Introducing | https://huggingface.co/mosaicml/mpt-7b-instruct                                                                                         |         6.7B         |         MPT-7B         |        32        |          -         |         32         |              -             |         59.3K         |       -       |
-|                                                                                    MPT-7B-StoryWriter-65k+ | MosaicML2023Introducing | https://huggingface.co/mosaicml/mpt-7b-storywriter                                                                                    |         6.7B         |         MPT-7B         |        32        |          -         |         32         |              -             |       \checkmark      |       -       |
-|                                                                                                    Dolly-v2-7b | 2023dolly | https://huggingface.co/databricks/dolly-v2-7b                                                                                                   |         6.9B         |       Pythia-6.9B      |        32        |          -         |         32         |              -             |          15K          |       -       |
-|                                                                                       h2ogpt-oig-oasst1-512-6.9b | 2023h2ogpt | https://huggingface.co/h2oai/h2ogpt-oig-oasst1-512-6.9b                                                                                      |         6.9B         |       Pythia-6.9B      |        32        |          -         |         32         |              -             |          398K         |       -       |
-|                                                                                               Pythia-6.9B | biderman2023pythia | https://huggingface.co/EleutherAI/pythia-6.9b                                                                                               |         6.9B         |            -           |        32        |          -         |         32         |         300B tokens        |           -           |       -       |
-|                                                                                                     Alpaca-7B | alpaca | https://huggingface.co/tatsu-lab/alpaca-7b-wdiff                                                                                                    |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          52K          |       -       |
-|                                                                                                 Alpaca-LoRA-7B | 2023alpacalora | https://huggingface.co/tloen/alpaca-lora-7b                                                                                                |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          52K          |       -       |
-|                                                                                                  Baize-7B | xu2023baize | https://huggingface.co/project-baize/baize-lora-7B                                                                                                 |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          263K         |       -       |
-|                                                                                       Baize Healthcare-7B | xu2023baize | https://huggingface.co/project-baize/baize-healthcare-lora-7B                                                                                      |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          201K         |       -       |
-|                                                                                                 ChatDoctor | yunxiang2023chatdoctor | https://github.com/Kent0n-Li/ChatDoctor                                                                                                |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          167K         |       -       |
-|                                                                                                 HuaTuo | wang2023huatuo | https://github.com/scir-hi/huatuo-llama-med-chinese                                                                                                |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |           8K          |       -       |
-|                                                                                                   Koala-7B | koala_blogpost_2023 | https://huggingface.co/young-geng/koala                                                                                                   |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          472K         |       -       |
-|                                                                                              LLaMA-7B | touvron2023llama | https://huggingface.co/decapoda-research/llama-7b-hf                                                                                              |          7B          |            -           |        32        |          -         |         32         |          1T tokens         |           -           |       -       |
-|                                                                                               Luotuo-lora-7b-0.3 | luotuo | https://huggingface.co/silk-road/luotuo-lora-7b-0.3                                                                                              |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          152K         |       -       |
-|                                                                                       StableLM-Base-Alpha-7B | 2023StableLM | https://huggingface.co/stabilityai/stablelm-base-alpha-7b                                                                                      |          7B          |            -           |        16        |          -         |         16         |         800B tokens        |           -           |       -       |
-|                                                                                      StableLM-Tuned-Alpha-7B | 2023StableLM | https://huggingface.co/stabilityai/stablelm-tuned-alpha-7b                                                                                     |          7B          | StableLM-Base-Alpha-7B |        16        |          -         |         16         |              -             |          632K         |       -       |
-|                                                                                            Vicuna-7b-delta-v1.1 | vicuna2023 | https://github.com/lm-sys/FastChat\#vicuna-weights                                                                                            |          7B          |        LLaMA-7B        |        32        |          -         |         32         |              -             |          70K          |       -       |
-| BELLE-7B-0.2M /0.6M /1M /2M | belle2023exploring  | https://huggingface.co/BelleGroup/BELLE-7B-2M    |         7.1B         |      Bloomz-7b1-mt     |        30        |          -         |         30         |              -             |    0.2M/0.6M/1M/2M    |       -       |
-|                                                                                                    BLOOM-7b1 | scao2022bloom | https://huggingface.co/bigscience/bloom-7b1                                                                                                     |         7.1B         |            -           |        30        |          -         |         30         |         350B tokens        |           -           |       -       |
-|                              BLOOMZ-7b1 /mt /p3 | muennighoff2022crosslingual | https://huggingface.co/bigscience/bloomz-7b1-p3                                  |         7.1B         |        BLOOM-7b1       |        30        |          -         |         30         |              -             |      4.19B tokens     |       -       |
-|                                                                                                   Dolly-v2-12b | 2023dolly | https://huggingface.co/databricks/dolly-v2-12b                                                                                                    |          12B         |       Pythia-12B       |        36        |          -         |         36         |              -             |          15K          |       -       |
-|                                                                                            h2ogpt-oasst1-512-12b | 2023h2ogpt | https://huggingface.co/h2oai/h2ogpt-oasst1-512-12b                                                                                             |          12B         |       Pythia-12B       |        36        |          -         |         36         |              -             |         94.6K         |       -       |
-|                                                                             Open-Assistant-SFT-4-12B | 2023openassistant | https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5                                                                               |          12B         |   Pythia-12B-deduped   |        36        |          -         |         36         |              -             |          161K         |       -       |
-|                                                                                                Pythia-12B | biderman2023pythia | https://huggingface.co/EleutherAI/pythia-12b                                                                                                  |          12B         |            -           |        36        |          -         |         36         |         300B tokens        |           -           |       -       |
-|                                                                                                 Baize-13B | xu2023baize | https://huggingface.co/project-baize/baize-lora-13B                                                                                                  |          13B         |        LLaMA-13B       |        40        |          -         |         40         |              -             |          263K         |       -       |
-|                                                                                                   Koala-13B | koala_blogpost_2023 | https://huggingface.co/young-geng/koala                                                                                                    |          13B         |        LLaMA-13B       |        40        |          -         |         40         |              -             |          472K         |       -       |
-|                                                                                             LLaMA-13B | touvron2023llama | https://huggingface.co/decapoda-research/llama-13b-hf                                                                                               |          13B         |            -           |        40        |          -         |         40         |          1T tokens         |           -           |       -       |
-|                                                                                           StableVicuna-13B | 2023StableLM | https://huggingface.co/CarperAI/stable-vicuna-13b-delta                                                                                            |          13B         |      Vicuna-13B v0     |        40        |          -         |         40         |              -             |          613K         |   \checkmark  |
-|                                                                                            Vicuna-13b-delta-v1.1 | vicuna2023 | https://github.com/lm-sys/FastChat\#vicuna-weights                                                                                             |          13B         |        LLaMA-13B       |        40        |          -         |         40         |              -             |          70K          |       -       |
-|                                                                                                 moss-moon-003-sft | 2023moss | https://huggingface.co/fnlp/moss-moon-003-sft                                                                                                   |          16B         |   moss-moon-003-base   |        34        |          -         |         34         |              -             |          1.1M         |       -       |
-|                                                                                          moss-moon-003-sft-plugin | 2023moss | https://huggingface.co/fnlp/moss-moon-003-sft-plugin                                                                                            |          16B         |   moss-moon-003-base   |        34        |          -         |         34         |              -             |          1.4M         |       -       |
-|                                                                                                    GPT-NeoX-20B | gptneox | https://huggingface.co/EleutherAI/gpt-neox-20b                                                                                                     |          20B         |            -           |        44        |          -         |         44         |            825GB           |           -           |       -       |
-|                                                                                            h2ogpt-oasst1-512-20b | 2023h2ogpt | https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b                                                                                             |          20B         |      GPT-NeoX-20B      |        44        |          -         |         44         |              -             |         94.6K         |       -       |
-|                                                                                                 Baize-30B | xu2023baize | https://huggingface.co/project-baize/baize-lora-30B                                                                                                  |          33B         |        LLaMA-30B       |        60        |          -         |         60         |              -             |          263K         |       -       |
-|                                                                                             LLaMA-30B | touvron2023llama | https://huggingface.co/decapoda-research/llama-30b-hf                                                                                               |          33B         |            -           |        60        |          -         |         60         |         1.4T tokens        |           -           |       -       |
-|                                                                                             LLaMA-65B | touvron2023llama | https://huggingface.co/decapoda-research/llama-65b-hf                                                                                               |          65B         |            -           |        80        |          -         |         80         |         1.4T tokens        |           -           |       -       |
-|                                                                                               GPT3-Davinci | brown2020language | https://platform.openai.com/docs/models/gpt-3                                                                                                 |         175B         |            -           |        96        |          -         |         96         |         300B tokens        |           -           |       -       |
-|                                                                                                        BLOOM | scao2022bloom | https://huggingface.co/bigscience/bloom                                                                                                         |         176B         |            -           |        70        |          -         |         70         |         366B tokens        |           -           |       -       |
-|                                      BLOOMZ /mt /p3 | muennighoff2022crosslingual | https://huggingface.co/bigscience/bloomz-p3                                          |         176B         |          BLOOM         |        70        |          -         |         70         |              -             |      2.09B tokens     |       -       |
-|                                                                                            ChatGPT~(2023.05.01) | openaichatgpt | https://platform.openai.com/docs/models/gpt-3-5                                                                                              |           -          |         GPT-3.5        |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
-|                                                                                              GPT-4~(2023.05.01) | openai2023gpt4 | https://platform.openai.com/docs/models/gpt-4                                                                                               |           -          |            -           |         -        |          -         |          -         |              -             |       \checkmark      |   \checkmark  |
+|          **Model**          |        **\#Author**         |                          **\#Link**                          | **\#Parameter** |     **Base Model**     | **\#Layer** | **\#Encoder** | **\#Decoder** | **\#Pretrain Tokens** | **\#IFT Sample** |  **RLHF**  |
+| :-------------------------: | :-------------------------: | :----------------------------------------------------------: | :-------------: | :--------------------: | :---------: | :-----------: | :-----------: | :-------------------: | :--------------: | :--------: |
+|          GPT3-Ada           |      brown2020language      |        https://platform.openai.com/docs/models/gpt-3         |      0.35B      |           -            |     24      |       -       |      24       |           -           |        -         |     -      |
+|          Pythia-1B          |     biderman2023pythia      |         https://huggingface.co/EleutherAI/pythia-1b          |       1B        |           -            |     16      |       -       |      16       |      300B tokens      |        -         |     -      |
+|        GPT3-Babbage         |      brown2020language      |        https://platform.openai.com/docs/models/gpt-3         |      1.3B       |           -            |     24      |       -       |      24       |           -           |        -         |     -      |
+|           GPT2-XL           |     radford2019language     |                https://huggingface.co/gpt2-xl                |      1.5B       |           -            |     48      |       -       |      48       |      40B tokens       |        -         |     -      |
+|          BLOOM-1b7          |        scao2022bloom        |         https://huggingface.co/bigscience/bloom-1b7          |      1.7B       |           -            |     24      |       -       |      24       |      350B tokens      |        -         |     -      |
+|         BLOOMZ-1b7          | muennighoff2022crosslingual |         https://huggingface.co/bigscience/bloomz-1b7         |      1.7B       |       BLOOM-1b7        |     24      |       -       |      24       |           -           |   8.39B tokens   |     -      |
+|         Dolly-v2-3b         |          2023dolly          |        https://huggingface.co/databricks/dolly-v2-3b         |      2.8B       |      Pythia-2.8B       |     32      |       -       |      32       |           -           |       15K        |     -      |
+|         Pythia-2.8B         |     biderman2023pythia      |        https://huggingface.co/EleutherAI/pythia-2.8b         |      2.8B       |           -            |     32      |       -       |      32       |      300B tokens      |        -         |     -      |
+|          BLOOM-3b           |        scao2022bloom        |          https://huggingface.co/bigscience/bloom-3b          |       3B        |           -            |     30      |       -       |      30       |      350B tokens      |        -         |     -      |
+|          BLOOMZ-3b          | muennighoff2022crosslingual |         https://huggingface.co/bigscience/bloomz-3b          |       3B        |        BLOOM-3b        |     30      |       -       |      30       |           -           |   8.39B tokens   |     -      |
+|   StableLM-Base-Alpha-3B    |        2023StableLM         |  https://huggingface.co/stabilityai/stablelm-base-alpha-3b   |       3B        |           -            |     16      |       -       |      16       |      800B tokens      |        -         |     -      |
+|   StableLM-Tuned-Alpha-3B   |        2023StableLM         |  https://huggingface.co/stabilityai/stablelm-tuned-alpha-3b  |       3B        | StableLM-Base-Alpha-3B |     16      |       -       |      16       |           -           |       632K       |     -      |
+|         ChatGLM-6B          | zeng2023glm-130b,du2022glm  |           https://huggingface.co/THUDM/chatglm-6b            |       6B        |           -            |     28      |      28       |      28       |       1T tokens       |    \checkmark    | \checkmark |
+|          DoctorGLM          |     xiong2023doctorglm      |          https://github.com/xionghonglin/DoctorGLM           |       6B        |       ChatGLM-6B       |     28      |      28       |      28       |           -           |      6.38M       |     -      |
+|         ChatGLM-Med         |         ChatGLM-Med         |            https://github.com/SCIR-HI/Med-ChatGLM            |       6B        |       ChatGLM-6B       |     28      |      28       |      28       |           -           |        8K        |     -      |
+|         GPT3-Curie          |      brown2020language      |        https://platform.openai.com/docs/models/gpt-3         |      6.7B       |           -            |     32      |       -       |      32       |           -           |        -         |     -      |
+|         MPT-7B-Chat         |   MosaicML2023Introducing   |         https://huggingface.co/mosaicml/mpt-7b-chat          |      6.7B       |         MPT-7B         |     32      |       -       |      32       |           -           |       360K       |     -      |
+|       MPT-7B-Instruct       |   MosaicML2023Introducing   |       https://huggingface.co/mosaicml/mpt-7b-instruct        |      6.7B       |         MPT-7B         |     32      |       -       |      32       |           -           |      59.3K       |     -      |
+|   MPT-7B-StoryWriter-65k+   |   MosaicML2023Introducing   |      https://huggingface.co/mosaicml/mpt-7b-storywriter      |      6.7B       |         MPT-7B         |     32      |       -       |      32       |           -           |    \checkmark    |     -      |
+|         Dolly-v2-7b         |          2023dolly          |        https://huggingface.co/databricks/dolly-v2-7b         |      6.9B       |      Pythia-6.9B       |     32      |       -       |      32       |           -           |       15K        |     -      |
+| h2ogpt-oig-oasst1-512-6.9b  |         2023h2ogpt          |   https://huggingface.co/h2oai/h2ogpt-oig-oasst1-512-6.9b    |      6.9B       |      Pythia-6.9B       |     32      |       -       |      32       |           -           |       398K       |     -      |
+|         Pythia-6.9B         |     biderman2023pythia      |        https://huggingface.co/EleutherAI/pythia-6.9b         |      6.9B       |           -            |     32      |       -       |      32       |      300B tokens      |        -         |     -      |
+|          Alpaca-7B          |           alpaca            |       https://huggingface.co/tatsu-lab/alpaca-7b-wdiff       |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       52K        |     -      |
+|       Alpaca-LoRA-7B        |       2023alpacalora        |         https://huggingface.co/tloen/alpaca-lora-7b          |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       52K        |     -      |
+|          Baize-7B           |         xu2023baize         |      https://huggingface.co/project-baize/baize-lora-7B      |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       263K       |     -      |
+|     Baize Healthcare-7B     |         xu2023baize         | https://huggingface.co/project-baize/baize-healthcare-lora-7B |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       201K       |     -      |
+|         ChatDoctor          |   yunxiang2023chatdoctor    |           https://github.com/Kent0n-Li/ChatDoctor            |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       167K       |     -      |
+|           HuaTuo            |       wang2023huatuo        |     https://github.com/scir-hi/huatuo-llama-med-chinese      |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |        8K        |     -      |
+|          Koala-7B           |     koala_blogpost_2023     |           https://huggingface.co/young-geng/koala            |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       472K       |     -      |
+|          LLaMA-7B           |      touvron2023llama       |     https://huggingface.co/decapoda-research/llama-7b-hf     |       7B        |           -            |     32      |       -       |      32       |       1T tokens       |        -         |     -      |
+|     Luotuo-lora-7b-0.3      |           luotuo            |     https://huggingface.co/silk-road/luotuo-lora-7b-0.3      |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       152K       |     -      |
+|   StableLM-Base-Alpha-7B    |        2023StableLM         |  https://huggingface.co/stabilityai/stablelm-base-alpha-7b   |       7B        |           -            |     16      |       -       |      16       |      800B tokens      |        -         |     -      |
+|   StableLM-Tuned-Alpha-7B   |        2023StableLM         |  https://huggingface.co/stabilityai/stablelm-tuned-alpha-7b  |       7B        | StableLM-Base-Alpha-7B |     16      |       -       |      16       |           -           |       632K       |     -      |
+|    Vicuna-7b-delta-v1.1     |         vicuna2023          |      https://github.com/lm-sys/FastChat\#vicuna-weights      |       7B        |        LLaMA-7B        |     32      |       -       |      32       |           -           |       70K        |     -      |
+| BELLE-7B-0.2M /0.6M /1M /2M |     belle2023exploring      |        https://huggingface.co/BelleGroup/BELLE-7B-2M         |      7.1B       |     Bloomz-7b1-mt      |     30      |       -       |      30       |           -           | 0.2M/0.6M/1M/2M  |     -      |
+|          BLOOM-7b1          |        scao2022bloom        |         https://huggingface.co/bigscience/bloom-7b1          |      7.1B       |           -            |     30      |       -       |      30       |      350B tokens      |        -         |     -      |
+|     BLOOMZ-7b1 /mt /p3      | muennighoff2022crosslingual |       https://huggingface.co/bigscience/bloomz-7b1-p3        |      7.1B       |       BLOOM-7b1        |     30      |       -       |      30       |           -           |   4.19B tokens   |     -      |
+|        Dolly-v2-12b         |          2023dolly          |        https://huggingface.co/databricks/dolly-v2-12b        |       12B       |       Pythia-12B       |     36      |       -       |      36       |           -           |       15K        |     -      |
+|    h2ogpt-oasst1-512-12b    |         2023h2ogpt          |      https://huggingface.co/h2oai/h2ogpt-oasst1-512-12b      |       12B       |       Pythia-12B       |     36      |       -       |      36       |           -           |      94.6K       |     -      |
+|  Open-Assistant-SFT-4-12B   |      2023openassistant      | https://huggingface.co/OpenAssistant/oasst-sft-4-pythia-12b-epoch-3.5 |       12B       |   Pythia-12B-deduped   |     36      |       -       |      36       |           -           |       161K       |     -      |
+|         Pythia-12B          |     biderman2023pythia      |         https://huggingface.co/EleutherAI/pythia-12b         |       12B       |           -            |     36      |       -       |      36       |      300B tokens      |        -         |     -      |
+|          Baize-13B          |         xu2023baize         |     https://huggingface.co/project-baize/baize-lora-13B      |       13B       |       LLaMA-13B        |     40      |       -       |      40       |           -           |       263K       |     -      |
+|          Koala-13B          |     koala_blogpost_2023     |           https://huggingface.co/young-geng/koala            |       13B       |       LLaMA-13B        |     40      |       -       |      40       |           -           |       472K       |     -      |
+|          LLaMA-13B          |      touvron2023llama       |    https://huggingface.co/decapoda-research/llama-13b-hf     |       13B       |           -            |     40      |       -       |      40       |       1T tokens       |        -         |     -      |
+|      StableVicuna-13B       |        2023StableLM         |   https://huggingface.co/CarperAI/stable-vicuna-13b-delta    |       13B       |     Vicuna-13B v0      |     40      |       -       |      40       |           -           |       613K       | \checkmark |
+|    Vicuna-13b-delta-v1.1    |         vicuna2023          |      https://github.com/lm-sys/FastChat\#vicuna-weights      |       13B       |       LLaMA-13B        |     40      |       -       |      40       |           -           |       70K        |     -      |
+|      moss-moon-003-sft      |          2023moss           |        https://huggingface.co/fnlp/moss-moon-003-sft         |       16B       |   moss-moon-003-base   |     34      |       -       |      34       |           -           |       1.1M       |     -      |
+|  moss-moon-003-sft-plugin   |          2023moss           |     https://huggingface.co/fnlp/moss-moon-003-sft-plugin     |       16B       |   moss-moon-003-base   |     34      |       -       |      34       |           -           |       1.4M       |     -      |
+|        GPT-NeoX-20B         |           gptneox           |        https://huggingface.co/EleutherAI/gpt-neox-20b        |       20B       |           -            |     44      |       -       |      44       |         825GB         |        -         |     -      |
+|    h2ogpt-oasst1-512-20b    |         2023h2ogpt          |      https://huggingface.co/h2oai/h2ogpt-oasst1-512-20b      |       20B       |      GPT-NeoX-20B      |     44      |       -       |      44       |           -           |      94.6K       |     -      |
+|          Baize-30B          |         xu2023baize         |     https://huggingface.co/project-baize/baize-lora-30B      |       33B       |       LLaMA-30B        |     60      |       -       |      60       |           -           |       263K       |     -      |
+|          LLaMA-30B          |      touvron2023llama       |    https://huggingface.co/decapoda-research/llama-30b-hf     |       33B       |           -            |     60      |       -       |      60       |      1.4T tokens      |        -         |     -      |
+|          LLaMA-65B          |      touvron2023llama       |    https://huggingface.co/decapoda-research/llama-65b-hf     |       65B       |           -            |     80      |       -       |      80       |      1.4T tokens      |        -         |     -      |
+|        GPT3-Davinci         |      brown2020language      |        https://platform.openai.com/docs/models/gpt-3         |      175B       |           -            |     96      |       -       |      96       |      300B tokens      |        -         |     -      |
+|            BLOOM            |        scao2022bloom        |           https://huggingface.co/bigscience/bloom            |      176B       |           -            |     70      |       -       |      70       |      366B tokens      |        -         |     -      |
+|       BLOOMZ /mt /p3        | muennighoff2022crosslingual |         https://huggingface.co/bigscience/bloomz-p3          |      176B       |         BLOOM          |     70      |       -       |      70       |           -           |   2.09B tokens   |     -      |
+|    ChatGPT~(2023.05.01)     |        openaichatgpt        |       https://platform.openai.com/docs/models/gpt-3-5        |        -        |        GPT-3.5         |      -      |       -       |       -       |           -           |    \checkmark    | \checkmark |
+|     GPT-4~(2023.05.01)      |       openai2023gpt4        |        https://platform.openai.com/docs/models/gpt-4         |        -        |           -            |      -      |       -       |       -       |           -           |    \checkmark    | \checkmark |
 
 
 <br><br>
@@ -679,36 +540,36 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 <br><br>
 ## LLMOps
 
-| 名称                                                    | Stars 数                                                     | 介绍                                                         |
-| ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Byzer-LLM](https://github.com/allwefantasy/byzer-llm) |  ![](https://img.shields.io/github/stars/allwefantasy/byzer-llm.svg?style=social) | Byzer-LLM是一套大模型基础设施，支持预训练，微调，部署，serving等各种和大模型相关的能力。Byzer-Retrieval则是专门为大模型开发的存储基础设施，支持各种数据源批量导入，实时单条更新，支持全文检索，向量检索，混合检索，方便Byzer-LLM使用数据。Byzer-SQL/Python则提供了易于使用的人机交互API，极低门槛去使用上述产品。 |
-| [agenta](https://github.com/Agenta-AI/agenta)           | ![](https://img.shields.io/github/stars/Agenta-AI/agenta.svg?style=social) | 用于构建强大LLM应用的LLMOps平台。轻松尝试和评估不同提示、模型和工作流，以构建稳健的应用程序。 |
-| [Arize-Phoenix](https://github.com/Arize-ai/phoenix)    | ![](https://img.shields.io/github/stars/Arize-ai/phoenix.svg?style=social) | 用于LLMs、视觉、语言和表格模型的ML可观测性。                 |
-| [BudgetML](https://github.com/ebhy/budgetml)            | ![](https://img.shields.io/github/stars/ebhy/budgetml.svg?style=social) | 在不到10行代码的情况下，以有限的预算部署ML推理服务。         |
-| [CometLLM](https://github.com/comet-ml/comet-llm)       | ![](https://img.shields.io/github/stars/comet-ml/comet-llm.svg?style=social) | 100%开源的LLMOps平台，用于记录、管理和可视化LLM提示和链条。跟踪提示模板、提示变量、提示持续时间、令牌使用等其他元数据。评分提示输出并在单个UI中可视化聊天历史。 |
-| [deeplake](https://github.com/activeloopai/deeplake)    | ![](https://img.shields.io/github/stars/activeloopai/Hub.svg?style=social) | 流式传输大型多模态数据集，实现接近100%的GPU利用率。查询、可视化和版本控制数据。无需重新计算模型微调的嵌入即可访问数据。 |
-| [Dify](https://github.com/langgenius/dify)              | ![](https://img.shields.io/github/stars/langgenius/dify.svg?style=social) | 开源框架旨在使开发人员（甚至非开发人员）能够快速构建基于大型语言模型的有用应用程序，确保它们具有可视性、可操作性和可改进性。 |
-| [Dstack](https://github.com/dstackai/dstack)            | ![](https://img.shields.io/github/stars/dstackai/dstack.svg?style=social) | 在任何云（AWS、GCP、Azure、Lambda等）中进行经济高效的LLM开发。 |
-| [Embedchain](https://github.com/embedchain/embedchain)  | ![](https://img.shields.io/github/stars/embedchain/embedchain.svg?style=social) | 用于在数据集上创建类似ChatGPT的机器人的框架。                |
-| [GPTCache](https://github.com/zilliztech/GPTCache)      | ![](https://img.shields.io/github/stars/zilliztech/GPTCache.svg?style=social) | 创建语义缓存以存储LLM查询的响应。                            |
-| [Haystack](https://github.com/deepset-ai/haystack)      | ![](https://img.shields.io/github/stars/deepset-ai/haystack.svg?style=social) | 快速构建带有LLM代理、语义搜索、问答等功能的应用程序。        |
-| [langchain](https://github.com/hwchase17/langchain)     | ![](https://img.shields.io/github/stars/hwchase17/langchain.svg?style=social) | 通过可组合性构建LLM应用程序。                                |
-| [LangFlow](https://github.com/logspace-ai/langflow)     | ![](https://img.shields.io/github/stars/logspace-ai/langflow.svg?style=social) | 通过拖放组件和聊天界面轻松实验和原型化LangChain流程的无忧方式。 |
-| [LangKit](https://github.com/whylabs/langkit)           | ![](https://img.shields.io/github/stars/whylabs/langkit.svg?style=social) | 开箱即用的LLM遥测收集库，可提取有关LLM随时间性能如何的特征和提示、响应和元数据的配置文件，以规模找到问题。 |
-| [LiteLLM 🚅](https://github.com/BerriAI/litellm/)        | ![](https://img.shields.io/github/stars/BerriAI/litellm.svg?style=social) | 一个简单且轻量的100行包，用于跨OpenAI、Azure、Cohere、Anthropic、Replicate API端点标准化LLM API调用。 |
-| [LlamaIndex](https://github.com/jerryjliu/llama_index)  | ![](https://img.shields.io/github/stars/jerryjliu/llama_index.svg?style=social) | 提供一个中央接口，将您的LLMs与外部数据连接起来。             |
-| [LLMApp](https://github.com/pathwaycom/llm-app)         | ![](https://img.shields.io/github/stars/pathwaycom/llm-app.svg?style=social) | LLM App是一个Python库，帮助您以几行代码构建实时的LLM启用数据管道。 |
-| [LLMFlows](https://github.com/stoyan-stoyanov/llmflows) | ![](https://img.shields.io/github/stars/stoyan-stoyanov/llmflows.svg?style=social) | LLMFlows是一个用于构建简单、明确和透明的LLM应用程序的框架，例如聊天机器人、问答系统和代理。 |
-| [LLMonitor](https://github.com/llmonitor/llmonitor) | ![](https://img.shields.io/github/stars/llmonitor/llmonitor.svg?style=social) | 用于AI应用程序和代理的可观测性和监控。通过强大的跟踪和日志记录来调试代理。使用分析工具深入研究请求历史。开发人员友好的模块，可以轻松集成到LangChain中。 |
-| [magentic](https://github.com/jackmpcollins/magentic) | ![](https://img.shields.io/github/stars/jackmpcollins/magentic.svg?style=social) | 无缝集成LLMs作为Python函数。使用类型注释来指定结构化输出。将LLM查询和函数调用与常规Python代码混合使用，创建复杂的LLM驱动功能。        |
-| [Pezzo 🕹️](https://github.com/pezzolabs/pezzo)     | ![](https://img.shields.io/github/stars/pezzolabs/pezzo.svg?style=social)     | Pezzo是为开发人员和团队构建的开源LLMOps平台。仅需两行代码，您就可以轻松排除AI操作中的问题，协作和管理您的提示，在一个地方立即部署更改。       |
-| [promptfoo](https://github.com/typpo/promptfoo)     | ![](https://img.shields.io/github/stars/typpo/promptfoo.svg?style=social)     | 用于测试和评估提示质量的开源工具。创建测试用例，自动检查输出质量并捕获回归，降低评估成本。                            |
-| [prompttools](https://github.com/hegelai/prompttools) | ![](https://img.shields.io/github/stars/hegelai/prompttools.svg?style=social) | 用于测试和尝试提示的开源工具。核心思想是使开发人员能够使用熟悉的界面（如代码和笔记本）评估提示。只需几行代码，您就可以在不同模型之间测试提示和参数（无论您是使用OpenAI、Anthropic还是LLaMA模型）。您甚至可以评估向量数据库的检索准确性。 |
-| [TrueFoundry](https://www.truefoundry.com/)     | 无Github链接 | 在自己的Kubernetes（EKS、AKS、GKE、On-prem）基础设施上部署LLMOps工具，包括Vector DBs、嵌入式服务器等，包括部署、微调、跟踪提示和提供完整的数据安全性和最佳GPU管理的开源LLM模型。使用最佳的软件工程实践在生产规模上训练和启动您的LLM应用程序。 |
-| [ReliableGPT 💪](https://github.com/BerriAI/reliableGPT/) | ![](https://img.shields.io/github/stars/BerriAI/reliableGPT.svg?style=social) | 为您的生产LLM应用程序处理OpenAI错误（超载的OpenAI服务器、旋转的密钥或上下文窗口错误）。                                       |
-| [Weights & Biases (Prompts)](https://docs.wandb.ai/guides/prompts) | 无Github链接 | 开发者优先的W&B MLOps平台中的一套LLMOps工具。利用W&B Prompts来可视化和检查LLM执行流程，跟踪输入和输出，查看中间结果，安全管理提示和LLM链配置。 |
-| [xTuring](https://github.com/stochasticai/xturing)   | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social)   | 使用快速和高效的微调来构建和控制您的个人LLMs。                                                                     |
-| [ZenML](https://github.com/zenml-io/zenml)         | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social)         | 用于编排、实验和部署生产级ML解决方案的开源框架，具有内置的`langchain`和`llama_index`集成。    |
+| Name | Stars | Description |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [Byzer-LLM](https://github.com/allwefantasy/byzer-llm ) | ![](https://img.shields.io/github/stars/allwefantasy/byzer-llm.svg?style=social ) | Byzer-LLM is a comprehensive large model infrastructure that supports capabilities related to large models, such as pre-training, fine-tuning, deployment, and serving. Byzer-Retrieval is a storage infrastructure specifically developed for large models, supporting batch import of various data sources, real-time single-item updates, and full-text, vector, and hybrid searches to facilitate data usage for Byzer-LLM. Byzer-SQL/Python offers user-friendly interactive APIs with a low barrier to entry for utilizing the aforementioned products. |
+| [agenta](https://github.com/Agenta-AI/agenta ) | ![](https://img.shields.io/github/stars/Agenta-AI/agenta.svg?style=social ) | An LLMOps platform for building powerful LLM applications. It allows for easy experimentation and evaluation of different prompts, models, and workflows to construct robust applications. |
+| [Arize-Phoenix](https://github.com/Arize-ai/phoenix ) | ![](https://img.shields.io/github/stars/Arize-ai/phoenix.svg?style=social ) | ML observability for LLMs, vision, language, and tabular models. |
+| [BudgetML](https://github.com/ebhy/budgetml ) | ![](https://img.shields.io/github/stars/ebhy/budgetml.svg?style=social ) | Deploy ML inference services on a limited budget with less than 10 lines of code. |
+| [CometLLM](https://github.com/comet-ml/comet-llm ) | ![](https://img.shields.io/github/stars/comet-ml/comet-llm.svg?style=social ) | An open-source LLMOps platform for logging, managing, and visualizing LLM prompts and chains. It tracks prompt templates, variables, duration, token usage, and other metadata. It also scores prompt outputs and visualizes chat history in a single UI. |
+| [deeplake](https://github.com/activeloopai/deeplake ) | ![](https://img.shields.io/github/stars/activeloopai/Hub.svg?style=social ) | Stream large multimodal datasets to achieve near 100% GPU utilization. Query, visualize, and version control data. Access data without recalculating embeddings for model fine-tuning. |
+| [Dify](https://github.com/langgenius/dify ) | ![](https://img.shields.io/github/stars/langgenius/dify.svg?style=social ) | An open-source framework that enables developers (even non-developers) to quickly build useful applications based on large language models, ensuring they are visible, actionable, and improvable. |
+| [Dstack](https://github.com/dstackai/dstack ) | ![](https://img.shields.io/github/stars/dstackai/dstack.svg?style=social ) | Cost-effective LLM development in any cloud (AWS, GCP, Azure, Lambda, etc.). |
+| [Embedchain](https://github.com/embedchain/embedchain ) | ![](https://img.shields.io/github/stars/embedchain/embedchain.svg?style=social ) | A framework for creating ChatGPT-like robots on datasets. |
+| [GPTCache](https://github.com/zilliztech/GPTCache ) | ![](https://img.shields.io/github/stars/zilliztech/GPTCache.svg?style=social ) | Create semantic caches to store responses to LLM queries. |
+| [Haystack](https://github.com/deepset-ai/haystack ) | ![](https://img.shields.io/github/stars/deepset-ai/haystack.svg?style=social ) | Quickly build applications with LLM agents, semantic search, question answering, and more. |
+| [langchain](https://github.com/hwchase17/langchain ) | ![](https://img.shields.io/github/stars/hwchase17/langchain.svg?style=social ) | Build LLM applications through composability. |
+| [LangFlow](https://github.com/logspace-ai/langflow ) | ![](https://img.shields.io/github/stars/logspace-ai/langflow.svg?style=social ) | A hassle-free way to experiment with and prototype LangChain processes using drag-and-drop components and a chat interface. |
+| [LangKit](https://github.com/whylabs/langkit ) | ![](https://img.shields.io/github/stars/whylabs/langkit.svg?style=social ) | A ready-to-use LLM telemetry collection library that extracts profiles of LLM performance over time, as well as prompts, responses, and metadata, to identify issues at scale. |
+| [LiteLLM 🚅](https://github.com/BerriAI/litellm/ ) | ![](https://img.shields.io/github/stars/BerriAI/litellm.svg?style=social ) | A simple and lightweight 100-line package for standardizing LLM API calls across OpenAI, Azure, Cohere, Anthropic, Replicate, and other API endpoints. |
+| [LlamaIndex](https://github.com/jerryjliu/llama_index ) | ![](https://img.shields.io/github/stars/jerryjliu/llama_index.svg?style=social ) | Provides a central interface to connect your LLMs with external data. |
+| [LLMApp](https://github.com/pathwaycom/llm-app ) | ![](https://img.shields.io/github/stars/pathwaycom/llm-app.svg?style=social ) | LLM App is a Python library that helps you build real-time LLM-enabled data pipelines with just a few lines of code. |
+| [LLMFlows](https://github.com/stoyan-stoyanov/llmflows ) | ![](https://img.shields.io/github/stars/stoyan-stoyanov/llmflows.svg?style=social ) | LLMFlows is a framework for building simple, clear, and transparent LLM applications, such as chatbots, question-answering systems, and agents. |
+| [LLMonitor](https://github.com/llmonitor/llmonitor ) | ![](https://img.shields.io/github/stars/llmonitor/llmonitor.svg?style=social ) | Observability and monitoring for AI applications and agents. Debug agents with robust tracking and logging. Use analytical tools to delve into request history. Developer-friendly modules that can be easily integrated into LangChain. |
+| [magentic](https://github.com/jackmpcollins/magentic ) | ![](https://img.shields.io/github/stars/jackmpcollins/magentic.svg?style=social ) | Seamlessly integrate LLMs as Python functions. Use type annotations to specify structured outputs. Combine LLM queries and function calls with regular Python code to create complex LLM-driven functionalities. |
+| [Pezzo 🕹️](https://github.com/pezzolabs/pezzo ) | ![](https://img.shields.io/github/stars/pezzolabs/pezzo.svg?style=social ) | Pezzo is an open-source LLMOps platform built for developers and teams. With just two lines of code, you can easily troubleshoot AI operations, collaborate on and manage your prompts, and deploy changes instantly from one place. |
+| [promptfoo](https://github.com/typpo/promptfoo ) | ![](https://img.shields.io/github/stars/typpo/promptfoo.svg?style=social ) | An open-source tool for testing and evaluating prompt quality. Create test cases, automatically check output quality, and catch regressions to reduce evaluation costs. |
+| [prompttools](https://github.com/hegelai/prompttools ) | ![](https://img.shields.io/github/stars/hegelai/prompttools.svg?style=social ) | An open-source tool for testing and trying out prompts. The core idea is to enable developers to evaluate prompts using familiar interfaces such as code and notebooks. With just a few lines of code, you can test prompts and parameters across different models (whether you're using OpenAI, Anthropic, or LLaMA models). You can even evaluate the accuracy of vector database retrievals. |
+| [TrueFoundry](https://www.truefoundry.com/ ) | No GitHub link | Deploy LLMOps tools on your own Kubernetes (EKS, AKS, GKE, On-prem) infrastructure, including Vector DBs, embedded servers, etc. This includes open-source LLM models for deployment, fine-tuning, prompt tracking, and providing complete data security and optimal GPU management. Use best software engineering practices to train and launch your LLM applications at production scale. |
+| [ReliableGPT 💪](https://github.com/BerriAI/reliableGPT/ ) | ![](https://img.shields.io/github/stars/BerriAI/reliableGPT.svg?style=social ) | Handle OpenAI errors for your production LLM applications (overloaded OpenAI servers, rotated keys, or context window errors). |
+| [Weights & Biases (Prompts)](https://docs.wandb.ai/guides/prompts ) | No GitHub link | A set of LLMOps tools in the developer-focused W&B MLOps platform. Use W&B Prompts to visualize and inspect LLM execution flows, track inputs and outputs, view intermediate results, and manage prompts and LLM chain configurations. |
+| [xTuring](https://github.com/stochasticai/xturing ) | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social ) | Build and control your personal LLMs using fast and efficient fine-tuning. |
+| [ZenML](https://github.com/zenml-io/zenml ) | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social ) | An open-source framework for orchestrating, experimenting, and deploying production-grade ML solutions, with built-in `langchain` and `llama_index` integration. |
 
 
 <br><br>
@@ -718,11 +579,6 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 - [Full+Stack+LLM+Bootcamp](https://ihower.tw/notes/技術筆記-AI/Full+Stack+LLM+Bootcamp) - LLM相关学习/应用资源集.
 
 
-<br><br>
-## Others
-
-- [Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft](https://levelup.gitconnected.com/how-to-benchmark-language-models-by-openai-deepmind-google-microsoft-783d4307ec50) - Evaluating Language Models by OpenAI, DeepMind, Google, Microsoft.
-- [Efficient Finetuning of Quantized LLMs --- 低资源的大语言模型量化训练/部署方案](https://github.com/jianzhnie/Efficient-Tuning-LLMs) - 旨在构建和开源遵循指令的baichuan/LLaMA/Pythia/GLM中文大模型微调训练方法，该方法可以在单个 Nvidia RTX-2080TI上进行训练，多轮聊天机器人可以在单个 Nvidia RTX-3090上进行上下文长度 2048的模型训练。使用bitsandbytes进行量化，并与Huggingface的PEFT和transformers库集成.
 
 
 <br><br>
@@ -754,11 +610,10 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-本项目遵循 [MIT License](https://lbesson.mit-license.org/).
+[MIT License](https://lbesson.mit-license.org/).
 
 [![CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-本项目遵循 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
-
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 <br><br>
