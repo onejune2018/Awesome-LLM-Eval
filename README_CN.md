@@ -819,3 +819,17 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 
 
 <br><br>
+
+## Citation
+
+```bibtex
+@misc{llm-eval-anthropomorphic,
+      title={Beyond Benchmark: LLMs Evaluation with an Anthropomorphic and Value-oriented Roadmap}, 
+      author={Jun Wang and Ninglun Gu and Kailai Zhang and Zijiao Zhang and Yelun Bao and Jin Yang and Xu Yin and Liwei Liu and Yihuan Liu and Pengyong Li and Gary G. Yen and Junchi Yan},
+      year={2025},
+      eprint={2508.18646},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.18646}, 
+}
+```
