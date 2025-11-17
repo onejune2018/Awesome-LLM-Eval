@@ -827,3 +827,17 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 <br><br>
+
+## Citation
+
+```bibtex
+@misc{llm-eval-anthropomorphic,
+      title={Beyond Benchmark: LLMs Evaluation with an Anthropomorphic and Value-oriented Roadmap}, 
+      author={Jun Wang and Ninglun Gu and Kailai Zhang and Zijiao Zhang and Yelun Bao and Jin Yang and Xu Yin and Liwei Liu and Yihuan Liu and Pengyong Li and Gary G. Yen and Junchi Yan},
+      year={2025},
+      eprint={2508.18646},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2508.18646}, 
+}
+```
