@@ -8,7 +8,7 @@
 
 Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboard, papers, docs and models, mainly for Evaluation on Large Language Models and exploring the boundaries and limits of Generative AI.
 
-
+![](docs/llm-eval-tree-2025.png)
 
 ## Table of Contents
 
@@ -41,8 +41,9 @@ Awesome-LLM-Eval: a curated list of tools, datasets/benchmark, demos, leaderboar
 - [Licenses](#Licenses)
 - [Citation](#Citation)
 
+
 ![](docs/survey-gif-test.gif)
-![](docs/image_llm_palm.gif)
+
 
 ## News
 
