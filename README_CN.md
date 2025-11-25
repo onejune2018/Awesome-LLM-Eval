@@ -269,6 +269,7 @@ If you find our survey useful, please kindly cite our paper:
 |Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
 | DeepEval | mr-gpt | [DeepEval](github.com/mr-gpt/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产 |
 | CONNER | Tencent AI Lab | [CONNER](https://github.com/ChanLiang/CONNER) | CONNER：一个综合性的大模型知识评估框架，旨在从六个重要角度系统地、自动地评估生成的信息——事实性、相关性、连贯性、信息性、有用性和有效性。 |
+| Kiln | Kiln-AI | [GitHub](https://github.com/Kiln-AI/Kiln)<br/>[kiln.tech](https://kiln.tech) | 5 分钟内通过拖拽即可搭建 RAG。Kiln 是免费的生产级 AI 系统构建工具，支持 RAG 流水线、评测、支持 MCP 工具调用的智能体、合成数据生成与微调。 |
 
 <br><br>
 ## Datasets-or-Benchmark
