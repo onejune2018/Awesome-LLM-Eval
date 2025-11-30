@@ -826,6 +826,7 @@ If you find our survey useful, please kindly cite our paper:
 | [Weights & Biases (Prompts)](https://docs.wandb.ai/guides/prompts ) | No GitHub link | A set of LLMOps tools in the developer-focused W&B MLOps platform. Use W&B Prompts to visualize and inspect LLM execution flows, track inputs and outputs, view intermediate results, and manage prompts and LLM chain configurations. |
 | [xTuring](https://github.com/stochasticai/xturing ) | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social ) | Build and control your personal LLMs using fast and efficient fine-tuning. |
 | [ZenML](https://github.com/zenml-io/zenml ) | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social ) | An open-source framework for orchestrating, experimenting, and deploying production-grade ML solutions, with built-in `langchain` and `llama_index` integration. |
+| [LaikaTest](https://laikatest.com/) | No Github link | LaikaTest is a prompt management and A/B testing toolkit for AI apps. It lets teams version, test, and optimize prompts with real-time analytics and safety guardrails, helping you ship more reliable LLM features. |
 
 
 <br><br>
