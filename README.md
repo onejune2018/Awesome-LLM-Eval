@@ -199,6 +199,7 @@ If you find our survey useful, please kindly cite our paper:
 | Name | Year | Task Type | Institution | Category | Datasets | Url |
 | --- | --- | --- | --- | --- | --- | --- |
 | DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
+| ISC-Bench | 2026 | Safety | Deakin/NTU | Internal Safety Collapse | 8+ domains | [link](https://github.com/wuyoscar/ISC-Bench ) |
 | CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
 | Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
 | HarmBench | 2024 | Safety | UIUC | Adversarial Behaviors | 510 | [link](https://github.com/centerforaisafety/HarmBench ) |
