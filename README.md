@@ -411,6 +411,7 @@ If you find our survey useful, please kindly cite our paper:
 |             AlpacaEval              | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]         |
 |                ANGO                 | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)] |
 |              BeHonest               | [[Source](https://gair-nlp.github.io/BeHonest/#leaderboard)] |
+|             BenchGecko              | [[Source](https://benchgecko.ai)]                            |
 |     Big Code Models Leaderboard     | [[Source](https://huggingface.co/spaces/bigcode/bigcode-models-leaderboard)] |
 |            Chatbot Arena            | [[Source](https://lmarena.ai/?leaderboard)]                  |
 |   Chinese Large Model Leaderboard   | [[Source](https://github.com/jeinlee1991/chinese-llm-benchmark)] |
