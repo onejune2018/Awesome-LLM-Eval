@@ -154,6 +154,7 @@ If you find our survey useful, please kindly cite our paper:
 
 
 
+- [guardian-agent-prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested AI agent system prompts with built-in quality evaluation gates and evidence-based validation. MIT licensed.
 ### Typical Professional Quotient (PQ)-Professional Expertise evaluation benchmarks
 
 | Domain     | Name                  | Institution              | Scope of Tasks                                         | Unique Contributions                                         | Url                                                          |
