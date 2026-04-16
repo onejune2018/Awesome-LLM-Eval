@@ -88,6 +88,9 @@ If you find our survey useful, please kindly cite our paper:
 
 ### Typical Intelligence Quotient (IQ)-General Intelligence evaluation benchmarks
 
+- [FutureAGI ai-evaluation](https://github.com/future-agi/ai-evaluation)
+- [FutureAGI futureagi-sdk](https://github.com/future-agi/futureagi-sdk)
+
 | Name                  | Year | Task Type              | Institution         | Evaluation Focus                              | Datasets       | Url                                                          |
 | --------------------- | ---- | ---------------------- | ------------------- | --------------------------------------------- | -------------- | ------------------------------------------------------------ |
 | MMLU-Pro              | 2024 | Multi-Choice Knowledge | TIGER-AI-Lab        | Subtle Reasoning, Fewer Noise                 | MMLU-Pro       | [link](https://github.com/TIGER-AI-Lab/MMLU-Pro )            |
