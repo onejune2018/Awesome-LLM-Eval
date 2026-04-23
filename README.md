@@ -887,3 +887,4 @@ If you find our survey useful, please kindly cite our paper:
       url={https://arxiv.org/abs/2508.18646}, 
 }
 ```
+- [BenchGecko](https://benchgecko.ai) - AI模型基准测试排行榜，涵盖数千个模型，数百个供应商，128个评估基准，支持跨供应商价格对比。免费API。[英文/中文](https://benchgecko.ai/zh/)
