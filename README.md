@@ -356,6 +356,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| Hlido AI Agent Benchmark | Hlido | [Hlido](https://hlido.eu) / [Dataset](https://huggingface.co/datasets/hlido-eu/agent-benchmark) | Independent benchmark and review dataset for 329 AI agents, with Laddoo Scores, claim-vs-evidence tables, C2PA-signed evidence artifacts, and a 9-tool MCP server for programmatic trust checks (2026-05-03) |
 
 ### Code-Capabilities
 
