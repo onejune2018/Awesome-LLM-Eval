@@ -758,6 +758,7 @@ Axioms**](https://doi.org/10.18653/v1/2021.emnlp-main.598),<br> by *Pei Zhou, Ra
 | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Byzer-LLM](https://github.com/allwefantasy/byzer-llm) |  ![](https://img.shields.io/github/stars/allwefantasy/byzer-llm.svg?style=social) | Byzer-LLM是一套大模型基础设施，支持预训练，微调，部署，serving等各种和大模型相关的能力。Byzer-Retrieval则是专门为大模型开发的存储基础设施，支持各种数据源批量导入，实时单条更新，支持全文检索，向量检索，混合检索，方便Byzer-LLM使用数据。Byzer-SQL/Python则提供了易于使用的人机交互API，极低门槛去使用上述产品。 |
 | [agenta](https://github.com/Agenta-AI/agenta)           | ![](https://img.shields.io/github/stars/Agenta-AI/agenta.svg?style=social) | 用于构建强大LLM应用的LLMOps平台。轻松尝试和评估不同提示、模型和工作流，以构建稳健的应用程序。 |
+| [agenttrace](https://github.com/luoyuctl/agenttrace) | ![](https://img.shields.io/github/stars/luoyuctl/agenttrace.svg?style=social) | 本地优先的 TUI 和 CLI，用于评估 AI 编码代理会话的成本、token、延迟和健康回归。 |
 | [Arize-Phoenix](https://github.com/Arize-ai/phoenix)    | ![](https://img.shields.io/github/stars/Arize-ai/phoenix.svg?style=social) | 用于LLMs、视觉、语言和表格模型的ML可观测性。                 |
 | [BudgetML](https://github.com/ebhy/budgetml)            | ![](https://img.shields.io/github/stars/ebhy/budgetml.svg?style=social) | 在不到10行代码的情况下，以有限的预算部署ML推理服务。         |
 | [CometLLM](https://github.com/comet-ml/comet-llm)       | ![](https://img.shields.io/github/stars/comet-ml/comet-llm.svg?style=social) | 100%开源的LLMOps平台，用于记录、管理和可视化LLM提示和链条。跟踪提示模板、提示变量、提示持续时间、令牌使用等其他元数据。评分提示输出并在单个UI中可视化聊天历史。 |
