@@ -887,3 +887,5 @@ If you find our survey useful, please kindly cite our paper:
       url={https://arxiv.org/abs/2508.18646}, 
 }
 ```
+
+- [AgentThreatBench](https://ukgovernmentbeis.github.io/inspect_evals/evals/safeguards/agent_threat_bench/) - OWASP Agentic Top 10 (2026) evaluation suite. Merged into UK AISI's inspect_evals. Tasks: memory poisoning (ASI06), autonomy hijack (ASI01), data exfiltration (ASI01). Dual-metric scoring: utility + security.
