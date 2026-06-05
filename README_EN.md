@@ -188,6 +188,7 @@ If you find our survey useful, please kindly cite our paper:
 |            | MultiPL-E             | Princeton University     | Neural code generation                                 | Benchmarking neural code generation models                   | [link](https://github.com/nuprl/MultiPL-E )                  |
 |            | CodeXGLUE             | Microsoft                | Code intelligence                                      | Wide tasks covering: code-code, text-code, code-text and text-text | [link](https://github.com/microsoft/CodeXGLUE )              |
 |            | EvoCodeBench          | Peking University        | Evolving code generation benchmark                     | Aligned with real-world code repositories, evolving over time | [link](https://github.com/seketeam/EvoCodeBench )            |
+|        | ShopPay Audit Benchmark | Dmatut7 | Business-logic audit benchmark for AI coding agents | Spec-grounded payment/wallet/order defects with tests, answer key and scoring rubric | [link](https://github.com/Dmatut7/shoppay-audit-benchmark ) |
 
 
 
