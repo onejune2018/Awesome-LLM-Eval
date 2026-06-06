@@ -797,6 +797,7 @@ If you find our survey useful, please kindly cite our paper:
 | [Weights & Biases (Prompts)](https://docs.wandb.ai/guides/prompts ) | No GitHub link | A set of LLMOps tools in the developer-focused W&B MLOps platform. Use W&B Prompts to visualize and inspect LLM execution flows, track inputs and outputs, view intermediate results, and manage prompts and LLM chain configurations. |
 | [xTuring](https://github.com/stochasticai/xturing ) | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social ) | Build and control your personal LLMs using fast and efficient fine-tuning. |
 | [ZenML](https://github.com/zenml-io/zenml ) | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social ) | An open-source framework for orchestrating, experimenting, and deploying production-grade ML solutions, with built-in `langchain` and `llama_index` integration. |
+| [TWZRD Agent Intel](https://intel.twzrd.xyz ) | No GitHub link | On-chain agent trust scoring for Solana. Exposes MCP tools (`score_agent`, `preflight_check`, `get_trust_receipt`) for evaluating AI agent reputation using HTTP 402 micro-payments. Useful for agent evaluation pipelines that need on-chain identity signals — query `https://intel.twzrd.xyz/mcp` to score any Solana wallet. |
 
 
 <br><br>
