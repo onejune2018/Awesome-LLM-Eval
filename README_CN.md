@@ -269,6 +269,7 @@ If you find our survey useful, please kindly cite our paper:
 |Prompt flow | Microsoft | [promptflow](github.com/microsoft/promptflow) | 一套开发工具，旨在简化基于 LLM 的AI应用的端到端开发周期，从构思、原型设计、测试、评估到生产部署和监控。它使提示工程变得更加容易，使您能构建具有产品级质量的 LLM 应用. |
 | DeepEval | mr-gpt | [DeepEval](github.com/mr-gpt/deepeval) | DeepEval：提供一种 Pythonic 方式在 LLM 管线上运行离线评估，以便轻松投入生产 |
 | CONNER | Tencent AI Lab | [CONNER](https://github.com/ChanLiang/CONNER) | CONNER：一个综合性的大模型知识评估框架，旨在从六个重要角度系统地、自动地评估生成的信息——事实性、相关性、连贯性、信息性、有用性和有效性。 |
+| Prompt Evaluator | Arian Gibson | [Prompt Evaluator](https://promptevaluator.ai) | Prompt Evaluator 是一个基于Web的LLM提示词和多步工作流审计与QA测试工具。它提供清晰度、具体性、鲁棒性和效率等维度的结构化评分，帮助提示词工程师在部署前系统性地识别弱点。支持单提示词和链式提示词评估，并提供可操作的改进建议。 |
 
 <br><br>
 ## Datasets-or-Benchmark
