@@ -512,6 +512,8 @@ If you find our survey useful, please kindly cite our paper:
 <br><br>
 ## Papers
 
+- [<img src=https://img.shields.io/badge/EMNLP-2025-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2509.16457) [**Implicit Behavioral Alignment of Language Agents in High-Stakes Crowd Simulations**](https://arxiv.org/abs/2509.16457),<br> by *Yunzhe Wang, Gale M. Lucas, Burcin Becerik-Gerber, Volkan Ustun*
+  <br><br>
 - [<img src=https://img.shields.io/badge/EMNLP-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2310.07289) [**Beyond Factuality: A Comprehensive Evaluation of Large Language Models as Knowledge Generators**](https://arxiv.org/abs/2310.07289),<br> by *Liang Chen, Yang Deng, Yatao Bian et al.*
   <br><br>
 - [<img src=https://img.shields.io/badge/CoRR-2023-blue alt="img" style="zoom:100%; vertical-align: middle" />](https://arxiv.org/abs/2307.03109) [**A Closer Look into Automatic Evaluation Using Large Language Models**](https://browse.arxiv.org/pdf/2310.05657.pdf),<br> by *Cheng-han Chiang, Hungyi Li*
