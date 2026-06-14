@@ -826,6 +826,7 @@ If you find our survey useful, please kindly cite our paper:
 | [Weights & Biases (Prompts)](https://docs.wandb.ai/guides/prompts ) | No GitHub link | A set of LLMOps tools in the developer-focused W&B MLOps platform. Use W&B Prompts to visualize and inspect LLM execution flows, track inputs and outputs, view intermediate results, and manage prompts and LLM chain configurations. |
 | [xTuring](https://github.com/stochasticai/xturing ) | ![](https://img.shields.io/github/stars/stochasticai/xturing.svg?style=social ) | Build and control your personal LLMs using fast and efficient fine-tuning. |
 | [ZenML](https://github.com/zenml-io/zenml ) | ![](https://img.shields.io/github/stars/zenml-io/zenml.svg?style=social ) | An open-source framework for orchestrating, experimenting, and deploying production-grade ML solutions, with built-in `langchain` and `llama_index` integration. |
+| [Future AGI](https://github.com/future-agi/future-agi ) | ![](https://img.shields.io/github/stars/future-agi/future-agi.svg?style=social ) | Open-source platform to simulate, evaluate, trace, guardrail, route, and optimize LLM and AI agent apps in one feedback loop, so agents don't just get monitored, they self-improve. Self-hostable. Apache-2.0. |
 
 
 <br><br>
