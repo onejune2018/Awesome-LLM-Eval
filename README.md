@@ -336,6 +336,7 @@ If you find our survey useful, please kindly cite our paper:
 | SmartPlay | microsoft | Gaming | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay is a large language model (LLM) benchmark designed for ease of use, offering a variety of games for testing |
 | FinEval | SUFE-AIFLM-Lab | Finance | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval: A collection of high-quality multiple-choice questions covering fields such as finance, economics, accounting, and certificates |
 | GSM8K | OpenAI | Mathematics | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K is a dataset of 8.5K high-quality linguistically diverse elementary school math word problems. GSM8K divides them into 7.5K training problems and 1K test problems. These problems require 2 to 8 steps to solve, with solutions primarily involving performing a series of basic arithmetic operations (+ - / *) to reach the final answer |
+| DocuBench | DocuPipe | Document AI | [DocuBench](https://github.com/DocuPipe/DocuBench) | DocuBench is a schema-guided structured extraction benchmark of 50 hard real-world documents (10 file types, 11 languages including RTL and CJK scripts), each paired with a JSON Schema and a hand-verified label; an open scorer reports macro-average field accuracy with order-independent array matching |
 
 ### RAG-Evaluation
 
