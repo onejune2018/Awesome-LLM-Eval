@@ -812,6 +812,7 @@ If you find our survey useful, please kindly cite our paper:
 ## Other-Awesome-Lists
 
 - [Awesome LLM](https://github.com/Hannibal046/Awesome-LLM/) -  A curated list of papers about large language models.
+- [Awesome AI Testing](https://github.com/tugkanboz/awesome-ai-testing) - A curated list of AI-powered testing tools and resources for QA engineers, including a dedicated LLM-as-judge evaluation section.
 - [Awesome-Efficient-LLM](https://github.com/horseee/Awesome-Efficient-LLM) - A curated list for Efficient Large Language Models.
 - [Awesome-production-machine-learning](https://github.com/EthicalML/awesome-production-machine-learning) - A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning.
 - [Awesome-marketing-datascience](https://github.com/underlines/awesome-marketing-datascience) - Curated list of useful LLM / Analytics / Datascience resources.
