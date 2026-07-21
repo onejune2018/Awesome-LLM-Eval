@@ -398,6 +398,7 @@ If you find our survey useful, please kindly cite our paper:
 
 ## Demos
 
+- [Darkmoon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI pentest platform and MCP host, covering web, API, Active Directory and Kubernetes, with proof of exploitation.
 - [Chat Arena: anonymous models side-by-side and vote for which one is better](https://chat.lmsys.org/?arena) - An open-source AI LLM "anonymous" arena! Here, you can become a judge, score two model responses without knowing their identities, and after scoring, the true identities of the models will be revealed. Participants include Vicuna, Koala, OpenAssistant (oasst), Dolly, ChatGLM, StableLM, Alpaca, LLaMA, and more.
 
 ![image](https://github.com/onejune2018/Awesome-LLM-Eval/assets/35061855/7c6c2ff4-a189-42c8-a8d4-e4defecebf85)
