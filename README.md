@@ -317,6 +317,9 @@ If you find our survey useful, please kindly cite our paper:
 
 ### Domain
 
+- **[REFUTE](https://bgpt.pro/refute)** (2026, BGPT) — Scientific critique & epistemic calibration on recent science paper summaries. Judge-free Truth Score board; separates critique skill from calibration. [Dataset](https://huggingface.co/datasets/BGPT-OFFICIAL/refute) · [Leaderboard](https://huggingface.co/spaces/BGPT-OFFICIAL/refute-leaderboard)
+
+
 | Name | Institution | Field | URL | Introduction |
 | :--: | :--: | :--: | :--: | :-- |
 | Seismometer | Epic | Healthcare | [seismomete](github.com/epic-open-source/seismometer) | Seismometer is an AI model performance evaluation tool for the healthcare field, providing standardized evaluation criteria to help make decisions based on local data and workflows. It supports continuous monitoring of model performance. Although it can be used for models in any field, it was designed with a focus on validation for healthcare AI models where local validation requires cross-referencing data about patients (such as demographics, clinical interventions, and patient outcomes) and model performance. (2024-05-22) |
