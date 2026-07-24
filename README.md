@@ -167,6 +167,7 @@ If you find our survey useful, please kindly cite our paper:
 | Finance    | FinEval               | SUFE-AIFLM-Lab           | Multiple-choice QA on finance, economics, accounting   | Focuses on high-quality evaluation questions                 | [link](https://github.com/SUFE-AIFLM-Lab/FinEval )           |
 |            | OpenFinData           | Shanghai AI Lab          | Multi-scenario financial tasks                         | First comprehensive finance evaluation dataset               | [link](https://opencompass.org.cn )                          |
 |            | FinBen                | FinAI                    | 35 datasets across 23 financial tasks                  | Inductive reasoning, quantitative reasoning                  | [link](https://github.com/The-FinAI/PIXIU )                  |
+|            | Helium Market Resolution | Helium Trades | Option-chain math from frozen live chains (IV, delta, parity) | Ground truth from market; best frontier ~48%; complements FinEval MCQ | [link](https://huggingface.co/datasets/HeliumTrades/helium-market-resolution-benchmark) |
 |            | LAiW                  | Sichuan University       | 13 fundamental legal NLP tasks                         | Divides legal NLP capabilities into three major abilities    | [link](https://github.com/Dai-shen/LAiW )                    |
 | Legal      | LawBench              | Nanjing University       | Legal entity recognition, reading comprehension        | Real-world tasks, "abstention rate" metric                   | [link](https://github.com/open-compass/lawbench )            |
 |            | LegalBench            | Stanford University      | 162 tasks covering six types of legal reasoning        | Enables interdisciplinary conversations                      | [link](https://github.com/HazyResearch/legalbench/ )         |
@@ -198,6 +199,8 @@ If you find our survey useful, please kindly cite our paper:
 
 | Name | Year | Task Type | Institution | Category | Datasets | Url |
 | --- | --- | --- | --- | --- | --- | --- |
+| Helium Model Worldview | 2026 | Bias/Values | Helium Trades | Values, refusal, political defaults, cue sensitivity | 323 probes / 14 models | [link](https://huggingface.co/datasets/HeliumTrades/helium-model-worldview-benchmark) |
+| Helium Market Resolution | 2026 | Reasoning | Helium Trades | Market/options resolution scoring | 84 items | [link](https://huggingface.co/datasets/HeliumTrades/helium-market-resolution-benchmark) |
 | DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
 | CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
 | Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
@@ -235,6 +238,7 @@ If you find our survey useful, please kindly cite our paper:
 | CrowS-Pairs | 2020 | Bias | NYU | Stereotype Measurement | 1,508 | [link](https://github.com/nyu-mll/crows-pairs ) |
 | SEAT | 2019 | Bias | Princeton | Encoder Bias | n/a | [link](https://github.com/W4ngatang/sent-bias ) |
 | WinoGender | 2018 | Bias | UMass | Gender Bias | 720 | [link](https://github.com/rudinger/winogender-schemas ) |
+| Helium Model Worldview | 2026 | Bias/Values | Helium Trades | Safety, values, political lean, cue-swap consistency | 304 | [link](https://huggingface.co/datasets/HeliumTrades/helium-model-worldview-benchmark) |
 
 ## Tools
 
@@ -335,6 +339,7 @@ If you find our survey useful, please kindly cite our paper:
 | BLURB | Mindrank AI | Healthcare | [BLURB](https://microsoft.github.io/BLURB/index.html) | BLURB includes a comprehensive benchmark test for biomedical natural language processing applications based on PubMed, as well as a leaderboard for tracking community progress. BLURB comprises six diverse tasks and thirteen publicly available datasets. To avoid overemphasizing tasks with many available datasets (e.g., named entity recognition NER), BLURB reports the macro-average across all tasks as the primary score. The BLURB leaderboard is model-agnostic; any system that can generate test predictions using the same training and development data can participate. The primary goal of BLURB is to lower the barrier to participation in biomedical natural language processing and help accelerate progress in this important field that has a positive impact on society and humanity |
 | SmartPlay | microsoft | Gaming | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay is a large language model (LLM) benchmark designed for ease of use, offering a variety of games for testing |
 | FinEval | SUFE-AIFLM-Lab | Finance | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval: A collection of high-quality multiple-choice questions covering fields such as finance, economics, accounting, and certificates |
+| Helium Market Resolution | Helium Trades | Finance | [Helium MR](https://huggingface.co/datasets/HeliumTrades/helium-market-resolution-benchmark) | 300 frozen prompts from live option chains (NVDA, SPY, TSLA, AAPL, QQQ, AMZN). Tests implied vol, delta, arbitrage, and rich-vs-average strike with ground truth from the chain itself. [Overview](https://heliumtrades.com/benchmarks/) |
 | GSM8K | OpenAI | Mathematics | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K is a dataset of 8.5K high-quality linguistically diverse elementary school math word problems. GSM8K divides them into 7.5K training problems and 1K test problems. These problems require 2 to 8 steps to solve, with solutions primarily involving performing a series of basic arithmetic operations (+ - / *) to reach the final answer |
 
 ### RAG-Evaluation
