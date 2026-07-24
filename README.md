@@ -199,6 +199,8 @@ If you find our survey useful, please kindly cite our paper:
 
 | Name | Year | Task Type | Institution | Category | Datasets | Url |
 | --- | --- | --- | --- | --- | --- | --- |
+| Helium Model Worldview | 2026 | Bias/Values | Helium Trades | Values, refusal, political defaults, cue sensitivity | 323 probes / 14 models | [link](https://huggingface.co/datasets/HeliumTrades/helium-model-worldview-benchmark) |
+| Helium Market Resolution | 2026 | Reasoning | Helium Trades | Market/options resolution scoring | 84 items | [link](https://huggingface.co/datasets/HeliumTrades/helium-market-resolution-benchmark) |
 | DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
 | CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
 | Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
