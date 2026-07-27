@@ -371,6 +371,7 @@ If you find our survey useful, please kindly cite our paper:
 | BLURB | Mindrank AI | 生物医学 | [BLURB](https://microsoft.github.io/BLURB/index.html) | BLURB包括一个基于PubMed的生物医学自然语言处理应用的全面基准测试，以及一个用于跟踪社区进展的排行榜。BLURB包含六种多样化任务、十三个公开可用数据集。为了避免过于强调具有许多可用数据集的任务（例如命名实体识别NER），BLURB以所有任务的宏平均作为主要分数进行报告。BLURB的排行榜不依赖于模型，任何能够使用相同的训练和开发数据生成测试预测的系统都可以参与。BLURB的主要目标是降低在生物医学自然语言处理中的参与门槛，并帮助加速这个对社会和人类有积极影响的重要领域的进展 |
 | SmartPlay | microsoft | 游戏 | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay是一个大型语言模型 (LLM) 基准，设计为易于使用，提供各种游戏来测试 |
 | FinEval | SUFE-AIFLM-Lab | 金融 | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval：包含金融、经济、会计和证书等领域高质量多项选择题的集合 |
+| FinMirror | faceWang753 | 金融 / RAG | [FinMirror](https://github.com/faceWang753/finmirror) | 面向金融 RAG 系统和智能体的确定性配对世界评测。v0.1 含 126 个合成案例，检验答案、引用、计算操作数、置信度与拒答是否仅沿证据许可路径变化。（2026-07-26） |
 | GSM8K | OpenAI | 数学 | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K是一个包含8.5K个高质量语言多样性的小学数学单词问题的数据集。GSM8K将它们分为7.5K个训练问题和1K个测试问题。这些问题需要2到8个步骤来解决，解决方案主要涉及执行一系列基本算术运算（+ - / *）以达到最终答案 |
 
 <br><br>
