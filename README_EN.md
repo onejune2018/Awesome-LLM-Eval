@@ -327,6 +327,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| ClawBench | TIGER-AI-Lab | [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) | An open benchmark for browser agents on real-world online tasks, with isolated runs and reproducible browser-action, screenshot, HTTP, and agent-message traces. See the [paper](https://arxiv.org/abs/2604.08523) and [project page](https://claw-bench.com/). |
 
 ### Code-Capabilities
 
