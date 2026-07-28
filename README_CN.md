@@ -249,6 +249,7 @@ If you find our survey useful, please kindly cite our paper:
 
 | 名称 | 机构 | 网址 | 简介 |
 | :--: | :--: | :--: | :--: |
+| Coder Eval | UiPath | [coder_eval](https://github.com/UiPath/coder_eval) | Coder Eval 是一个用于评测 AI 编码代理（Claude Code、Codex、Gemini/Antigravity）及其技能的开源框架。它在沙箱中运行真实的代理来执行声明式 YAML 任务，然后对代理实际产出的文件与执行的命令进行评分：提供 14 种评分标准类型、0.0–1.0 的加权连续评分与通过阈值、用于并排比较模型或配置的 A/B 实验层、逐工具的 token 与成本遥测，以及可在 CI 中作为质量门禁的 GitHub Action。与 SWE-bench 等固定数据集不同，它面向团队自己交付的任务、技能与工作流，并支持基于数据集扩展的技能激活检查（`skill_triggered`，可按套件级精确率/召回率设阈值）(2026-07-28) |
 | prometheus-eval | prometheus-eval | [prometheus-eval](https://github.com/prometheus-eval/prometheus-eval) | PROMETHEUS开放第二版比其前身更强大的评估专用的语言模型，它能密切模仿人类和 GPT-4 的判断。此外,它能够处理直接评估和成对排序两种格式，并配合使用者定义的评估标准。在四个直接评估基准和四个成对排序基准上，PROMETHEUS 2 在所有测试的开源评估语言模型中，与人类和专有语言模型评判者取得最高的相关性和一致性 (2024-05-04) |
 | athina-evals | athina-ai |[athina-ai](https://github.com/athina-ai/athina-evals) | athina-ai是一个开源库，提供即插即用的预设评估（preset evals）/模块化、可扩展的框架来编写和运行评估，帮助工程师通过评估驱动的开发来系统性地提高他们的大型语言模型的可靠性和性能，athina-ai提供了一个系统，用于评估驱动的开发，克服了传统工作流程的限制，允许快速实验和具有一致指标的可定制评估器 |
 | LeaderboardFinder | Huggingface | [LeaderboardFinder](https://huggingface.co/spaces/leaderboards/LeaderboardFinder) | LeaderboardFinder帮你找到适合特定场景的大模型排行榜，排行榜的排行榜 (2024-04-02) |
