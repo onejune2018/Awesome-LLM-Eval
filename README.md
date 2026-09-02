@@ -437,6 +437,7 @@ If you find our survey useful, please kindly cite our paper:
 |      MMLU by Task Leaderboard       | [[Source](https://huggingface.co/spaces/CoreyMorris/MMLU-by-task-Leaderboard)] |
 |              MMToM-QA               | [[Source](https://chuanyangjin.com/mmtom-qa-leaderboard)]    |
 |              MathEval               | [[Source](https://matheval.ai/)]                             |
+|            ModelBenchmark           | [[Source](https://modelbenchmark.io)]                        |
 |            OlympicArena             | [[Source](https://gair-nlp.github.io/OlympicArena/#leaderboard)] |
 |              OpenEval               | [[Source](http://openeval.org.cn/#/rank)]                    |
 |     Open Multilingual LLM Eval      | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)] |
