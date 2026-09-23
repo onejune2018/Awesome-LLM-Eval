@@ -38,6 +38,7 @@ If you find our survey useful, please kindly cite our paper:
   - [Domain](#Domain)
   - [RAG-Evaluation](#RAG-Evaluation)
   - [Agent-Capabilities](#Agent-Capabilities)
+  - [Analytics-Agents](#Analytics-Agents)
   - [Coding-Capabilities](#Coding-Capabilities)
   - [Multimodal/Cross-modal](#Multimodal-Cross-modal)
   - [Long-Context](#Long-Context)
@@ -356,6 +357,20 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+
+### Analytics-Agents
+
+Agents that answer business questions over a data warehouse: schema discovery, query generation, and the analysis on top of the result.
+
+| Name | Institution | URL | Introduction |
+| :--: | :--: | :--: | :-- |
+| Benchouse | Benchouse | [Benchouse](https://benchouse.ai/benchmark) | An independent benchmark of analytics agent products rather than models, run on a simulated e-commerce warehouse whose ground truth is withheld. Every configuration (agent + LLM + semantic layer) answers the same 300 questions across three tiers — descriptive (what happened), diagnostic (why), prescriptive (what to do) — and an LLM judge scores three separate metrics: accuracy over answered questions, completeness over answerable ones, and restraint, the share of deliberately unanswerable trap questions the agent declines instead of answering. Season 2026-S2 covers Snowflake Cortex Analyst and Cortex Agents, Databricks Genie, Hex, nao, Lightdash and Supersimple (2026-09-01) |
+| The Agentic Analytics Benchmark | ClickHouse | [data-agent-mnist](https://clickhouse.com/blog/agentic-analytics-benchmark-data-agent-mnist) | 201 real production analytics questions run against a warehouse, comparing 28 models on pass rate and cost per run, with planning failures tracked separately from execution failures |
+| DataBench | Hex | [DataBench](https://hex.tech/databench/) | About 100 realistic analytical tasks executed inside one product, comparing model configurations rather than competing products. Includes trap tasks that have a plausible but wrong easy answer, where scores drop sharply |
+| AA-AnalystAgent | Artificial Analysis | [AA-AnalystAgent](https://artificialanalysis.ai/evaluations/aa-analyst-agent) | End-to-end quantitative analysis over real spreadsheets and documents across 14 business and scientific domains, scored pass^5 — correct on all five independent runs — so that reliability rather than best-of-n is the headline metric |
+| ADE-bench | dbt Labs | [ADE-bench](https://docs.getdbt.com/blog/building-a-better-data-agent-benchmark) | Analytical tasks set in realistic dbt projects, including staging models, macros and deliberately broken joins, plus vague business problems where the agent has to decide what is being asked |
+| Spider 2.0 | XLang Lab | [Spider 2.0](https://spider2-sql.github.io/) | Enterprise-scale text-to-SQL workflows over real warehouses with schemas of 1000+ columns, substantially harder than Spider 1.0 |
+| BIRD | HKU | [BIRD](https://bird-bench.github.io/) | Large-scale text-to-SQL benchmark over 95 databases, scoring both execution accuracy and query efficiency against a human performance baseline |
 
 ### Code-Capabilities
 
