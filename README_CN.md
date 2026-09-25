@@ -349,6 +349,7 @@ If you find our survey useful, please kindly cite our paper:
 | promptbench | microsoft | [promptbench](https://github.com/microsoft/promptbench) | PromptBench是一个强大的工具，旨在仔细研究和分析大型语言模型与各种提示的互动。它提供了一个方便的基础设施，用于模拟对模型的黑盒对抗提示攻击并评估它们的性能。这个存储库托管了必要的代码库、数据集和说明，以促进这些实验的进行 |
 | KoLA | THU-KEG | [KoLA](http://103.238.162.37:31622) | Knowledge-oriented LLM Assessment benchmark（KoLA）由清华大学知识工程组（THU-KEG）托管，旨在通过进行认真的设计，考虑数据、能力分类和评估指标，来精心测试LLMs的全球知识。这个基准测试包含80个高质量的多轮问题 |
 | M3Exam | DAMO | [M3Exam](https://github.com/DAMO-NLP-SG/M3Exam) | 一个多语言、多模态、多层次的用于研究大型语言模型的基准测试 |
+| Decision Bench | Atlan | [GitHub](https://github.com/atlanai/decision-bench) / [排行榜](https://decisionbench.ai/) | 面向路由、工具选择和分类等有限选项决策的模型评测基准。冻结的公开来源语料包含 35 项任务、1,071 条样本，公开准确率、校准度、延迟、成本和逐条预测结果。公开来源数据可能与模型训练数据重叠。 |
 
 <br><br>
 ### 垂直领域
