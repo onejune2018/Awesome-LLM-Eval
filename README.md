@@ -444,6 +444,7 @@ If you find our survey useful, please kindly cite our paper:
 |             SafetyBench             | [[Source](https://llmbench.ai/safety)]                       |
 |              SciBench               | [[Source](https://scibench-ucla.github.io/#leaderboard)]     |
 |             SciKnowEval             | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]         |
+|           ScoreIA La Forge          | [[Source](https://scoreia.ai/forge/en/ranking/)]             |
 |             SEED-Bench              | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)] |
 |             SuperBench              | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)] |
 |              SuperCLUE              | [[Source](https://www.superclueai.com/)]                     |
