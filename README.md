@@ -337,6 +337,8 @@ If you find our survey useful, please kindly cite our paper:
 | FinEval | SUFE-AIFLM-Lab | Finance | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval: A collection of high-quality multiple-choice questions covering fields such as finance, economics, accounting, and certificates |
 | GSM8K | OpenAI | Mathematics | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K is a dataset of 8.5K high-quality linguistically diverse elementary school math word problems. GSM8K divides them into 7.5K training problems and 1K test problems. These problems require 2 to 8 steps to solve, with solutions primarily involving performing a series of basic arithmetic operations (+ - / *) to reach the final answer |
 
+| scireason-forge | chenhz01 | Science Reasoning | [scireason-forge](https://github.com/chenhz01/scireason-forge) | Seed-generated science-reasoning benchmark (unit analysis, error propagation, experimental design, dimensional consistency) with a 100k problem pool and local oracle grading (no stored answers, no model judges). Includes a contamination-proof construction. MIT-licensed, self-tested (150+ checks), one-command reproduction. (2026-10-13) |
+
 ### RAG-Evaluation
 
 | Name | Institution | URL | Introduction |
@@ -356,6 +358,8 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+
+| forge-agentic | chenhz01 | [forge-agentic](https://github.com/chenhz01/forge-agentic) | Seed-generated agent-planning benchmark (tool ordering, budget knapsack, loop detection, permission matrix, plan makespan) with local oracle grading. Provides CPU-reproducible Qwen2.5 0.5B–14B baselines (4.4%–39.2% accuracy, chance 9.6%) and per-type capability-emergence curves. MIT-licensed, self-tested (150+ checks), one-command reproduction. (2026-10-13) |
 
 ### Code-Capabilities
 
