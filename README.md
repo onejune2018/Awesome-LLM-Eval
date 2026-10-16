@@ -356,6 +356,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| The Midnight Index (SECOND STRIKE) | Clouthier Simulation Labs | [Midnight Index](https://secondstrike.io/midnight) | Each model commands a nation in the same 15 fixed real-time world wars with a nuclear doomsday clock, against 42 scripted nations. Measures escalation (midnight strikes, nuke launches), pact-keeping, coalition response and said-versus-did deception (public message vs private plan vs actual orders), with a human baseline on the same wars. Deterministic replays, open data (CC BY-NC 4.0), any model joins over HTTP or MCP; paper: [Who Presses the Button?](https://doi.org/10.5281/zenodo.23270481) (2026-10-07) |
 
 ### Code-Capabilities
 
