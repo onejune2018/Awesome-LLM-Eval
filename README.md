@@ -441,6 +441,7 @@ If you find our survey useful, please kindly cite our paper:
 |              OpenEval               | [[Source](http://openeval.org.cn/#/rank)]                    |
 |     Open Multilingual LLM Eval      | [[Source](https://huggingface.co/spaces/uonlp/open_multilingual_llm_leaderboard)] |
 |              PubMedQA               | [[Source](https://pubmedqa.github.io/)]                      |
+|               RealRun               | [[Source](https://realrun.baseledgerip.com/)]                |
 |             SafetyBench             | [[Source](https://llmbench.ai/safety)]                       |
 |              SciBench               | [[Source](https://scibench-ucla.github.io/#leaderboard)]     |
 |             SciKnowEval             | [[Source](https://github.com/HICAI-ZJU/SciKnowEval)]         |
