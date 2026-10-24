@@ -392,6 +392,7 @@ If you find our survey useful, please kindly cite our paper:
 |            DreamBench++             | [[Source](https://dreambenchplus.github.io/#leaderboard)]    |
 |                FELM                 | [[Source](https://hkust-nlp.github.io/felm)]                 |
 |              FlagEval               | [[Source](https://flageval.baai.ac.cn/)]                     |
+|            FreeLLMArena             | [[Source](https://freellmarena.com/)]                        |
 |      Hallucination Leaderboard      | [[Source](https://github.com/vectara/hallucination-leaderboard)] |
 |                HELM                 | [[Source](https://crfm.stanford.edu/helm/)]                  |
 |  Huggingface Open LLM Leaderboard   | [[Source](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)] |
