@@ -356,6 +356,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| LevelBench-100 | Level CFO | [LevelBench-100](https://github.com/levelcfo/levelbench-100) | A 100-check agentic accounting and fractional CFO benchmark evaluating 38 AI models, CLI agent harnesses, and browser agents across real-world QuickBooks Online takeover diagnostics, 15 anonymized SMB close case studies, and 30 AI accounting error modes ([Interactive Leaderboard](https://levelcfo.com/benchmarks/agentic-accounting/) · [HF Dataset](https://huggingface.co/datasets/LevelCFO/levelbench-100)) (2026-10-25) |
 
 ### Code-Capabilities
 
@@ -429,6 +430,7 @@ If you find our survey useful, please kindly cite our paper:
 |              InfiBench              | [[Source](https://infi-coder.github.io/infibench)]           |
 |              InterCode              | [[Source](https://intercode-benchmark.github.io/)]           |
 |              LawBench               | [[Source](https://lawbench.opencompass.org.cn/leaderboard)]  |
+|           LevelBench-100            | [[Source](https://levelcfo.com/benchmarks/agentic-accounting/)] |
 |               LLMEval               | [[Source](https://openrouter.ai/rankings)]                   |
 |            LLM Rankings             | [[Source](http://llmeval.com)]                               |
 |      LLM Use Case Leaderboard       | [[Source](https://llmleaderboard.goml.io)]                   |
