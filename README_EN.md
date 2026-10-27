@@ -327,6 +327,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| TIB-AK79 | Andrii Kalchuk | [TIB-AK79](https://github.com/andruwka79-cloud/tib-ak79) | Open benchmark harness that grades what an agent's actions actually changed in a mock environment, plus a check of its claims against the resulting state. Apache-2.0 code, CC-BY-4.0 data. Author: Andrii Kalchuk. DOI: 10.5281/zenodo.23685588. |
 
 ### Code-Capabilities
 
