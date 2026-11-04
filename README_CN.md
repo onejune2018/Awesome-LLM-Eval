@@ -392,6 +392,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench是一个用于评估LLM作为agent智能体的系统化基准评测工具，突出了商业LLM和开源竞争对手之间的性能差距 (2023-08-01) |
 | AgentBench推理决策评估榜单 | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | 清华联合多所高校推出，涵盖不同任务环境，如购物、家居、操作系统等场景下模型的推理决策能力|
 | ToolBench工具调用评测 | 智源/清华 | [ToolBench](https://github.com/OpenBMB/ToolBench) | 通过与工具微调模型和 ChatGPT 进行比较，提供评测脚本|
+| EC²-Bench (EC2-Bench) | 东北大学 / OpenBMB | [EC2-Bench](https://github.com/OpenBMB/EC2-Bench) | EC²-Bench（EC2-Bench）评测长程 LLM 智能体执行中的端云协同，包含 128 个可执行的数字工作空间任务（其中 100 个带隐私标注），同时衡量任务表现、云端开销和隐私暴露，并对比查询级路由、逐步路由、端侧主导的委托和端侧主导的云端建议四种协同方式（[论文](https://arxiv.org/abs/2610.17816)，2026-10-13） |
 
 
 <br><br>
