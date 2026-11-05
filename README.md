@@ -356,6 +356,7 @@ If you find our survey useful, please kindly cite our paper:
 | AgentBench | Tsinghua University | [AgentBench](https://github.com/THUDM/AgentBench) | AgentBench is a systematic benchmark evaluation tool for assessing LLMs as intelligent agents, highlighting the performance gap between commercial LLMs and open-source competitors (2023-08-01) |
 | AgentBench Reasoning and Decision-making Evaluation Leaderboard | THUDM | [AgentBench](https://github.com/THUDM/AgentBench) | Jointly launched by Tsinghua and multiple universities, it covers the reasoning and decision-making capabilities of models in different task environments, such as shopping, home, and operating systems |
 | ToolBench Tool Invocation Evaluation | Zhiyuan/Tsinghua | [ToolBench](https://github.com/OpenBMB/ToolBench) | Compares with tool fine-tuned models and ChatGPT to provide evaluation scripts |
+| EC²-Bench (EC2-Bench) | Northeastern University (China) / Tsinghua University | [EC2-Bench](https://github.com/OpenBMB/EC2-Bench) | EC²-Bench (EC2-Bench) evaluates edge–cloud collaboration in long-horizon LLM agent execution on 128 executable digital-workspace tasks (100 with privacy annotations), jointly measuring task performance, cloud cost and privacy exposure, and compares query routing, per-step routing, edge-controlled delegation and edge-controlled advisory ([paper](https://arxiv.org/abs/2610.17816), 2026-10-13) |
 
 ### Code-Capabilities
 
