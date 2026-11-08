@@ -457,7 +457,7 @@ If you find our survey useful, please kindly cite our paper:
 |           VisualWebArena            | [[Source](https://jykoh.com/vwa)]                            |
 |               We-Math               | [[Source](https://we-math.github.io/#leaderboard)]           |
 |               WHOOPS!               | [[Source](https://whoops-benchmark.github.io)]               |
-|        Wordsmith Model Bench        | [[Source](https://wordsmith.page/benchmark/models)]          |
+|      Hypercritica Model Bench       | [[Source](https://hypercritica.com/benchmark/models)]        |
 
 
 
