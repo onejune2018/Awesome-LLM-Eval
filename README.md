@@ -407,6 +407,7 @@ If you find our survey useful, please kindly cite our paper:
 |              Platform               | Access                                                       |
 | :---------------------------------: | ------------------------------------------------------------ |
 |                ACLUE                | [[Source](https://github.com/isen-zhang/ACLUE)               |
+| AIHOT Model Leaderboard | [[Source](https://aihot.news/leaderboard)] |
 |             AgentBench              | [[Source](https://llmbench.ai/agent)]                        |
 |             AlpacaEval              | [[Source](https://tatsu-lab.github.io/alpaca_eval/)]         |
 |                ANGO                 | [[Source](https://huggingface.co/spaces/AngoHF/ANGO-Leaderboard)] |
