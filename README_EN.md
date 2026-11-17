@@ -233,6 +233,7 @@ If you find our survey useful, please kindly cite our paper:
 | Prompt flow | Microsoft | [promptflow](https://github.com/microsoft/promptflow) | A set of development tools designed by Microsoft to simplify the end-to-end development cycle of AI applications based on LLMs, from conception, prototyping, testing, and evaluation to production deployment and monitoring. It makes prompt engineering easier and enables the development of product-level LLM applications. |
 | DeepEval | mr-gpt | [DeepEval](https://github.com/confident-ai/deepeval) | DeepEval is a simple-to-use, open-source LLM evaluation framework. Similar to Pytest but specialized for unit testing LLM outputs, it incorporates the latest research to evaluate LLM outputs based on metrics such as G-Eval, hallucination, answer relevance, RAGAS, etc., utilizing LLMs and various other NLP models that run locally on your machine for evaluation. |
 | CONNER | Tencent AI Lab | [CONNER](https://github.com/ChanLiang/CONNER) | CONNER is a comprehensive large model knowledge evaluation framework designed to systematically and automatically assess the information generated from six critical perspectives: factuality, relevance, coherence, informativeness, usefulness, and validity. |
+| Litmiq | Litmiq | [litmiq.com](https://litmiq.com) | A free browser UI for prompt evaluation: run a system prompt against your own test cases on multiple OpenAI models, compare outputs side by side, and collect per-metric LLM-judge scores. Bring your own OpenAI key; no account or install. |
 
 ## Datasets or Benchmarks
 
