@@ -447,6 +447,7 @@ If you find our survey useful, please kindly cite our paper:
 |             SEED-Bench              | [[Source](https://huggingface.co/spaces/AILab-CVC/SEED-Bench_Leaderboard)] |
 |             SuperBench              | [[Source](https://fm.ai.tsinghua.edu.cn/superbench/#/leaderboard)] |
 |              SuperCLUE              | [[Source](https://www.superclueai.com/)]                     |
+|            Teanga Bench             | [[Blas](https://research.blasapp.com)] [[Tonada](https://research.tonadaapp.com)] [[Source](https://github.com/johnway114/teanga-bench)] |
 |              SuperGLUE              | [[Source](https://super.gluebenchmark.com/)]                 |
 |              SuperLim               | [[Source](https://lab.kb.se/leaderboard/results)]            |
 |               TAT-DQA               | [[Source](https://nextplusplus.github.io/TAT-DQA)]           |
