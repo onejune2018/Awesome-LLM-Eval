@@ -336,6 +336,7 @@ If you find our survey useful, please kindly cite our paper:
 | SmartPlay | microsoft | Gaming | [SmartPlay](github.com/microsoft/SmartPlay) | SmartPlay is a large language model (LLM) benchmark designed for ease of use, offering a variety of games for testing |
 | FinEval | SUFE-AIFLM-Lab | Finance | [FinEval](github.com/SUFE-AIFLM-Lab/FinEval) | FinEval: A collection of high-quality multiple-choice questions covering fields such as finance, economics, accounting, and certificates |
 | GSM8K | OpenAI | Mathematics | [GSM8K](https://github.com/openai/grade-school-math) | GSM8K is a dataset of 8.5K high-quality linguistically diverse elementary school math word problems. GSM8K divides them into 7.5K training problems and 1K test problems. These problems require 2 to 8 steps to solve, with solutions primarily involving performing a series of basic arithmetic operations (+ - / *) to reach the final answer |
+| PlaceBench | VOYGR | Local search / places | [PlaceBench](https://github.com/voygr-tech/placebench) | PlaceBench tests AI assistants on 150 everyday, time-bound questions about real places in 121 cities (46 in the local language), such as what is open nearby at a given hour or how to get somewhere. Each question has an answer key built from the place's own sources; answers are graded right, small error, partly right, no answer or wrong (wrong scores -1). Questions, keys and grades are released under CC BY 4.0 (2026-11-18). |
 
 ### RAG-Evaluation
 
