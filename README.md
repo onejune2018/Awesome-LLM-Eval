@@ -198,6 +198,7 @@ If you find our survey useful, please kindly cite our paper:
 
 | Name | Year | Task Type | Institution | Category | Datasets | Url |
 | --- | --- | --- | --- | --- | --- | --- |
+| Still Ours? | 2026 | Alignment | Y* Bridge Labs | Projective Value & Visual Alignment | 1,395 Runs | [link](https://github.com/still-ours/still-ours ) |
 | DiffAware | 2025 | Bias | Stanford | General Bias | 8 datasets | [link](https://github.com/Angelina-Wang/difference_awareness ) |
 | CASE-Bench | 2025 | Safety | Cambridge | Context-Aware Safety | CASE-Bench | [link](https://github.com/BriansIDP/CASEBench ) |
 | Fairness | 2025 | Fairness | PSU | Distributive Fairness | - | - |
